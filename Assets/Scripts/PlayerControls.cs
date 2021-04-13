@@ -15,6 +15,8 @@ public class PlayerControls : MonoBehaviour
     
     void Start()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         axis = Vector2.zero;
         mouse = Vector2.zero;
     }
