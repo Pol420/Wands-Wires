@@ -29,6 +29,7 @@ public class LongRangeWeapon : Weapon
     protected override void ShootFire()
     {
         FireBomb();
+        AddFireAmmo(-1);
     }
 
     protected override void ShootTesla()
@@ -41,7 +42,7 @@ public class LongRangeWeapon : Weapon
     protected override void ShootWater()
     {
         shootingWater = true;
-        remainingWater = ammo.y;
+        remainingWater = GetWaterAmmo();
     }
 
     protected override void SubStart()
@@ -59,7 +60,7 @@ public class LongRangeWeapon : Weapon
             else
             {
                 remainingWater -= Time.deltaTime;
-                ammo.y = Mathf.FloorToInt(remainingWater);
+                SetWaterAmmo(Mathf.FloorToInt(remainingWater));
                 if (densityCounter >= 1f / waterDensity) WaterStream();
                 else densityCounter += Time.deltaTime;
             }
@@ -94,5 +95,6 @@ public class LongRangeWeapon : Weapon
         chargingTesla = false;
         Instantiate(teslaBullet).GetComponent<Projectile>().Shoot(bulletHole.position, cam.transform.forward, power * (chargeTime + 1) / (maxChargeTime + 1));
         reloadTime = ammoReloadTime.z;
+        AddTeslaAmmo(-1);
     }
 }

@@ -7,8 +7,9 @@ public abstract class Weapon : MonoBehaviour
 {
     [SerializeField] private GameObject otherWeaponObject = null;
     private Weapon otherWeapon;
+    [SerializeField] private HUD hud = null;
 
-    [SerializeField] protected static Vector3Int ammo = new Vector3Int(23, 23, 23);
+    [SerializeField] private static Vector3Int ammo = new Vector3Int(23, 23, 23);
     [SerializeField] protected Vector3 ammoReloadTime = new Vector3(1f, 2f, 3f);
     protected Transform bulletHole;
     private Ammo currentAmmo;
@@ -18,42 +19,45 @@ public abstract class Weapon : MonoBehaviour
 
     void Start()
     {
-        currentAmmo = Ammo.Fire;
-        reloadTime = 0f;
         anim = GetComponent<Animator>();
         bulletHole = transform.GetChild(0);
         cam = Camera.main.transform;
         otherWeapon = otherWeaponObject.GetComponent<Weapon>();
+        AddFireAmmo(0);
+        AddWaterAmmo(0);
+        AddTeslaAmmo(0);
+        SwitchAmmo(Ammo.Fire);
         SubStart();
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.F)) SwitchWeapon();
-        else if (reloadTime > 0f) reloadTime -= Time.deltaTime;
+        else if (reloadTime > 0f)
+        {
+            reloadTime -= Time.deltaTime;
+            hud.SetSelector(1 - reloadTime / ammoReloadTime[CurrentAmmo()]);
+        }
         else if (Input.GetButtonDown("Fire1"))
         {
             switch (currentAmmo)
             {
                 case Ammo.Fire:
                     ShootFire();
-                    ammo -= new Vector3Int(1, 0, 0);
                     reloadTime = ammoReloadTime.x;
                     //anim.SetTrigger("Shoot Fire");
                     break;
                 case Ammo.Water:
                     ShootWater();
-                    ammo -= new Vector3Int(0, 1, 0);
                     reloadTime = ammoReloadTime.y;
                     //anim.SetTrigger("Shoot Water");
                     break;
                 case Ammo.Tesla:
                     ShootTesla();
-                    ammo -= new Vector3Int(0, 0, 1);
                     reloadTime = ammoReloadTime.z;
                     //anim.SetTrigger("Shoot Tesla");
                     break;
-                default:break;
+                default: break;
             }
         }
         else if (Input.GetKeyDown(KeyCode.Alpha1)) SwitchAmmo(Ammo.Fire);
@@ -69,18 +73,18 @@ public abstract class Weapon : MonoBehaviour
         {
             case Ammo.Fire:
                 reloadTime = ammoReloadTime.x;
+                hud.MoveSelector(0);
                 //anim.SetTrigger("Reload Fire");
-                Debug.Log("Swtiched to Fire!");
                 break;
             case Ammo.Water:
                 reloadTime = ammoReloadTime.y;
+                hud.MoveSelector(1);
                 //anim.SetTrigger("Reload Water");
-                Debug.Log("Swtiched to Water!");
                 break;
             case Ammo.Tesla:
                 reloadTime = ammoReloadTime.z;
+                hud.MoveSelector(2);
                 //anim.SetTrigger("Reload Tesla");
-                Debug.Log("Swtiched to Tesla!");
                 break;
             default: break;
         }
@@ -98,6 +102,17 @@ public abstract class Weapon : MonoBehaviour
     protected abstract void ShootTesla();
     protected abstract void SubStart();
     protected abstract void SubUpdate();
+
+    protected void AddFireAmmo(int amount) { SetFireAmmo(ammo.x + amount); }
+    protected void AddWaterAmmo(int amount) { SetWaterAmmo(ammo.y + amount); }
+    protected void AddTeslaAmmo(int amount) { SetTeslaAmmo(ammo.z + amount); }
+    protected void SetFireAmmo(int amount) { ammo.x = Mathf.Clamp(amount, 0, 100); hud.SetFire(ammo.x); }
+    protected void SetWaterAmmo(int amount) { ammo.y = Mathf.Clamp(amount, 0, 100); hud.SetWater(ammo.y); }
+    protected void SetTeslaAmmo(int amount) { ammo.z = Mathf.Clamp(amount, 0, 100); hud.SetTesla(ammo.z); }
+    protected int GetFireAmmo() { return ammo.x; }
+    protected int GetWaterAmmo() { return ammo.y; }
+    protected int GetTeslaAmmo() { return ammo.z; }
+    protected int CurrentAmmo() { if (currentAmmo == Ammo.Fire) return 0; else if (currentAmmo == Ammo.Water) return 1; else return 2; }
 
 }
 public enum Ammo{Fire, Water, Tesla}
