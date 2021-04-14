@@ -722,7 +722,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1393609554
 Transform:
   m_ObjectHideFlags: 0
@@ -1471,7 +1471,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   otherWeaponObject: {fileID: 1393609553}
-  ammoReloadTime: {x: 1, y: 2, z: 3}
+  ammoReloadTime: {x: 1, y: 1, z: 1}
+  fireBullet: {fileID: 0}
+  waterBullet: {fileID: 1546721434583871812, guid: eeb4c25e8d28a6a4aa3da05969b96c16, type: 3}
+  waterPower: 12
+  waterCharge: 1
+  teslaBullet: {fileID: 0}
+  chargeBall: {fileID: 0}
 --- !u!23 &1892996933
 MeshRenderer:
   m_ObjectHideFlags: 0
