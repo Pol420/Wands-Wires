@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 2574890033184618979}
   - component: {fileID: 290012342513158408}
   - component: {fileID: 1823197467849401114}
-  - component: {fileID: 3668237746835265200}
+  - component: {fileID: 3658618990252372888}
   m_Layer: 6
   m_Name: Tesla Laser
   m_TagString: PlayerProjectile
@@ -142,10 +142,10 @@ Rigidbody:
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 112
-  m_CollisionDetection: 0
---- !u!114 &3668237746835265200
+  m_CollisionDetection: 1
+--- !u!114 &3658618990252372888
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -159,3 +159,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 20
   type: 2
+  explosionPrefab: {fileID: 0}

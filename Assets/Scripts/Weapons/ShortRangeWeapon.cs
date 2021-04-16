@@ -57,6 +57,7 @@ public class ShortRangeWeapon : Weapon
             currentSpiral -= Time.deltaTime;
             if (stream >= 1f / (waterPower/waterCharge)) SprayWater();
             else stream += Time.deltaTime;
+            holder.Push(-transform.forward, waterPower);
         }
         else if (flaming)
         {

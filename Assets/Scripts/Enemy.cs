@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Animator), typeof(BodyPart))]
-public class Enemy : MonoBehaviour
+public class Enemy : Pushable
 {
     [SerializeField] private GameObject floatyTextPrefab = null;
     [SerializeField] private int health = 100;

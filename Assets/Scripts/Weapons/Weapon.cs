@@ -6,6 +6,7 @@ using UnityEngine;
 public abstract class Weapon : MonoBehaviour
 {
     [SerializeField] private GameObject otherWeaponObject = null;
+    [SerializeField] protected Pushable holder = null;
     private Weapon otherWeapon;
     [SerializeField] private HUD hud = null;
 
@@ -17,7 +18,7 @@ public abstract class Weapon : MonoBehaviour
     private Animator anim;
     protected Transform cam;
 
-    void Start()
+    void Awake()
     {
         anim = GetComponent<Animator>();
         bulletHole = transform.GetChild(0);

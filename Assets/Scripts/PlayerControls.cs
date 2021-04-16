@@ -5,9 +5,9 @@ using UnityEngine;
 public class PlayerControls : MonoBehaviour
 {
     [Header("Settings")]
-    [SerializeField] private Vector2 mouseSensitivity = new Vector2(1f, 2f);
-    [SerializeField] [Range(0f, 10f)] private float moveSpeed = 5f;
-    [SerializeField] [Range(0f, 5f)] public float jumpPower = 5f;
+    [SerializeField] private float mouseSensitivity = 2f;
+    [SerializeField] [Range(0f, 20f)] private float moveSpeed = 10f;
+    [SerializeField] [Range(0f, 20f)] public float jumpPower = 10f;
 
     [Header("Current Values")]
     public Vector2 axis;
@@ -29,8 +29,7 @@ public class PlayerControls : MonoBehaviour
         else axis = new Vector2(inputX, inputY).normalized * moveSpeed;
         mouse = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y")).normalized * mouseSensitivity;
     }
-
-    public bool Sprinting() { return Input.GetKey(KeyCode.LeftShift); }
+    
     public bool IsJumping() { return Input.GetKey(KeyCode.Space); }
 
 }

@@ -2,16 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody), typeof(Collider2D))]
-public class TeslaCharge : MonoBehaviour
+public class TeslaCharge : Projectile
 {
     private static List<Transform> charges;
     private List<Transform> neighbours;
     
-    private float sparkChance = 0.25f;
-    private float ttl = 10f;
+    private float sparkChance;
+    private float ttl;
 
-    private Rigidbody body;
     private bool stuck;
     private GameObject sparkPrefab;
     private GameObject spark;
@@ -35,7 +33,7 @@ public class TeslaCharge : MonoBehaviour
     private void FindNeighbours()
     {
         neighbours = new List<Transform>();
-        foreach (Transform t in charges) if (!neighbours.Contains(t) && Vector3.Distance(t.position, transform.position) <= 20f) neighbours.Add(t);
+        foreach (Transform t in charges) if (t != null && !neighbours.Contains(t) && Vector3.Distance(t.position, transform.position) <= 25f) neighbours.Add(t);
     }
 
     void Update()
@@ -62,6 +60,11 @@ public class TeslaCharge : MonoBehaviour
             spark.transform.localScale = 2 * Vector3.Distance(transform.position, otherEnd.position) * Vector3.forward + new Vector3(0.2f, 0.2f);
             spark.transform.LookAt(otherEnd, Vector3.right);
             Invoke("ClearSpark", Time.deltaTime * 30f);
+            Collider[] hits = Physics.OverlapCapsule(transform.position, otherEnd.position, 0.1f); foreach (Collider c in hits)
+            {
+                BodyPart part = c.gameObject.GetComponent<BodyPart>();
+                if (part != null) part.Hurt(c.ClosestPoint(transform.position), damage, type);
+            }
         }
     }
 
@@ -76,11 +79,13 @@ public class TeslaCharge : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    protected override void OnCollision(Collision collision)
     {
-        body.isKinematic = true;
-        transform.SetParent(collision.transform);
         stuck = true;
         GetComponent<Collider>().enabled = false;
+        body.isKinematic = true;
+        transform.SetParent(collision.transform);
     }
+
+    protected override void OnDrag(Collision collision) {}
 }

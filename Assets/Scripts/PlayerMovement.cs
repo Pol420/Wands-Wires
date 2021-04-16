@@ -2,17 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(PlayerControls), typeof(Rigidbody))]
-public class PlayerMovement : MonoBehaviour
+[RequireComponent(typeof(PlayerControls))]
+public class PlayerMovement : Pushable
 {
     private PlayerControls controls;
-    private Rigidbody body;
     private Transform cam;
 
     void Start()
     {
         controls = GetComponent<PlayerControls>();
-        body = GetComponent<Rigidbody>();
         cam = Camera.main.transform;
     }
     
@@ -26,10 +24,19 @@ public class PlayerMovement : MonoBehaviour
     {
         if (IsGrounded())
         {
-            Move(controls.axis * (controls.Sprinting() ? 2f : 1f));
-            if (controls.IsJumping()) Jump();
+            Move(controls.axis);
+            if (controls.IsJumping()) Jump(controls.axis);
         }
-        else Move(controls.axis * (controls.Sprinting() ? 1f : 0.5f));
+        else
+        {
+            body.velocity += Time.deltaTime * Physics.gravity * body.mass / 2f;
+            if (body.velocity.y >= 0f) Move(controls.axis);
+            else
+            {
+                Move(controls.axis);
+                body.velocity += Time.deltaTime * Physics.gravity * body.mass / 2f;
+            }
+        }
     }
 
     private void Pivot(float angle)
@@ -39,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Look(float angle)
     {
-        cam.Rotate(Vector3.right, -angle * 90f * Time.deltaTime);
+        cam.Rotate(Vector3.right, - angle * 90f * Time.deltaTime);
         if (cam.localEulerAngles.x < 180f)
         {
             if (cam.localEulerAngles.x > 89f) cam.localEulerAngles = new Vector3(89f, 0f, 0f);
@@ -48,15 +55,17 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Move(Vector2 input)
     {
-        transform.position += transform.forward * input.y * Time.deltaTime + transform.right * input.x * Time.deltaTime;
+        Vector3 movement = transform.forward * input.y * Time.deltaTime + transform.right * input.x * Time.deltaTime;
+        movement.y = 0f;
+        transform.position += movement;
     }
     private bool IsGrounded()
     {
         if (Physics.Raycast(transform.position+Vector3.down, Vector3.down, out RaycastHit hit, Time.deltaTime * -Physics2D.gravity.y)) if (hit.collider.gameObject.CompareTag("Ground")) return true;
         return false;
     }
-    private void Jump()
+    private void Jump(Vector2 input)
     {
-        body.AddForce(new Vector3(0f, controls.jumpPower), ForceMode.Impulse);
+        body.AddForce((transform.forward * input.y + transform.right * input.x) * Time.deltaTime + new Vector3(0f, controls.jumpPower * body.mass), ForceMode.Impulse);
     }
 }

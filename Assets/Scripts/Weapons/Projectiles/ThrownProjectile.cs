@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class ThrownProjectile : Projectile
 {
-
+    [SerializeField] private GameObject explosionPrefab = null;
     private int wallBounces;
     private int enemyBounces;
     private float contactTime;
+    private float explosionRadius;
 
     //Shoot with gravity
-    public void Shoot(Vector3 position, Vector3 direction, float power, float weight) { Shoot(position, direction, power, weight, 0, 0); }
-    public void Shoot(Vector3 position, Vector3 direction, float power, float weight, int bouncesInWalls, int bouncesInEnemies)
+    public void Shoot(Vector3 position, Vector3 direction, float power, float weight) { Shoot(position, direction, power, weight, 0, 0, 0f); }
+    public void Shoot(Vector3 position, Vector3 direction, float power, float weight, int bouncesInWalls, int bouncesInEnemies) { Shoot(position, direction, power, weight, 0, 0, 0f); }
+    public void Shoot(Vector3 position, Vector3 direction, float power, float weight, int bouncesInWalls, int bouncesInEnemies, float radius)
     {
         body = GetComponent<Rigidbody>();
         transform.forward = direction;
@@ -20,6 +22,7 @@ public class ThrownProjectile : Projectile
         body.AddForce(direction * power * Time.deltaTime, ForceMode.Impulse);
         wallBounces = bouncesInWalls;
         enemyBounces = bouncesInEnemies;
+        explosionRadius = radius;
     }
 
     //Shoot without gravity
@@ -34,6 +37,22 @@ public class ThrownProjectile : Projectile
         wallBounces = bouncesInWalls;
         enemyBounces = bouncesInEnemies;
         damage = (int) power;
+    }
+
+    private void OnDestroy()
+    {
+        if (explosionRadius > 0f)
+        {
+            Collider[] hits = Physics.OverlapSphere(transform.position, explosionRadius);
+            foreach(Collider c in hits)
+            {
+                GameObject explosion = Instantiate(explosionPrefab);
+                explosion.transform.localScale = explosionRadius * Vector3.one;
+                explosion.transform.position = transform.position;
+                BodyPart part = c.gameObject.GetComponent<BodyPart>();
+                if (part != null) part.Hurt(c.ClosestPoint(transform.position), damage, type);
+            }
+        }
     }
 
     protected override void OnCollision(Collision collision)

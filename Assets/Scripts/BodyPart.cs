@@ -14,21 +14,13 @@ public class BodyPart : MonoBehaviour
         this.floatyText = floatyText;
     }
 
-    void Start()
-    {
-        
-    }
-    
-
-    void Update()
-    {
-        
-    }
-
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.CompareTag("PlayerProjectile")) Hurt(collision.contacts[0].point, (collision.contacts[0].point - transform.position).normalized, (int)damageMultiplier * collision.gameObject.GetComponent<Projectile>().damage);
+        if (collision.gameObject.CompareTag("PlayerProjectile")) Hurt(collision.contacts[0].point, (collision.contacts[0].point - transform.position).normalized, (int) (collision.gameObject.GetComponent<Projectile>().damage * damageMultiplier));
     }
+
+
+    public void Hurt(Vector3 position, int damage, Ammo type) { Hurt(position, (position - transform.position).normalized, (int) (damage * damageMultiplier)); }
 
     private void Hurt(Vector3 position, Vector3 direction, int damage)
     {
