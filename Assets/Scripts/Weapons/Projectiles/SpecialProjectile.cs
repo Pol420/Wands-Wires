@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody), typeof(Collider))]
-public class SpecialProjectile : MonoBehaviour
+public class SpecialProjectile : Projectile
 {
-    private Rigidbody body;
 
     private bool spiral = false;
     private bool wobbly = false;
@@ -60,4 +59,13 @@ public class SpecialProjectile : MonoBehaviour
         ++spread;
     }
 
+    protected override void OnCollision(Collision collision)
+    {
+        // 
+    }
+
+    protected override void OnDrag(Collision collision)
+    {
+        //
+    }
 }

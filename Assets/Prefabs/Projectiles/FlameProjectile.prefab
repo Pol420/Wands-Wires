@@ -13,10 +13,10 @@ GameObject:
   - component: {fileID: 1546721434583871814}
   - component: {fileID: 1546721434583871815}
   - component: {fileID: 1546721434583871810}
-  - component: {fileID: 1546721434583871811}
+  - component: {fileID: 5101683682371780301}
   m_Layer: 6
-  m_Name: FatProjectile
-  m_TagString: Untagged
+  m_Name: FlameProjectile
+  m_TagString: PlayerProjectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113,7 +113,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1546721434583871811
+--- !u!114 &5101683682371780301
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -122,6 +122,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1546721434583871812}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12537d6f3fe243a4a85fdc020336ae7b, type: 3}
+  m_Script: {fileID: 11500000, guid: eb2908a8ebb86674c9735bbd61cc60f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 5

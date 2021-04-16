@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 1546721434583871810}
   - component: {fileID: 1546721434583871811}
   m_Layer: 6
-  m_Name: WaterProjectile
-  m_TagString: Untagged
+  m_Name: FatProjectile
+  m_TagString: PlayerProjectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c45a591eb8e469b4482c1d094ca23a91, type: 2}
+  - {fileID: 2100000, guid: 672ae395ee655be4bba2a9f52d330405, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -122,6 +122,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1546721434583871812}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12537d6f3fe243a4a85fdc020336ae7b, type: 3}
+  m_Script: {fileID: 11500000, guid: 8efa46adbf97f6941b29d86f44c8f555, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 70

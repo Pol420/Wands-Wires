@@ -80,12 +80,12 @@ public class LongRangeWeapon : Weapon
 
     private void FireBomb()
     {
-        Instantiate(fireBullet).GetComponent<Projectile>().Shoot(bulletHole.position, cam.transform.forward + Vector3.up * 0.1f, power, fireBulletWeight, 2, 0);
+        Instantiate(fireBullet).GetComponent<ThrownProjectile>().Shoot(bulletHole.position, cam.transform.forward + Vector3.up * 0.1f, power, fireBulletWeight, 2, 0);
     }
 
     private void WaterStream()
     {
-        Instantiate(waterBullet).GetComponent<Projectile>().Shoot(bulletHole.position, cam.transform.forward + Vector3.up * 0.05f, power, waterBulletWeight, 1, 1);
+        Instantiate(waterBullet).GetComponent<ThrownProjectile>().Shoot(bulletHole.position, cam.transform.forward + Vector3.up * 0.05f, power, waterBulletWeight, 1, 1);
         densityCounter = 0f;
     }
 
@@ -93,7 +93,7 @@ public class LongRangeWeapon : Weapon
     {
         Destroy(currentChargeBall.gameObject);
         chargingTesla = false;
-        Instantiate(teslaBullet).GetComponent<Projectile>().Shoot(bulletHole.position, cam.transform.forward, power * (chargeTime + 1) / (maxChargeTime + 1));
+        Instantiate(teslaBullet).GetComponent<ThrownProjectile>().Shoot(bulletHole.position, cam.transform.forward, power * 1.5f * (chargeTime + 1) / (maxChargeTime + 1));
         reloadTime = ammoReloadTime.z;
         AddTeslaAmmo(-1);
     }
