@@ -1,3 +1,4 @@
+/*
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -89,3 +90,4 @@ public class TeslaCharge : Projectile
 
     protected override void OnDrag(Collision collision) {}
 }
+*/

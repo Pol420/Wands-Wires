@@ -1,3 +1,4 @@
+/*
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -90,3 +91,5 @@ public class ShortRangeWeapon : Weapon
         Instantiate(teslaCharge).GetComponent<TeslaCharge>().Shoot(bulletHole.position, cam.transform.forward + Vector3.up * 0.2f, sparkChance, chargeDuration, teslaSpark);
     }
 }
+
+*/

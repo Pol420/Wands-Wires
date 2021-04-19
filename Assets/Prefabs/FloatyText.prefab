@@ -225,4 +225,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3
   duration: 1
-  highDamageThreshold: 100
+  highDamageThreshold: 20

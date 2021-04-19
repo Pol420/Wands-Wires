@@ -5,14 +5,23 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody), typeof(Collider))]
 public abstract class Projectile : MonoBehaviour
 {
-    [SerializeField] public int damage = 10;
     [SerializeField] public Ammo type = Ammo.Fire;
+    public float damage;
     protected Rigidbody body;
 
-    private void OnCollisionEnter(Collision collision) { OnCollision(collision); }
-    private void OnCollisionStay(Collision collision) { OnDrag(collision); }
+    public void ShootProjectile(Vector3 position, Vector3 direction, float bulletDamage, float power) { ShootProjectile(position, direction, bulletDamage, power, 0f); }
+    public void ShootProjectile(Vector3 position, Vector3 direction, float bulletDamage, float power, float weight)
+    {
+        body = GetComponent<Rigidbody>();
+        damage = bulletDamage;
+        body.mass = weight;
+        body.useGravity = weight > 0f;
+        Shoot(position, direction, power);
+    } 
 
-    protected abstract void OnCollision(Collision collision);
-    protected abstract void OnDrag(Collision collision);
+    private void OnCollisionEnter(Collision collision) { Explode(); }
+    protected abstract void Shoot(Vector3 position, Vector3 direction, float power);
+    protected abstract void Explode();
 
+    public void DestroyProjectile() { Destroy(gameObject); }
 }
