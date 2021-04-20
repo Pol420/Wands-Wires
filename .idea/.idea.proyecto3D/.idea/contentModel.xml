@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\stich\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\stich\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_proyecto3D.1006057170.00" t="ExcludeRecursive" />
+    <e p="E:\Tecnocampus\4o_ano\Trimestre_3\proyecto3D" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="BodyPart.cs" t="Include" />
+          <e p="BoundingBox.cs" t="Include" />
+          <e p="Destroyable.cs" t="Include" />
+          <e p="Enemies" t="Include">
+            <e p="Enemy_Behaviour_Fat.cs" t="Include" />
+            <e p="Enemy_Behaviour_Normal.cs" t="Include" />
+            <e p="Enemy_Health.cs" t="Include" />
+            <e p="Enemy_Projectile_Fat.cs" t="Include" />
+            <e p="Enemy_Projectile_Normal.cs" t="Include" />
+            <e p="Enemy_Stats.cs" t="Include" />
+          </e>
+          <e p="Enemy.cs" t="Include" />
+          <e p="FloatyText.cs" t="Include" />
+          <e p="HUD.cs" t="Include" />
+          <e p="PlayerControls.cs" t="Include" />
+          <e p="PlayerMovement.cs" t="Include" />
+          <e p="Pushable.cs" t="Include" />
+          <e p="Weapons" t="Include">
+            <e p="LongRangeWeapon.cs" t="Include" />
+            <e p="Projectiles" t="Include">
+              <e p="Projectile.cs" t="Include" />
+              <e p="SpecialProjectile.cs" t="Include" />
+              <e p="TeslaCharge.cs" t="Include" />
+              <e p="ThrownProjectile.cs" t="Include" />
+            </e>
+            <e p="ShortRangeWeapon.cs" t="Include" />
+            <e p="Weapon.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="proyecto3D.sln" t="IncludeFlat" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
