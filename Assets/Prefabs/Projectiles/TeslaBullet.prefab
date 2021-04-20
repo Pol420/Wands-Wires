@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5440104898268466427}
   - component: {fileID: 2631006800557978154}
   - component: {fileID: 7366984819638718913}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TeslaBullet
   m_TagString: PlayerProjectile
   m_Icon: {fileID: 0}

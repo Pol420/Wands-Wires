@@ -27,7 +27,7 @@ public class PlayerControls : MonoBehaviour
         float inputY = Input.GetAxis("Vertical");
         if(inputX * inputY == 0f) axis = new Vector2(inputX, inputY) * moveSpeed;
         else axis = new Vector2(inputX, inputY).normalized * moveSpeed;
-        mouse = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y")).normalized * mouseSensitivity;
+        mouse = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y") * Screen.currentResolution.height / Screen.currentResolution.width) * mouseSensitivity;
     }
     
     public bool IsJumping() { return Input.GetKey(KeyCode.Space); }

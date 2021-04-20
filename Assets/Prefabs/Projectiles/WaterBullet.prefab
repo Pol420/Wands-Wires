@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4587267049268307928}
   - component: {fileID: 8068685066520330006}
   - component: {fileID: 889046326003360665}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WaterBullet
   m_TagString: PlayerProjectile
   m_Icon: {fileID: 0}

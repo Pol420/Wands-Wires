@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7078729034344170993}
   - component: {fileID: 7078729034344170992}
   - component: {fileID: 7078729034344170991}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FireBullet
   m_TagString: PlayerProjectile
   m_Icon: {fileID: 0}

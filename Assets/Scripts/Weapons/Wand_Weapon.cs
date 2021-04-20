@@ -13,9 +13,9 @@ public class Wand_Weapon : Weapon
     protected override void Shoot(Ammo ammo)
     {
         GameObject bullet;
-        if (ammo == Ammo.Fire) bullet = Instantiate(fireBullet);
-        else if (ammo == Ammo.Water) bullet = Instantiate(waterBullet);
-        else bullet = Instantiate(teslaBullet);
+        if (ammo == Ammo.Fire) { bullet = Instantiate(fireBullet); SpendFire(); }
+        else if (ammo == Ammo.Water) { bullet = Instantiate(waterBullet); SpendWater(); }
+        else { bullet = Instantiate(teslaBullet); SpendTesla(); }
         bullet.GetComponent<Projectile>().ShootProjectile(bulletHole.position, cam.transform.forward, damage, shotPower, weight);
     }
 
