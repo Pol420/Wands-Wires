@@ -310,9 +310,9 @@ MonoBehaviour:
   teslaBullet: {fileID: 1529187553263328860, guid: afa443875e57ba141b5225239afec719, type: 3}
   reloadTime: 1
   auto: 0
-  shotPower: 50
+  shotPower: 40
   damage: 10
-  weight: 4
+  weight: 100
   bullets: 8
   dispersion: 0.15
 --- !u!95 &208465122
