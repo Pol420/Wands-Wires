@@ -6,9 +6,9 @@ using UnityEngine;
 public abstract class Weapon : MonoBehaviour
 {
     [Header("References")]
-    //[SerializeField] private GameObject otherWeaponObject = null;
+    [SerializeField] private GameObject otherWeaponObject = null;
     [SerializeField] protected PlayerStats holder = null;
-    //private Weapon otherWeapon;
+    private Weapon otherWeapon;
 
     [Header("Projectile Prefabs")]
     [SerializeField] protected GameObject fireBullet = null;
@@ -30,7 +30,7 @@ public abstract class Weapon : MonoBehaviour
         anim = GetComponent<Animator>();
         bulletHole = transform.GetChild(0);
         cam = Camera.main.transform;
-        //otherWeapon = otherWeaponObject.GetComponent<Weapon>();
+        otherWeapon = otherWeaponObject.GetComponent<Weapon>();
         holder.AddFireAmmo(0);
         holder.AddWaterAmmo(0);
         holder.AddTeslaAmmo(0);
@@ -54,25 +54,20 @@ public abstract class Weapon : MonoBehaviour
             if (holder.GetCurrentAmmo(currentAmmo) > 0)
             {
                 currentReload = reloadTime;
-                switch (currentAmmo)
-                {
-                    case Ammo.Fire:
-                        Shoot(Ammo.Fire);
-                        //anim.SetTrigger("Shoot Fire");
-                        break;
-                    case Ammo.Water:
-                        Shoot(Ammo.Water);
-                        //anim.SetTrigger("Shoot Water");
-                        break;
-                    case Ammo.Tesla:
-                        Shoot(Ammo.Tesla);
-                        //anim.SetTrigger("Shoot Tesla");
-                        break;
-                    default: break;
-                }
+                Shoot(SpawnBullet(currentAmmo));
+                //todo trigger animation accordingly
             }
         }
         SubUpdate();
+    }
+
+    private GameObject SpawnBullet(Ammo ammo)
+    {
+        GameObject bullet;
+        if (ammo == Ammo.Fire) { bullet = Instantiate(fireBullet); SpendFire(); }
+        else if (ammo == Ammo.Water) { bullet = Instantiate(waterBullet); SpendWater(); }
+        else { bullet = Instantiate(teslaBullet); SpendTesla(); }
+        return bullet;
     }
 
     private void SwitchAmmo(Ammo ammoType)
@@ -99,9 +94,9 @@ public abstract class Weapon : MonoBehaviour
 
     private void SwitchWeapon()
     {
-        //otherWeaponObject.SetActive(true);
-        //otherWeapon.SwitchAmmo(currentAmmo);
-        //gameObject.SetActive(false);
+        otherWeaponObject.SetActive(true);
+        otherWeapon.SwitchAmmo(currentAmmo);
+        gameObject.SetActive(false);
     }
 
     protected void SpendFire() { SpendFire(1); }
@@ -111,8 +106,16 @@ public abstract class Weapon : MonoBehaviour
     protected void SpendTesla() { SpendTesla(1); }
     protected void SpendTesla(int amount) { holder.AddTeslaAmmo(-amount); }
     protected int GetCurrentAmmo() { return holder.GetCurrentAmmo(currentAmmo); }
+    protected void SpendAmmo() { SpendAmmo(1); }
+    protected void SpendAmmo(int amount)
+    {
+        if (currentAmmo == Ammo.Fire) SpendFire(amount);
+        else if (currentAmmo == Ammo.Water) SpendWater(amount);
+        else SpendTesla(amount);
+    }
+    protected void AddAmmo() { SpendAmmo(-1); }
 
-    protected abstract void Shoot(Ammo ammo);
+    protected abstract void Shoot(GameObject bullet);
     protected abstract void SubStart();
     protected abstract void SubUpdate();
 }

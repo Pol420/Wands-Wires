@@ -11,18 +11,16 @@ public class StaffWeapon : Weapon
     [SerializeField] [Range(0, 10)] private int bullets = 5;
     [SerializeField] [Range(0f, 1f)] private float dispersion = 0.15f;
 
-    protected override void Shoot(Ammo ammo)
+    protected override void Shoot(GameObject bullet)
     {
         int shots = Mathf.Min(bullets, GetCurrentAmmo());
-        for (int i=0; i < shots; ++i)
+        for (int i = 0; i < shots; ++i)
         {
-            GameObject bullet;
-            if (ammo == Ammo.Fire) { bullet = Instantiate(fireBullet); SpendFire(); }
-            else if (ammo == Ammo.Water) { bullet = Instantiate(waterBullet); SpendWater(); }
-            else { bullet = Instantiate(teslaBullet); SpendTesla(); }
+            if (i != 0) SpendAmmo();
             Vector2 dispersionCircle = Random.insideUnitCircle * dispersion;
-            bullet.GetComponent<Projectile>().ShootProjectile(bulletHole.position, cam.transform.forward + cam.transform.up * dispersionCircle.x + cam.transform.right * dispersionCircle.y, damage, shotPower, weight);
+            Instantiate(bullet).GetComponent<Projectile>().ShootProjectile(bulletHole.position, cam.transform.forward + cam.transform.up * dispersionCircle.x + cam.transform.right * dispersionCircle.y, damage, shotPower, weight);
         }
+        Destroy(bullet);
     }
 
     protected override void SubStart()
