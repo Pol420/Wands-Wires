@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9c9f4e6d42be7c9498faa084e1070772, type: 2}
+  - {fileID: 2100000, guid: 409636336ed57e34c8929aaaebb48cba, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -171,7 +171,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9c9f4e6d42be7c9498faa084e1070772, type: 2}
+  - {fileID: 2100000, guid: 409636336ed57e34c8929aaaebb48cba, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -549,9 +549,8 @@ GameObject:
   - component: {fileID: 4919004038460964161}
   - component: {fileID: 4919004038460964166}
   - component: {fileID: 4919004038460964188}
-  - component: {fileID: 1743928574175412926}
   m_Layer: 0
-  m_Name: DummyThick
+  m_Name: DummyThick (Fire)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -603,7 +602,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9c9f4e6d42be7c9498faa084e1070772, type: 2}
+  - {fileID: 2100000, guid: 409636336ed57e34c8929aaaebb48cba, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -672,6 +671,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   floatyTextPrefab: {fileID: 1996404576058732650, guid: 0e278bd307087e149ad553cc97a03605, type: 3}
   health: 100
+  healthBar: {fileID: 0}
+  type: 0
 --- !u!114 &4919004038460964188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -685,22 +686,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageMultiplier: 1.5
---- !u!54 &1743928574175412926
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4919004038460964167}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
 --- !u!1 &4919004038675290509
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,7 +747,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9c9f4e6d42be7c9498faa084e1070772, type: 2}
+  - {fileID: 2100000, guid: 409636336ed57e34c8929aaaebb48cba, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

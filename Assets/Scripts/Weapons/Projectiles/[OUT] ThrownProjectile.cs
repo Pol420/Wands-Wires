@@ -1,3 +1,4 @@
+/*
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -72,3 +73,4 @@ public class ThrownProjectile : Projectile
         else contactTime += Time.deltaTime;
     }
 }
+*/

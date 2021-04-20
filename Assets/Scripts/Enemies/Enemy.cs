@@ -3,32 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Animator), typeof(BodyPart))]
-public class Enemy : Pushable
+[RequireComponent(typeof(Animator))]
+public class Enemy : MonoBehaviour
 {
     [SerializeField] private GameObject floatyTextPrefab = null;
     [SerializeField] private int health = 100;
-    //[SerializeField] private Slider healthBar = null;
+    [SerializeField] private Slider healthBar = null;
+    [SerializeField] protected Ammo type = Ammo.Fire;
     private int currentHealth;
     private Animator anim;
+    private bool hb;
 
     void Start()
     {
-        GetComponent<BodyPart>().Connect(this, floatyTextPrefab);
-        foreach (BodyPart part in transform.GetComponentsInChildren<BodyPart>()) part.Connect(this, floatyTextPrefab);
+        GetComponent<BodyPart>().Connect(this, floatyTextPrefab, type);
+        foreach (BodyPart part in transform.GetComponentsInChildren<BodyPart>()) part.Connect(this, floatyTextPrefab, type);
         currentHealth = health;
         anim = GetComponent<Animator>();
-    }
-    
-    void Update()
-    {
-        
+        hb = healthBar != null;
     }
 
     public void Hurt(int amount)
     {
         currentHealth -= amount;
-        //healthBar.value = currentHealth / health;
+        if (hb) healthBar.value = currentHealth / health;
         if (currentHealth <= 0) Die();
     }
 
