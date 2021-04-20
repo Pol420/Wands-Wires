@@ -2,50 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="436568db-9915-4505-bab8-3a191725d208" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/riderModule.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Fat.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Fat.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Flying.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Flying.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Normal.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Normal.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Enemies.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Enemies/Enemy_projectile.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Enemies/Enemy_projectile.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Enemies/Enemy_projectile_Normal.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Enemies/Enemy_projectile_Normal.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene_Alejandro.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene_Alejandro.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Enemies.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Enemies/Enemy_Stats_Fat.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Enemies/Enemy_Stats_Fat.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Enemies/Enemy_Stats_Flying.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Enemies/Enemy_Stats_Flying.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Enemies/Enemy_Stats_Normal.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Enemies/Enemy_Stats_Normal.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Behaviour_Fat.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Behaviour_Fat.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Behaviour_Normal.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Health.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Projectile_Fat.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Projectile_Normal.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Stats.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Stats.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSettings/QuickSearch.settings" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/TEMP_DummyThick.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/TEMP_DummyThick.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/TEMP_Ground.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/TEMP_Ground.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene_Alejandro.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene_Alejandro.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerControls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerControls.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +42,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Behaviour_Fat.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Projectile_Normal.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Behaviour_Normal.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PlayerControls.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rJEGPnjYAxRO3ccFd4NRy7lvQY" />
@@ -137,6 +97,7 @@
       <workItem from="1618767173594" duration="5508000" />
       <workItem from="1618846384964" duration="5039000" />
       <workItem from="1618933638160" duration="11264000" />
+      <workItem from="1618954145235" duration="263000" />
     </task>
     <servers />
   </component>
