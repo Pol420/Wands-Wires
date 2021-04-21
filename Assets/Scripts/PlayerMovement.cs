@@ -57,7 +57,7 @@ public class PlayerMovement : Pushable
     {
         Vector3 movement = transform.forward * input.y * Time.deltaTime + transform.right * input.x * Time.deltaTime;
         movement.y = 0f;
-        transform.position += movement;
+        body.MovePosition(transform.position + movement);
     }
     private bool IsGrounded()
     {

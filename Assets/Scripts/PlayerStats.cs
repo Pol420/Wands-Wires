@@ -13,8 +13,11 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] [Range(0f,500f)] private float maxHealth = 300f;
     [SerializeField] [Range(0f,500f)] private float maxShield = 300f;
     [SerializeField] [Range(0f, 1f)] private float shieldAbsorption = 0.75f;
+    [SerializeField] private Ammo currentAmmo;
     private float currentHealth;
     private float currentShield;
+
+    private List<string> keyItems;
 
     private void Awake()
     {
@@ -25,6 +28,10 @@ public class PlayerStats : MonoBehaviour
     {
         SetHealth(maxHealth);
         SetShield(maxShield);
+        AddFireAmmo(0);
+        AddWaterAmmo(0);
+        AddTeslaAmmo(0);
+        keyItems = new List<string>();
     }
     
     void Update()
@@ -36,7 +43,7 @@ public class PlayerStats : MonoBehaviour
 
     public static PlayerStats Instance() { return instance; }
 
-    public int GetCurrentAmmo(Ammo currentAmmo)
+    public int GetCurrentAmmo()
     {
         switch (currentAmmo)
         {
@@ -47,15 +54,44 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
-    public void AddFireAmmo(int amount) { SetFireAmmo(ammo.x + amount); }
-    public void AddWaterAmmo(int amount) { SetWaterAmmo(ammo.y + amount); }
-    public void AddTeslaAmmo(int amount) { SetTeslaAmmo(ammo.z + amount); }
-    public void SetFireAmmo(int amount) { ammo.x = Mathf.Clamp(amount, 0, 100); hud.SetFire(ammo.x); }
-    public void SetWaterAmmo(int amount) { ammo.y = Mathf.Clamp(amount, 0, 100); hud.SetWater(ammo.y); }
-    public void SetTeslaAmmo(int amount) { ammo.z = Mathf.Clamp(amount, 0, 100); hud.SetTesla(ammo.z); }
+    public void SpendAmmo(int amount)
+    {
+        if (currentAmmo == Ammo.Fire) AddFireAmmo(-amount);
+        else if (currentAmmo == Ammo.Water) AddWaterAmmo(-amount);
+        else AddTeslaAmmo(-amount);
+    }
+
+    public void SwitchAmmo(Ammo ammoType)
+    {
+        currentAmmo = ammoType;
+        switch (ammoType)
+        {
+            case Ammo.Fire:
+                MoveHudSelector(0);
+                //anim.SetTrigger("Reload Fire");
+                break;
+            case Ammo.Water:
+                MoveHudSelector(1);
+                //anim.SetTrigger("Reload Water");
+                break;
+            case Ammo.Tesla:
+                MoveHudSelector(2);
+                //anim.SetTrigger("Reload Tesla");
+                break;
+            default: break;
+        }
+    }
+
+    private void AddFireAmmo(int amount) { SetFireAmmo(ammo.x + amount); }
+    private void AddWaterAmmo(int amount) { SetWaterAmmo(ammo.y + amount); }
+    private void AddTeslaAmmo(int amount) { SetTeslaAmmo(ammo.z + amount); }
+    private void SetFireAmmo(int amount) { ammo.x = Mathf.Clamp(amount, 0, 100); hud.SetFire(ammo.x); }
+    private void SetWaterAmmo(int amount) { ammo.y = Mathf.Clamp(amount, 0, 100); hud.SetWater(ammo.y); }
+    private void SetTeslaAmmo(int amount) { ammo.z = Mathf.Clamp(amount, 0, 100); hud.SetTesla(ammo.z); }
     public int GetFireAmmo() { return ammo.x; }
     public int GetWaterAmmo() { return ammo.y; }
     public int GetTeslaAmmo() { return ammo.z; }
+    public Ammo GetCurrentAmmoType() { return currentAmmo; }
     public void SetHudSelector(float rate) { hud.SetSelector(rate); }
     public void MoveHudSelector(int slot) { hud.MoveSelector(slot); }
 
@@ -80,6 +116,28 @@ public class PlayerStats : MonoBehaviour
     {
         currentShield = amount;
         hud.SetShield(currentShield / maxShield);
+    }
+
+    public void AddKeyItem(string code)
+    {
+        keyItems.Add(code);
+        //todo display it somewhere
+        Debug.Log("Added " + code);
+    }
+    private void RemoveKeyItem(string code)
+    {
+        keyItems.Remove(code);
+        //todo display it somewhere
+    }
+
+    public bool GetKey(string code)
+    {
+        if (keyItems.Contains(code))
+        {
+            RemoveKeyItem(code);
+            return true;
+        }
+        return false;
     }
 
 }

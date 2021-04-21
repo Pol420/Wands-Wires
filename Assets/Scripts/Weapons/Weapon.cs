@@ -20,7 +20,6 @@ public abstract class Weapon : MonoBehaviour
     [SerializeField] private bool auto = false;
     private float currentReload;
 
-    private Ammo currentAmmo;
     private Animator anim;
     protected Transform cam;
     protected Transform bulletHole; //must have an empty object as first child
@@ -31,9 +30,6 @@ public abstract class Weapon : MonoBehaviour
         bulletHole = transform.GetChild(0);
         cam = Camera.main.transform;
         otherWeapon = otherWeaponObject.GetComponent<Weapon>();
-        holder.AddFireAmmo(0);
-        holder.AddWaterAmmo(0);
-        holder.AddTeslaAmmo(0);
         SwitchAmmo(Ammo.Fire);
         SubStart();
     }
@@ -51,68 +47,41 @@ public abstract class Weapon : MonoBehaviour
         }
         else if ((!auto && Input.GetButtonDown("Fire1")) || (auto && Input.GetButton("Fire1")))
         {
-            if (holder.GetCurrentAmmo(currentAmmo) > 0)
+            if (holder.GetCurrentAmmo() > 0)
             {
                 currentReload = reloadTime;
-                Shoot(SpawnBullet(currentAmmo));
+                Shoot(SpawnBullet());
                 //todo trigger animation accordingly
             }
         }
         SubUpdate();
     }
 
-    private GameObject SpawnBullet(Ammo ammo)
+    private GameObject SpawnBullet()
     {
         GameObject bullet;
-        if (ammo == Ammo.Fire) { bullet = Instantiate(fireBullet); SpendFire(); }
-        else if (ammo == Ammo.Water) { bullet = Instantiate(waterBullet); SpendWater(); }
-        else { bullet = Instantiate(teslaBullet); SpendTesla(); }
+        if (holder.GetCurrentAmmoType() == Ammo.Fire) bullet = Instantiate(fireBullet);
+        else if (holder.GetCurrentAmmoType() == Ammo.Water) bullet = Instantiate(waterBullet);
+        else bullet = Instantiate(teslaBullet);
+        SpendAmmo();
         return bullet;
     }
 
     private void SwitchAmmo(Ammo ammoType)
     {
-        currentAmmo = ammoType;
+        holder.SwitchAmmo(ammoType);
         currentReload = reloadTime;
-        switch (ammoType)
-        {
-            case Ammo.Fire:
-                holder.MoveHudSelector(0);
-                //anim.SetTrigger("Reload Fire");
-                break;
-            case Ammo.Water:
-                holder.MoveHudSelector(1);
-                //anim.SetTrigger("Reload Water");
-                break;
-            case Ammo.Tesla:
-                holder.MoveHudSelector(2);
-                //anim.SetTrigger("Reload Tesla");
-                break;
-            default: break;
-        }
     }
 
     private void SwitchWeapon()
     {
         otherWeaponObject.SetActive(true);
-        otherWeapon.SwitchAmmo(currentAmmo);
         gameObject.SetActive(false);
     }
-
-    protected void SpendFire() { SpendFire(1); }
-    protected void SpendFire(int amount) { holder.AddFireAmmo(-amount); }
-    protected void SpendWater() { SpendWater(1); }
-    protected void SpendWater(int amount) { holder.AddWaterAmmo(-amount); }
-    protected void SpendTesla() { SpendTesla(1); }
-    protected void SpendTesla(int amount) { holder.AddTeslaAmmo(-amount); }
-    protected int GetCurrentAmmo() { return holder.GetCurrentAmmo(currentAmmo); }
+    
+    protected int GetCurrentAmmo() { return holder.GetCurrentAmmo(); }
     protected void SpendAmmo() { SpendAmmo(1); }
-    protected void SpendAmmo(int amount)
-    {
-        if (currentAmmo == Ammo.Fire) SpendFire(amount);
-        else if (currentAmmo == Ammo.Water) SpendWater(amount);
-        else SpendTesla(amount);
-    }
+    protected void SpendAmmo(int amount) { holder.SpendAmmo(amount); }
     protected void AddAmmo() { SpendAmmo(-1); }
 
     protected abstract void Shoot(GameObject bullet);

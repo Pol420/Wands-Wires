@@ -16,7 +16,7 @@ public class ChannelerWeapon : Weapon
     protected override void Shoot(GameObject bullet)
     {
         AddAmmo();
-        if(reloadTime == 0f)
+        if (reloadTime == 0f)
         {
             charging = true;
             if (this.bullet == null)
@@ -31,12 +31,13 @@ public class ChannelerWeapon : Weapon
             if (charge >= maximumChargeTime) ShootCharge();
             else charge += Time.deltaTime;
         }
+        else Destroy(bullet);
     }
 
     private void ShootCharge()
     {
         charge = Mathf.Min(maximumChargeTime, charge);
-        float proportion = 0.5f + charge / maximumChargeTime;
+        float proportion = 2f * charge / maximumChargeTime;
         SpendAmmo(Mathf.RoundToInt(charge));
         bullet.GetComponent<Projectile>().ShootProjectile(bulletHole.position, cam.transform.forward, baseDamage * proportion, basePower * proportion);
         charge = 0f;
