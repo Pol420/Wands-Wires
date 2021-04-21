@@ -16,7 +16,6 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
-        GetComponent<BodyPart>().Connect(this, floatyTextPrefab, type);
         foreach (BodyPart part in transform.GetComponentsInChildren<BodyPart>()) part.Connect(this, floatyTextPrefab, type);
         currentHealth = health;
         anim = GetComponent<Animator>();

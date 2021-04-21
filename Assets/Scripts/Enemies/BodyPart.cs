@@ -42,7 +42,7 @@ public class BodyPart : MonoBehaviour
     private void Hurt(Vector3 position, Vector3 direction, int damage, Ammo ammoType)
     {
         body.Hurt(damage);
-        Instantiate(floatyText).GetComponent<FloatyText>().Init(position, direction, damage, ammoType);
+        Instantiate(floatyText).GetComponent<FloatyText>().Init(position, damage, ammoType);
     }
 
 }
