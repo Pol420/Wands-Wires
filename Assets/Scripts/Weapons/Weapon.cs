@@ -30,7 +30,6 @@ public abstract class Weapon : MonoBehaviour
         bulletHole = transform.GetChild(0);
         cam = Camera.main.transform;
         otherWeapon = otherWeaponObject.GetComponent<Weapon>();
-        SwitchAmmo(Ammo.Fire);
         SubStart();
     }
 

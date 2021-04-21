@@ -11,16 +11,14 @@ public class FloatyText : MonoBehaviour
     private float ttl;
 
     private Text text;
-    private Vector3 direction;
     private Transform view;
 
-    public void Init(Vector3 position, Vector3 direction, int damage, Ammo ammoType)
+    public void Init(Vector3 position, int damage, Ammo ammoType)
     {
         ttl = duration;
         text = GetComponentInChildren<Text>();
         view = Camera.main.transform;
         transform.position = position;
-        this.direction = direction;
         text.text = damage + "";
         Color color = Color.red;
         if (ammoType == Ammo.Water) color = Color.cyan;
@@ -42,7 +40,7 @@ public class FloatyText : MonoBehaviour
         {
             ttl-= Time.deltaTime;
             text.color = new Color(text.color.r, text.color.g, text.color.b, ttl / duration);
-            transform.position += direction * moveSpeed * Time.deltaTime;
+            transform.position += Vector3.up * moveSpeed * Time.deltaTime;
             transform.forward = view.forward;
         }
     }

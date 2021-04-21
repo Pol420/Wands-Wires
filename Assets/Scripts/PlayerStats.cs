@@ -17,6 +17,20 @@ public class PlayerStats : MonoBehaviour
     private float currentHealth;
     private float currentShield;
 
+    [Header("Powers & Powerups")]
+    [SerializeField] [Range(0f, 10f)] private float maxSloDuration = 5f;
+    [SerializeField] [Range(0f, 10f)] private float maxInvDuration = 6f;
+    [SerializeField] [Range(0f, 10f)] private float maxInfDuration = 10f;
+    [SerializeField] [Range(0f, 10f)] private float maxDeaDuration = 8f;
+    [SerializeField] [Range(1f, 5f)] private float deadlyMultiplier = 4f;
+    [SerializeField] [Range(0f, 1f)] private float slowAmount = 0.5f;
+    [SerializeField] [Range(0f, 0.5f)] private float killPowerIncrease = 0.05f;
+
+    private float invincibleDuration;
+    private float infiniteAmmoDuration;
+    private float deadlyDuration;
+    private float slowmoDuration;
+
     private List<string> keyItems;
 
     private void Awake()
@@ -28,6 +42,7 @@ public class PlayerStats : MonoBehaviour
     {
         SetHealth(maxHealth);
         SetShield(maxShield);
+        SwitchAmmo(Ammo.Fire);
         AddFireAmmo(0);
         AddWaterAmmo(0);
         AddTeslaAmmo(0);
@@ -39,6 +54,29 @@ public class PlayerStats : MonoBehaviour
         if (Input.GetKey(KeyCode.H)) Hurt(5f);
         if (Input.GetKey(KeyCode.V)) AddHealth(5f);
         if (Input.GetKey(KeyCode.E)) AddShield(1f);
+        CoolDownPowers();
+        if (Slowmo()) Time.timeScale = 1f - slowAmount;
+        else if(Time.timeScale!= 1f) Time.timeScale = 1f;
+    }
+
+    private void CoolDownPowers() //TODO also update HUD counter
+    {
+        if (Invincible()) invincibleDuration -= Time.unscaledDeltaTime;
+        if (InfiniteAmmo()) infiniteAmmoDuration -= Time.unscaledDeltaTime;
+        if (Deadly()) deadlyDuration -= Time.unscaledDeltaTime;
+        if (Slowmo()) slowmoDuration -= Time.unscaledDeltaTime;
+    }
+    private bool Invincible() { return invincibleDuration > 0f; }
+    private bool InfiniteAmmo() { return infiniteAmmoDuration > 0f; }
+    private bool Deadly() { return deadlyDuration > 0f; }
+    private bool Slowmo() { return slowmoDuration > 0f; }
+
+    private void OnKill()
+    {
+        if (Invincible()) invincibleDuration += maxInvDuration * (1f + killPowerIncrease);
+        if (InfiniteAmmo()) infiniteAmmoDuration += maxInfDuration * (1f + killPowerIncrease);
+        if (Deadly()) deadlyDuration += maxDeaDuration * (1f + killPowerIncrease);
+        if (Slowmo()) slowmoDuration += maxSloDuration * (1f + killPowerIncrease);
     }
 
     public static PlayerStats Instance() { return instance; }
@@ -56,9 +94,12 @@ public class PlayerStats : MonoBehaviour
 
     public void SpendAmmo(int amount)
     {
-        if (currentAmmo == Ammo.Fire) AddFireAmmo(-amount);
-        else if (currentAmmo == Ammo.Water) AddWaterAmmo(-amount);
-        else AddTeslaAmmo(-amount);
+        if (!InfiniteAmmo())
+        {
+            if (currentAmmo == Ammo.Fire) AddFireAmmo(-amount);
+            else if (currentAmmo == Ammo.Water) AddWaterAmmo(-amount);
+            else AddTeslaAmmo(-amount);
+        }
     }
 
     public void SwitchAmmo(Ammo ammoType)
@@ -82,12 +123,12 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
-    private void AddFireAmmo(int amount) { SetFireAmmo(ammo.x + amount); }
-    private void AddWaterAmmo(int amount) { SetWaterAmmo(ammo.y + amount); }
-    private void AddTeslaAmmo(int amount) { SetTeslaAmmo(ammo.z + amount); }
-    private void SetFireAmmo(int amount) { ammo.x = Mathf.Clamp(amount, 0, 100); hud.SetFire(ammo.x); }
-    private void SetWaterAmmo(int amount) { ammo.y = Mathf.Clamp(amount, 0, 100); hud.SetWater(ammo.y); }
-    private void SetTeslaAmmo(int amount) { ammo.z = Mathf.Clamp(amount, 0, 100); hud.SetTesla(ammo.z); }
+    public void AddFireAmmo(int amount) { SetFireAmmo(ammo.x + amount); }
+    public void AddWaterAmmo(int amount) { SetWaterAmmo(ammo.y + amount); }
+    public void AddTeslaAmmo(int amount) { SetTeslaAmmo(ammo.z + amount); }
+    private void SetFireAmmo(int amount) { ammo.x = Mathf.Clamp(amount, 0, 256); hud.SetFire(ammo.x); }
+    private void SetWaterAmmo(int amount) { ammo.y = Mathf.Clamp(amount, 0, 256); hud.SetWater(ammo.y); }
+    private void SetTeslaAmmo(int amount) { ammo.z = Mathf.Clamp(amount, 0, 256); hud.SetTesla(ammo.z); }
     public int GetFireAmmo() { return ammo.x; }
     public int GetWaterAmmo() { return ammo.y; }
     public int GetTeslaAmmo() { return ammo.z; }
@@ -97,12 +138,15 @@ public class PlayerStats : MonoBehaviour
 
     private void Hurt(float amount)
     {
-        if (currentShield > 0f)
+        if (!Invincible())
         {
-            AddShield(-amount * shieldAbsorption);
-            AddHealth(-amount * (1f - shieldAbsorption));
+            if (currentShield > 0f)
+            {
+                AddShield(-amount * shieldAbsorption);
+                AddHealth(-amount * (1f - shieldAbsorption));
+            }
+            else AddHealth(-amount);
         }
-        else AddHealth(-amount);
     }
 
     public void AddHealth(float amount) { SetHealth(Mathf.Clamp(currentHealth + amount, 0f, maxHealth)); }
@@ -139,5 +183,10 @@ public class PlayerStats : MonoBehaviour
         }
         return false;
     }
+
+    public void MakeInvincible() { invincibleDuration = maxInvDuration; }
+    public void MakeInfinite() { infiniteAmmoDuration = maxInfDuration; }
+    public void MakeDeadly() { deadlyDuration = maxDeaDuration; }
+    public void MakeSlowmo() { slowmoDuration = maxSloDuration; }
 
 }
