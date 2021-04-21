@@ -14,4 +14,10 @@ public class Enemy_Projectile_Normal : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         rb.velocity = speed * transform.forward;
     }
+    
+    private void OnCollisionEnter(Collision other)
+    {
+        if(other.transform.CompareTag("Player"))
+            Destroy(this);
+    }
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,6 +14,12 @@ public class Enemy_Projectile_Fat : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         GiveInitialSpeed();
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if(other.transform.CompareTag("Player"))
+            Destroy(this);
     }
 
     private void GiveInitialSpeed()

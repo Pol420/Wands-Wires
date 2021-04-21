@@ -13,6 +13,7 @@
             <e p="BodyPart.cs" t="Include" />
             <e p="Enemy.cs" t="Include" />
             <e p="Enemy_Behaviour_Fat.cs" t="Include" />
+            <e p="Enemy_Behaviour_Flying.cs" t="Include" />
             <e p="Enemy_Behaviour_Normal.cs" t="Include" />
             <e p="Enemy_Health.cs" t="Include" />
             <e p="Enemy_Projectile_Fat.cs" t="Include" />
@@ -21,6 +22,11 @@
             <e p="FloatyText.cs" t="Include" />
           </e>
           <e p="HUD.cs" t="Include" />
+          <e p="Items" t="Include">
+            <e p="KeyDoor.cs" t="Include" />
+            <e p="KeyItem.cs" t="Include" />
+            <e p="PickableObject.cs" t="Include" />
+          </e>
           <e p="PlayerControls.cs" t="Include" />
           <e p="PlayerMovement.cs" t="Include" />
           <e p="PlayerStats.cs" t="Include" />
