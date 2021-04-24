@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerStats : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] private Vector3Int ammo = new Vector3Int(99, 99, 99);
     [SerializeField] private HUD hud = null;
     private static PlayerStats instance;
+    public static UnityEvent death;
+    public static UnityEvent effectiveHit;
 
     [Header("Status")]
     [SerializeField] [Range(0f,500f)] private float maxHealth = 300f;
@@ -18,6 +21,7 @@ public class PlayerStats : MonoBehaviour
     private float currentShield;
 
     [Header("Powers & Powerups")]
+    [SerializeField] [Range(0, 100)] private int slowMaxCharge = 50;
     [SerializeField] [Range(0f, 10f)] private float maxSloDuration = 5f;
     [SerializeField] [Range(0f, 10f)] private float maxInvDuration = 6f;
     [SerializeField] [Range(0f, 10f)] private float maxInfDuration = 10f;
@@ -30,12 +34,20 @@ public class PlayerStats : MonoBehaviour
     private float infiniteAmmoDuration;
     private float deadlyDuration;
     private float slowmoDuration;
+    private int slowCharge;
 
     private List<string> keyItems;
 
     private void Awake()
     {
-        if (instance == null) instance = this;
+        if (instance == null)
+        {
+            instance = this;
+            death = new UnityEvent();
+            death.AddListener(OnKill);
+            effectiveHit = new UnityEvent();
+            effectiveHit.AddListener(OnEffectiveHit);
+        }
     }
 
     void Start()
@@ -46,7 +58,12 @@ public class PlayerStats : MonoBehaviour
         AddFireAmmo(0);
         AddWaterAmmo(0);
         AddTeslaAmmo(0);
+        invincibleDuration = Time.deltaTime;
+        infiniteAmmoDuration = Time.deltaTime;
+        deadlyDuration = Time.deltaTime;
+        slowmoDuration = Time.deltaTime;
         keyItems = new List<string>();
+        SetSlowCharge();
     }
     
     void Update()
@@ -54,17 +71,18 @@ public class PlayerStats : MonoBehaviour
         if (Input.GetKey(KeyCode.H)) Hurt(5f);
         if (Input.GetKey(KeyCode.V)) AddHealth(5f);
         if (Input.GetKey(KeyCode.E)) AddShield(1f);
+        if (Input.GetKey(KeyCode.Z) && slowCharge >= slowMaxCharge) MakeSlowmo();
         CoolDownPowers();
         if (Slowmo()) Time.timeScale = 1f - slowAmount;
         else if(Time.timeScale!= 1f) Time.timeScale = 1f;
     }
 
-    private void CoolDownPowers() //TODO also update HUD counter
+    private void CoolDownPowers() 
     {
-        if (Invincible()) invincibleDuration -= Time.unscaledDeltaTime;
-        if (InfiniteAmmo()) infiniteAmmoDuration -= Time.unscaledDeltaTime;
-        if (Deadly()) deadlyDuration -= Time.unscaledDeltaTime;
-        if (Slowmo()) slowmoDuration -= Time.unscaledDeltaTime;
+        if (Invincible()) { invincibleDuration -= Time.unscaledDeltaTime; hud.SetInvincible(invincibleDuration / maxInvDuration, Invincible()); }
+        if (InfiniteAmmo()) { infiniteAmmoDuration -= Time.unscaledDeltaTime; hud.SetInfinite(infiniteAmmoDuration / maxInfDuration, InfiniteAmmo()); }
+        if (Deadly()) { deadlyDuration -= Time.unscaledDeltaTime; hud.SetDeadly(deadlyDuration / maxInvDuration, Deadly()); }
+        if (Slowmo()) { slowmoDuration -= Time.unscaledDeltaTime; hud.SetSlowmo(slowmoDuration / maxSloDuration, Slowmo()); }
     }
     private bool Invincible() { return invincibleDuration > 0f; }
     private bool InfiniteAmmo() { return infiniteAmmoDuration > 0f; }
@@ -73,10 +91,10 @@ public class PlayerStats : MonoBehaviour
 
     private void OnKill()
     {
-        if (Invincible()) invincibleDuration += maxInvDuration * (1f + killPowerIncrease);
-        if (InfiniteAmmo()) infiniteAmmoDuration += maxInfDuration * (1f + killPowerIncrease);
-        if (Deadly()) deadlyDuration += maxDeaDuration * (1f + killPowerIncrease);
-        if (Slowmo()) slowmoDuration += maxSloDuration * (1f + killPowerIncrease);
+        if (Invincible()) invincibleDuration += maxInvDuration * killPowerIncrease;
+        if (InfiniteAmmo()) infiniteAmmoDuration += maxInfDuration * killPowerIncrease;
+        if (Deadly()) deadlyDuration += maxDeaDuration * killPowerIncrease;
+        if (Slowmo()) slowmoDuration += maxSloDuration * killPowerIncrease;
     }
 
     public static PlayerStats Instance() { return instance; }
@@ -162,16 +180,15 @@ public class PlayerStats : MonoBehaviour
         hud.SetShield(currentShield / maxShield);
     }
 
-    public void AddKeyItem(string code)
+    public void AddKeyItem(string code, GameObject key)
     {
         keyItems.Add(code);
-        //todo display it somewhere
-        Debug.Log("Added " + code);
+        hud.AddKeyItem(key);
     }
     private void RemoveKeyItem(string code)
     {
         keyItems.Remove(code);
-        //todo display it somewhere
+        hud.RemoveKeyItem(code);
     }
 
     public bool GetKey(string code)
@@ -187,6 +204,17 @@ public class PlayerStats : MonoBehaviour
     public void MakeInvincible() { invincibleDuration = maxInvDuration; }
     public void MakeInfinite() { infiniteAmmoDuration = maxInfDuration; }
     public void MakeDeadly() { deadlyDuration = maxDeaDuration; }
-    public void MakeSlowmo() { slowmoDuration = maxSloDuration; }
+    public void MakeSlowmo() { slowmoDuration = maxSloDuration; slowCharge -= slowMaxCharge; SetSlowCharge(); }
 
+    public float GetDamageMultiplier() { return Deadly() ? deadlyMultiplier : 1f; }
+
+    private void OnEffectiveHit()
+    {
+        if (slowCharge < slowMaxCharge * 2)
+        {
+            slowCharge++;
+            SetSlowCharge();
+        }
+    }
+    private void SetSlowCharge() { hud.SetSlowCharge((float)slowCharge / slowMaxCharge); }
 }

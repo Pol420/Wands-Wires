@@ -31,6 +31,7 @@ public class Enemy : MonoBehaviour
 
     private void Die()
     {
+        PlayerStats.death.Invoke();
         Destroy(gameObject);
     }
 }

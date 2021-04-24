@@ -33,7 +33,7 @@ public class KeyDoor : MonoBehaviour
 
     private void Open()
     {
-        Debug.Log("Door opened succesfully with "+code);
+        //todo I guess just fucking open
         Destroy(gameObject);
     }
 

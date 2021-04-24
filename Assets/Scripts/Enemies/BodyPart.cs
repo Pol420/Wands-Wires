@@ -23,7 +23,9 @@ public class BodyPart : MonoBehaviour
         {
             Vector3 point = collision.contacts[0].point;
             Projectile projectile = other.GetComponent<Projectile>();
-            Hurt(point, (point - transform.position).normalized, Mathf.RoundToInt(projectile.damage * damageMultiplier * GetTypeMultiplier(projectile.type)), projectile.type);
+            float typeMultiplier = GetTypeMultiplier(projectile.type);
+            Hurt(point, (point - transform.position).normalized, Mathf.RoundToInt(projectile.damage * damageMultiplier * typeMultiplier), projectile.type);
+            if (typeMultiplier == 1.25f) PlayerStats.effectiveHit.Invoke();
         }
     }
 

@@ -5,8 +5,6 @@ using UnityEngine;
 public class ChannelerWeapon : Weapon
 {
     [Header("Physics")]
-    [SerializeField] [Range(0f, 100f)] private float basePower = 50f;
-    [SerializeField] [Range(0f, 100f)] private float baseDamage = 20f;
     [SerializeField] [Range(0f, 5f)] private float maximumChargeTime = 3f;
     private float charge;
     private bool charging;
@@ -39,7 +37,7 @@ public class ChannelerWeapon : Weapon
         charge = Mathf.Min(maximumChargeTime, charge);
         float proportion = 2f * charge / maximumChargeTime;
         SpendAmmo(Mathf.RoundToInt(charge));
-        bullet.GetComponent<Projectile>().ShootProjectile(bulletHole.position, cam.transform.forward, baseDamage * proportion, basePower * proportion);
+        bullet.GetComponent<Projectile>().ShootProjectile(bulletHole.position, cam.transform.forward, damage * proportion * holder.GetDamageMultiplier(), shotPower);
         charge = 0f;
         charging = false;
         bullet = null;

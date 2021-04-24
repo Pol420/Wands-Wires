@@ -6,7 +6,7 @@ public class KeyItem : PickableObject
 {
     [SerializeField] private string keyCode = "door1";
 
-    protected override void OnPickup() {  player.AddKeyItem(keyCode); }
+    protected override void OnPickup() {  player.AddKeyItem(keyCode, gameObject); }
 
     public string GetCode() { return keyCode; }
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerControls))]
 public class PlayerMovement : Pushable
 {
+    [SerializeField] private Transform feet = null;
     private PlayerControls controls;
     private Transform cam;
 
@@ -46,12 +47,9 @@ public class PlayerMovement : Pushable
     }
     private void Look(float angle)
     {
-        cam.Rotate(Vector3.right, - angle * 90f * Time.deltaTime);
-        if (cam.localEulerAngles.x < 180f)
-        {
-            if (cam.localEulerAngles.x > 89f) cam.localEulerAngles = new Vector3(89f, 0f, 0f);
-        }
-        else if (cam.localEulerAngles.x < 360f - 89f) cam.localEulerAngles = new Vector3(360f - 89f, 0f, 0f);
+        Vector3 euler = cam.eulerAngles;
+        euler.x = Mathf.Clamp(((euler.x + 180f) % 360f) - 180f - angle * 90f * Time.deltaTime, -90f, 90f);
+        cam.rotation = Quaternion.Euler(euler);
     }
     private void Move(Vector2 input)
     {
@@ -61,7 +59,7 @@ public class PlayerMovement : Pushable
     }
     private bool IsGrounded()
     {
-        if (Physics.Raycast(transform.position+Vector3.down, Vector3.down, out RaycastHit hit, Time.deltaTime * -Physics2D.gravity.y)) if (hit.collider.gameObject.CompareTag("Ground")) return true;
+        if (Physics.Raycast(feet.position, Vector3.down, out RaycastHit hit, Time.deltaTime * -Physics2D.gravity.y)) if (hit.collider.gameObject.CompareTag("Ground") && Vector3.Angle(Vector3.up, hit.normal) <= 30f) return true;
         return false;
     }
     private void Jump(Vector2 input)

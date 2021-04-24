@@ -8,6 +8,7 @@ public abstract class Weapon : MonoBehaviour
     [Header("References")]
     [SerializeField] private GameObject otherWeaponObject = null;
     [SerializeField] protected PlayerStats holder = null;
+    [SerializeField] protected Transform bulletHole = null;
     private Weapon otherWeapon;
 
     [Header("Projectile Prefabs")]
@@ -20,14 +21,17 @@ public abstract class Weapon : MonoBehaviour
     [SerializeField] private bool auto = false;
     private float currentReload;
 
+    [Header("Stats")]
+    [SerializeField] [Range(0f, 100f)] protected float shotPower = 20f;
+    [SerializeField] [Range(0f, 10f)] protected float weight = 0f;
+    [SerializeField] [Range(0f, 100f)] protected float damage = 20f;
+
     private Animator anim;
     protected Transform cam;
-    protected Transform bulletHole; //must have an empty object as first child
 
     void Awake()
     {
         anim = GetComponent<Animator>();
-        bulletHole = transform.GetChild(0);
         cam = Camera.main.transform;
         otherWeapon = otherWeaponObject.GetComponent<Weapon>();
         SubStart();
