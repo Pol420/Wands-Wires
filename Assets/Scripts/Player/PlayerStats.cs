@@ -24,7 +24,12 @@ public class PlayerStats : MonoBehaviour
     private List<string> keyItems;
     private PlayerPowers powers;
 
-    private void Awake() { if (instance == null) instance = this; }
+    private void Awake()
+    {
+        if (instance == null) instance = this;
+        powers = GetComponent<PlayerPowers>();
+        powers.SetHud(hud);
+    }
 
     void Start()
     {
@@ -35,8 +40,6 @@ public class PlayerStats : MonoBehaviour
         AddWaterAmmo(0);
         AddTeslaAmmo(0);
         keyItems = new List<string>();
-        powers = GetComponent<PlayerPowers>();
-        powers.SetHud(hud);
     }
     
     void Update()
