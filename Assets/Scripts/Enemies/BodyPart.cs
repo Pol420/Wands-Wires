@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class BodyPart : MonoBehaviour
 {
@@ -8,12 +9,14 @@ public class BodyPart : MonoBehaviour
     private GameObject floatyText;
     private Enemy body;
     private Ammo enemyType;
+    private UnityEvent effectiveHit;
 
     public void Connect(Enemy parentBody, GameObject floatyText, Ammo type)
     {
         body = parentBody;
         this.floatyText = floatyText;
         enemyType = type;
+        effectiveHit = PlayerPowers.effectiveHit;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -25,7 +28,7 @@ public class BodyPart : MonoBehaviour
             Projectile projectile = other.GetComponent<Projectile>();
             float typeMultiplier = GetTypeMultiplier(projectile.type);
             Hurt(point, (point - transform.position).normalized, Mathf.RoundToInt(projectile.damage * damageMultiplier * typeMultiplier), projectile.type);
-            if (typeMultiplier == 1.25f) PlayerStats.effectiveHit.Invoke();
+            if (typeMultiplier == 1.25f) effectiveHit.Invoke();
         }
     }
 

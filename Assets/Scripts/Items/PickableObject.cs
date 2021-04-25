@@ -5,11 +5,13 @@ using UnityEngine;
 [RequireComponent(typeof(Collider))]
 public abstract class PickableObject : MonoBehaviour
 {
-    protected PlayerStats player;
+    protected PlayerStats playerStats;
+    protected PlayerPowers playerPowers;
 
     private void Start()
     {
-        player = PlayerStats.Instance();
+        playerStats = PlayerStats.Instance();
+        playerPowers = PlayerPowers.Instance();
         GetComponent<Collider>().isTrigger = true;
     }
 

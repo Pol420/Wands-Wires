@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Animator))]
@@ -13,6 +14,17 @@ public class Enemy : MonoBehaviour
     private int currentHealth;
     private Animator anim;
     private bool hb;
+    public static UnityEvent death;
+    public UnityEvent singularDeath;
+    private bool dead;
+
+    private void Awake()
+    {
+        if(death == null) death = new UnityEvent();
+        singularDeath = new UnityEvent();
+        singularDeath.AddListener(death.Invoke);
+        dead = false;
+    }
 
     void Start()
     {
@@ -31,7 +43,11 @@ public class Enemy : MonoBehaviour
 
     private void Die()
     {
-        PlayerStats.death.Invoke();
-        Destroy(gameObject);
+        if (!dead)
+        {
+            dead = true;
+            singularDeath.Invoke();
+            Destroy(gameObject);
+        }
     }
 }

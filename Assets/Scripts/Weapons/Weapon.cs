@@ -7,7 +7,7 @@ public abstract class Weapon : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private GameObject otherWeaponObject = null;
-    [SerializeField] protected PlayerStats holder = null;
+    [SerializeField] private PlayerStats holder = null;
     [SerializeField] protected Transform bulletHole = null;
     private Weapon otherWeapon;
 
@@ -22,9 +22,9 @@ public abstract class Weapon : MonoBehaviour
     private float currentReload;
 
     [Header("Stats")]
-    [SerializeField] [Range(0f, 100f)] protected float shotPower = 20f;
+    [SerializeField] [Range(0f, 100f)] private float shotPower = 20f;
     [SerializeField] [Range(0f, 10f)] protected float weight = 0f;
-    [SerializeField] [Range(0f, 100f)] protected float damage = 20f;
+    [SerializeField] [Range(0f, 100f)] private float damage = 20f;
 
     private Animator anim;
     protected Transform cam;
@@ -45,7 +45,7 @@ public abstract class Weapon : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Alpha3)) SwitchAmmo(Ammo.Tesla);
         else if (currentReload > 0f)
         {
-            currentReload -= Time.deltaTime;
+            currentReload -= Time.unscaledDeltaTime;
             holder.SetHudSelector(1 - currentReload / reloadTime);
         }
         else if ((!auto && Input.GetButtonDown("Fire1")) || (auto && Input.GetButton("Fire1")))
@@ -86,9 +86,12 @@ public abstract class Weapon : MonoBehaviour
     protected void SpendAmmo() { SpendAmmo(1); }
     protected void SpendAmmo(int amount) { holder.SpendAmmo(amount); }
     protected void AddAmmo() { SpendAmmo(-1); }
+    protected float ShotPower() { return (1f / Time.timeScale) * shotPower; }
+    protected float Damage() { return damage * holder.GetDamageMultiplier(); }
 
     protected abstract void Shoot(GameObject bullet);
     protected abstract void SubStart();
     protected abstract void SubUpdate();
+
 }
 public enum Ammo{Fire, Water, Tesla}

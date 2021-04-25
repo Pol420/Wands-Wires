@@ -12,29 +12,29 @@ public class StatusPickup : PickableObject
         switch (type)
         {
             case PickupType.Health:
-                if (size == PickupSize.Small) player.AddHealth(20f);
-                else if (size == PickupSize.Medium) player.AddHealth(50f);
-                else player.AddHealth(200f);
+                if (size == PickupSize.Small) playerStats.AddHealth(20f);
+                else if (size == PickupSize.Medium) playerStats.AddHealth(50f);
+                else playerStats.AddHealth(200f);
                 break;
             case PickupType.Shield:
-                if (size == PickupSize.Small) player.AddShield(20f);
-                else if (size == PickupSize.Medium) player.AddShield(50f);
-                else player.AddShield(100f);
+                if (size == PickupSize.Small) playerStats.AddShield(20f);
+                else if (size == PickupSize.Medium) playerStats.AddShield(50f);
+                else playerStats.AddShield(100f);
                 break;
             case PickupType.FireAmmo:
-                if (size == PickupSize.Small) player.AddFireAmmo(10);
-                else if (size == PickupSize.Medium) player.AddFireAmmo(25);
-                else player.AddFireAmmo(64);
+                if (size == PickupSize.Small) playerStats.AddFireAmmo(10);
+                else if (size == PickupSize.Medium) playerStats.AddFireAmmo(25);
+                else playerStats.AddFireAmmo(64);
                 break;
             case PickupType.WaterAmmo:
-                if (size == PickupSize.Small) player.AddWaterAmmo(10);
-                else if (size == PickupSize.Medium) player.AddWaterAmmo(25);
-                else player.AddWaterAmmo(64);
+                if (size == PickupSize.Small) playerStats.AddWaterAmmo(10);
+                else if (size == PickupSize.Medium) playerStats.AddWaterAmmo(25);
+                else playerStats.AddWaterAmmo(64);
                 break;
             case PickupType.TeslaAmmo:
-                if (size == PickupSize.Small) player.AddTeslaAmmo(10);
-                else if (size == PickupSize.Medium) player.AddTeslaAmmo(25);
-                else player.AddTeslaAmmo(64);
+                if (size == PickupSize.Small) playerStats.AddTeslaAmmo(10);
+                else if (size == PickupSize.Medium) playerStats.AddTeslaAmmo(25);
+                else playerStats.AddTeslaAmmo(64);
                 break;
             default: break;
         }

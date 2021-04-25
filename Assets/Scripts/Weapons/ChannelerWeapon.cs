@@ -27,7 +27,7 @@ public class ChannelerWeapon : Weapon
             this.bullet.transform.localScale = startingScale * (0.5f + charge / maximumChargeTime);
             this.bullet.transform.up = cam.transform.forward;
             if (charge >= maximumChargeTime) ShootCharge();
-            else charge += Time.deltaTime;
+            else charge += Time.unscaledDeltaTime;
         }
         else Destroy(bullet);
     }
@@ -37,7 +37,7 @@ public class ChannelerWeapon : Weapon
         charge = Mathf.Min(maximumChargeTime, charge);
         float proportion = 2f * charge / maximumChargeTime;
         SpendAmmo(Mathf.RoundToInt(charge));
-        bullet.GetComponent<Projectile>().ShootProjectile(bulletHole.position, cam.transform.forward, damage * proportion * holder.GetDamageMultiplier(), shotPower);
+        bullet.GetComponent<Projectile>().ShootProjectile(bulletHole.position, cam.transform.forward, Damage() * proportion, ShotPower());
         charge = 0f;
         charging = false;
         bullet = null;

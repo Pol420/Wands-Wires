@@ -9,7 +9,7 @@ public class WandWeapon : Weapon
 
     protected override void Shoot(GameObject bullet)
     {
-        bullet.GetComponent<Projectile>().ShootProjectile(bulletHole.position, cam.transform.forward, damage * holder.GetDamageMultiplier(), shotPower, weight);
+        bullet.GetComponent<Projectile>().ShootProjectile(bulletHole.position, cam.transform.forward, Damage(), ShotPower(), weight);
     }
 
     protected override void SubStart()

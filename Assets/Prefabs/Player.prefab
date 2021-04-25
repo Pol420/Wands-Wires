@@ -381,7 +381,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   otherWeaponObject: {fileID: 927007593830107153}
-  holder: {fileID: 927007594816134328}
+  holder: {fileID: 5132045120809965011}
   bulletHole: {fileID: 927007594340185289}
   fireBullet: {fileID: 7078729034344170990, guid: 9cce3ca80648c474d93a9980e0923ed9, type: 3}
   waterBullet: {fileID: 6220460582208079453, guid: 4fcc0677cad53e345b9afbad9367c667, type: 3}
@@ -1307,7 +1307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   otherWeaponObject: {fileID: 927007594414436252}
-  holder: {fileID: 927007594816134328}
+  holder: {fileID: 5132045120809965011}
   bulletHole: {fileID: 927007594196386513}
   fireBullet: {fileID: 7078729034344170990, guid: 9cce3ca80648c474d93a9980e0923ed9, type: 3}
   waterBullet: {fileID: 6220460582208079453, guid: 4fcc0677cad53e345b9afbad9367c667, type: 3}
@@ -1850,7 +1850,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   otherWeaponObject: {fileID: 927007592864967118}
-  holder: {fileID: 927007594816134328}
+  holder: {fileID: 5132045120809965011}
   bulletHole: {fileID: 927007593129770528}
   fireBullet: {fileID: 7078729034344170990, guid: 9cce3ca80648c474d93a9980e0923ed9, type: 3}
   waterBullet: {fileID: 6220460582208079453, guid: 4fcc0677cad53e345b9afbad9367c667, type: 3}
@@ -2188,12 +2188,11 @@ GameObject:
   m_Component:
   - component: {fileID: 927007594816134330}
   - component: {fileID: 927007594816134331}
-  - component: {fileID: 927007594816134333}
-  - component: {fileID: 927007594816134328}
-  - component: {fileID: 927007594816134332}
   - component: {fileID: 7526560587661624673}
+  - component: {fileID: 927007594816134333}
+  - component: {fileID: 927007594816134332}
   m_Layer: 3
-  m_Name: PlayerControlelr
+  m_Name: PlayerController
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2231,62 +2230,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 2
---- !u!114 &927007594816134333
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 927007594816134326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 405cea93f36559c47a1f15df6025b92d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseSensitivity: 2
-  moveSpeed: 15
-  jumpPower: 6
-  axis: {x: 0, y: 0}
-  mouse: {x: 0, y: 0}
---- !u!114 &927007594816134328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 927007594816134326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b9d95ff8a52b21479ac85936904cd71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ammo: {x: 99, y: 99, z: 99}
-  hud: {fileID: 927007592870089211}
-  maxHealth: 318
-  maxShield: 200
-  shieldAbsorption: 0.75
-  currentAmmo: 0
-  slowMaxCharge: 32
-  maxSloDuration: 6
-  maxInvDuration: 7
-  maxInfDuration: 10
-  maxDeaDuration: 8
-  deadlyMultiplier: 4
-  slowAmount: 0.5
-  killPowerIncrease: 0.05
---- !u!114 &927007594816134332
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 927007594816134326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed69fc8130641f849a9db55fd5b04220, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  feet: {fileID: 3647176390821983506}
 --- !u!136 &7526560587661624673
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2301,6 +2244,36 @@ CapsuleCollider:
   m_Height: 3
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &927007594816134333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927007594816134326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 405cea93f36559c47a1f15df6025b92d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseSensitivity: 2
+  moveSpeed: 16
+  jumpPower: 200
+  axis: {x: 0, y: 0}
+  mouse: {x: 0, y: 0}
+--- !u!114 &927007594816134332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927007594816134326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed69fc8130641f849a9db55fd5b04220, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  feet: {fileID: 3647176390821983506}
 --- !u!1 &927007594874215443
 GameObject:
   m_ObjectHideFlags: 0
@@ -3348,6 +3321,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8774921424117114113}
+  - component: {fileID: 5132045120809965011}
+  - component: {fileID: 4726162964607739008}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -3372,6 +3347,44 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5132045120809965011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8774921424117114114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b9d95ff8a52b21479ac85936904cd71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammo: {x: 99, y: 99, z: 99}
+  hud: {fileID: 927007592870089211}
+  maxHealth: 300
+  maxShield: 200
+  shieldAbsorption: 0.75
+  currentAmmo: 0
+--- !u!114 &4726162964607739008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8774921424117114114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8f38d5374bb70d44bcaea56bbf1ec76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slowMaxCharge: 32
+  maxSloDuration: 6
+  maxInvDuration: 7
+  maxInfDuration: 10
+  maxDeaDuration: 8
+  deadlyMultiplier: 4
+  slowAmount: 0.5
+  killPowerIncrease: 0.05
 --- !u!1 &9072713087347352990
 GameObject:
   m_ObjectHideFlags: 0

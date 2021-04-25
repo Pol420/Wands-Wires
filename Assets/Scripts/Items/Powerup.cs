@@ -10,10 +10,10 @@ public class Powerup : PickableObject
     {
         switch (type)
         {
-            case PowerupType.Invincible: player.MakeInvincible(); break;
-            case PowerupType.Infinite: player.MakeInfinite(); break;
-            case PowerupType.Deadly: player.MakeDeadly(); break;
-            case PowerupType.TEMPslowmo: player.MakeSlowmo(); break;
+            case PowerupType.Invincible: playerPowers.MakeInvincible(); break;
+            case PowerupType.Infinite: playerPowers.MakeInfinite(); break;
+            case PowerupType.Deadly: playerPowers.MakeDeadly(); break;
+            case PowerupType.TEMPslowmo: playerPowers.MakeSlowmo(); break;
             default: break;
         }
     }
