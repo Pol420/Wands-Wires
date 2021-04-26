@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 86843190665879540}
   - component: {fileID: 8365797977044108873}
   m_Layer: 0
-  m_Name: Enemy_Flying
+  m_Name: Enemy_Flying_Electric
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -125,7 +125,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 1d90c24684c344a478e825d3341e9015, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -235,7 +235,7 @@ MonoBehaviour:
   floatyTextPrefab: {fileID: 1996404576058732650, guid: 0e278bd307087e149ad553cc97a03605, type: 3}
   health: 100
   healthBar: {fileID: 0}
-  type: 0
+  type: 2
   singularDeath:
     m_PersistentCalls:
       m_Calls: []

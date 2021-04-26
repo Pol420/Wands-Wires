@@ -15,8 +15,7 @@ public class Enemy_Projectile_Normal : MonoBehaviour, Enemy_Projectile
     {
         Destroy(gameObject, timeToDestroy);
     }
-
-    // Start is called before the first frame update
+    
     void Start()
     {
         rb = GetComponent<Rigidbody>();

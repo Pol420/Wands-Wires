@@ -14,7 +14,6 @@ public class Feet : MonoBehaviour
 
     public bool IsGrounded()
     {
-        Debug.Log(grounds.Count);
         return grounds.Count > 0;
     }
 
