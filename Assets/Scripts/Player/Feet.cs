@@ -12,6 +12,10 @@ public class Feet : MonoBehaviour
     private void OnTriggerEnter(Collider other) { if (other.CompareTag("Ground")) grounds.Add(other.gameObject); }
     private void OnTriggerExit(Collider other) { if (other.CompareTag("Ground")) grounds.Remove(other.gameObject); }
 
-    public bool IsGrounded() { return grounds.Count > 0; }
+    public bool IsGrounded()
+    {
+        Debug.Log(grounds.Count);
+        return grounds.Count > 0;
+    }
 
 }

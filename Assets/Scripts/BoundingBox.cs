@@ -7,6 +7,7 @@ public class BoundingBox : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        other.transform.position = Vector3.up+other.transform.localScale;
+        if(other.gameObject.GetComponent<Feet>() == null)
+            other.transform.position = Vector3.up+other.transform.localScale;
     }
 }

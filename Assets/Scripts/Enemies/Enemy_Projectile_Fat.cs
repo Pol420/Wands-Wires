@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy_Projectile_Fat : MonoBehaviour
+public class Enemy_Projectile_Fat : MonoBehaviour, Enemy_Projectile
 {
     [SerializeField] private float speed = 10.0f;
     [SerializeField] private float damage = 20.0f;
@@ -33,5 +33,10 @@ public class Enemy_Projectile_Fat : MonoBehaviour
     private void GiveInitialSpeed()
     {
         rb.velocity = speed * transform.forward;
+    }
+
+    public float GetDamage()
+    {
+        return damage;
     }
 }

@@ -17,6 +17,7 @@
             <e p="Enemy_Behaviour_Normal.cs" t="Include" />
             <e p="Enemy_Behaviour_Spawner.cs" t="Include" />
             <e p="Enemy_Health.cs" t="Include" />
+            <e p="Enemy_Projectile.cs" t="Include" />
             <e p="Enemy_Projectile_Fat.cs" t="Include" />
             <e p="Enemy_Projectile_Normal.cs" t="Include" />
             <e p="Enemy_Stats.cs" t="Include" />
@@ -33,6 +34,7 @@
           <e p="Player" t="Include">
             <e p="Feet.cs" t="Include" />
             <e p="PlayerControls.cs" t="Include" />
+            <e p="PlayerDamageDetection.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
             <e p="PlayerPowers.cs" t="Include" />
             <e p="PlayerStats.cs" t="Include" />

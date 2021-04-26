@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(PlayerPowers))]
 public class PlayerStats : MonoBehaviour
@@ -91,7 +92,7 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
-    private void Hurt(float amount)
+    public void Hurt(float amount)
     {
         if (!powers.Invincible())
         {
@@ -124,6 +125,14 @@ public class PlayerStats : MonoBehaviour
     {
         currentHealth = amount;
         hud.SetHealth(currentHealth / maxHealth);
+        
+        if(currentHealth <= 0f)
+            Die();
+    }
+
+    private void Die()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     public void AddShield(float amount) { SetShield(Mathf.Clamp(currentShield + amount, 0f, maxShield)); }
     public void SetShield(float amount)

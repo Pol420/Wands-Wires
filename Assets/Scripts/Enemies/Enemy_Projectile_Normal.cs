@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy_Projectile_Normal : MonoBehaviour
+public class Enemy_Projectile_Normal : MonoBehaviour, Enemy_Projectile
 {
     [SerializeField] private float speed = 10.0f;
     [SerializeField] private float damage = 20.0f;
@@ -27,5 +27,10 @@ public class Enemy_Projectile_Normal : MonoBehaviour
     {
         if(other.transform.CompareTag("Player"))
             Destroy(gameObject);
+    }
+
+    public float GetDamage()
+    {
+        return damage;
     }
 }
