@@ -1,20 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Numerics;
-using TreeEditor;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.UI;
-using Vector3 = UnityEngine.Vector3;
 
-public class Enemy_Behaviour_Flying : MonoBehaviour
+public class Enemy_Behaviour_Spawner : MonoBehaviour
 {
     [SerializeField] private GameObject player;
     [SerializeField] private Enemy_Stats enemyStats;
     [SerializeField] private GameObject shootingPoint;
 
-    [SerializeField] public GameObject[] patrolPositions;
+    [SerializeField] private GameObject[] patrolPositions;
     private int patrolPosition = 0;
+
+    [SerializeField] private GameObject enemyToSpawn;
 
     private float timeToAttack;
     private float timeToShoot;
@@ -27,12 +25,7 @@ public class Enemy_Behaviour_Flying : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(player == null)
-            SetPlayer();
-        if(patrolPositions[0] == null)
-            SetDefaultPatrolPositions();
-        
-        timeToAttack = 0.0f;
+        timeToAttack = enemyStats.maxTimeToAttack;
         timeToShoot = 0.0f;
         navMeshAgent = GetComponent<NavMeshAgent>();
         navMeshAgent.speed = enemyStats.speed;
@@ -44,7 +37,7 @@ public class Enemy_Behaviour_Flying : MonoBehaviour
     {
         if (InDetectionRange())
         {
-            if (InAttackRange() || InShootRange())
+            if (InAttackRange())
             {
                 EndChase();
                 state = EnemyStates.ATTACK;
@@ -89,31 +82,26 @@ public class Enemy_Behaviour_Flying : MonoBehaviour
     private void Attack()
     {
         LookAtPlayer();
-        
-        ShootingAttack();
 
         if (InComfortZone(transform.position))
         {
-            MovementAttack();
+            SpawnEnemy();
         }
             
         else
             AvoidPlayer();
     }
 
-    private void MovementAttack()
+    private void SpawnEnemy()
     {
-        if (CalculateDistance(navMeshAgent.destination, transform.position) < 2.0f)
+        if (timeToAttack <= 0)
         {
-            Vector3 newPosition = transform.position + 
-                                  new Vector3(Random.Range(-50.0f, 50.0f), 0, Random.Range(-5.0f, 5.0f));
-            while(!InShootRange(newPosition))
-            {
-                newPosition = transform.position +
-                              new Vector3(Random.Range(-50.0f, 50.0f), 0, Random.Range(-5.0f, 5.0f));
-            }
-
-            navMeshAgent.destination = newPosition;
+            Instantiate(enemyToSpawn, shootingPoint.transform.position, shootingPoint.transform.rotation);
+            timeToAttack = enemyStats.maxTimeToAttack;
+        }
+        else
+        {
+            timeToAttack -= Time.deltaTime;
         }
     }
 
@@ -122,21 +110,21 @@ public class Enemy_Behaviour_Flying : MonoBehaviour
         if (CalculateDistance(navMeshAgent.destination, transform.position) < 2.0f)
         {
             Vector3 newPosition = transform.position + transform.forward * - 
-                (enemyStats.shootDistance - CalculateDistance(player.transform.position, transform.position));
+                (enemyStats.attackDistance - CalculateDistance(player.transform.position, transform.position));
 
             if (!ValidPosition(newPosition))
             {
                 newPosition = transform.position + transform.forward *  
-                    (enemyStats.shootDistance + CalculateDistance(player.transform.position, transform.position));
+                    (enemyStats.attackDistance + CalculateDistance(player.transform.position, transform.position));
 
                 if (!ValidPosition(newPosition))
                 {
                     newPosition = transform.position + transform.right *  
-                        (enemyStats.shootDistance - 2.0f);
+                        (enemyStats.attackDistance - 2.0f);
                     if (!ValidPosition(newPosition))
                     {
                         newPosition = transform.position + transform.right *  
-                            - (enemyStats.shootDistance - 2.0f);
+                            - (enemyStats.attackDistance - 2.0f);
                         
                     }
     
@@ -144,32 +132,6 @@ public class Enemy_Behaviour_Flying : MonoBehaviour
             }
 
             navMeshAgent.destination = newPosition;
-        }
-    }
-
-    private void MeleeAttack()
-    {
-        if (timeToAttack <= 0)
-        {
-            Debug.Log("Attack: Normal enemy");
-            timeToAttack = enemyStats.maxTimeToAttack;
-        }
-        else
-        {
-            timeToAttack -= Time.deltaTime;
-        } 
-    }
-
-    private void ShootingAttack()
-    {
-        if (timeToShoot <= 0)
-        {
-            Instantiate(enemyStats.projectile, shootingPoint.transform.position, shootingPoint.transform.rotation);
-            timeToShoot = enemyStats.maxTimeToShoot;
-        }
-        else
-        {
-            timeToShoot -= Time.deltaTime;
         }
     }
 
@@ -205,11 +167,6 @@ public class Enemy_Behaviour_Flying : MonoBehaviour
         return Vector3.Distance(player.transform.position, position) <= enemyStats.attackDistance;
     }
 
-    private bool InShootRange()
-    {
-        return Vector3.Distance(player.transform.position, transform.position) <= enemyStats.shootDistance;
-    }
-    
     private bool InShootRange(Vector3 position)
     {
         return Vector3.Distance(player.transform.position, position) <= enemyStats.shootDistance;
@@ -217,8 +174,8 @@ public class Enemy_Behaviour_Flying : MonoBehaviour
 
     private bool InComfortZone(Vector3 position)
     {
-        return CalculateDistance(player.transform.position, position) <= enemyStats.shootDistance && 
-               CalculateDistance(player.transform.position, position) >= enemyStats.shootDistance - 10.0f;
+        return CalculateDistance(player.transform.position, position) <= enemyStats.attackDistance && 
+               CalculateDistance(player.transform.position, position) >= enemyStats.attackDistance - 10.0f;
     }
 
     private bool ValidPosition(Vector3 position)
@@ -241,15 +198,5 @@ public class Enemy_Behaviour_Flying : MonoBehaviour
         b.y = 0;
 
         return Vector3.Distance(a, b);
-    }
-
-    private void SetPlayer()
-    {
-        player = GameObject.FindGameObjectWithTag("Player");
-    }
-
-    private void SetDefaultPatrolPositions()
-    {
-        patrolPositions = GameObject.FindGameObjectsWithTag("Enemy")[0].GetComponent<Enemy_Behaviour_Flying>().patrolPositions;
     }
 }

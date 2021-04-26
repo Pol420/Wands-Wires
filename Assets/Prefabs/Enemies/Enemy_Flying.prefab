@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3494929045055973975}
   - component: {fileID: 3494929045055973968}
   - component: {fileID: 3494929045055973969}
-  - component: {fileID: 3494929045055973970}
+  - component: {fileID: 489713004}
   m_Layer: 0
   m_Name: Enemy_Flying
   m_TagString: Untagged
@@ -120,7 +120,7 @@ NavMeshAgent:
   m_BaseOffset: 2.91
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &3494929045055973970
+--- !u!114 &489713004
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -129,14 +129,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3494929045055973971}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f2eee7e5ad91504eacd783007639cd3, type: 3}
+  m_Script: {fileID: 11500000, guid: 674192d6278519f4dbb2b13faed4b0ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 8
   player: {fileID: 0}
-  enemyStats: {fileID: 11400000, guid: 005606ecdc12f4745be8de632fa7908d, type: 2}
+  enemyStats: {fileID: 11400000, guid: 90103e1f35f67924d8b236a1c61e71c5, type: 2}
   shootingPoint: {fileID: 3494929046204060837}
   patrolPositions:
   - {fileID: 0}

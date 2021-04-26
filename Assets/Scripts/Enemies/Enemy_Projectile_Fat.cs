@@ -7,7 +7,14 @@ public class Enemy_Projectile_Fat : MonoBehaviour
 {
     [SerializeField] private float speed = 10.0f;
     [SerializeField] private float damage = 20.0f;
+    [SerializeField] private float timeToDestroy = 5.0f;
     private Rigidbody rb;
+    
+    
+    private void Awake()
+    {
+        Destroy(gameObject, timeToDestroy);
+    }
     
     // Start is called before the first frame update
     void Start()
@@ -19,7 +26,8 @@ public class Enemy_Projectile_Fat : MonoBehaviour
     private void OnCollisionEnter(Collision other)
     {
         if(other.transform.CompareTag("Player"))
-            Destroy(this);
+            Destroy(gameObject);
+        
     }
 
     private void GiveInitialSpeed()

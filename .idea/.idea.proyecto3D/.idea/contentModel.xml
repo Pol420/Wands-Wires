@@ -15,6 +15,7 @@
             <e p="Enemy_Behaviour_Fat.cs" t="Include" />
             <e p="Enemy_Behaviour_Flying.cs" t="Include" />
             <e p="Enemy_Behaviour_Normal.cs" t="Include" />
+            <e p="Enemy_Behaviour_Spawner.cs" t="Include" />
             <e p="Enemy_Health.cs" t="Include" />
             <e p="Enemy_Projectile_Fat.cs" t="Include" />
             <e p="Enemy_Projectile_Normal.cs" t="Include" />
@@ -23,14 +24,19 @@
           </e>
           <e p="HUD.cs" t="Include" />
           <e p="Items" t="Include">
-            <e p="KeyDoor.cs" t="Include" />
             <e p="KeyItem.cs" t="Include" />
+            <e p="LockedDoor.cs" t="Include" />
             <e p="PickableObject.cs" t="Include" />
+            <e p="Powerup.cs" t="Include" />
+            <e p="StatusPickup.cs" t="Include" />
           </e>
-          <e p="PlayerControls.cs" t="Include" />
-          <e p="PlayerMovement.cs" t="Include" />
-          <e p="PlayerStats.cs" t="Include" />
-          <e p="Pushable.cs" t="Include" />
+          <e p="Player" t="Include">
+            <e p="Feet.cs" t="Include" />
+            <e p="PlayerControls.cs" t="Include" />
+            <e p="PlayerMovement.cs" t="Include" />
+            <e p="PlayerPowers.cs" t="Include" />
+            <e p="PlayerStats.cs" t="Include" />
+          </e>
           <e p="Weapons" t="Include">
             <e p="[OUT] LongRangeWeapon.cs" t="Include" />
             <e p="[OUT] ShortRangeWeapon.cs" t="Include" />
