@@ -6,8 +6,8 @@ public class PlayerControls : MonoBehaviour
 {
     [Header("Settings")]
     [SerializeField] private float mouseSensitivity = 2f;
-    [SerializeField] [Range(0f, 20f)] private float moveSpeed = 10f;
-    [SerializeField] [Range(0f, 1000f)] public float jumpPower = 200f;
+    [SerializeField] [Range(0f, 32f)] private float moveSpeed = 16f;
+    [SerializeField] [Range(0f, 2048f)] public float jumpPower = 1024f;
 
     [Header("Current Values")]
     public Vector2 axis;

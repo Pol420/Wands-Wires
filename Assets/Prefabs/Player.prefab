@@ -2258,7 +2258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseSensitivity: 2
   moveSpeed: 16
-  jumpPower: 528
+  jumpPower: 1024
   axis: {x: 0, y: 0}
   mouse: {x: 0, y: 0}
 --- !u!114 &927007594816134332
@@ -3380,11 +3380,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slowMaxCharge: 32
   maxSloDuration: 6
+  slowAmount: 0.5
   maxInvDuration: 7
   maxInfDuration: 10
   maxDeaDuration: 8
   deadlyMultiplier: 4
-  slowAmount: 0.5
   killPowerIncrease: 0.05
 --- !u!1 &9072713087347352990
 GameObject:

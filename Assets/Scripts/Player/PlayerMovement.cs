@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     private PlayerControls controls;
     private Transform cam;
     protected Rigidbody body;
+    private float fixedTimeFlow;
     
     void Start()
     {
@@ -26,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        fixedTimeFlow = Time.fixedDeltaTime / Time.timeScale;
         if (IsGrounded())
         {
             Move(controls.axis);
@@ -35,17 +37,21 @@ public class PlayerMovement : MonoBehaviour
         {
             if (body.velocity.y >= 0f)
             {
-                body.velocity += Time.unscaledDeltaTime * Physics.gravity * body.mass * (controls.IsJumping() ? 0.5f : 1f);
                 Move(controls.axis);
+                Fall(fixedTimeFlow * (controls.IsJumping() ? 0.5f : 1f));
             }
             else
             {
                 Move(controls.axis);
-                body.velocity += Time.unscaledDeltaTime * Physics.gravity * body.mass;
+                Fall(fixedTimeFlow);
             }
         }
-        Debug.Log(Mathf.RoundToInt(body.velocity.magnitude));
         SpeedLimit();
+    }
+
+    private void Fall(float multiplier)
+    {
+        body.velocity += multiplier * Physics.gravity * body.mass;
     }
 
     private void Pivot(float angle)
@@ -60,19 +66,19 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Move(Vector2 input)
     {
-        Vector3 movement = (transform.forward * input.y + transform.right * input.x) * Time.unscaledDeltaTime;
+        Vector3 movement = (transform.forward * input.y + transform.right * input.x) * fixedTimeFlow;
         movement.y = 0f;
         body.MovePosition(transform.position + movement);
     }
     private bool IsGrounded() { return feet.IsGrounded(); }
     private void Jump(Vector2 input)
     {
-        body.AddForce(((transform.forward * input.y + transform.right * input.x) * body.mass + new Vector3(0f, controls.jumpPower * body.mass)) * Time.unscaledDeltaTime, ForceMode.Impulse);
+        body.AddForce(((transform.forward * input.y + transform.right * input.x) * body.mass + new Vector3(0f, controls.jumpPower * body.mass)) * fixedTimeFlow, ForceMode.Impulse);
     }
 
     private void SpeedLimit()
     {
-        if (body.velocity.magnitude > maximumVelocity && body.velocity.y > 0f) body.velocity = body.velocity.normalized * maximumVelocity;
+        if (body.velocity.magnitude > maximumVelocity / Time.timeScale && body.velocity.y > 0f) body.velocity = body.velocity.normalized * maximumVelocity;
     }
 
 }

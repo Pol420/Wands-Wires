@@ -12,6 +12,7 @@ public class PlayerPowers : MonoBehaviour
     [Header("Power")]
     [SerializeField] [Range(0, 100)] private int slowMaxCharge = 50;
     [SerializeField] [Range(0f, 10f)] private float maxSloDuration = 5f;
+    [SerializeField] [Range(0f, 1f)] private float slowAmount = 0.5f;
     private float slowmoDuration;
     private int slowCharge;
 
@@ -20,7 +21,6 @@ public class PlayerPowers : MonoBehaviour
     [SerializeField] [Range(0f, 10f)] private float maxInfDuration = 10f;
     [SerializeField] [Range(0f, 10f)] private float maxDeaDuration = 8f;
     [SerializeField] [Range(1f, 5f)] private float deadlyMultiplier = 4f;
-    [SerializeField] [Range(0f, 1f)] private float slowAmount = 0.5f;
     [SerializeField] [Range(0f, 0.5f)] private float killPowerIncrease = 0.05f;
     private float invincibleDuration;
     private float infiniteAmmoDuration;
