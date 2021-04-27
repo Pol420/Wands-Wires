@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private int health = 100;
     [SerializeField] private Slider healthBar = null;
     [SerializeField] protected Ammo type = Ammo.Fire;
+    [SerializeField] private StatusPickup[] pickups;
     private int currentHealth;
     private Animator anim;
     private bool hb;
@@ -38,7 +39,7 @@ public class Enemy : MonoBehaviour
     {
         currentHealth -= amount;
         if (hb) healthBar.value = currentHealth / health;
-        if (currentHealth <= 0) Die();
+        if (currentHealth <= 0 && !dead) Die();
     }
 
     private void Die()
@@ -46,8 +47,17 @@ public class Enemy : MonoBehaviour
         if (!dead)
         {
             dead = true;
+            LeavePickUp();
             singularDeath.Invoke();
             Destroy(gameObject);
+        }
+    }
+
+    private void LeavePickUp()
+    {
+        if (pickups.Length > 0)
+        {
+            Instantiate(pickups[0], transform.position + Vector3.up * 2, transform.rotation);
         }
     }
 }

@@ -22,6 +22,10 @@
             <e p="Enemy_Projectile_Fat.cs" t="Include" />
             <e p="Enemy_Projectile_Normal.cs" t="Include" />
             <e p="Enemy_Stats.cs" t="Include" />
+            <e p="EnemyBehaviour.cs" t="Include" />
+            <e p="EnemyBehaviourFat.cs" t="Include" />
+            <e p="EnemyBehaviourNormal.cs" t="Include" />
+            <e p="EnemyStateMachine.cs" t="Include" />
             <e p="FloatyText.cs" t="Include" />
           </e>
           <e p="HUD.cs" t="Include" />
@@ -32,6 +36,8 @@
             <e p="Powerup.cs" t="Include" />
             <e p="StatusPickup.cs" t="Include" />
           </e>
+          <e p="LevelEnd.cs" t="Include" />
+          <e p="LevelManager.cs" t="Include" />
           <e p="Player" t="Include">
             <e p="Feet.cs" t="Include" />
             <e p="PlayerControls.cs" t="Include" />
