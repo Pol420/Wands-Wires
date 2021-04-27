@@ -6,7 +6,8 @@ using UnityEngine;
 public class LevelEnd : MonoBehaviour
 {
     [SerializeField] private bool loadNext = true;
-    [SerializeField] private string levelName = "no level";
+    [SerializeField] private string levelName = "do not use this yet";
+    [SerializeField] private int levelIndex = 0;
 
 
     private void OnTriggerEnter(Collider other)
@@ -14,7 +15,7 @@ public class LevelEnd : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             if (loadNext) LevelManager.Instance().LoadNextScene();
-            else LevelManager.Instance().LoadScene(levelName);
+            else LevelManager.Instance().LoadScene(levelIndex);
         }
     }
 }

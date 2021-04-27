@@ -44,7 +44,7 @@ public class LevelManager : MonoBehaviour
     public void LoadScene(string sceneName) { LoadScene(SceneManager.GetSceneByName(sceneName).buildIndex); }
 
     private int CurrentScene() { return SceneManager.GetActiveScene().buildIndex; }
-    private void LoadScene(int index)
+    public void LoadScene(int index)
     {
         loading = SceneManager.LoadSceneAsync(index, LoadSceneMode.Single);
         loadingScreen.SetActive(true);
