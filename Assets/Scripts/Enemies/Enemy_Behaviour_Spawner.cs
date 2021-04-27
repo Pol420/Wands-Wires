@@ -30,6 +30,9 @@ public class Enemy_Behaviour_Spawner : MonoBehaviour
         navMeshAgent = GetComponent<NavMeshAgent>();
         navMeshAgent.speed = enemyStats.speed;
         state = EnemyStates.PATROL;
+
+        if (player == null)
+            player = DefaultPlayer();
     }
 
     // Update is called once per frame
@@ -198,5 +201,10 @@ public class Enemy_Behaviour_Spawner : MonoBehaviour
         b.y = 0;
 
         return Vector3.Distance(a, b);
+    }
+    
+    private GameObject DefaultPlayer()
+    {
+        return GameObject.FindWithTag("Player");
     }
 }

@@ -5,6 +5,7 @@ using System.Numerics;
 using UnityEditor.UI;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Analytics;
 using UnityEngine.Serialization;
 using Debug = UnityEngine.Debug;
 using Vector3 = UnityEngine.Vector3;
@@ -22,6 +23,8 @@ public class Enemy_Behaviour_Fat : MonoBehaviour
 
     private NavMeshAgent navMeshAgent;
 
+    private Animator animator;
+
     enum EnemyStates {ATTACK, CHASE, PATROL}
     private EnemyStates state;
 
@@ -32,6 +35,9 @@ public class Enemy_Behaviour_Fat : MonoBehaviour
         navMeshAgent = GetComponent<NavMeshAgent>();
         navMeshAgent.speed = enemyStats.speed;
         state = EnemyStates.PATROL;
+        animator = GetComponent<Animator>();
+        if (player == null)
+            player = DefaultPlayer();
     }
 
     // Update is called once per frame
@@ -81,7 +87,8 @@ public class Enemy_Behaviour_Fat : MonoBehaviour
         
         if (timeToAttack <= 0)
         {
-            Instantiate(enemyStats.projectile, shootingPoint.transform.position, shootingPoint.transform.rotation);
+            //Instantiate(enemyStats.projectile, shootingPoint.transform.position, shootingPoint.transform.rotation);
+            animator.SetTrigger("Attack");
             timeToAttack = enemyStats.maxTimeToAttack;
         }
         else
@@ -121,5 +128,10 @@ public class Enemy_Behaviour_Fat : MonoBehaviour
     {
         var playerPosition = player.transform.position;
         transform.LookAt(new Vector3(playerPosition.x, transform.position.y, playerPosition.z));
+    }
+
+    private GameObject DefaultPlayer()
+    {
+        return GameObject.FindWithTag("Player");
     }
 }
