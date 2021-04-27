@@ -32,6 +32,9 @@ public class Enemy_Behaviour_Normal : MonoBehaviour
         navMeshAgent.speed = enemyStats.speed;
         state = EnemyStates.PATROL;
         animator = GetComponent<Animator>();
+
+        if (player == null)
+            player = DefaultPlayer();
     }
 
     // Update is called once per frame
@@ -180,5 +183,10 @@ public class Enemy_Behaviour_Normal : MonoBehaviour
         var playerPosition = player.transform.position;
         transform.LookAt(new Vector3(playerPosition.x, transform.position.y, playerPosition.z));
         shootingPoint.transform.LookAt(player.transform.position + new Vector3(0,1,0));
+    }
+    
+    private GameObject DefaultPlayer()
+    {
+        return GameObject.FindWithTag("Player");
     }
 }
