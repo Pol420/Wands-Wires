@@ -19,6 +19,10 @@ public class PlayerDamageDetection : MonoBehaviour
         {
             playerStats.Hurt(other.transform.GetComponent<Enemy_Projectile>().GetDamage());
         }
+        else if (other.transform.CompareTag("EnemyAttack"))
+        {
+            playerStats.Hurt(other.transform.parent.GetComponent<Enemy_Data>().GetAttackDamage());
+        }
                 
     }
 }

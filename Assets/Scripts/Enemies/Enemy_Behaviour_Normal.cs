@@ -18,6 +18,8 @@ public class Enemy_Behaviour_Normal : MonoBehaviour
 
     private NavMeshAgent navMeshAgent;
 
+    private Animator animator;
+
     enum EnemyStates {ATTACK, CHASE, PATROL}
     private EnemyStates state;
 
@@ -29,6 +31,7 @@ public class Enemy_Behaviour_Normal : MonoBehaviour
         navMeshAgent = GetComponent<NavMeshAgent>();
         navMeshAgent.speed = enemyStats.speed;
         state = EnemyStates.PATROL;
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -108,7 +111,7 @@ public class Enemy_Behaviour_Normal : MonoBehaviour
     {
         if (timeToAttack <= 0)
         {
-            Debug.Log("Attack: Normal enemy");
+            animator.SetTrigger("Attack");
             timeToAttack = enemyStats.maxTimeToAttack;
         }
         else
