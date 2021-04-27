@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Collider))]
+[RequireComponent(typeof(Collider), typeof(MeshRenderer))]
 public class LockedDoor : MonoBehaviour
 {
     [SerializeField] private DoorLock lockType = DoorLock.Key;
+    [SerializeField] private bool trapDoor = false;
 
     [Header("Key Settings")]
     [SerializeField] private GameObject sceneKey = null;
@@ -20,15 +21,29 @@ public class LockedDoor : MonoBehaviour
 
     private bool playerInRange;
     private PlayerStats player;
+    private bool trapped;
+    private List<Collider> colliders;
+    private MeshRenderer doorRenderer;
 
     private void Start()
     {
+        colliders = new List<Collider>();
+        doorRenderer = GetComponent<MeshRenderer>();
+        foreach (Collider c in GetComponentsInChildren<Collider>()) if (!c.isTrigger) colliders.Add(c);
         if (sceneKey != null) code = sceneKey.GetComponent<KeyItem>().GetCode();
         else code = alternateCode;
         playerInRange = false;
         player = PlayerStats.Instance();
         kills = 0;
         EnemyPool();
+        if (trapDoor) ActivateCollisions(false);
+        trapped = trapDoor;
+    }
+
+    private void ActivateCollisions(bool active)
+    {
+        doorRenderer.enabled = active;
+        foreach (Collider c in colliders) c.enabled = active;
     }
 
     private void OnDrawGizmos()  { if (lockType == DoorLock.Kills) { Gizmos.color = Color.red; Gizmos.DrawWireCube(transform.position + areaPosition, areaSize); } }
@@ -48,13 +63,18 @@ public class LockedDoor : MonoBehaviour
         }
     }
 
-    private void Open()
-    {
-        //todo I guess just fucking open
-        Destroy(gameObject);
-    }
+    private void Open() { ActivateCollisions(false); }
+    private void Close() { ActivateCollisions(true); }
 
-    private void OnTriggerEnter(Collider other) { if (other.gameObject.CompareTag("Player")) playerInRange = true; }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player")) playerInRange = true;
+        if (trapped)
+        {
+            ActivateCollisions(true);
+            trapped = false;
+        }
+    }
     private void OnTriggerExit(Collider other) { if (other.gameObject.CompareTag("Player")) playerInRange = false; }
 
     private void EnemyPool()

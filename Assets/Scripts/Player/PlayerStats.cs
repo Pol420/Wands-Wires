@@ -125,15 +125,11 @@ public class PlayerStats : MonoBehaviour
     {
         currentHealth = amount;
         hud.SetHealth(currentHealth / maxHealth);
-        
-        if(currentHealth <= 0f)
-            Die();
+        if(currentHealth <= 0f) Die();
     }
 
-    private void Die()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
+    private void Die() { LevelManager.Instance().ReloadScene(); }
+
     public void AddShield(float amount) { SetShield(Mathf.Clamp(currentShield + amount, 0f, maxShield)); }
     public void SetShield(float amount)
     {
