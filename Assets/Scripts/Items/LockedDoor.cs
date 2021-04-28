@@ -54,7 +54,7 @@ public class LockedDoor : MonoBehaviour
         {
             if (playerInRange)
             {
-                if (Input.GetButton("Fire2"))
+                if (Input.GetButtonDown("Fire2"))
                 {
                     if (player.GetKey(code)) Open();
                     else Debug.Log("You don't have a " + code);
@@ -68,11 +68,14 @@ public class LockedDoor : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player")) playerInRange = true;
-        if (trapped)
+        if (other.gameObject.CompareTag("Player"))
         {
-            ActivateCollisions(true);
-            trapped = false;
+            if (trapped)
+            {
+                ActivateCollisions(true);
+                trapped = false;
+            }
+            playerInRange = true;
         }
     }
     private void OnTriggerExit(Collider other) { if (other.gameObject.CompareTag("Player")) playerInRange = false; }

@@ -27,9 +27,14 @@ public class PlayerStats : MonoBehaviour
 
     private void Awake()
     {
-        if (instance == null) instance = this;
-        powers = GetComponent<PlayerPowers>();
-        powers.SetHud(hud);
+        if (instance == null)
+        {
+            instance = this;
+            powers = GetComponent<PlayerPowers>();
+            powers.SetHud(hud);
+            DontDestroyOnLoad(gameObject);
+        }
+        else if (instance != this) { instance.transform.GetChild(0).position = transform.GetChild(0).position; Destroy(gameObject); }
     }
 
     void Start()
@@ -156,5 +161,11 @@ public class PlayerStats : MonoBehaviour
             return true;
         }
         return false;
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.transform.CompareTag("EnemyProjectile")) Hurt(other.transform.GetComponent<Enemy_Projectile>().GetDamage());
+        else if (other.transform.CompareTag("EnemyAttack")) Hurt(other.transform.parent.GetComponent<Enemy_Data>().GetAttackDamage());
     }
 }

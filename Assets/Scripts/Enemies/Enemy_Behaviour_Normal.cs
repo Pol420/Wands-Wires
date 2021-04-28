@@ -6,7 +6,6 @@ using UnityEngine.AI;
 
 public class Enemy_Behaviour_Normal : MonoBehaviour
 {
-    [SerializeField] private GameObject player;
     [SerializeField] private Enemy_Stats enemyStats;
     [SerializeField] private GameObject shootingPoint;
 
@@ -19,6 +18,7 @@ public class Enemy_Behaviour_Normal : MonoBehaviour
     private NavMeshAgent navMeshAgent;
 
     private Animator animator;
+    private Transform player;
 
     enum EnemyStates {ATTACK, CHASE, PATROL}
     private EnemyStates state;
@@ -32,9 +32,7 @@ public class Enemy_Behaviour_Normal : MonoBehaviour
         navMeshAgent.speed = enemyStats.speed;
         state = EnemyStates.PATROL;
         animator = GetComponent<Animator>();
-
-        if (player == null)
-            player = DefaultPlayer();
+        player = PlayerStats.Instance().transform.GetChild(0);
     }
 
     // Update is called once per frame
@@ -76,7 +74,7 @@ public class Enemy_Behaviour_Normal : MonoBehaviour
 
     private void Chase()
     {
-        navMeshAgent.destination = player.transform.position;
+        navMeshAgent.destination = player.position;
     }
 
     private void EndChase()
@@ -155,38 +153,33 @@ public class Enemy_Behaviour_Normal : MonoBehaviour
 
     private bool InDetectionRange()
     {
-        return Vector3.Distance(player.transform.position, transform.position) <= enemyStats.maxSightDistance;
+        return Vector3.Distance(player.position, transform.position) <= enemyStats.maxSightDistance;
     }
 
     private bool InAttackRange()
     {
-        return Vector3.Distance(player.transform.position, transform.position) <= enemyStats.attackDistance;
+        return Vector3.Distance(player.position, transform.position) <= enemyStats.attackDistance;
     }
     
     private bool InAttackRange(Vector3 position)
     {
-        return Vector3.Distance(player.transform.position, position) <= enemyStats.attackDistance;
+        return Vector3.Distance(player.position, position) <= enemyStats.attackDistance;
     }
 
     private bool InShootRange()
     {
-        return Vector3.Distance(player.transform.position, transform.position) <= enemyStats.shootDistance;
+        return Vector3.Distance(player.position, transform.position) <= enemyStats.shootDistance;
     }
     
     private bool InShootRange(Vector3 position)
     {
-        return Vector3.Distance(player.transform.position, position) <= enemyStats.shootDistance;
+        return Vector3.Distance(player.position, position) <= enemyStats.shootDistance;
     }
 
     private void LookAtPlayer()
     {
-        var playerPosition = player.transform.position;
+        var playerPosition = player.position;
         transform.LookAt(new Vector3(playerPosition.x, transform.position.y, playerPosition.z));
-        shootingPoint.transform.LookAt(player.transform.position + new Vector3(0,1,0));
-    }
-    
-    private GameObject DefaultPlayer()
-    {
-        return GameObject.FindWithTag("Player");
+        shootingPoint.transform.LookAt(player.position + new Vector3(0,1,0));
     }
 }
