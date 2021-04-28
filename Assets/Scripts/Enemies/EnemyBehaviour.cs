@@ -9,7 +9,7 @@ public abstract class EnemyBehaviour : MonoBehaviour
     [SerializeField] protected GameObject[] patrolPositions;
     [SerializeField] protected GameObject shootingPoint;
     protected int patrolPosition;
-    protected GameObject player;
+    protected Transform player;
     protected Enemy_Data enemyData;
     protected float errorDistance = 2.0f;
     protected float timeToAttack;
@@ -21,7 +21,7 @@ public abstract class EnemyBehaviour : MonoBehaviour
     
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        player = PlayerStats.Instance().transform.GetChild(0);
         navMeshAgent = GetComponent<NavMeshAgent>();
         enemyData = GetComponent<Enemy_Data>();
         timeToAttack = 0.0f;
@@ -34,7 +34,7 @@ public abstract class EnemyBehaviour : MonoBehaviour
 
     public void Chase()
     {
-        navMeshAgent.destination = player.transform.position;
+        navMeshAgent.destination = player.position;
     }
 
     public void EndChase()
@@ -55,31 +55,75 @@ public abstract class EnemyBehaviour : MonoBehaviour
     }
 
     public abstract void Attack();
+    
+    protected virtual void AvoidPlayer()
+    {
+        if (CalculateDistance(navMeshAgent.destination, transform.position) < errorDistance)
+        {
+            Vector3 newPosition = transform.position + transform.forward * - 
+                (enemyData.GetShootDistance() - CalculateDistance(player.position, transform.position));
+
+            if (!ValidPosition(newPosition))
+            {
+                newPosition = transform.position + transform.forward *  
+                    (enemyData.GetShootDistance() + CalculateDistance(player.position, transform.position));
+
+                if (!ValidPosition(newPosition))
+                {
+                    newPosition = transform.position + transform.right *  
+                        (enemyData.GetShootDistance() - errorDistance);
+                    if (!ValidPosition(newPosition))
+                    {
+                        newPosition = transform.position + transform.right *  
+                            - (enemyData.GetShootDistance() - errorDistance);
+                        
+                    }
+    
+                }
+            }
+
+            navMeshAgent.destination = newPosition;
+        }
+    }
 
     protected void LookAtPlayer()
     {
-        var playerPosition = player.transform.position;
+        var playerPosition = player.position;
         transform.LookAt(new Vector3(playerPosition.x, transform.position.y, playerPosition.z));
+        shootingPoint.transform.LookAt(playerPosition + new Vector3(0,1,0));
     }
 
     public bool InAttackRange()
     {
-        return CalculateDistance(player.transform.position, transform.position) <= enemyData.GetAttackDistance();
+        return CalculateDistance(player.position, transform.position) <= enemyData.GetAttackDistance();
     }
     
     public bool InAttackRange(Vector3 position)
     {
-        return CalculateDistance(player.transform.position, position) <= enemyData.GetAttackDistance();
+        return CalculateDistance(player.position, position) <= enemyData.GetAttackDistance();
     }
 
     public bool InShootRange()
     {
-        return CalculateDistance(player.transform.position, transform.position) <= enemyData.GetShootDistance();
+        return CalculateDistance(player.position, transform.position) <= enemyData.GetShootDistance();
     }
     
-    public bool InShootRange(Vector3 position)
+    protected bool InShootRange(Vector3 position)
     {
-        return CalculateDistance(player.transform.position, position) <= enemyData.GetShootDistance();
+        return CalculateDistance(player.position, position) <= enemyData.GetShootDistance();
+    }
+    
+    protected virtual bool InComfortZone(Vector3 position)
+    {
+        return CalculateDistance(player.position, position) <= enemyData.GetShootDistance() && 
+               CalculateDistance(player.position, position) >= enemyData.GetShootDistance() - 10.0f;
+    }
+
+    protected bool ValidPosition(Vector3 position)
+    {
+        var path = new NavMeshPath();
+        navMeshAgent.CalculatePath(position, path);
+        return path.status == NavMeshPathStatus.PathComplete;
     }
     
     public float CalculateDistance(Vector3 a, Vector3 b)
@@ -92,7 +136,7 @@ public abstract class EnemyBehaviour : MonoBehaviour
 
     private GameObject[] DefaultPatrolPositions()
     {
-        GameObject[] newPatrolPositions = GameObject.FindGameObjectsWithTag("PatrolPosition");
+        var newPatrolPositions = GameObject.FindGameObjectsWithTag("PatrolPosition");
 
         if (newPatrolPositions.Length > 0)
             return newPatrolPositions;

@@ -216,7 +216,7 @@ GameObject:
   - component: {fileID: 2237245943984634502}
   m_Layer: 0
   m_Name: Enemy_Fat_Electric
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -376,6 +376,7 @@ MonoBehaviour:
   health: 200
   healthBar: {fileID: 0}
   type: 2
+  pickups: []
   singularDeath:
     m_PersistentCalls:
       m_Calls: []

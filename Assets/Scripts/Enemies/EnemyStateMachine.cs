@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class EnemyStateMachine : MonoBehaviour
 {
-    private GameObject player;
+    private Transform player;
     private Enemy_Data enemyData;
     private EnemyBehaviour enemyBehaviour;
 
@@ -15,7 +15,7 @@ public class EnemyStateMachine : MonoBehaviour
     void Start()
     {
         state = EnemyStates.Patrol;
-        player = GameObject.FindGameObjectWithTag("Player");
+        player = PlayerStats.Instance().transform.GetChild(0);
         enemyData = GetComponent<Enemy_Data>();
         enemyBehaviour = GetComponent<EnemyBehaviour>();
     }
@@ -81,16 +81,16 @@ public class EnemyStateMachine : MonoBehaviour
 
     private bool InDetectionRange()
     {
-        return enemyBehaviour.CalculateDistance(player.transform.position, transform.position) <= enemyData.GetMaxSightDistance();
+        return enemyBehaviour.CalculateDistance(player.position, transform.position) <= enemyData.GetMaxSightDistance();
     }
 
     private bool InAttackRange()
     {
-        return enemyBehaviour.CalculateDistance(player.transform.position, transform.position) <= enemyData.GetAttackDistance();
+        return enemyBehaviour.CalculateDistance(player.position, transform.position) <= enemyData.GetAttackDistance();
     }
     
     private bool InShootDistance()
     {
-        return enemyBehaviour.CalculateDistance(player.transform.position, transform.position) <= enemyData.GetShootDistance();
+        return enemyBehaviour.CalculateDistance(player.position, transform.position) <= enemyData.GetShootDistance();
     }
 }

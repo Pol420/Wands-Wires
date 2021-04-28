@@ -76,7 +76,7 @@ GameObject:
   - component: {fileID: 8365797977044108873}
   m_Layer: 0
   m_Name: Enemy_Flying_Fire
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -236,6 +236,7 @@ MonoBehaviour:
   health: 50
   healthBar: {fileID: 0}
   type: 0
+  pickups: []
   singularDeath:
     m_PersistentCalls:
       m_Calls: []

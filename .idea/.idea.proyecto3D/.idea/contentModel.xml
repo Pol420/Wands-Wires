@@ -24,7 +24,9 @@
             <e p="Enemy_Stats.cs" t="Include" />
             <e p="EnemyBehaviour.cs" t="Include" />
             <e p="EnemyBehaviourFat.cs" t="Include" />
+            <e p="EnemyBehaviourFlying.cs" t="Include" />
             <e p="EnemyBehaviourNormal.cs" t="Include" />
+            <e p="EnemyBehaviourSpawner.cs" t="Include" />
             <e p="EnemyStateMachine.cs" t="Include" />
             <e p="FloatyText.cs" t="Include" />
           </e>

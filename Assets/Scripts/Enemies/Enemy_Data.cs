@@ -7,11 +7,6 @@ public class Enemy_Data : MonoBehaviour
 {
     [SerializeField] private Enemy_Stats enemyStats;
 
-    private void Awake()
-    {
-
-    }
-
     public float GetAttackDamage() { return enemyStats.attackDamage; }
     public float GetMaxSightDistance() { return enemyStats.maxSightDistance; }
     public float GetAttackDistance() { return enemyStats.attackDistance; }

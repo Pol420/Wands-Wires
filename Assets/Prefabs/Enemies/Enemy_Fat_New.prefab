@@ -217,7 +217,7 @@ GameObject:
   - component: {fileID: 1377829230025270839}
   m_Layer: 0
   m_Name: Enemy_Fat_New
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -401,6 +401,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolPositions: []
+  shootingPoint: {fileID: 0}
 --- !u!1 &8384358196557328932
 GameObject:
   m_ObjectHideFlags: 0
