@@ -101,9 +101,11 @@ GameObject:
   - component: {fileID: 8012977574662141681}
   - component: {fileID: 8012977574662141680}
   - component: {fileID: 8012977574662141683}
-  - component: {fileID: -4886353433537679132}
   - component: {fileID: 2727127690050505342}
   - component: {fileID: 7866907330955829339}
+  - component: {fileID: 1281336059879119750}
+  - component: {fileID: 3371727597729164469}
+  - component: {fileID: 2224179868499940856}
   m_Layer: 0
   m_Name: Enemy_Spawner_Water
   m_TagString: Enemy
@@ -212,25 +214,6 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &-4886353433537679132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8012977574662141581}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4df2ee5805303c841badc994580a3ea4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  enemyStats: {fileID: 11400000, guid: 2f3517f2d377c97478e305d13b895b62, type: 2}
-  shootingPoint: {fileID: 8012977574023841770}
-  patrolPositions:
-  - {fileID: 0}
-  - {fileID: 0}
-  enemyToSpawn: {fileID: 3494929045055973971, guid: ee6674a057898c04a8ee90c2ec3aec83, type: 3}
 --- !u!95 &2727127690050505342
 Animator:
   serializedVersion: 3
@@ -270,6 +253,46 @@ MonoBehaviour:
   singularDeath:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1281336059879119750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8012977574662141581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d451011c8244ca243af7b07e263d8e84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyStats: {fileID: 11400000, guid: 2f3517f2d377c97478e305d13b895b62, type: 2}
+--- !u!114 &3371727597729164469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8012977574662141581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60bf2aeb9d219634991619b86f4d82c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2224179868499940856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8012977574662141581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc03255eadae2104ba705bd34ed7c0eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  patrolPositions: []
+  shootingPoint: {fileID: 8012977574023841770}
+  enemyToSpawn: {fileID: 0}
 --- !u!1 &8365754876702336971
 GameObject:
   m_ObjectHideFlags: 0

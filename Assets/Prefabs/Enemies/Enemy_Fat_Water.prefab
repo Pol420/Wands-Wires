@@ -210,10 +210,11 @@ GameObject:
   - component: {fileID: 8012977574662141681}
   - component: {fileID: 8012977574662141680}
   - component: {fileID: 8012977574662141683}
-  - component: {fileID: 8012977574662141682}
   - component: {fileID: 360548724}
   - component: {fileID: 360548723}
   - component: {fileID: 2237245943984634502}
+  - component: {fileID: 4315707446004216965}
+  - component: {fileID: 2505495527859031578}
   m_Layer: 0
   m_Name: Enemy_Fat_Water
   m_TagString: Enemy
@@ -323,24 +324,6 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &8012977574662141682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8012977574662141581}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f2eee7e5ad91504eacd783007639cd3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  enemyStats: {fileID: 11400000, guid: 005606ecdc12f4745be8de632fa7908d, type: 2}
-  shootingPoint: {fileID: 8012977574023841770}
-  patrolPositions:
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!95 &360548724
 Animator:
   serializedVersion: 3
@@ -393,6 +376,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyStats: {fileID: 11400000, guid: 005606ecdc12f4745be8de632fa7908d, type: 2}
+--- !u!114 &4315707446004216965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8012977574662141581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60bf2aeb9d219634991619b86f4d82c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2505495527859031578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8012977574662141581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f57298fe9a8491c4ca2337a8cd7a0af7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  patrolPositions: []
+  shootingPoint: {fileID: 8012977574023841770}
 --- !u!1 &8384358196557328932
 GameObject:
   m_ObjectHideFlags: 0

@@ -162,10 +162,4 @@ public class PlayerStats : MonoBehaviour
         }
         return false;
     }
-
-    private void OnCollisionEnter(Collision other)
-    {
-        if (other.transform.CompareTag("EnemyProjectile")) Hurt(other.transform.GetComponent<Enemy_Projectile>().GetDamage());
-        else if (other.transform.CompareTag("EnemyAttack")) Hurt(other.transform.parent.GetComponent<Enemy_Data>().GetAttackDamage());
-    }
 }

@@ -17,7 +17,6 @@
             <e p="Enemy_Behaviour_Normal.cs" t="Include" />
             <e p="Enemy_Behaviour_Spawner.cs" t="Include" />
             <e p="Enemy_Data.cs" t="Include" />
-            <e p="Enemy_Health.cs" t="Include" />
             <e p="Enemy_Projectile.cs" t="Include" />
             <e p="Enemy_Projectile_Fat.cs" t="Include" />
             <e p="Enemy_Projectile_Normal.cs" t="Include" />

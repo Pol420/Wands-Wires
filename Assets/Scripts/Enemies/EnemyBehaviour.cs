@@ -90,7 +90,8 @@ public abstract class EnemyBehaviour : MonoBehaviour
     {
         var playerPosition = player.position;
         transform.LookAt(new Vector3(playerPosition.x, transform.position.y, playerPosition.z));
-        shootingPoint.transform.LookAt(playerPosition + new Vector3(0,1,0));
+        if(shootingPoint != null)
+            shootingPoint.transform.LookAt(playerPosition + new Vector3(0,1,0));
     }
 
     public bool InAttackRange()

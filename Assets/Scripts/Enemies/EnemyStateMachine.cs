@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
+[RequireComponent(typeof(Enemy_Data))]
 public class EnemyStateMachine : MonoBehaviour
 {
     private Transform player;

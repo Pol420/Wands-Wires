@@ -71,9 +71,11 @@ GameObject:
   - component: {fileID: 3494929045055973975}
   - component: {fileID: 3494929045055973968}
   - component: {fileID: 3494929045055973969}
-  - component: {fileID: 489713004}
   - component: {fileID: 86843190665879540}
   - component: {fileID: 8365797977044108873}
+  - component: {fileID: 2238307860015567462}
+  - component: {fileID: 6800139036390224371}
+  - component: {fileID: 6397637259199128109}
   m_Layer: 0
   m_Name: Enemy_Flying_Electric
   m_TagString: Enemy
@@ -182,25 +184,6 @@ NavMeshAgent:
   m_BaseOffset: 2.91
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &489713004
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3494929045055973971}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 674192d6278519f4dbb2b13faed4b0ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  enemyStats: {fileID: 11400000, guid: 90103e1f35f67924d8b236a1c61e71c5, type: 2}
-  shootingPoint: {fileID: 3494929046204060837}
-  patrolPositions:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!95 &86843190665879540
 Animator:
   serializedVersion: 3
@@ -240,6 +223,45 @@ MonoBehaviour:
   singularDeath:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2238307860015567462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3494929045055973971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d451011c8244ca243af7b07e263d8e84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyStats: {fileID: 11400000, guid: 90103e1f35f67924d8b236a1c61e71c5, type: 2}
+--- !u!114 &6800139036390224371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3494929045055973971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60bf2aeb9d219634991619b86f4d82c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6397637259199128109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3494929045055973971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c2ec28e17d27474baa8e9268af16884, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  patrolPositions: []
+  shootingPoint: {fileID: 3494929046204060837}
 --- !u!1 &3494929046204060837
 GameObject:
   m_ObjectHideFlags: 0
