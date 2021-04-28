@@ -74,6 +74,7 @@ public class LockedDoor : MonoBehaviour
             {
                 ActivateCollisions(true);
                 trapped = false;
+                EnemyPool();
             }
             playerInRange = true;
         }
@@ -96,6 +97,6 @@ public class LockedDoor : MonoBehaviour
         killsToOpen = Mathf.Min(killsToOpen, enemyCount);
     }
 
-    private void AddKill() { kills++; if (kills >= killsToOpen) Open(); }
+    private void AddKill() { if (lockType == DoorLock.Kills) { kills++; if (kills >= killsToOpen) Open(); } }
 }
 public enum DoorLock { Key, Kills}
