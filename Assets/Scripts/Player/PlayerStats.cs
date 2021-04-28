@@ -37,7 +37,9 @@ public class PlayerStats : MonoBehaviour
         else if (instance != this) { instance.transform.GetChild(0).position = transform.GetChild(0).position; Destroy(gameObject); }
     }
 
-    void Start()
+    void Start() { LevelManager.levelLoad.AddListener(ResetPlayer); ResetPlayer(); }
+
+    private void ResetPlayer()
     {
         SetHealth(maxHealth);
         SetShield(maxShield);
