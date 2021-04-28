@@ -12,7 +12,6 @@ using Vector3 = UnityEngine.Vector3;
 
 public class Enemy_Behaviour_Fat : MonoBehaviour
 {
-    [SerializeField] private GameObject player;
     [SerializeField] private Enemy_Stats enemyStats;
     [SerializeField] private GameObject shootingPoint;
 
@@ -24,6 +23,7 @@ public class Enemy_Behaviour_Fat : MonoBehaviour
     private NavMeshAgent navMeshAgent;
 
     private Animator animator;
+    private Transform player;
 
     enum EnemyStates {ATTACK, CHASE, PATROL}
     private EnemyStates state;
@@ -36,9 +36,9 @@ public class Enemy_Behaviour_Fat : MonoBehaviour
         navMeshAgent.speed = enemyStats.speed;
         state = EnemyStates.PATROL;
         animator = GetComponent<Animator>();
-        if (player == null)
-            player = DefaultPlayer();
+        player = PlayerStats.Instance().transform.GetChild(0);
     }
+    
 
     // Update is called once per frame
     void Update()
@@ -71,7 +71,7 @@ public class Enemy_Behaviour_Fat : MonoBehaviour
 
     private void Chase()
     {
-        navMeshAgent.destination = player.transform.position;
+        navMeshAgent.destination = player.position;
     }
 
     private void EndChase()
@@ -116,22 +116,17 @@ public class Enemy_Behaviour_Fat : MonoBehaviour
 
     private bool InDetectionRange()
     {
-        return Vector3.Distance(player.transform.position, transform.position) <= enemyStats.maxSightDistance;
+        return Vector3.Distance(player.position, transform.position) <= enemyStats.maxSightDistance;
     }
 
     private bool InAttackRange()
     {
-        return Vector3.Distance(player.transform.position, transform.position) <= enemyStats.attackDistance;
+        return Vector3.Distance(player.position, transform.position) <= enemyStats.attackDistance;
     }
     
     private void LookAtPlayer()
     {
-        var playerPosition = player.transform.position;
+        var playerPosition = player.position;
         transform.LookAt(new Vector3(playerPosition.x, transform.position.y, playerPosition.z));
-    }
-
-    private GameObject DefaultPlayer()
-    {
-        return GameObject.FindWithTag("Player");
     }
 }

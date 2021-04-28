@@ -15,6 +15,7 @@ public class LockedDoor : MonoBehaviour
 
     [Header("Kills Settings")]
     [SerializeField] private int killsToOpen = 20;
+    [SerializeField] private bool killAll = false;
     [SerializeField] private Vector3 areaPosition = Vector3.zero;
     [SerializeField] private Vector3 areaSize = Vector3.one;
     private int kills;
@@ -54,7 +55,7 @@ public class LockedDoor : MonoBehaviour
         {
             if (playerInRange)
             {
-                if (Input.GetButton("Fire2"))
+                if (Input.GetButtonDown("Fire2"))
                 {
                     if (player.GetKey(code)) Open();
                     else Debug.Log("You don't have a " + code);
@@ -68,17 +69,22 @@ public class LockedDoor : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player")) playerInRange = true;
-        if (trapped)
+        if (other.gameObject.CompareTag("Player"))
         {
-            ActivateCollisions(true);
-            trapped = false;
+            if (trapped)
+            {
+                ActivateCollisions(true);
+                trapped = false;
+                EnemyPool();
+            }
+            playerInRange = true;
         }
     }
     private void OnTriggerExit(Collider other) { if (other.gameObject.CompareTag("Player")) playerInRange = false; }
 
     private void EnemyPool()
     {
+        if(killAll) kills = 0;
         Collider[] colliders = Physics.OverlapBox(transform.position + areaPosition, areaSize / 2f);
         int enemyCount = 0;
         foreach (Collider c in colliders)
@@ -93,6 +99,14 @@ public class LockedDoor : MonoBehaviour
         killsToOpen = Mathf.Min(killsToOpen, enemyCount);
     }
 
-    private void AddKill() { kills++; if (kills >= killsToOpen) Open(); }
+    private void AddKill()
+    {
+        if (lockType == DoorLock.Kills)
+        {
+            if (killAll) EnemyPool();
+            else kills++;
+            if (kills >= killsToOpen) Open();
+        }
+    }
 }
 public enum DoorLock { Key, Kills}

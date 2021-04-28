@@ -3625,6 +3625,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1865051231}
     m_Modifications:
+    - target: {fileID: 7911257359562445369, guid: 630918a8fa98bdb42a00a5e482eb24e5, type: 3}
+      propertyPath: lockType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911257359562445369, guid: 630918a8fa98bdb42a00a5e482eb24e5, type: 3}
+      propertyPath: killsToOpen
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7911257359562445371, guid: 630918a8fa98bdb42a00a5e482eb24e5, type: 3}
       propertyPath: m_RootOrder
       value: 2

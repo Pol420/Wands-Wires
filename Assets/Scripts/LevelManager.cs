@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -8,7 +9,8 @@ public class LevelManager : MonoBehaviour
 {
     private static LevelManager instance;
     public static LevelManager Instance() { return instance; }
-    
+    public static UnityEvent levelLoad;
+
     private GameObject loadingScreen;
     private Slider loadBar;
     private AsyncOperation loading;
@@ -22,6 +24,7 @@ public class LevelManager : MonoBehaviour
             loadingScreen = transform.GetChild(0).gameObject;
             loadBar = loadingScreen.GetComponentInChildren<Slider>();
             loadingScreen.SetActive(false);
+            levelLoad = new UnityEvent();
         }
         else if (instance != this) Destroy(gameObject);
     }
@@ -34,6 +37,7 @@ public class LevelManager : MonoBehaviour
             {
                 loading = null;
                 loadingScreen.SetActive(false);
+                levelLoad.Invoke();
             }
             else loadBar.value = Mathf.Clamp01(loading.progress / 0.9f);
         }
