@@ -15,6 +15,7 @@ public class LockedDoor : MonoBehaviour
 
     [Header("Kills Settings")]
     [SerializeField] private int killsToOpen = 20;
+    [SerializeField] private bool killAll = false;
     [SerializeField] private Vector3 areaPosition = Vector3.zero;
     [SerializeField] private Vector3 areaSize = Vector3.one;
     private int kills;
@@ -83,6 +84,7 @@ public class LockedDoor : MonoBehaviour
 
     private void EnemyPool()
     {
+        if(killAll) kills = 0;
         Collider[] colliders = Physics.OverlapBox(transform.position + areaPosition, areaSize / 2f);
         int enemyCount = 0;
         foreach (Collider c in colliders)
@@ -97,6 +99,14 @@ public class LockedDoor : MonoBehaviour
         killsToOpen = Mathf.Min(killsToOpen, enemyCount);
     }
 
-    private void AddKill() { if (lockType == DoorLock.Kills) { kills++; if (kills >= killsToOpen) Open(); } }
+    private void AddKill()
+    {
+        if (lockType == DoorLock.Kills)
+        {
+            if (killAll) EnemyPool();
+            else kills++;
+            if (kills >= killsToOpen) Open();
+        }
+    }
 }
 public enum DoorLock { Key, Kills}
