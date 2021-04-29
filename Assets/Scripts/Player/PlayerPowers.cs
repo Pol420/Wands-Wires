@@ -28,6 +28,7 @@ public class PlayerPowers : MonoBehaviour
 
     private HUD hud;
     public void SetHud(HUD hud) { this.hud = hud; }
+    private int startingCharge;
 
     private void Awake()
     {
@@ -42,10 +43,21 @@ public class PlayerPowers : MonoBehaviour
     void Start()
     {
         Enemy.death.AddListener(OnKill);
+        LevelManager.levelLoad.AddListener(InitPlayer);
+        InitPlayer();
+        LevelManager.levelReset.AddListener(ResetPowers);
+        ResetPowers();
+    }
+
+    private void InitPlayer()  { startingCharge = slowCharge; }
+
+    private void ResetPowers()
+    {
         invincibleDuration = Time.deltaTime;
         infiniteAmmoDuration = Time.deltaTime;
         deadlyDuration = Time.deltaTime;
         slowmoDuration = Time.deltaTime;
+        slowCharge = startingCharge;
         SetSlowCharge();
     }
 

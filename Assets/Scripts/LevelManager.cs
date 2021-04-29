@@ -10,10 +10,12 @@ public class LevelManager : MonoBehaviour
     private static LevelManager instance;
     public static LevelManager Instance() { return instance; }
     public static UnityEvent levelLoad;
+    public static UnityEvent levelReset;
 
     private GameObject loadingScreen;
     private Slider loadBar;
     private AsyncOperation loading;
+    private bool reset;
 
     private void Awake()
     {
@@ -25,6 +27,8 @@ public class LevelManager : MonoBehaviour
             loadBar = loadingScreen.GetComponentInChildren<Slider>();
             loadingScreen.SetActive(false);
             levelLoad = new UnityEvent();
+            levelReset = new UnityEvent();
+            reset = false;
         }
         else if (instance != this) Destroy(gameObject);
     }
@@ -37,14 +41,16 @@ public class LevelManager : MonoBehaviour
             {
                 loading = null;
                 loadingScreen.SetActive(false);
-                levelLoad.Invoke();
+                if (reset) levelReset.Invoke();
+                else levelLoad.Invoke();
+                reset = false;
             }
             else loadBar.value = Mathf.Clamp01(loading.progress / 0.9f);
         }
     }
 
     public void LoadNextScene() { LoadScene(CurrentScene() + 1); }
-    public void ReloadScene() { LoadScene(CurrentScene()); }
+    public void ReloadScene() { reset = true; LoadScene(CurrentScene()); }
     public void LoadScene(string sceneName) { LoadScene(SceneManager.GetSceneByName(sceneName).buildIndex); }
 
     private int CurrentScene() { return SceneManager.GetActiveScene().buildIndex; }

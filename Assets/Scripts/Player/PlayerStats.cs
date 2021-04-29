@@ -18,12 +18,23 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] [Range(0f,500f)] private float maxHealth = 300f;
     [SerializeField] [Range(0f,500f)] private float maxShield = 300f;
     [SerializeField] [Range(0f, 1f)] private float shieldAbsorption = 0.75f;
-    [SerializeField] private Ammo currentAmmo;
+    [SerializeField] private Ammo currentAmmo = Ammo.Fire;
+
+    [Header("Options")]
+    [SerializeField] private bool healOnDeath = true;
+    [SerializeField] private bool resetHealthOnLevelComplete = false;
+    [SerializeField] private bool resetAmmoOnDeath = false;
+    [SerializeField] private bool resetAmmoOnLevelComplete = false;
+
     private float currentHealth;
     private float currentShield;
 
     private List<string> keyItems;
     private PlayerPowers powers;
+
+    private Vector3Int startingAmmo;
+    private float startingHealth;
+    private float startingShield;
 
     private void Awake()
     {
@@ -37,13 +48,39 @@ public class PlayerStats : MonoBehaviour
         else if (instance != this) { instance.transform.GetChild(0).position = transform.GetChild(0).position; Destroy(gameObject); }
     }
 
-    void Start() { LevelManager.levelLoad.AddListener(ResetPlayer); ResetPlayer(); }
+    void Start()
+    {
+        LevelManager.levelLoad.AddListener(InitPlayer);
+        InitPlayer();
+        LevelManager.levelReset.AddListener(ResetPlayer);
+        ResetPlayer();
+    }
+
+    private void InitPlayer()
+    {
+        if(!resetAmmoOnLevelComplete) startingAmmo = ammo;
+        if (!resetHealthOnLevelComplete)
+        {
+            startingHealth = currentHealth;
+            startingShield = currentShield;
+        }
+    }
 
     private void ResetPlayer()
     {
-        SetHealth(maxHealth);
-        SetShield(maxShield);
+        if (resetHealthOnLevelComplete)
+        {
+            SetHealth(maxHealth);
+            SetShield(maxShield);
+        }
+        else
+        {
+            SetHealth(startingHealth);
+            SetShield(startingShield);
+        }
         SwitchAmmo(Ammo.Fire);
+        if (resetAmmoOnLevelComplete) new Vector3Int(99, 99, 99);
+        else ammo = startingAmmo;
         AddFireAmmo(0);
         AddWaterAmmo(0);
         AddTeslaAmmo(0);
