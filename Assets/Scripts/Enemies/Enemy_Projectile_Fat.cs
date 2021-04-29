@@ -23,12 +23,20 @@ public class Enemy_Projectile_Fat : MonoBehaviour, Enemy_Projectile
         GiveInitialSpeed();
     }
 
-    private void OnCollisionEnter(Collision other)
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.transform.CompareTag("Player"))
+            Destroy(gameObject);
+        else if(other.transform.CompareTag("Untagged"))
+            Destroy(gameObject);
+    }
+    /*private void OnTriggerEnter()
     {
         if(other.transform.CompareTag("Player"))
             Destroy(gameObject);
         
-    }
+    }*/
 
     private void GiveInitialSpeed()
     {
