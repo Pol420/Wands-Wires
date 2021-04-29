@@ -2258,7 +2258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mouseSensitivity: 2
-  moveSpeed: 16
+  moveSpeed: 18
   jumpPower: 1024
   axis: {x: 0, y: 0}
   mouse: {x: 0, y: 0}
@@ -3379,6 +3379,10 @@ MonoBehaviour:
   maxShield: 200
   shieldAbsorption: 0.75
   currentAmmo: 0
+  healOnDeath: 1
+  resetHealthOnLevelComplete: 0
+  resetAmmoOnDeath: 0
+  resetAmmoOnLevelComplete: 0
 --- !u!114 &4726162964607739008
 MonoBehaviour:
   m_ObjectHideFlags: 0
