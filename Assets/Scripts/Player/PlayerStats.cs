@@ -61,8 +61,10 @@ public class PlayerStats : MonoBehaviour
         if(!resetAmmoOnLevelComplete) startingAmmo = ammo;
         if (!resetHealthOnLevelComplete)
         {
-            startingHealth = currentHealth;
-            startingShield = currentShield;
+            if (currentHealth != 0) startingHealth = currentHealth;
+            else startingHealth = maxHealth;
+            if (currentShield != 0) startingShield = currentShield;
+            else startingShield = maxShield;
         }
     }
 
