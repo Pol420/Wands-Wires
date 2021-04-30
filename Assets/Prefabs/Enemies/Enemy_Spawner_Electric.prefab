@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6634616818032469501}
   m_Layer: 0
   m_Name: body
-  m_TagString: Enemy
+  m_TagString: EnemyPart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69,7 +69,7 @@ GameObject:
   - component: {fileID: 8012977574023841771}
   m_Layer: 0
   m_Name: ShootingPoint
-  m_TagString: Enemy
+  m_TagString: EnemyPart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -308,7 +308,7 @@ GameObject:
   - component: {fileID: 2883449010724361158}
   m_Layer: 0
   m_Name: head
-  m_TagString: Enemy
+  m_TagString: EnemyPart
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

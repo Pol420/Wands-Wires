@@ -622,6 +622,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911257359562445372, guid: 630918a8fa98bdb42a00a5e482eb24e5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 630918a8fa98bdb42a00a5e482eb24e5, type: 3}
 --- !u!1 &64673998
@@ -2189,6 +2193,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7911257359562445372, guid: 630918a8fa98bdb42a00a5e482eb24e5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 630918a8fa98bdb42a00a5e482eb24e5, type: 3}
 --- !u!1 &275696591
@@ -3656,6 +3664,10 @@ PrefabInstance:
     - target: {fileID: 7911257359562445372, guid: 630918a8fa98bdb42a00a5e482eb24e5, type: 3}
       propertyPath: m_Name
       value: Door (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911257359562445372, guid: 630918a8fa98bdb42a00a5e482eb24e5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 630918a8fa98bdb42a00a5e482eb24e5, type: 3}
@@ -7787,6 +7799,10 @@ PrefabInstance:
     - target: {fileID: 7911257359562445372, guid: 630918a8fa98bdb42a00a5e482eb24e5, type: 3}
       propertyPath: m_Name
       value: Door (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911257359562445372, guid: 630918a8fa98bdb42a00a5e482eb24e5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 630918a8fa98bdb42a00a5e482eb24e5, type: 3}
@@ -13881,6 +13897,10 @@ PrefabInstance:
     - target: {fileID: 7911257359562445372, guid: 630918a8fa98bdb42a00a5e482eb24e5, type: 3}
       propertyPath: m_Name
       value: Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911257359562445372, guid: 630918a8fa98bdb42a00a5e482eb24e5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 630918a8fa98bdb42a00a5e482eb24e5, type: 3}

@@ -10,6 +10,7 @@ TagManager:
   - EnemyAttack
   - EnemyProjectile
   - PatrolPosition
+  - EnemyPart
   layers:
   - Default
   - TransparentFX
