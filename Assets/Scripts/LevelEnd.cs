@@ -6,7 +6,7 @@ using UnityEngine;
 public class LevelEnd : MonoBehaviour
 {
     [SerializeField] private bool loadNext = true;
-    [SerializeField] private string levelName = "do not use this yet";
+    //[SerializeField] private string levelName = "do not use this yet";
     [SerializeField] private int levelIndex = 0;
 
 

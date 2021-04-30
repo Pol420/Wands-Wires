@@ -49,7 +49,7 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    public void LoadNextScene() { LoadScene(CurrentScene() + 1); }
+    public void LoadNextScene() { LoadScene((CurrentScene() + 1) % SceneManager.sceneCount); }
     public void ReloadScene() { reset = true; LoadScene(CurrentScene()); }
     public void LoadScene(string sceneName) { LoadScene(SceneManager.GetSceneByName(sceneName).buildIndex); }
 

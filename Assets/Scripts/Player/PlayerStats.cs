@@ -58,19 +58,23 @@ public class PlayerStats : MonoBehaviour
 
     private void InitPlayer()
     {
-        if(!resetAmmoOnLevelComplete) startingAmmo = ammo;
-        if (!resetHealthOnLevelComplete)
+        if (resetAmmoOnLevelComplete) startingAmmo = new Vector3Int(99, 99, 99);
+        else startingAmmo = ammo;
+        if (currentHealth > 0 && !resetHealthOnLevelComplete)
         {
-            if (currentHealth != 0) startingHealth = currentHealth;
-            else startingHealth = maxHealth;
-            if (currentShield != 0) startingShield = currentShield;
-            else startingShield = maxShield;
+            startingHealth = currentHealth;
+            startingShield = currentShield;
+        }
+        else
+        {
+            startingHealth = maxHealth;
+            startingShield = maxShield;
         }
     }
 
     private void ResetPlayer()
     {
-        if (resetHealthOnLevelComplete)
+        if (healOnDeath)
         {
             SetHealth(maxHealth);
             SetShield(maxShield);
@@ -81,7 +85,7 @@ public class PlayerStats : MonoBehaviour
             SetShield(startingShield);
         }
         SwitchAmmo(Ammo.Fire);
-        if (resetAmmoOnLevelComplete) new Vector3Int(99, 99, 99);
+        if (resetAmmoOnDeath) ammo = new Vector3Int(99, 99, 99);
         else ammo = startingAmmo;
         AddFireAmmo(0);
         AddWaterAmmo(0);

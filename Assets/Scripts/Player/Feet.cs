@@ -7,7 +7,7 @@ public class Feet : MonoBehaviour
 {
     private List<GameObject> grounds;
 
-    private void Start() { grounds = new List<GameObject>(); LevelManager.levelLoad.AddListener(ClearFeet); }
+    private void Start() { grounds = new List<GameObject>(); LevelManager.levelLoad.AddListener(ClearFeet); LevelManager.levelReset.AddListener(ClearFeet); }
 
     private void OnTriggerEnter(Collider other) { if (other.CompareTag("Ground")) grounds.Add(other.gameObject); }
     private void OnTriggerExit(Collider other) { if (other.CompareTag("Ground")) grounds.Remove(other.gameObject); }
