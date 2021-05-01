@@ -92,6 +92,13 @@ public abstract class Weapon : MonoBehaviour
     protected abstract void Shoot(GameObject bullet);
     protected abstract void SubStart();
     protected abstract void SubUpdate();
-
+    protected bool OutOfAmmo() { return holder.GetFireAmmo() * holder.GetWaterAmmo() * holder.GetTeslaAmmo() == 0; }
+    protected void SpendRandomAmmo()
+    {
+        int roll = Random.Range(0, 3);
+        if(roll == 0) holder.AddFireAmmo(-1);
+        else if (roll == 1) holder.AddWaterAmmo(-1); 
+        else holder.AddTeslaAmmo(-1);
+    }
 }
 public enum Ammo{Fire, Water, Tesla}

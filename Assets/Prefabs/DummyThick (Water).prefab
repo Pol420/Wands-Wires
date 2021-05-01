@@ -673,6 +673,10 @@ MonoBehaviour:
   health: 100
   healthBar: {fileID: 0}
   type: 1
+  pickups: []
+  singularDeath:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &4919004038460964188
 MonoBehaviour:
   m_ObjectHideFlags: 0

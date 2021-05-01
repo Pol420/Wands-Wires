@@ -109,4 +109,4 @@ public class LockedDoor : MonoBehaviour
         }
     }
 }
-public enum DoorLock { Key, Kills}
+public enum DoorLock { Key, Kills }
