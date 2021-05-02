@@ -42,7 +42,7 @@ public class PlayerPowers : MonoBehaviour
 
     void Start()
     {
-        Enemy.death.AddListener(OnKill);
+        //Enemy.death.AddListener(OnKill);
         LevelManager.levelLoad.AddListener(InitPlayer);
         InitPlayer();
         LevelManager.levelReset.AddListener(ResetPowers);

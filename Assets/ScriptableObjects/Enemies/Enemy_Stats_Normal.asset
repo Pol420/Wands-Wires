@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Enemy_Stats_Normal
   m_EditorClassIdentifier: 
   attackDistance: 6
-  shootDistance: 18
+  shootDistance: 50
   shootDamage: 20
   attackDamage: 30
-  maxSightDistance: 30
+  maxSightDistance: 80
   maxTimeToShoot: 0.5
   maxTimeToAttack: 0.8
   maxHealth: 100
-  speed: 10
+  speed: 50
   projectile: {fileID: 5916056238211575011, guid: 1c82f71e0fefa0e4ba60a3e4b84de31e, type: 3}

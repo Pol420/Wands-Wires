@@ -20,5 +20,5 @@ MonoBehaviour:
   maxTimeToShoot: -1
   maxTimeToAttack: 1
   maxHealth: 200
-  speed: 3.5
+  speed: 25
   projectile: {fileID: 5916056238211575011, guid: bf335991e836b2a4eb0bcab088c99f9f, type: 3}

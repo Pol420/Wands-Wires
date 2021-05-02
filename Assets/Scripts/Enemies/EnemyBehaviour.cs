@@ -22,11 +22,13 @@ public abstract class EnemyBehaviour : MonoBehaviour
     void Start()
     {
         player = PlayerStats.Instance().transform.GetChild(0);
-        navMeshAgent = GetComponent<NavMeshAgent>();
         enemyData = GetComponent<Enemy_Data>();
+        navMeshAgent = GetComponent<NavMeshAgent>();
+        navMeshAgent.speed = enemyData.GetSpeed();
         timeToAttack = 0.0f;
         timeToShoot = 0.0f;
         animator = GetComponent<Animator>();
+        patrolPosition = 0;
 
         if (patrolPositions.Length <= 0)
             patrolPositions = DefaultPatrolPositions();
@@ -138,10 +140,11 @@ public abstract class EnemyBehaviour : MonoBehaviour
     private GameObject[] DefaultPatrolPositions()
     {
         var newPatrolPositions = GameObject.FindGameObjectsWithTag("PatrolPosition");
-
+        
         if (newPatrolPositions.Length > 0)
             return newPatrolPositions;
 
+        newPatrolPositions = new GameObject[1];
         newPatrolPositions[0] = gameObject;
         return newPatrolPositions;
     }

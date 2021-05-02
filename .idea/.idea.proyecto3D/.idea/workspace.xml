@@ -2,31 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="436568db-9915-4505-bab8-3a191725d208" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/TEMP_GroundDungeon.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/TEMP_GroundDungeon.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/TEMP_StairsDungeon.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/TEMP_StairsDungeon.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/TEMP_WallDungeon.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/TEMP_WallDungeon.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/TEMP_WaterSewers.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/TEMP_WaterSewers.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Scenari.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Scenari/suelo.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Scenari/suelo.obj.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/ScenaPrueba.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/ScenaPrueba.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/ScenaPrueba.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/ScenaPrueba/NavMesh.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/ScenaPrueba/NavMesh.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Fat.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Fat.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Fat_Electric.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Fat_Electric.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Fat_Fire.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Fat_Fire.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Fat_Water.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Fat_Water.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Flying.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Flying.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Flying_Electric.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Flying_Electric.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Flying_Fire.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Flying_Fire.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Flying_Water.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Flying_Water.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Normal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Normal.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Normal_Electric.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Normal_Electric.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Normal_Fire.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Normal_Fire.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Normal_New.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Normal_New.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Normal_Water.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Normal_Water.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Spawner.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Spawner.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Spawner_Electric.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Spawner_Electric.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Spawner_FIre.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Spawner_FIre.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Spawner_Water.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Spawner_Water.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Spawner_new.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Spawner_new.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Enemies/Enemy_projectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Enemies/Enemy_projectile.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Enemies/Enemy_projectile_Flying.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Enemies/Enemy_projectile_Flying.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Enemies/Enemy_projectile_Normal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Enemies/Enemy_projectile_Normal.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Projectile_Fat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Projectile_Fat.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Projectile_Normal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Projectile_Normal.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerDamageDetection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerDamageDetection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Enemies/Enemy_Stats_Fat.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Enemies/Enemy_Stats_Fat.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Enemies/Enemy_Stats_Flying.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Enemies/Enemy_Stats_Flying.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Enemies/Enemy_Stats_Normal.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Enemies/Enemy_Stats_Normal.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Enemies/Enemy_Stats_Spawner.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Enemies/Enemy_Stats_Spawner.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Data.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Data.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerPowers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerPowers.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +70,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Stats.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Behaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerControls.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerPowers.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/BoundingBox.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Projectile.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/Feet.cs" />
@@ -80,15 +81,16 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Behaviour_Fat.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviourFat.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviourNormal.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Data.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviourFlying.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviourSpawner.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerStats.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyStateMachine.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerDamageDetection.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Projectile_Normal.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Projectile_Fat.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerPowers.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Data.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviour.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rJEGPnjYAxRO3ccFd4NRy7lvQY" />
@@ -110,6 +112,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../build_prueba/Wands &amp; Wires.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="E:\Tecnocampus\4o_ano\Trimestre_3\build_prueba" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -155,6 +165,9 @@
       <workItem from="1619598628742" duration="7061000" />
       <workItem from="1619615345896" duration="4088000" />
       <workItem from="1619715893604" duration="1806000" />
+      <workItem from="1619807465136" duration="854000" />
+      <workItem from="1619952619539" duration="1529000" />
+      <workItem from="1619972493313" duration="2640000" />
     </task>
     <servers />
   </component>

@@ -13,5 +13,6 @@ public class Enemy_Data : MonoBehaviour
     public float GetShootDistance() { return enemyStats.shootDistance; }
     public float GetMaxTimeToAttack() { return enemyStats.maxTimeToAttack; }
     public float GetMaxTimeToShoot() { return enemyStats.maxTimeToShoot; }
+    public float GetSpeed() { return enemyStats.speed; }
     public GameObject GetProjectile() { return enemyStats.projectile; }
 }
