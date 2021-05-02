@@ -24,12 +24,16 @@ public class BodyPart : MonoBehaviour
         GameObject other = collision.gameObject;
         if (other.CompareTag("PlayerProjectile"))
         {
-            Vector3 point = collision.contacts[0].point;
             Projectile projectile = other.GetComponent<Projectile>();
-            float typeMultiplier = GetTypeMultiplier(projectile.type);
-            Hurt(point, (point - transform.position).normalized, Mathf.RoundToInt(projectile.damage * damageMultiplier * typeMultiplier), projectile.type);
-            if (typeMultiplier == 1.25f) effectiveHit.Invoke();
+            Hurt(collision.contacts[0].point, projectile.damage, projectile.type);
         }
+    }
+
+    public void Hurt(Vector3 position, float baseDamage, Ammo ammoType)
+    {
+        float typeMultiplier = GetTypeMultiplier(ammoType);
+        Hurt(position, (position - transform.position).normalized, Mathf.RoundToInt(baseDamage * damageMultiplier * typeMultiplier), ammoType);
+        if (typeMultiplier == 1.25f) effectiveHit.Invoke();
     }
 
     private float GetTypeMultiplier(Ammo projectileType)
