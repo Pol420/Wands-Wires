@@ -88,7 +88,7 @@ public class MegaPrism : Weapon
             closestDist = Vector3.Distance(bulletHole.position, hit.point);
             int roll = Random.Range(0, 3);
             Ammo randomAmmo = (roll == 0? Ammo.Fire:(roll == 1? Ammo.Water:Ammo.Tesla));
-            if (hit.collider.CompareTag("Enemy")) hit.collider.gameObject.GetComponent<BodyPart>().Hurt(hit.point, Damage(), randomAmmo);
+            if (hit.collider.CompareTag("EnemyPart")) hit.collider.gameObject.GetComponent<BodyPart>().Hurt(hit.point, Damage(), randomAmmo);
         }
     }
 

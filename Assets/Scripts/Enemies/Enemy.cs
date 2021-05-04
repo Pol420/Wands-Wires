@@ -7,11 +7,15 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Animator))]
 public class Enemy : MonoBehaviour
 {
+    [Header("References")]
     [SerializeField] private GameObject floatyTextPrefab = null;
-    [SerializeField] private int health = 100;
     [SerializeField] private Slider healthBar = null;
+    [SerializeField] private StatusPickup[] pickups; //TODO weighed drops
+    [SerializeField] private Material[] mats = new Material[] { null, null, null };
+
+    [Header("Stats")]
+    [SerializeField] private int health = 100;
     [SerializeField] protected Ammo type = Ammo.Fire;
-    [SerializeField] private StatusPickup[] pickups;
     private int currentHealth;
     private Animator anim;
     private bool hb;
@@ -33,6 +37,14 @@ public class Enemy : MonoBehaviour
         currentHealth = health;
         anim = GetComponent<Animator>();
         hb = healthBar != null;
+        Renderer rend = GetComponent<Renderer>();
+        switch(type)
+        {
+            case Ammo.Fire: rend.material = mats[0]; break;
+            case Ammo.Water: rend.material = mats[1]; break;
+            case Ammo.Tesla: rend.material = mats[2]; break;
+            default: break;
+        }
     }
 
     public void Hurt(int amount)

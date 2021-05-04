@@ -103,9 +103,9 @@ GameObject:
   - component: {fileID: 8012977574662141683}
   - component: {fileID: 2727127690050505342}
   - component: {fileID: 7866907330955829339}
-  - component: {fileID: 2469684982326820475}
-  - component: {fileID: 2113946133259843618}
-  - component: {fileID: 5313362966153962269}
+  - component: {fileID: -6725970622701268010}
+  - component: {fileID: 3595140833794793962}
+  - component: {fileID: 1337334879619756657}
   m_Layer: 0
   m_Name: Enemy_Spawner
   m_TagString: Enemy
@@ -246,27 +246,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   floatyTextPrefab: {fileID: 1996404576058732650, guid: 0e278bd307087e149ad553cc97a03605, type: 3}
-  health: 100
   healthBar: {fileID: 0}
-  type: 0
   pickups: []
+  mats:
+  - {fileID: 2100000, guid: 409636336ed57e34c8929aaaebb48cba, type: 2}
+  - {fileID: 2100000, guid: 409636336ed57e34c8929aaaebb48cba, type: 2}
+  - {fileID: 2100000, guid: 1d90c24684c344a478e825d3341e9015, type: 2}
+  health: 100
+  type: 0
   singularDeath:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &2469684982326820475
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8012977574662141581}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d451011c8244ca243af7b07e263d8e84, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyStats: {fileID: 11400000, guid: 2f3517f2d377c97478e305d13b895b62, type: 2}
---- !u!114 &2113946133259843618
+--- !u!114 &-6725970622701268010
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -278,7 +269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60bf2aeb9d219634991619b86f4d82c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5313362966153962269
+--- !u!114 &3595140833794793962
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -291,8 +282,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolPositions: []
-  shootingPoint: {fileID: 8012977574023841770}
-  enemyToSpawn: {fileID: 0}
+  shootingPoint: {fileID: 0}
+  enemiesToSpawn: []
+--- !u!114 &1337334879619756657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8012977574662141581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d451011c8244ca243af7b07e263d8e84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyStats: {fileID: 11400000, guid: 2f3517f2d377c97478e305d13b895b62, type: 2}
 --- !u!1 &8365754876702336971
 GameObject:
   m_ObjectHideFlags: 0

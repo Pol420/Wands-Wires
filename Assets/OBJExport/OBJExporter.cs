@@ -4,6 +4,7 @@ using System.Collections;
 using UnityEditor;
 using System.Text;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 /*=============================================================================
  |	    Project:  Unity3D Scene OBJ Exporter
@@ -162,7 +163,7 @@ public class OBJExporter : ScriptableWizard
         //work on export
         StringBuilder sb = new StringBuilder();
         StringBuilder sbMaterials = new StringBuilder();
-        sb.AppendLine("# Export of " + Application.loadedLevelName);
+        sb.AppendLine("# Export of " + SceneManager.GetActiveScene().name);
         sb.AppendLine("# from Aaro4130 OBJ Exporter " + versionString);
         if (generateMaterials)
         {
@@ -315,7 +316,7 @@ public class OBJExporter : ScriptableWizard
                 var tImporter = AssetImporter.GetAtPath(assetPath) as TextureImporter;
                 if (tImporter != null)
                 {
-                    tImporter.textureType = TextureImporterType.Advanced;
+                    tImporter.textureType = TextureImporterType.Default;
 
                     if (!tImporter.isReadable)
                     {
@@ -334,7 +335,7 @@ public class OBJExporter : ScriptableWizard
         }
         catch (System.Exception ex)
         {
-            Debug.Log("Could not export texture : " + t.name + ". is it readable?");
+            Debug.Log("Could not export texture : " + t.name + ". is it readable? Exception: " + ex);
             return "null";
         }
 

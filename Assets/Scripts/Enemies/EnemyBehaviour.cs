@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-[RequireComponent(typeof(EnemyStateMachine), typeof(NavMeshAgent))]
+[RequireComponent(typeof(Animator), typeof(NavMeshAgent), typeof(Enemy_Data))]
 public abstract class EnemyBehaviour : MonoBehaviour
 {
     [SerializeField] protected GameObject[] patrolPositions;
-    [SerializeField] protected GameObject shootingPoint;
+    [SerializeField] protected Transform shootingPoint = null;
     protected int patrolPosition;
     protected Transform player;
     protected Enemy_Data enemyData;
@@ -18,16 +18,16 @@ public abstract class EnemyBehaviour : MonoBehaviour
 
     protected NavMeshAgent navMeshAgent;
     
-    
     void Start()
     {
         player = PlayerStats.Instance().transform.GetChild(0);
         enemyData = GetComponent<Enemy_Data>();
         navMeshAgent = GetComponent<NavMeshAgent>();
+        animator = GetComponent<Animator>();
+        if(shootingPoint == null) shootingPoint = transform.GetChild(0);
         navMeshAgent.speed = enemyData.GetSpeed();
         timeToAttack = 0.0f;
         timeToShoot = 0.0f;
-        animator = GetComponent<Animator>();
         patrolPosition = 0;
 
         if (patrolPositions.Length <= 0)
@@ -78,12 +78,9 @@ public abstract class EnemyBehaviour : MonoBehaviour
                     {
                         newPosition = transform.position + transform.right *  
                             - (enemyData.GetShootDistance() - errorDistance);
-                        
                     }
-    
                 }
             }
-
             navMeshAgent.destination = newPosition;
         }
     }
@@ -92,8 +89,7 @@ public abstract class EnemyBehaviour : MonoBehaviour
     {
         var playerPosition = player.position;
         transform.LookAt(new Vector3(playerPosition.x, transform.position.y, playerPosition.z));
-        if(shootingPoint != null)
-            shootingPoint.transform.LookAt(playerPosition + new Vector3(0,1,0));
+        if(shootingPoint != null) shootingPoint.LookAt(playerPosition + new Vector3(0,1,0));
     }
 
     public bool InAttackRange()
@@ -133,7 +129,6 @@ public abstract class EnemyBehaviour : MonoBehaviour
     {
         a.y = 0;
         b.y = 0;
-
         return Vector3.Distance(a, b);
     }
 

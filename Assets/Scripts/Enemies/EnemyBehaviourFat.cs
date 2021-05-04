@@ -13,9 +13,6 @@ public class EnemyBehaviourFat : EnemyBehaviour
             animator.SetTrigger("Attack");
             timeToAttack = enemyData.GetMaxTimeToAttack();
         }
-        else
-        {
-            timeToAttack -= Time.deltaTime;
-        }
+        else timeToAttack -= Time.deltaTime;
     }
 }

@@ -213,10 +213,10 @@ GameObject:
   - component: {fileID: 360548724}
   - component: {fileID: 360548723}
   - component: {fileID: 2237245943984634502}
-  - component: {fileID: 2483822644055906692}
-  - component: {fileID: 297900150549291664}
+  - component: {fileID: 243492791227819540}
+  - component: {fileID: 1377829230025270839}
   m_Layer: 0
-  m_Name: Enemy_Fat
+  m_Name: Enemy_Fat_New
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -231,7 +231,7 @@ Transform:
   m_GameObject: {fileID: 8012977574662141581}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -17.63, y: 1.07, z: 9.59}
-  m_LocalScale: {x: 2.9368472, y: 3.5882268, z: 2.0451155}
+  m_LocalScale: {x: 5, y: 6, z: 4}
   m_Children:
   - {fileID: 8012977574023841771}
   - {fileID: 973697243}
@@ -356,10 +356,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   floatyTextPrefab: {fileID: 1996404576058732650, guid: 0e278bd307087e149ad553cc97a03605, type: 3}
-  health: 200
   healthBar: {fileID: 0}
-  type: 0
   pickups: []
+  mats:
+  - {fileID: 2100000, guid: 409636336ed57e34c8929aaaebb48cba, type: 2}
+  - {fileID: 2100000, guid: c45a591eb8e469b4482c1d094ca23a91, type: 2}
+  - {fileID: 2100000, guid: 1d90c24684c344a478e825d3341e9015, type: 2}
+  health: 200
+  type: 0
   singularDeath:
     m_PersistentCalls:
       m_Calls: []
@@ -376,7 +380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyStats: {fileID: 11400000, guid: 005606ecdc12f4745be8de632fa7908d, type: 2}
---- !u!114 &2483822644055906692
+--- !u!114 &243492791227819540
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -388,7 +392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60bf2aeb9d219634991619b86f4d82c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &297900150549291664
+--- !u!114 &1377829230025270839
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -401,7 +405,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolPositions: []
-  shootingPoint: {fileID: 8012977574023841770}
+  shootingPoint: {fileID: 0}
 --- !u!1 &8384358196557328932
 GameObject:
   m_ObjectHideFlags: 0
