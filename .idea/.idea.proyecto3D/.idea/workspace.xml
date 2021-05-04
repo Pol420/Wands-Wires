@@ -2,33 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="436568db-9915-4505-bab8-3a191725d208" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/TEMP_GroundDungeon.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/TEMP_GroundDungeon.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/TEMP_StairsDungeon.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/TEMP_StairsDungeon.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/TEMP_WallDungeon.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/TEMP_WallDungeon.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/TEMP_WaterSewers.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/TEMP_WaterSewers.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Scenari.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Scenari/suelo.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Scenari/suelo.obj.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/ScenaPrueba.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/ScenaPrueba.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/ScenaPrueba.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/ScenaPrueba/NavMesh.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/ScenaPrueba/NavMesh.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OBJExport/Documentation.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OBJExport/Documentation/docs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OBJExport/Documentation/docs/export.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OBJExport/Documentation/docs/export.html.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OBJExport/Documentation/docs/export_a.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OBJExport/Documentation/docs/export_a.html.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OBJExport/Documentation/docs/intro.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OBJExport/Documentation/docs/intro.html.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OBJExport/Documentation/docs/troubleshooting.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OBJExport/Documentation/docs/troubleshooting.html.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OBJExport/Documentation/imgs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OBJExport/Documentation/imgs/d_be.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OBJExport/Documentation/imgs/d_be.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OBJExport/Documentation/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OBJExport/Documentation/index.html.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OBJExport/Documentation/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OBJExport/Documentation/style.css.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OBJExport/OBJExporter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/OBJExport/OBJExporter.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Normal_Fire.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Enemy_Normal_Fire.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Enemies/Enemy_projectile_Normal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Enemies/Enemy_projectile_Normal.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Enemies/Enemy_Stats_Fat.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Enemies/Enemy_Stats_Fat.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Enemies/Enemy_Stats_Flying.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Enemies/Enemy_Stats_Flying.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Enemies/Enemy_Stats_Normal.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Enemies/Enemy_Stats_Normal.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Enemies/Enemy_Stats_Spawner.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Enemies/Enemy_Stats_Spawner.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Data.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Data.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerPowers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerPowers.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ScenaPrueba.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ScenaPrueba.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ScenaPrueba/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ScenaPrueba/NavMesh.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,14 +46,15 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Projectile_Normal.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Projectile_Fat.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviourFat.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Projectile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviourNormal.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Behaviour_Spawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Behaviour_Normal.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Data.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/OBJExport/OBJExporter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Projectile_Fat.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Projectile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviourSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerDamageDetection.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -168,6 +166,7 @@
       <workItem from="1619807465136" duration="854000" />
       <workItem from="1619952619539" duration="1529000" />
       <workItem from="1619972493313" duration="2640000" />
+      <workItem from="1620054921695" duration="1190000" />
     </task>
     <servers />
   </component>

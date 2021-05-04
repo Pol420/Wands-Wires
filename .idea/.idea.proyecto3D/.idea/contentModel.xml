@@ -6,6 +6,9 @@
     <e p="E:\Tecnocampus\4o_ano\Trimestre_3\proyecto3D" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="OBJExport" t="Include">
+          <e p="OBJExporter.cs" t="Include" />
+        </e>
         <e p="Scripts" t="Include">
           <e p="BoundingBox.cs" t="Include" />
           <e p="Destroyable.cs" t="Include" />
@@ -51,10 +54,12 @@
             <e p="[OUT] LongRangeWeapon.cs" t="Include" />
             <e p="[OUT] ShortRangeWeapon.cs" t="Include" />
             <e p="ChannelerWeapon.cs" t="Include" />
+            <e p="MegaPrism.cs" t="Include" />
             <e p="Projectiles" t="Include">
               <e p="[AOUT] SpecialProjectile.cs" t="Include" />
               <e p="[OUT] TeslaCharge.cs" t="Include" />
               <e p="[OUT] ThrownProjectile.cs" t="Include" />
+              <e p="LightRay.cs" t="Include" />
               <e p="Projectile.cs" t="Include" />
               <e p="StraightShot.cs" t="Include" />
             </e>
