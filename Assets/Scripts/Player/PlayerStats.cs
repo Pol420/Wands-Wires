@@ -159,9 +159,9 @@ public class PlayerStats : MonoBehaviour
     private void SetWaterAmmo(int amount) { ammo.y = Mathf.Clamp(amount, 0, 256); hud.SetWater(ammo.y); }
     private void SetTeslaAmmo(int amount) { ammo.z = Mathf.Clamp(amount, 0, 256); hud.SetTesla(ammo.z); }
 
-    public void AddFireAmmo(int amount) { SetFireAmmo(ammo.x + amount); }
-    public void AddWaterAmmo(int amount) { SetWaterAmmo(ammo.y + amount); }
-    public void AddTeslaAmmo(int amount) { SetTeslaAmmo(ammo.z + amount); }
+    public void AddFireAmmo(int amount) { if(!(amount < 0f && powers.InfiniteAmmo())) SetFireAmmo(ammo.x + amount); }
+    public void AddWaterAmmo(int amount) { if (!(amount < 0f && powers.InfiniteAmmo())) SetWaterAmmo(ammo.y + amount); }
+    public void AddTeslaAmmo(int amount) { if (!(amount < 0f && powers.InfiniteAmmo())) SetTeslaAmmo(ammo.z + amount); }
     public int GetFireAmmo() { return ammo.x; }
     public int GetWaterAmmo() { return ammo.y; }
     public int GetTeslaAmmo() { return ammo.z; }

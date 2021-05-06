@@ -9,4 +9,6 @@ public class KeyItem : PickableObject
     protected override void OnPickup() {  playerStats.AddKeyItem(keyCode, gameObject); }
 
     public string GetCode() { return keyCode; }
+
+    protected override void OnStart() { }
 }

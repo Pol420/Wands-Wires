@@ -216,7 +216,7 @@ GameObject:
   - component: {fileID: 243492791227819540}
   - component: {fileID: 1377829230025270839}
   m_Layer: 0
-  m_Name: Enemy_Fat_New
+  m_Name: Enemy_Fat
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -364,6 +364,9 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 1d90c24684c344a478e825d3341e9015, type: 2}
   health: 200
   type: 0
+  dropChance: 100
+  ammoToStatusChance: 75
+  powerupDropChance: 10
   singularDeath:
     m_PersistentCalls:
       m_Calls: []

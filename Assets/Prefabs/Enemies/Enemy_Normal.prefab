@@ -429,6 +429,9 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 1d90c24684c344a478e825d3341e9015, type: 2}
   health: 100
   type: 0
+  dropChance: 100
+  ammoToStatusChance: 75
+  powerupDropChance: 10
   singularDeath:
     m_PersistentCalls:
       m_Calls: []
