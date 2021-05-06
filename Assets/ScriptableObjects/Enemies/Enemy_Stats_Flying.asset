@@ -21,4 +21,4 @@ MonoBehaviour:
   maxTimeToAttack: 0
   maxHealth: 50
   speed: 50
-  projectile: {fileID: 5916056238211575011, guid: 980d3a264d7457f4589e9f1dddff88d0, type: 3}
+  projectile: {fileID: 5916056238211575011, guid: bf335991e836b2a4eb0bcab088c99f9f, type: 3}

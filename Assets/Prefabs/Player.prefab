@@ -120,7 +120,6 @@ GameObject:
   - component: {fileID: 927007592843876289}
   - component: {fileID: 927007592843876291}
   - component: {fileID: 927007592843876290}
-  - component: {fileID: 927007592843876292}
   m_Layer: 5
   m_Name: Ammo
   m_TagString: Untagged
@@ -144,7 +143,7 @@ RectTransform:
   - {fileID: 927007594689826939}
   - {fileID: 927007593464464670}
   m_Father: {fileID: 927007592870089207}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -189,34 +188,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &927007592843876292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 927007592843876288}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d3e784960bf48d4682b06d9179e9242, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toAdjust: []
-  fireText: {fileID: 927007593160920559}
-  waterText: {fileID: 927007594689826940}
-  teslaText: {fileID: 927007593464464671}
-  selector: {fileID: 927007592863130408}
-  healthBar: {fileID: 0}
-  shieldBar: {fileID: 0}
-  slowCharge: {fileID: 0}
-  secondSlowCharge: {fileID: 0}
-  slowIcon: {fileID: 0}
-  slowmo: {fileID: 0}
-  invincible: {fileID: 0}
-  infinite: {fileID: 0}
-  deadly: {fileID: 0}
-  KeyItems: {fileID: 0}
-  itemSpacing: 50
 --- !u!1 &927007592863130406
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,7 +406,7 @@ GameObject:
   - component: {fileID: 927007592870089210}
   - component: {fileID: 927007592870089209}
   - component: {fileID: 927007592870089208}
-  - component: {fileID: 927007592870089211}
+  - component: {fileID: 4311329859873195150}
   m_Layer: 5
   m_Name: HUD
   m_TagString: Untagged
@@ -455,8 +426,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 160902692279574242}
-  - {fileID: 927007592843876289}
   - {fileID: 927007594348648954}
+  - {fileID: 927007592843876289}
   - {fileID: 927007594112983277}
   - {fileID: 8401773233963533082}
   - {fileID: 8355010971229050770}
@@ -529,7 +500,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &927007592870089211
+--- !u!114 &4311329859873195150
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -544,11 +515,8 @@ MonoBehaviour:
   toAdjust:
   - {fileID: 927007592843876289}
   - {fileID: 927007594112983277}
+  - {fileID: 8401773233963533082}
   - {fileID: 8355010971229050770}
-  - {fileID: 6791763059440219428}
-  - {fileID: 1980814500380759562}
-  - {fileID: 170378095429943880}
-  - {fileID: 8542297063519617446}
   fireText: {fileID: 927007593160920559}
   waterText: {fileID: 927007594689826940}
   teslaText: {fileID: 927007593464464671}
@@ -1726,7 +1694,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 927007592870089207}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3621,7 +3589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ammo: {x: 99, y: 99, z: 99}
-  hud: {fileID: 927007592870089211}
+  hud: {fileID: 4311329859873195150}
   maxHealth: 300
   maxShield: 200
   shieldAbsorption: 0.75

@@ -37,7 +37,12 @@ public class HUD : MonoBehaviour
         items = new List<GameObject>();
         adjustmentPane = transform.GetChild(0).GetComponent<RectTransform>();
         Vector2 adjustment = new Vector2(Screen.width / adjustmentPane.rect.width, Screen.height / adjustmentPane.rect.height);
-        foreach(RectTransform rt in toAdjust) rt.anchoredPosition *= adjustment;
+        foreach (RectTransform rt in toAdjust)
+        {
+            rt.anchoredPosition *= adjustment;
+            rt.localScale *= adjustment.x;
+        }
+        itemSpacing *= adjustment.x;
         adjustmentPane.gameObject.SetActive(false);
     }
 

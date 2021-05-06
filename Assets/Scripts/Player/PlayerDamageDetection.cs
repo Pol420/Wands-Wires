@@ -7,25 +7,13 @@ public class PlayerDamageDetection : MonoBehaviour
 {
     private PlayerStats playerStats;
 
-    private void Start()
-    {
-        playerStats = PlayerStats.Instance();
-    }
+    private void Start() { playerStats = PlayerStats.Instance(); }
+    private void OnTriggerEnter(Collider other) { Collide(other.gameObject); }
+    private void OnCollisionEnter(Collision other) { Collide(other.gameObject); }
 
-
-    private void OnTriggerEnter(Collider other)
+    private void Collide(GameObject other)
     {
-        if (other.transform.CompareTag("EnemyProjectile")) 
-            playerStats.Hurt(other.transform.GetComponent<Enemy_Projectile>().GetDamage());
-        else if (other.transform.CompareTag("EnemyAttack")) 
-            playerStats.Hurt(other.transform.parent.GetComponent<Enemy_Data>().GetAttackDamage());
-    }
-
-    private void OnCollisionEnter(Collision other)
-    {
-        if (other.transform.CompareTag("EnemyProjectile")) 
-            playerStats.Hurt(other.transform.GetComponent<Enemy_Projectile>().GetDamage());
-        else if (other.transform.CompareTag("EnemyAttack")) 
-            playerStats.Hurt(other.transform.parent.GetComponent<Enemy_Data>().GetAttackDamage());
+        if (other.CompareTag("EnemyProjectile")) playerStats.Hurt(other.GetComponent<Enemy_Projectile>().GetDamage());
+        else if (other.CompareTag("EnemyAttack")) playerStats.Hurt(other.transform.parent.GetComponent<Enemy_Data>().GetAttackDamage());
     }
 }
