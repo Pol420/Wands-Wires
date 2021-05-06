@@ -5,6 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public abstract class Weapon : MonoBehaviour
 {
+    [SerializeField] private bool unlocked = true;
+
     [Header("References")]
     [SerializeField] private GameObject otherWeaponObject = null;
     [SerializeField] private PlayerStats holder = null;
@@ -27,12 +29,12 @@ public abstract class Weapon : MonoBehaviour
     [SerializeField] [Range(0f, 100f)] private float damage = 20f;
 
     private Animator anim;
-    protected Transform cam;
+    protected static Transform cam;
 
     void Awake()
     {
         anim = GetComponent<Animator>();
-        cam = Camera.main.transform;
+        if(cam == null) cam = Camera.main.transform;
         otherWeapon = otherWeaponObject.GetComponent<Weapon>();
         SubStart();
     }
@@ -78,8 +80,14 @@ public abstract class Weapon : MonoBehaviour
 
     private void SwitchWeapon()
     {
-        otherWeaponObject.SetActive(true);
         gameObject.SetActive(false);
+        otherWeapon.NextWeapon().SetActive(true);
+    }
+    public GameObject NextWeapon()
+    {
+        if (unlocked) return gameObject;
+        if (otherWeapon == null) Awake();
+        return otherWeapon.NextWeapon();
     }
     
     protected int GetCurrentAmmo() { return holder.GetCurrentAmmo(); }

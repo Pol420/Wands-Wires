@@ -382,6 +382,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0cbc91d0539a9a41ba44a2715f1e88e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unlocked: 1
   otherWeaponObject: {fileID: 2622220311438377613}
   holder: {fileID: 5132045120809965011}
   bulletHole: {fileID: 927007594340185289}
@@ -1314,6 +1315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28c534c26c8ec654c81d12c81c5ce6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unlocked: 1
   otherWeaponObject: {fileID: 927007594414436252}
   holder: {fileID: 5132045120809965011}
   bulletHole: {fileID: 927007594196386513}
@@ -1486,7 +1488,7 @@ GameObject:
   - component: {fileID: 927007594196545075}
   - component: {fileID: 927007594196545074}
   m_Layer: 3
-  m_Name: Main Camera
+  m_Name: Main Camera (holes)
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1857,6 +1859,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525345dad7cf04f498c49ad61582f327, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unlocked: 1
   otherWeaponObject: {fileID: 927007592864967118}
   holder: {fileID: 5132045120809965011}
   bulletHole: {fileID: 927007593129770528}
@@ -2201,7 +2204,7 @@ GameObject:
   - component: {fileID: 927007594816134332}
   - component: {fileID: 7611179031459969061}
   m_Layer: 3
-  m_Name: PlayerController
+  m_Name: PlayerController (cam+holes)
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2472,6 +2475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a401c520394379488b0c7634e92bb35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unlocked: 1
   otherWeaponObject: {fileID: 927007593830107153}
   holder: {fileID: 5132045120809965011}
   bulletHole: {fileID: 4255164260259166691}
@@ -2486,7 +2490,7 @@ MonoBehaviour:
   lightRayPrefab: {fileID: 5635067192216064532, guid: a037a93da24e12243bf440fbea616d57, type: 3}
   rayPerElement: 3
   maxChargeTime: 4
-  maxDistance: 100
+  maxDistance: 256
   spendChance: 50
 --- !u!95 &7619986458624424708
 Animator:
@@ -2979,7 +2983,7 @@ GameObject:
   - component: {fileID: 1846411979263872503}
   - component: {fileID: 8638807043323715706}
   m_Layer: 3
-  m_Name: UIcam
+  m_Name: UIcam (weapons)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

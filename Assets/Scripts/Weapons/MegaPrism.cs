@@ -8,7 +8,7 @@ public class MegaPrism : Weapon
     [SerializeField] private GameObject lightRayPrefab = null;
     [SerializeField] [Range(1, 8)] private int rayPerElement = 1;
     [SerializeField] [Range(0f, 10f)] private float maxChargeTime = 4f;
-    [SerializeField] [Range(0f, 100f)] private float maxDistance = 50f;
+    [SerializeField] [Range(0f, 1000f)] private float maxDistance = 100f;
     [SerializeField] [Range(0f, 100f)] private float spendChance = 50f;
     private float chargeTime;
     private bool charging;
@@ -33,7 +33,6 @@ public class MegaPrism : Weapon
                 Vector3 dir = Quaternion.AngleAxis(offset + pow * 360f, bulletHole.forward) * (bulletHole.forward * pow + (bulletHole.right + bulletHole.up).normalized * (1f - pow));
                 adjacentRays[i].SetRay(bulletHole.position, dir, Mathf.Pow(pow, 2) * Distance());
                 adjacentRays[i].SetGirth(pow / 10f);
-                //adjacentRays[i].transform.Rotate(bulletHole.forward, pow * 180f * Time.deltaTime);
             }
             HurtEnemiesInLine(pow);
         }
