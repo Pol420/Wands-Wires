@@ -7,12 +7,21 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Animator))]
 public class Enemy : MonoBehaviour
 {
+    [Header("References")]
     [SerializeField] private GameObject floatyTextPrefab = null;
-    [SerializeField] private int health = 100;
     [SerializeField] private Slider healthBar = null;
+    [SerializeField] private Material[] mats = new Material[] { null, null, null };
+
+    [Header("Stats")]
+    [SerializeField] private int health = 100;
     [SerializeField] protected Ammo type = Ammo.Fire;
-    [SerializeField] private StatusPickup[] pickups;
     private int currentHealth;
+
+    [Header("Drops")]
+    [SerializeField] [Range(0f, 100f)] private float dropChance = 100f;
+    [SerializeField] [Range(0f, 100f)] private float ammoToStatusChance = 75f;
+    [SerializeField] [Range(0f, 100f)] private float powerupDropChance = 10f;
+
     private Animator anim;
     private bool hb;
     public static UnityEvent death;
@@ -33,6 +42,14 @@ public class Enemy : MonoBehaviour
         currentHealth = health;
         anim = GetComponent<Animator>();
         hb = healthBar != null;
+        Renderer rend = GetComponent<Renderer>();
+        switch(type)
+        {
+            case Ammo.Fire: rend.material = mats[0]; break;
+            case Ammo.Water: rend.material = mats[1]; break;
+            case Ammo.Tesla: rend.material = mats[2]; break;
+            default: break;
+        }
     }
 
     public void Hurt(int amount)
@@ -47,17 +64,20 @@ public class Enemy : MonoBehaviour
         if (!dead)
         {
             dead = true;
-            LeavePickUp();
+            if(Random.Range(0f, 1f) <= dropChance) DropItem();
             singularDeath.Invoke();
             Destroy(gameObject);
         }
     }
 
-    private void LeavePickUp()
+    private void DropItem()
     {
-        if (pickups.Length > 0)
-        {
-            Instantiate(pickups[0], transform.position + Vector3.up * 2, transform.rotation);
-        }
+        GameObject drop;
+        if(Roll(powerupDropChance)) drop = Powerup.RandomPowerup(transform.position);
+        else  if (Roll(ammoToStatusChance)) drop = StatusPickup.DropAmmo(transform.position, type);
+        else drop = StatusPickup.RandomStatus(transform.position);
+        drop.transform.position = transform.position;
     }
+
+    private bool Roll(float threshold) { return Random.Range(0f, 100f) <= threshold; }
 }

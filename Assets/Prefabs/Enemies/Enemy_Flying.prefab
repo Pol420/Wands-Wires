@@ -73,9 +73,9 @@ GameObject:
   - component: {fileID: 3494929045055973969}
   - component: {fileID: 86843190665879540}
   - component: {fileID: 8365797977044108873}
-  - component: {fileID: 7763202471104426712}
-  - component: {fileID: 5977374593961313001}
-  - component: {fileID: 1894554685461837073}
+  - component: {fileID: 4293296660462531932}
+  - component: {fileID: 5353608791219942827}
+  - component: {fileID: -2372136370607007452}
   m_Layer: 0
   m_Name: Enemy_Flying
   m_TagString: Enemy
@@ -92,7 +92,7 @@ Transform:
   m_GameObject: {fileID: 3494929045055973971}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -17.63, y: 2.47, z: 31.19}
-  m_LocalScale: {x: 0.7068841, y: 1.1610274, z: 0.61908454}
+  m_LocalScale: {x: 1, y: 2, z: 1}
   m_Children:
   - {fileID: 3494929046204060836}
   - {fileID: 9195471794939535919}
@@ -216,14 +216,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   floatyTextPrefab: {fileID: 1996404576058732650, guid: 0e278bd307087e149ad553cc97a03605, type: 3}
-  health: 50
   healthBar: {fileID: 0}
-  type: 0
   pickups: []
+  mats:
+  - {fileID: 2100000, guid: 409636336ed57e34c8929aaaebb48cba, type: 2}
+  - {fileID: 2100000, guid: c45a591eb8e469b4482c1d094ca23a91, type: 2}
+  - {fileID: 2100000, guid: 1d90c24684c344a478e825d3341e9015, type: 2}
+  health: 50
+  type: 0
+  dropChance: 100
+  ammoToStatusChance: 75
+  powerupDropChance: 10
   singularDeath:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &7763202471104426712
+--- !u!114 &4293296660462531932
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -236,7 +243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyStats: {fileID: 11400000, guid: 90103e1f35f67924d8b236a1c61e71c5, type: 2}
---- !u!114 &5977374593961313001
+--- !u!114 &5353608791219942827
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -248,7 +255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60bf2aeb9d219634991619b86f4d82c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1894554685461837073
+--- !u!114 &-2372136370607007452
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -261,7 +268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolPositions: []
-  shootingPoint: {fileID: 3494929046204060837}
+  shootingPoint: {fileID: 0}
 --- !u!1 &3494929046204060837
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,44 +1,27 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Numerics;
 using UnityEngine;
-using Vector3 = UnityEngine.Vector3;
 
 public class EnemyBehaviourSpawner : EnemyBehaviour
 {
-    [SerializeField] private GameObject enemyToSpawn;
-
-    private void Awake()
-    {
-        if (enemyToSpawn == null)
-            enemyToSpawn = DefaultEnemyToSpawn();
-    }
+    [SerializeField] private List<GameObject> enemiesToSpawn = new List<GameObject>();
 
     public override void Attack()
     {
         LookAtPlayer();
 
-        if (InComfortZone(transform.position))
-        {
-            SpawnEnemy();
-        }
-            
-        else
-            AvoidPlayer();
+        if (InComfortZone(transform.position)) SpawnEnemy();
+        else AvoidPlayer();
     }
 
     private void SpawnEnemy()
     {
         if (timeToAttack <= 0)
         {
-            Instantiate(enemyToSpawn, shootingPoint.transform.position, shootingPoint.transform.rotation);
+            Instantiate(GetEnemyToSpawn(), shootingPoint.transform.position, shootingPoint.transform.rotation, transform.parent);
             timeToAttack = enemyData.GetMaxTimeToAttack();
         }
-        else
-        {
-            timeToAttack -= Time.deltaTime;
-        }
+        else timeToAttack -= Time.deltaTime;
     }
 
     protected override bool InComfortZone(Vector3 position)
@@ -67,26 +50,23 @@ public class EnemyBehaviourSpawner : EnemyBehaviour
                     {
                         newPosition = transform.position + transform.right *  
                             - (enemyData.GetAttackDistance() - errorDistance);
-                        
                     }
-    
                 }
             }
-
             navMeshAgent.destination = newPosition;
         }
     }
 
-    private GameObject DefaultEnemyToSpawn()
+    private GameObject GetEnemyToSpawn()
     {
-        var enemies = GameObject.FindGameObjectsWithTag("Enemy");
-
-        foreach (var enemy in enemies)
+        if (enemiesToSpawn.Count > 0) return enemiesToSpawn[Random.Range(0, enemiesToSpawn.Count)];
+        else
         {
-            if(!enemy.GetComponent<EnemyBehaviourSpawner>())
-                return enemy;  
+            foreach (var enemy in GameObject.FindGameObjectsWithTag("Enemy"))
+            {
+                if (!enemy.GetComponent<EnemyBehaviourSpawner>()) return enemy;
+            }
         }
-
-        return gameObject;
+        return null;
     }
 }

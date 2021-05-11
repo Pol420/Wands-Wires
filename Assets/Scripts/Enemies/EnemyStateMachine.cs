@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
-[RequireComponent(typeof(Enemy_Data))]
+[RequireComponent(typeof(EnemyBehaviour), typeof(Enemy_Data))]
 public class EnemyStateMachine : MonoBehaviour
 {
     private Transform player;
@@ -21,22 +21,14 @@ public class EnemyStateMachine : MonoBehaviour
         enemyBehaviour = GetComponent<EnemyBehaviour>();
     }
 
-    
     void Update()
     {
         ChangeState();
-
         switch (state)
         {
-            case EnemyStates.Chase:
-                Chase();
-                break;
-            case EnemyStates.Attack:
-                Attack();
-                break;
-            default:
-                Patrol();
-                break;
+            case EnemyStates.Chase: Chase(); break;
+            case EnemyStates.Attack: Attack(); break;
+            default: Patrol(); break;
         }
     }
 
@@ -49,47 +41,24 @@ public class EnemyStateMachine : MonoBehaviour
                 EndChase();
                 state = EnemyStates.Attack;
             }
-            else
-            {
-                state = EnemyStates.Chase;
-            }
+            else state = EnemyStates.Chase;
         }
-        else
-        {
-            state = EnemyStates.Patrol;
-        }
+        else state = EnemyStates.Patrol;
     }
 
-    private void Chase()
-    {
-        enemyBehaviour.Chase();
-    }
-
-    private void EndChase()
-    {
-        enemyBehaviour.EndChase();
-    }
-
-    private void Attack()
-    {
-        enemyBehaviour.Attack();
-    }
-
-    private void Patrol()
-    {
-        enemyBehaviour.Patrol();
-    }
+    private void Chase() { enemyBehaviour.Chase(); }
+    private void EndChase() { enemyBehaviour.EndChase(); }
+    private void Attack() { enemyBehaviour.Attack(); }
+    private void Patrol() { enemyBehaviour.Patrol(); }
 
     private bool InDetectionRange()
     {
         return enemyBehaviour.CalculateDistance(player.position, transform.position) <= enemyData.GetMaxSightDistance();
     }
-
     private bool InAttackRange()
     {
         return enemyBehaviour.CalculateDistance(player.position, transform.position) <= enemyData.GetAttackDistance();
     }
-    
     private bool InShootDistance()
     {
         return enemyBehaviour.CalculateDistance(player.position, transform.position) <= enemyData.GetShootDistance();
