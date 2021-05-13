@@ -15,9 +15,9 @@ MonoBehaviour:
   attackDistance: 6
   shootDistance: 50
   shootDamage: 20
-  attackDamage: 30
+  attackDamage: 25
   maxSightDistance: 80
-  maxTimeToShoot: 0.5
+  maxTimeToShoot: 1
   maxTimeToAttack: 0.8
   maxHealth: 100
   speed: 50
