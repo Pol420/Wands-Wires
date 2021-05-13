@@ -2,21 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(PlayerControls), typeof(Rigidbody))]
+[RequireComponent(typeof(PlayerControls), typeof(Rigidbody), typeof(Collider))]
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float maximumVelocity = 64f;
-    [SerializeField] private Feet feet = null;
+    [SerializeField] private LayerMask groundMask = 0;
     private PlayerControls controls;
     private Transform cam;
     protected Rigidbody body;
     private float fixedTimeFlow;
+
+
+    private bool grounded;
+    private float offFeet;
+    private Vector3 feetSize;
     
     void Start()
     {
         body = GetComponent<Rigidbody>();
         controls = GetComponent<PlayerControls>();
         cam = Camera.main.transform;
+        grounded = false;
+        offFeet = GetComponent<Collider>().bounds.size.y / 2f;
+        feetSize = new Vector3(0.25f, 0.1f, 0.25f);
     }
     
     void Update()
@@ -28,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         fixedTimeFlow = Time.fixedDeltaTime / Time.timeScale;
-        if (IsGrounded())
+        if (grounded)
         {
             Move(controls.axis);
             if (controls.IsJumping()) Jump(controls.axis);
@@ -47,6 +55,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
         SpeedLimit();
+        grounded = Physics.CheckBox(transform.position - transform.up * offFeet, feetSize, transform.rotation, groundMask);
     }
 
     private void Fall(float multiplier)
@@ -70,7 +79,6 @@ public class PlayerMovement : MonoBehaviour
         movement.y = 0f;
         body.MovePosition(transform.position + movement);
     }
-    private bool IsGrounded() { return feet.IsGrounded(); }
     private void Jump(Vector2 input)
     {
         body.AddForce(((transform.forward * input.y + transform.right * input.x) * body.mass + new Vector3(0f, controls.jumpPower * body.mass)) * fixedTimeFlow, ForceMode.Impulse);

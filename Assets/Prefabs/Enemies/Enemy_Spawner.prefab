@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4440032534157620974}
   - component: {fileID: 2174749936007233906}
   - component: {fileID: 7847389029488150882}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: body
   m_TagString: EnemyPart
   m_Icon: {fileID: 0}
@@ -67,7 +67,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8012977574023841771}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ShootingPoint
   m_TagString: EnemyPart
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: -6725970622701268010}
   - component: {fileID: 3595140833794793962}
   - component: {fileID: 1337334879619756657}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy_Spawner
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -247,7 +247,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   floatyTextPrefab: {fileID: 1996404576058732650, guid: 0e278bd307087e149ad553cc97a03605, type: 3}
   healthBar: {fileID: 0}
-  pickups: []
   mats:
   - {fileID: 2100000, guid: 409636336ed57e34c8929aaaebb48cba, type: 2}
   - {fileID: 2100000, guid: 409636336ed57e34c8929aaaebb48cba, type: 2}
@@ -313,7 +312,7 @@ GameObject:
   - component: {fileID: 8719837418479279561}
   - component: {fileID: 781872927678786271}
   - component: {fileID: 2883449010724361158}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: head
   m_TagString: EnemyPart
   m_Icon: {fileID: 0}
