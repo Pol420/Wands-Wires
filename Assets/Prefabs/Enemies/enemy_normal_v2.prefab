@@ -290,6 +290,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6594794341916925632}
   - component: {fileID: 5820977872712658107}
+  - component: {fileID: 1127302794443752285}
   m_Layer: 0
   m_Name: enemy
   m_TagString: Untagged
@@ -330,7 +331,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e452658ec82b03544bf13b69221bf170, type: 2}
+  - {fileID: 2100000, guid: 885c75dd88623c244b258fc8c2cea9be, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -386,6 +387,25 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.36134958, y: -0.024447918, z: -0.041668057}
     m_Extent: {x: 2.676873, y: 1.5383521, z: 1.5380678}
   m_DirtyAABB: 0
+--- !u!95 &1127302794443752285
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3042422657956896791}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3318092015859233404
 GameObject:
   m_ObjectHideFlags: 0
@@ -931,7 +951,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4172789214370599983}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -4.18, y: 0.01999998, z: 59.94}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1065494480492506558}
@@ -1043,9 +1063,9 @@ MonoBehaviour:
   floatyTextPrefab: {fileID: 1996404576058732650, guid: 0e278bd307087e149ad553cc97a03605, type: 3}
   healthBar: {fileID: 0}
   mats:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: e452658ec82b03544bf13b69221bf170, type: 2}
+  - {fileID: 2100000, guid: c0994c87cf18e30419fb841ec13b513c, type: 2}
+  - {fileID: 2100000, guid: 0c90034834a549f4b89912675b9cb958, type: 2}
   health: 100
   type: 0
   dropChance: 100

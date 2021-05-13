@@ -2,63 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="436568db-9915-4505-bab8-3a191725d208" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Scene_AlejandroPruebas.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Scene_AlejandroPruebas.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Scene_AlejandroPruebas.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Scene_AlejandroPruebas/NavMesh.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Scene_AlejandroPruebas/NavMesh.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/Sword_prueba.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/Sword_prueba.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/animator_normal_v2.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/animator_normal_v2.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/book_texture_.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/book_texture_.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/cosas.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/cosas.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/enemigo_normal_textura_fire.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/enemigo_normal_textura_fire.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/enemigo_normal_textura_tesla.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/enemigo_normal_textura_tesla.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/enemigo_normal_textura_water.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/enemigo_normal_textura_water.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/material_book.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/material_book.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/material_enemy_normal_fire.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/material_enemy_normal_fire.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/material_enemy_normal_tesla.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/material_enemy_normal_tesla.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/material_enemy_normal_water.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/material_enemy_normal_water.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/material_sword.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/material_sword.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/normal_animaciones.FBX" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/normal_animaciones.FBX.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/normal_animacionesV2.FBX" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/normal_animacionesV2.FBX.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/normal_prueba.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/normal_prueba.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/normal_weapons.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/normal_weapons.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/player.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/player.obj.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/player_0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/player_0.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/prueba 6.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/prueba 6.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/textura_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/textura_1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/texture4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/texture4.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/enemy_normal_v2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/enemy_normal_v2.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviourNormal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviourNormal.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/pruebas/aaaa.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pruebas/aaaa.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/pruebas/papsdad.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pruebas/papsdad.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/pruebas/prueba 3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pruebas/prueba 3.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,8 +60,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerPowers.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Data.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviour.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviourNormal.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rJEGPnjYAxRO3ccFd4NRy7lvQY" />
@@ -196,6 +141,7 @@
       <workItem from="1619972493313" duration="2640000" />
       <workItem from="1620054921695" duration="1190000" />
       <workItem from="1620851233395" duration="4533000" />
+      <workItem from="1620876979210" duration="393000" />
     </task>
     <servers />
   </component>

@@ -42,7 +42,7 @@ public class Enemy : MonoBehaviour
         currentHealth = health;
         anim = GetComponent<Animator>();
         hb = healthBar != null;
-        Renderer rend = GetComponent<Renderer>();
+        Renderer rend = GetComponentInChildren<SkinnedMeshRenderer>();
         switch(type)
         {
             case Ammo.Fire: rend.material = mats[0]; break;
