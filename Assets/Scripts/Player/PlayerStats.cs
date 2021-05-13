@@ -207,4 +207,6 @@ public class PlayerStats : MonoBehaviour
         }
         return false;
     }
+
+    public void Kill() { Die(); }
 }

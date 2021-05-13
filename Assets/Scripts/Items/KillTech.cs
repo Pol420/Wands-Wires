@@ -54,7 +54,7 @@ public abstract class KillTech : MonoBehaviour
     {
         if (killAll) kills = 0;
         Collider[] colliders = Physics.OverlapBox(transform.position + areaPosition, areaSize / 2f);
-        int enemyCount = 0;
+        int enemyCount = -1;
         foreach (Collider c in colliders)
         {
             Enemy enemy = c.gameObject.GetComponent<Enemy>();

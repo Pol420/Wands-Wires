@@ -17,7 +17,7 @@ public class Elevator : KillTech
     private Vector3 direction;
     private bool arrived;
 
-    protected override void Activate() { active = true; }
+    protected override void Activate() { active = true;Debug.Log("ACTIVATED"); }
 
     protected override void OnEnter() { player.transform.SetParent(transform);}
     protected override void OnExit() { player.transform.SetParent(null); }
@@ -26,8 +26,8 @@ public class Elevator : KillTech
     {
         active = !killActivated;
         origin = transform.position;
-        going = true;
-        currentWait = 0f;
+        going = false;
+        currentWait = -1f;
         direction = movement.normalized;
     }
 
@@ -39,7 +39,7 @@ public class Elevator : KillTech
             if (currentWait <= 0f)
             {
                 if (!onlyMoveWhenCarrying) Move();
-                else if (playerInRange||!arrived) Move();
+                else if (playerInRange || !arrived || going) Move();
             }
             else currentWait -= Time.deltaTime;
         }
@@ -49,7 +49,8 @@ public class Elevator : KillTech
     {
         if (arrived)
         {
-            currentWait = wait;
+            if (currentWait == -1f) currentWait = 0f;
+            else currentWait = wait;
             going = !going;
         }
         else transform.position += direction * moveSpeed * Time.deltaTime * (going ? 1 : -1);

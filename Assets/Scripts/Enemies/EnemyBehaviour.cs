@@ -37,7 +37,7 @@ public abstract class EnemyBehaviour : MonoBehaviour
     public void Chase()
     {
         navMeshAgent.destination = player.position;
-        animator.SetBool("Walking", true);
+        //animator.SetBool("Walking", true);
     }
 
     public void EndChase()
