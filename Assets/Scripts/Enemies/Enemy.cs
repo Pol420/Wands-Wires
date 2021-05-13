@@ -66,8 +66,13 @@ public class Enemy : MonoBehaviour
             dead = true;
             if(Random.Range(0f, 1f) <= dropChance) DropItem();
             singularDeath.Invoke();
-            Destroy(gameObject);
+            anim.SetTrigger("Die");
         }
+    }
+
+    public void DestroyEnemy()
+    {
+        Destroy(gameObject);
     }
 
     private void DropItem()

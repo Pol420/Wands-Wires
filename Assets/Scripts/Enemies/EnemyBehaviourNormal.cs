@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemyBehaviourNormal : EnemyBehaviour
 {
+    [SerializeField] private GameObject attackArea;
+    
     public override void Attack()
     {
         LookAtPlayer();
@@ -26,6 +28,7 @@ public class EnemyBehaviourNormal : EnemyBehaviour
                 }
 
                 navMeshAgent.destination = newPosition;
+                animator.SetBool("Walking", true);
             }
         }
     }
@@ -49,10 +52,23 @@ public class EnemyBehaviourNormal : EnemyBehaviour
         {
             Instantiate(enemyData.GetProjectile(), shootingPoint.transform.position, shootingPoint.transform.rotation);
             timeToShoot = enemyData.GetMaxTimeToShoot();
+            animator.SetTrigger("Shoot");
         }
         else
         {
             timeToShoot -= Time.deltaTime;
         }
+    }
+
+    public void ActivateAttackArea()
+    {
+        attackArea.SetActive(true);
+        Debug.Log("Holaaa");
+    }
+    
+    public void DeactivateAttackArea()
+    {
+        attackArea.SetActive(false);
+        Debug.Log("Adios");
     }
 }
