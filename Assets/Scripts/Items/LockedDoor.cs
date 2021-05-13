@@ -3,110 +3,65 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Collider), typeof(MeshRenderer))]
-public class LockedDoor : MonoBehaviour
+public class LockedDoor : KillTech
 {
-    [SerializeField] private DoorLock lockType = DoorLock.Key;
     [SerializeField] private bool trapDoor = false;
 
     [Header("Key Settings")]
     [SerializeField] private GameObject sceneKey = null;
     [SerializeField] private string alternateCode = "door1";
     private string code;
-
-    [Header("Kills Settings")]
-    [SerializeField] private int killsToOpen = 20;
-    [SerializeField] private bool killAll = false;
-    [SerializeField] private Vector3 areaPosition = Vector3.zero;
-    [SerializeField] private Vector3 areaSize = Vector3.one;
-    private int kills;
-
-    private bool playerInRange;
-    private PlayerStats player;
+    
     private bool trapped;
     private List<Collider> colliders;
     private MeshRenderer doorRenderer;
 
-    private void Start()
+    protected override void OnStart()
     {
         colliders = new List<Collider>();
         doorRenderer = GetComponent<MeshRenderer>();
         foreach (Collider c in GetComponentsInChildren<Collider>()) if (!c.isTrigger) colliders.Add(c);
         if (sceneKey != null) code = sceneKey.GetComponent<KeyItem>().GetCode();
         else code = alternateCode;
-        playerInRange = false;
-        player = PlayerStats.Instance();
-        kills = 0;
-        EnemyPool();
         if (trapDoor) ActivateCollisions(false);
         trapped = trapDoor;
     }
-
     private void ActivateCollisions(bool active)
     {
         doorRenderer.enabled = active;
         foreach (Collider c in colliders) c.enabled = active;
     }
 
-    private void OnDrawGizmos()  { if (lockType == DoorLock.Kills) { Gizmos.color = Color.red; Gizmos.DrawWireCube(transform.position + areaPosition, areaSize); } }
-
     private void Update()
     {
-        if (lockType == DoorLock.Key)
+        if (killActivated)
         {
             if (playerInRange)
             {
                 if (Input.GetButtonDown("Fire2"))
                 {
-                    if (player.GetKey(code)) Open();
+                    if (player.GetKey(code)) Activate();
                     else Debug.Log("You don't have a " + code);
                 }
             }
         }
     }
+    protected override void Activate() { ActivateCollisions(false); }
 
-    private void Open() { ActivateCollisions(false); }
-    private void Close() { ActivateCollisions(true); }
-
-    private void OnTriggerEnter(Collider other)
+    protected override void OnEnter()
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (trapped)
         {
-            if (trapped)
-            {
-                ActivateCollisions(true);
-                trapped = false;
-                EnemyPool();
-            }
-            playerInRange = true;
+            ActivateCollisions(true);
+            trapped = false;
+            EnemyPool();
         }
     }
-    private void OnTriggerExit(Collider other) { if (other.gameObject.CompareTag("Player")) playerInRange = false; }
 
-    private void EnemyPool()
+    protected override void OnExit()
     {
-        if(killAll) kills = 0;
-        Collider[] colliders = Physics.OverlapBox(transform.position + areaPosition, areaSize / 2f);
-        int enemyCount = 0;
-        foreach (Collider c in colliders)
-        {
-            Enemy enemy = c.gameObject.GetComponent<Enemy>();
-            if (enemy != null)
-            {
-                enemy.singularDeath.AddListener(AddKill);
-                enemyCount++;
-            }
-        }
-        killsToOpen = Mathf.Min(killsToOpen, enemyCount);
+        throw new System.NotImplementedException();
     }
 
-    private void AddKill()
-    {
-        if (lockType == DoorLock.Kills)
-        {
-            if (killAll) EnemyPool();
-            else kills++;
-            if (kills >= killsToOpen) Open();
-        }
-    }
+    protected override void OnGizmos() { }
 }
-public enum DoorLock { Key, Kills }

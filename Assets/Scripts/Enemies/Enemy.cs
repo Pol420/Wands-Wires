@@ -42,7 +42,8 @@ public class Enemy : MonoBehaviour
         currentHealth = health;
         anim = GetComponent<Animator>();
         hb = healthBar != null;
-        Renderer rend = GetComponentInChildren<SkinnedMeshRenderer>();
+        Renderer rend = GetComponent<Renderer>();
+        if(rend == null) rend = GetComponentInChildren<SkinnedMeshRenderer>();
         switch(type)
         {
             case Ammo.Fire: rend.material = mats[0]; break;
@@ -67,6 +68,7 @@ public class Enemy : MonoBehaviour
             if(Random.Range(0f, 1f) <= dropChance) DropItem();
             singularDeath.Invoke();
             anim.SetTrigger("Die");
+            DestroyEnemy(); //temp before animation events!
         }
     }
 

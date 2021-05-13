@@ -135,9 +135,9 @@ GameObject:
   - component: {fileID: 23217054}
   - component: {fileID: 23217053}
   - component: {fileID: 23217052}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (1)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -230,7 +230,7 @@ GameObject:
   - component: {fileID: 23494086}
   - component: {fileID: 23494085}
   - component: {fileID: 23494084}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (1)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -325,9 +325,9 @@ GameObject:
   - component: {fileID: 24177709}
   - component: {fileID: 24177708}
   - component: {fileID: 24177707}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (6)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -425,7 +425,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5387113776803695039, guid: 3ab1311b0987b3a4683094a3f25f51b8, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5387113776803695039, guid: 3ab1311b0987b3a4683094a3f25f51b8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -481,9 +481,9 @@ GameObject:
   - component: {fileID: 30865384}
   - component: {fileID: 30865383}
   - component: {fileID: 30865382}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (8)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -576,9 +576,9 @@ GameObject:
   - component: {fileID: 35836830}
   - component: {fileID: 35836829}
   - component: {fileID: 35836828}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (36)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -671,9 +671,9 @@ GameObject:
   - component: {fileID: 47631976}
   - component: {fileID: 47631975}
   - component: {fileID: 47631974}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (130)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -766,9 +766,9 @@ GameObject:
   - component: {fileID: 68725235}
   - component: {fileID: 68725234}
   - component: {fileID: 68725233}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (6)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -861,7 +861,7 @@ GameObject:
   - component: {fileID: 69486909}
   - component: {fileID: 69486908}
   - component: {fileID: 69486907}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (3)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -956,9 +956,9 @@ GameObject:
   - component: {fileID: 82388836}
   - component: {fileID: 82388835}
   - component: {fileID: 82388834}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (5)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -1051,9 +1051,9 @@ GameObject:
   - component: {fileID: 95892103}
   - component: {fileID: 95892102}
   - component: {fileID: 95892101}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (74)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -1146,9 +1146,9 @@ GameObject:
   - component: {fileID: 95983120}
   - component: {fileID: 95983119}
   - component: {fileID: 95983118}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (71)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -1246,9 +1246,9 @@ GameObject:
   - component: {fileID: 105935938}
   - component: {fileID: 105935937}
   - component: {fileID: 105935936}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (121)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -1385,9 +1385,9 @@ GameObject:
   - component: {fileID: 143324182}
   - component: {fileID: 143324181}
   - component: {fileID: 143324180}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (53)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -1478,9 +1478,9 @@ GameObject:
   m_Component:
   - component: {fileID: 147226734}
   - component: {fileID: 147226735}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: collider
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1524,9 +1524,9 @@ GameObject:
   - component: {fileID: 152008159}
   - component: {fileID: 152008158}
   - component: {fileID: 152008157}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (25)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -1619,9 +1619,9 @@ GameObject:
   - component: {fileID: 152127871}
   - component: {fileID: 152127870}
   - component: {fileID: 152127869}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (64)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -1714,9 +1714,9 @@ GameObject:
   - component: {fileID: 172877042}
   - component: {fileID: 172877041}
   - component: {fileID: 172877040}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (20)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -1809,9 +1809,9 @@ GameObject:
   - component: {fileID: 175970453}
   - component: {fileID: 175970452}
   - component: {fileID: 175970451}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (1)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -1904,9 +1904,9 @@ GameObject:
   - component: {fileID: 196683998}
   - component: {fileID: 196683997}
   - component: {fileID: 196683996}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (72)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -1999,9 +1999,9 @@ GameObject:
   - component: {fileID: 214834490}
   - component: {fileID: 214834489}
   - component: {fileID: 214834488}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (73)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -2094,7 +2094,7 @@ GameObject:
   - component: {fileID: 269471053}
   - component: {fileID: 269471052}
   - component: {fileID: 269471051}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (5)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -2290,9 +2290,9 @@ GameObject:
   - component: {fileID: 291010593}
   - component: {fileID: 291010592}
   - component: {fileID: 291010591}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (118)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -2385,9 +2385,9 @@ GameObject:
   - component: {fileID: 292003567}
   - component: {fileID: 292003566}
   - component: {fileID: 292003565}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (99)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -2480,9 +2480,9 @@ GameObject:
   - component: {fileID: 293143424}
   - component: {fileID: 293143423}
   - component: {fileID: 293143422}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (85)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -2575,9 +2575,9 @@ GameObject:
   - component: {fileID: 299093014}
   - component: {fileID: 299093013}
   - component: {fileID: 299093012}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (47)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -2670,9 +2670,9 @@ GameObject:
   - component: {fileID: 316342551}
   - component: {fileID: 316342550}
   - component: {fileID: 316342549}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (27)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -2765,9 +2765,9 @@ GameObject:
   - component: {fileID: 319334601}
   - component: {fileID: 319334600}
   - component: {fileID: 319334599}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (115)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -2860,9 +2860,9 @@ GameObject:
   - component: {fileID: 319612953}
   - component: {fileID: 319612952}
   - component: {fileID: 319612951}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (3)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -2955,9 +2955,9 @@ GameObject:
   - component: {fileID: 323595821}
   - component: {fileID: 323595820}
   - component: {fileID: 323595819}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (35)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -3050,9 +3050,9 @@ GameObject:
   - component: {fileID: 323996563}
   - component: {fileID: 323996562}
   - component: {fileID: 323996561}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (2)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -3145,9 +3145,9 @@ GameObject:
   - component: {fileID: 349532573}
   - component: {fileID: 349532572}
   - component: {fileID: 349532571}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (56)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -3240,9 +3240,9 @@ GameObject:
   - component: {fileID: 361422861}
   - component: {fileID: 361422860}
   - component: {fileID: 361422859}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (3)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -3335,9 +3335,9 @@ GameObject:
   - component: {fileID: 374775378}
   - component: {fileID: 374775377}
   - component: {fileID: 374775376}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (1)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -3427,7 +3427,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 383290250}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Stairs (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3516,12 +3516,20 @@ PrefabInstance:
       value: suelo (3)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0d4a9c4482bbbf94badd06bcfb33e2b3, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d4a9c4482bbbf94badd06bcfb33e2b3, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0d4a9c4482bbbf94badd06bcfb33e2b3, type: 3}
       propertyPath: m_TagString
-      value: Ground
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 0d4a9c4482bbbf94badd06bcfb33e2b3, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8164078558771037576, guid: 0d4a9c4482bbbf94badd06bcfb33e2b3, type: 3}
       propertyPath: m_TagString
@@ -3545,7 +3553,7 @@ GameObject:
   - component: {fileID: 405885865}
   - component: {fileID: 405885864}
   - component: {fileID: 405885863}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (5)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -3638,9 +3646,9 @@ GameObject:
   m_Component:
   - component: {fileID: 406339317}
   - component: {fileID: 406339318}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: collider
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3681,7 +3689,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 407636433}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Escenario
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3943,7 +3951,7 @@ Transform:
   - {fileID: 2097423838}
   - {fileID: 47631973}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &418018439
 GameObject:
@@ -3957,7 +3965,7 @@ GameObject:
   - component: {fileID: 418018443}
   - component: {fileID: 418018442}
   - component: {fileID: 418018441}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (3)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -4052,9 +4060,9 @@ GameObject:
   - component: {fileID: 421705489}
   - component: {fileID: 421705488}
   - component: {fileID: 421705487}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (7)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -4147,9 +4155,9 @@ GameObject:
   - component: {fileID: 421980890}
   - component: {fileID: 421980889}
   - component: {fileID: 421980888}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (96)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -4242,9 +4250,9 @@ GameObject:
   - component: {fileID: 450126307}
   - component: {fileID: 450126306}
   - component: {fileID: 450126305}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (12)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -4337,9 +4345,9 @@ GameObject:
   - component: {fileID: 451836864}
   - component: {fileID: 451836863}
   - component: {fileID: 451836862}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (24)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -4432,9 +4440,9 @@ GameObject:
   - component: {fileID: 452650026}
   - component: {fileID: 452650025}
   - component: {fileID: 452650024}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (3)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -4532,7 +4540,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8012977574662141687, guid: 8c4ca71a8a7737741aef35d5019cbc4b, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8012977574662141687, guid: 8c4ca71a8a7737741aef35d5019cbc4b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4588,9 +4596,9 @@ GameObject:
   - component: {fileID: 459779562}
   - component: {fileID: 459779561}
   - component: {fileID: 459779560}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (57)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -4683,7 +4691,7 @@ GameObject:
   - component: {fileID: 465224173}
   - component: {fileID: 465224172}
   - component: {fileID: 465224171}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (7)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -4778,9 +4786,9 @@ GameObject:
   - component: {fileID: 466304899}
   - component: {fileID: 466304898}
   - component: {fileID: 466304897}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (13)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -4873,9 +4881,9 @@ GameObject:
   - component: {fileID: 479235051}
   - component: {fileID: 479235050}
   - component: {fileID: 479235049}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (77)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -4965,7 +4973,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 488288275}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Stairs (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5007,9 +5015,9 @@ GameObject:
   - component: {fileID: 494672469}
   - component: {fileID: 494672468}
   - component: {fileID: 494672467}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -5099,7 +5107,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 499888675}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Stairs (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5132,9 +5140,9 @@ GameObject:
   - component: {fileID: 505091817}
   - component: {fileID: 505091816}
   - component: {fileID: 505091815}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (2)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -5227,9 +5235,9 @@ GameObject:
   - component: {fileID: 506037885}
   - component: {fileID: 506037884}
   - component: {fileID: 506037883}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (58)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -5322,9 +5330,9 @@ GameObject:
   - component: {fileID: 507249742}
   - component: {fileID: 507249741}
   - component: {fileID: 507249740}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (89)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -5417,9 +5425,9 @@ GameObject:
   - component: {fileID: 514603536}
   - component: {fileID: 514603535}
   - component: {fileID: 514603534}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (50)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -5517,9 +5525,9 @@ GameObject:
   - component: {fileID: 528718438}
   - component: {fileID: 528718437}
   - component: {fileID: 528718436}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (107)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -5673,9 +5681,9 @@ GameObject:
   - component: {fileID: 554353492}
   - component: {fileID: 554353491}
   - component: {fileID: 554353490}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (51)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -5768,9 +5776,9 @@ GameObject:
   - component: {fileID: 557967313}
   - component: {fileID: 557967312}
   - component: {fileID: 557967311}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (60)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -5863,9 +5871,9 @@ GameObject:
   - component: {fileID: 558879086}
   - component: {fileID: 558879085}
   - component: {fileID: 558879084}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (2)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -5958,9 +5966,9 @@ GameObject:
   - component: {fileID: 559440785}
   - component: {fileID: 559440784}
   - component: {fileID: 559440783}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (2)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -6053,9 +6061,9 @@ GameObject:
   - component: {fileID: 575164074}
   - component: {fileID: 575164073}
   - component: {fileID: 575164072}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -6148,9 +6156,9 @@ GameObject:
   - component: {fileID: 597454819}
   - component: {fileID: 597454818}
   - component: {fileID: 597454817}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (125)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -6243,9 +6251,9 @@ GameObject:
   - component: {fileID: 601246539}
   - component: {fileID: 601246538}
   - component: {fileID: 601246537}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (2)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -6338,9 +6346,9 @@ GameObject:
   - component: {fileID: 604939291}
   - component: {fileID: 604939290}
   - component: {fileID: 604939289}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (4)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -6433,9 +6441,9 @@ GameObject:
   - component: {fileID: 607226173}
   - component: {fileID: 607226172}
   - component: {fileID: 607226171}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (86)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -6528,9 +6536,9 @@ GameObject:
   - component: {fileID: 608966967}
   - component: {fileID: 608966966}
   - component: {fileID: 608966965}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (4)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -6623,9 +6631,9 @@ GameObject:
   - component: {fileID: 611788197}
   - component: {fileID: 611788196}
   - component: {fileID: 611788195}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (28)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -6718,9 +6726,9 @@ GameObject:
   - component: {fileID: 616680715}
   - component: {fileID: 616680714}
   - component: {fileID: 616680713}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (6)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -6813,9 +6821,9 @@ GameObject:
   - component: {fileID: 620486585}
   - component: {fileID: 620486584}
   - component: {fileID: 620486583}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (29)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -6908,9 +6916,9 @@ GameObject:
   - component: {fileID: 622878286}
   - component: {fileID: 622878285}
   - component: {fileID: 622878284}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (70)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -7003,9 +7011,9 @@ GameObject:
   - component: {fileID: 624076366}
   - component: {fileID: 624076365}
   - component: {fileID: 624076364}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (52)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -7095,7 +7103,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 624898393}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Stairs (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7128,9 +7136,9 @@ GameObject:
   - component: {fileID: 634094742}
   - component: {fileID: 634094741}
   - component: {fileID: 634094740}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (79)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -7223,7 +7231,7 @@ GameObject:
   - component: {fileID: 635482957}
   - component: {fileID: 635482956}
   - component: {fileID: 635482955}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (4)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -7318,9 +7326,9 @@ GameObject:
   - component: {fileID: 637247263}
   - component: {fileID: 637247262}
   - component: {fileID: 637247261}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (3)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -7413,9 +7421,9 @@ GameObject:
   - component: {fileID: 648793893}
   - component: {fileID: 648793892}
   - component: {fileID: 648793891}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (104)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -7505,7 +7513,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 659842982}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Stairs (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7538,9 +7546,9 @@ GameObject:
   - component: {fileID: 669200184}
   - component: {fileID: 669200183}
   - component: {fileID: 669200182}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (54)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -7633,9 +7641,9 @@ GameObject:
   - component: {fileID: 680170587}
   - component: {fileID: 680170586}
   - component: {fileID: 680170585}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (6)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -7764,9 +7772,9 @@ GameObject:
   - component: {fileID: 705263418}
   - component: {fileID: 705263417}
   - component: {fileID: 705263416}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (15)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -7859,9 +7867,9 @@ GameObject:
   - component: {fileID: 706267851}
   - component: {fileID: 706267850}
   - component: {fileID: 706267849}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -7954,9 +7962,9 @@ GameObject:
   - component: {fileID: 706538092}
   - component: {fileID: 706538091}
   - component: {fileID: 706538090}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (9)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -8049,9 +8057,9 @@ GameObject:
   - component: {fileID: 709210270}
   - component: {fileID: 709210269}
   - component: {fileID: 709210268}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (1)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -8144,9 +8152,9 @@ GameObject:
   - component: {fileID: 711561989}
   - component: {fileID: 711561988}
   - component: {fileID: 711561987}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (34)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -8234,13 +8242,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7866907330955829339, guid: 8c4ca71a8a7737741aef35d5019cbc4b, type: 3}
+      propertyPath: type
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8012977574662141581, guid: 8c4ca71a8a7737741aef35d5019cbc4b, type: 3}
       propertyPath: m_Name
       value: Enemy_Spawner_new
       objectReference: {fileID: 0}
     - target: {fileID: 8012977574662141687, guid: 8c4ca71a8a7737741aef35d5019cbc4b, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8012977574662141687, guid: 8c4ca71a8a7737741aef35d5019cbc4b, type: 3}
       propertyPath: m_LocalScale.x
@@ -8308,9 +8320,9 @@ GameObject:
   - component: {fileID: 713815562}
   - component: {fileID: 713815561}
   - component: {fileID: 713815560}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (3)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -8403,9 +8415,9 @@ GameObject:
   - component: {fileID: 718903790}
   - component: {fileID: 718903789}
   - component: {fileID: 718903788}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (7)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -8498,9 +8510,9 @@ GameObject:
   - component: {fileID: 734131451}
   - component: {fileID: 734131450}
   - component: {fileID: 734131449}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (38)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -8593,9 +8605,9 @@ GameObject:
   - component: {fileID: 735609748}
   - component: {fileID: 735609747}
   - component: {fileID: 735609746}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (6)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -8688,9 +8700,9 @@ GameObject:
   - component: {fileID: 736092644}
   - component: {fileID: 736092643}
   - component: {fileID: 736092642}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (105)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -8783,9 +8795,9 @@ GameObject:
   - component: {fileID: 736940579}
   - component: {fileID: 736940578}
   - component: {fileID: 736940577}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (82)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -8878,7 +8890,7 @@ GameObject:
   - component: {fileID: 737197611}
   - component: {fileID: 737197610}
   - component: {fileID: 737197609}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (6)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -8973,9 +8985,9 @@ GameObject:
   - component: {fileID: 744583886}
   - component: {fileID: 744583885}
   - component: {fileID: 744583884}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (83)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -9068,9 +9080,9 @@ GameObject:
   - component: {fileID: 753628837}
   - component: {fileID: 753628836}
   - component: {fileID: 753628835}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (76)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -9163,9 +9175,9 @@ GameObject:
   - component: {fileID: 755628031}
   - component: {fileID: 755628030}
   - component: {fileID: 755628029}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (19)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -9258,9 +9270,9 @@ GameObject:
   - component: {fileID: 794872519}
   - component: {fileID: 794872518}
   - component: {fileID: 794872517}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (4)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -9350,7 +9362,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 809444065}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Stairs (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9383,7 +9395,7 @@ GameObject:
   - component: {fileID: 811700872}
   - component: {fileID: 811700871}
   - component: {fileID: 811700870}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -9478,9 +9490,9 @@ GameObject:
   - component: {fileID: 829815256}
   - component: {fileID: 829815255}
   - component: {fileID: 829815254}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (78)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -9573,9 +9585,9 @@ GameObject:
   - component: {fileID: 836755937}
   - component: {fileID: 836755936}
   - component: {fileID: 836755935}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (59)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -9668,9 +9680,9 @@ GameObject:
   - component: {fileID: 838968692}
   - component: {fileID: 838968691}
   - component: {fileID: 838968690}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (7)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -9763,9 +9775,9 @@ GameObject:
   - component: {fileID: 842000886}
   - component: {fileID: 842000885}
   - component: {fileID: 842000884}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (4)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -9856,7 +9868,7 @@ GameObject:
   m_Component:
   - component: {fileID: 848793663}
   - component: {fileID: 848793664}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: collider
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -9958,12 +9970,20 @@ PrefabInstance:
       value: suelo
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0d4a9c4482bbbf94badd06bcfb33e2b3, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d4a9c4482bbbf94badd06bcfb33e2b3, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0d4a9c4482bbbf94badd06bcfb33e2b3, type: 3}
       propertyPath: m_TagString
-      value: Ground
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 0d4a9c4482bbbf94badd06bcfb33e2b3, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8164078558771037576, guid: 0d4a9c4482bbbf94badd06bcfb33e2b3, type: 3}
       propertyPath: m_IsActive
@@ -9991,9 +10011,9 @@ GameObject:
   - component: {fileID: 855607900}
   - component: {fileID: 855607899}
   - component: {fileID: 855607898}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -10161,9 +10181,9 @@ GameObject:
   - component: {fileID: 856372779}
   - component: {fileID: 856372778}
   - component: {fileID: 856372777}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -10256,9 +10276,9 @@ GameObject:
   - component: {fileID: 871855664}
   - component: {fileID: 871855663}
   - component: {fileID: 871855662}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (4)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -10351,9 +10371,9 @@ GameObject:
   - component: {fileID: 875623967}
   - component: {fileID: 875623966}
   - component: {fileID: 875623965}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (2)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -10446,9 +10466,9 @@ GameObject:
   - component: {fileID: 879728044}
   - component: {fileID: 879728043}
   - component: {fileID: 879728042}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (65)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -10541,7 +10561,7 @@ GameObject:
   - component: {fileID: 879989621}
   - component: {fileID: 879989620}
   - component: {fileID: 879989619}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (2)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -10633,7 +10653,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 881088944}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Stairs (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10666,9 +10686,9 @@ GameObject:
   - component: {fileID: 884886908}
   - component: {fileID: 884886907}
   - component: {fileID: 884886906}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (5)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -10758,7 +10778,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 912490437}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Stairs (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10880,9 +10900,9 @@ GameObject:
   - component: {fileID: 932876931}
   - component: {fileID: 932876930}
   - component: {fileID: 932876929}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (98)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -10975,9 +10995,9 @@ GameObject:
   - component: {fileID: 940051615}
   - component: {fileID: 940051614}
   - component: {fileID: 940051613}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (78)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -11145,7 +11165,7 @@ GameObject:
   - component: {fileID: 952117258}
   - component: {fileID: 952117257}
   - component: {fileID: 952117256}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (6)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -11240,9 +11260,9 @@ GameObject:
   - component: {fileID: 968528517}
   - component: {fileID: 968528516}
   - component: {fileID: 968528515}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (55)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -11335,9 +11355,9 @@ GameObject:
   - component: {fileID: 971110050}
   - component: {fileID: 971110049}
   - component: {fileID: 971110048}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (5)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -11430,9 +11450,9 @@ GameObject:
   - component: {fileID: 980457036}
   - component: {fileID: 980457035}
   - component: {fileID: 980457034}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (43)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -11525,9 +11545,9 @@ GameObject:
   - component: {fileID: 982034359}
   - component: {fileID: 982034358}
   - component: {fileID: 982034357}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (92)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -11680,12 +11700,20 @@ PrefabInstance:
       value: suelo (5)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0d4a9c4482bbbf94badd06bcfb33e2b3, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d4a9c4482bbbf94badd06bcfb33e2b3, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0d4a9c4482bbbf94badd06bcfb33e2b3, type: 3}
       propertyPath: m_TagString
-      value: Ground
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 0d4a9c4482bbbf94badd06bcfb33e2b3, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8164078558771037576, guid: 0d4a9c4482bbbf94badd06bcfb33e2b3, type: 3}
       propertyPath: m_TagString
@@ -11725,7 +11753,7 @@ GameObject:
   - component: {fileID: 996917249}
   - component: {fileID: 996917248}
   - component: {fileID: 996917247}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (6)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -11839,9 +11867,9 @@ GameObject:
   - component: {fileID: 1000292460}
   - component: {fileID: 1000292459}
   - component: {fileID: 1000292458}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (1)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -11934,9 +11962,9 @@ GameObject:
   - component: {fileID: 1017536989}
   - component: {fileID: 1017536988}
   - component: {fileID: 1017536987}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (5)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -12029,9 +12057,9 @@ GameObject:
   - component: {fileID: 1018352368}
   - component: {fileID: 1018352367}
   - component: {fileID: 1018352366}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (1)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -12124,9 +12152,9 @@ GameObject:
   - component: {fileID: 1020784688}
   - component: {fileID: 1020784687}
   - component: {fileID: 1020784686}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (76)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -12214,10 +12242,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 927007594816134326, guid: b6229acca2b6bdc4f8d5008e44c40210, type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
     - target: {fileID: 927007594816134333, guid: b6229acca2b6bdc4f8d5008e44c40210, type: 3}
       propertyPath: moveSpeed
       value: 32
@@ -12236,7 +12260,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8774921424117114113, guid: b6229acca2b6bdc4f8d5008e44c40210, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8774921424117114113, guid: b6229acca2b6bdc4f8d5008e44c40210, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12282,10 +12306,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 8774921424117114114, guid: b6229acca2b6bdc4f8d5008e44c40210, type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 927007592843876292, guid: b6229acca2b6bdc4f8d5008e44c40210, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b6229acca2b6bdc4f8d5008e44c40210, type: 3}
@@ -12299,7 +12319,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1040215305}
   - component: {fileID: 1040215306}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: collider
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -12345,9 +12365,9 @@ GameObject:
   - component: {fileID: 1042528032}
   - component: {fileID: 1042528031}
   - component: {fileID: 1042528030}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (7)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -12440,9 +12460,9 @@ GameObject:
   - component: {fileID: 1050981012}
   - component: {fileID: 1050981011}
   - component: {fileID: 1050981010}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (124)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -12535,9 +12555,9 @@ GameObject:
   - component: {fileID: 1052828145}
   - component: {fileID: 1052828144}
   - component: {fileID: 1052828143}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (5)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -12630,7 +12650,7 @@ GameObject:
   - component: {fileID: 1057521260}
   - component: {fileID: 1057521259}
   - component: {fileID: 1057521258}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (1)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -12725,7 +12745,7 @@ GameObject:
   - component: {fileID: 1068863477}
   - component: {fileID: 1068863476}
   - component: {fileID: 1068863475}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (1)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -12820,9 +12840,9 @@ GameObject:
   - component: {fileID: 1083071450}
   - component: {fileID: 1083071449}
   - component: {fileID: 1083071448}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (17)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -12933,7 +12953,7 @@ Transform:
   - {fileID: 950496983}
   - {fileID: 1269491752}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1109269251
 GameObject:
@@ -12947,9 +12967,9 @@ GameObject:
   - component: {fileID: 1109269254}
   - component: {fileID: 1109269253}
   - component: {fileID: 1109269252}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (94)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -13042,7 +13062,7 @@ GameObject:
   - component: {fileID: 1112984796}
   - component: {fileID: 1112984795}
   - component: {fileID: 1112984794}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (3)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -13135,9 +13155,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1117352762}
   - component: {fileID: 1117352763}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: collider
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13181,9 +13201,9 @@ GameObject:
   - component: {fileID: 1124458323}
   - component: {fileID: 1124458322}
   - component: {fileID: 1124458321}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (22)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -13276,9 +13296,9 @@ GameObject:
   - component: {fileID: 1127842522}
   - component: {fileID: 1127842521}
   - component: {fileID: 1127842520}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (90)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -13431,12 +13451,20 @@ PrefabInstance:
       value: suelo (4)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0d4a9c4482bbbf94badd06bcfb33e2b3, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d4a9c4482bbbf94badd06bcfb33e2b3, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0d4a9c4482bbbf94badd06bcfb33e2b3, type: 3}
       propertyPath: m_TagString
-      value: Ground
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 0d4a9c4482bbbf94badd06bcfb33e2b3, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8164078558771037576, guid: 0d4a9c4482bbbf94badd06bcfb33e2b3, type: 3}
       propertyPath: m_TagString
@@ -13456,9 +13484,9 @@ GameObject:
   - component: {fileID: 1133786768}
   - component: {fileID: 1133786767}
   - component: {fileID: 1133786766}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (14)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -13551,9 +13579,9 @@ GameObject:
   - component: {fileID: 1141403213}
   - component: {fileID: 1141403212}
   - component: {fileID: 1141403211}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (87)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -13665,9 +13693,9 @@ GameObject:
   - component: {fileID: 1152521962}
   - component: {fileID: 1152521961}
   - component: {fileID: 1152521960}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (112)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -13760,9 +13788,9 @@ GameObject:
   - component: {fileID: 1156340966}
   - component: {fileID: 1156340965}
   - component: {fileID: 1156340964}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (7)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -13852,7 +13880,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1162991935}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Stairs (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13894,9 +13922,9 @@ GameObject:
   - component: {fileID: 1164120761}
   - component: {fileID: 1164120760}
   - component: {fileID: 1164120759}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (120)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -13989,7 +14017,7 @@ GameObject:
   - component: {fileID: 1170767289}
   - component: {fileID: 1170767288}
   - component: {fileID: 1170767287}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (6)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -14084,9 +14112,9 @@ GameObject:
   - component: {fileID: 1171277683}
   - component: {fileID: 1171277682}
   - component: {fileID: 1171277681}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (102)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -14179,7 +14207,7 @@ GameObject:
   - component: {fileID: 1174887806}
   - component: {fileID: 1174887805}
   - component: {fileID: 1174887804}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (7)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -14275,7 +14303,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3494929045055973973, guid: eed464784102b474e82e3c4e81b45ede, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3494929045055973973, guid: eed464784102b474e82e3c4e81b45ede, type: 3}
       propertyPath: m_LocalScale.x
@@ -14343,9 +14371,9 @@ GameObject:
   - component: {fileID: 1178932926}
   - component: {fileID: 1178932925}
   - component: {fileID: 1178932924}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (5)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -14438,9 +14466,9 @@ GameObject:
   - component: {fileID: 1183615334}
   - component: {fileID: 1183615333}
   - component: {fileID: 1183615332}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (5)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -14617,7 +14645,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1192854727
 GameObject:
@@ -14631,9 +14659,9 @@ GameObject:
   - component: {fileID: 1192854731}
   - component: {fileID: 1192854730}
   - component: {fileID: 1192854729}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (4)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -14724,7 +14752,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1222899719}
   - component: {fileID: 1222899720}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: collider
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -14770,9 +14798,9 @@ GameObject:
   - component: {fileID: 1227886381}
   - component: {fileID: 1227886380}
   - component: {fileID: 1227886379}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (84)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -14865,9 +14893,9 @@ GameObject:
   - component: {fileID: 1227993639}
   - component: {fileID: 1227993638}
   - component: {fileID: 1227993637}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (39)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -14960,9 +14988,9 @@ GameObject:
   - component: {fileID: 1231462935}
   - component: {fileID: 1231462934}
   - component: {fileID: 1231462933}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (44)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -15085,9 +15113,9 @@ GameObject:
   - component: {fileID: 1270289415}
   - component: {fileID: 1270289414}
   - component: {fileID: 1270289413}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (69)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -15180,9 +15208,9 @@ GameObject:
   - component: {fileID: 1288989908}
   - component: {fileID: 1288989907}
   - component: {fileID: 1288989906}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (7)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -15275,9 +15303,9 @@ GameObject:
   - component: {fileID: 1292857028}
   - component: {fileID: 1292857027}
   - component: {fileID: 1292857026}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (116)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -15367,7 +15395,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1300171826}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15400,9 +15428,9 @@ GameObject:
   - component: {fileID: 1303160072}
   - component: {fileID: 1303160071}
   - component: {fileID: 1303160070}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (75)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -15495,9 +15523,9 @@ GameObject:
   - component: {fileID: 1305448721}
   - component: {fileID: 1305448720}
   - component: {fileID: 1305448719}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (1)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -15651,9 +15679,9 @@ GameObject:
   - component: {fileID: 1315769956}
   - component: {fileID: 1315769955}
   - component: {fileID: 1315769954}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (6)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -15751,9 +15779,9 @@ GameObject:
   - component: {fileID: 1324691725}
   - component: {fileID: 1324691724}
   - component: {fileID: 1324691723}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (114)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -15846,9 +15874,9 @@ GameObject:
   - component: {fileID: 1333593422}
   - component: {fileID: 1333593421}
   - component: {fileID: 1333593420}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (26)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -15941,9 +15969,9 @@ GameObject:
   - component: {fileID: 1336545816}
   - component: {fileID: 1336545815}
   - component: {fileID: 1336545814}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (33)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -16036,9 +16064,9 @@ GameObject:
   - component: {fileID: 1337345776}
   - component: {fileID: 1337345775}
   - component: {fileID: 1337345774}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -16131,9 +16159,9 @@ GameObject:
   - component: {fileID: 1338446227}
   - component: {fileID: 1338446226}
   - component: {fileID: 1338446225}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (7)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -16221,13 +16249,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2884498819071266555, guid: c2a85776aa9c0ea40aaf0bf56c0efa08, type: 3}
+      propertyPath: type
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9136160405187565410, guid: c2a85776aa9c0ea40aaf0bf56c0efa08, type: 3}
       propertyPath: m_Name
       value: Enemy_Normal_New (2)
       objectReference: {fileID: 0}
     - target: {fileID: 9136160405187565412, guid: c2a85776aa9c0ea40aaf0bf56c0efa08, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 9136160405187565412, guid: c2a85776aa9c0ea40aaf0bf56c0efa08, type: 3}
       propertyPath: m_LocalScale.x
@@ -16295,9 +16327,9 @@ GameObject:
   - component: {fileID: 1354082853}
   - component: {fileID: 1354082852}
   - component: {fileID: 1354082851}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (7)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -16387,7 +16419,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1355439042}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Stairs (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16408,6 +16440,79 @@ Transform:
   m_Father: {fileID: 407636433}
   m_RootOrder: 98
   m_LocalEulerAnglesHint: {x: 0, y: -210210, z: 0}
+--- !u!1001 &1355764725
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5187404188257493904, guid: b1754ac050ce1174596536fbdf95a0b9, type: 3}
+      propertyPath: movement.y
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 5187404188257493904, guid: b1754ac050ce1174596536fbdf95a0b9, type: 3}
+      propertyPath: killActivated
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5187404188257493904, guid: b1754ac050ce1174596536fbdf95a0b9, type: 3}
+      propertyPath: killsToActivate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5187404188257493904, guid: b1754ac050ce1174596536fbdf95a0b9, type: 3}
+      propertyPath: onlyMoveWhenCarrying
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5187404188257493905, guid: b1754ac050ce1174596536fbdf95a0b9, type: 3}
+      propertyPath: m_Name
+      value: Elevator (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5187404188257493908, guid: b1754ac050ce1174596536fbdf95a0b9, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5187404188257493908, guid: b1754ac050ce1174596536fbdf95a0b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 5187404188257493908, guid: b1754ac050ce1174596536fbdf95a0b9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 5187404188257493908, guid: b1754ac050ce1174596536fbdf95a0b9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5187404188257493908, guid: b1754ac050ce1174596536fbdf95a0b9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9659258
+      objectReference: {fileID: 0}
+    - target: {fileID: 5187404188257493908, guid: b1754ac050ce1174596536fbdf95a0b9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5187404188257493908, guid: b1754ac050ce1174596536fbdf95a0b9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.2588191
+      objectReference: {fileID: 0}
+    - target: {fileID: 5187404188257493908, guid: b1754ac050ce1174596536fbdf95a0b9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5187404188257493908, guid: b1754ac050ce1174596536fbdf95a0b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5187404188257493908, guid: b1754ac050ce1174596536fbdf95a0b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5187404188257493908, guid: b1754ac050ce1174596536fbdf95a0b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b1754ac050ce1174596536fbdf95a0b9, type: 3}
 --- !u!1 &1359528896
 GameObject:
   m_ObjectHideFlags: 0
@@ -16417,7 +16522,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1359528897}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16456,7 +16561,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1364750835}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Stairs (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16489,7 +16594,7 @@ GameObject:
   - component: {fileID: 1374791807}
   - component: {fileID: 1374791806}
   - component: {fileID: 1374791805}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -16584,9 +16689,9 @@ GameObject:
   - component: {fileID: 1382116039}
   - component: {fileID: 1382116038}
   - component: {fileID: 1382116037}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (74)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -16679,9 +16784,9 @@ GameObject:
   - component: {fileID: 1382887910}
   - component: {fileID: 1382887909}
   - component: {fileID: 1382887908}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (113)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -16774,9 +16879,9 @@ GameObject:
   - component: {fileID: 1392099069}
   - component: {fileID: 1392099068}
   - component: {fileID: 1392099067}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (3)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -16869,9 +16974,9 @@ GameObject:
   - component: {fileID: 1395491619}
   - component: {fileID: 1395491618}
   - component: {fileID: 1395491617}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (7)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -16964,7 +17069,7 @@ GameObject:
   - component: {fileID: 1420325080}
   - component: {fileID: 1420325079}
   - component: {fileID: 1420325078}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -17059,7 +17164,7 @@ GameObject:
   - component: {fileID: 1428026435}
   - component: {fileID: 1428026434}
   - component: {fileID: 1428026433}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (4)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -17154,9 +17259,9 @@ GameObject:
   - component: {fileID: 1428645528}
   - component: {fileID: 1428645527}
   - component: {fileID: 1428645526}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (31)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -17249,9 +17354,9 @@ GameObject:
   - component: {fileID: 1429714093}
   - component: {fileID: 1429714092}
   - component: {fileID: 1429714091}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (122)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -17344,7 +17449,7 @@ GameObject:
   - component: {fileID: 1440041322}
   - component: {fileID: 1440041321}
   - component: {fileID: 1440041320}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (5)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -17439,9 +17544,9 @@ GameObject:
   - component: {fileID: 1442816573}
   - component: {fileID: 1442816572}
   - component: {fileID: 1442816571}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (100)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -17534,9 +17639,9 @@ GameObject:
   - component: {fileID: 1443528311}
   - component: {fileID: 1443528310}
   - component: {fileID: 1443528309}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (6)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -17629,9 +17734,9 @@ GameObject:
   - component: {fileID: 1455798317}
   - component: {fileID: 1455798316}
   - component: {fileID: 1455798315}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (76)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -17724,9 +17829,9 @@ GameObject:
   - component: {fileID: 1469683711}
   - component: {fileID: 1469683710}
   - component: {fileID: 1469683709}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (77)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -17819,9 +17924,9 @@ GameObject:
   - component: {fileID: 1472795554}
   - component: {fileID: 1472795553}
   - component: {fileID: 1472795552}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (74)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -17914,9 +18019,9 @@ GameObject:
   - component: {fileID: 1475246763}
   - component: {fileID: 1475246762}
   - component: {fileID: 1475246761}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (2)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -18009,9 +18114,9 @@ GameObject:
   - component: {fileID: 1475966856}
   - component: {fileID: 1475966855}
   - component: {fileID: 1475966854}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (91)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -18104,9 +18209,9 @@ GameObject:
   - component: {fileID: 1494988939}
   - component: {fileID: 1494988938}
   - component: {fileID: 1494988937}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (5)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -18199,9 +18304,9 @@ GameObject:
   - component: {fileID: 1499789766}
   - component: {fileID: 1499789765}
   - component: {fileID: 1499789764}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (81)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -18294,9 +18399,9 @@ GameObject:
   - component: {fileID: 1500278776}
   - component: {fileID: 1500278775}
   - component: {fileID: 1500278774}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (6)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -18408,7 +18513,7 @@ GameObject:
   - component: {fileID: 1505629979}
   - component: {fileID: 1505629978}
   - component: {fileID: 1505629977}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (1)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -18503,9 +18608,9 @@ GameObject:
   - component: {fileID: 1506672939}
   - component: {fileID: 1506672938}
   - component: {fileID: 1506672937}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (5)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -18598,9 +18703,9 @@ GameObject:
   - component: {fileID: 1520110086}
   - component: {fileID: 1520110085}
   - component: {fileID: 1520110084}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -18693,7 +18798,7 @@ GameObject:
   - component: {fileID: 1530685940}
   - component: {fileID: 1530685939}
   - component: {fileID: 1530685938}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (2)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -18785,7 +18890,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1535272078}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Stairs (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18818,9 +18923,9 @@ GameObject:
   - component: {fileID: 1537213879}
   - component: {fileID: 1537213878}
   - component: {fileID: 1537213877}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (21)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -18911,9 +19016,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1542182084}
   - component: {fileID: 1542182085}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: collider
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19017,12 +19122,20 @@ PrefabInstance:
       value: suelo (2)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0d4a9c4482bbbf94badd06bcfb33e2b3, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d4a9c4482bbbf94badd06bcfb33e2b3, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0d4a9c4482bbbf94badd06bcfb33e2b3, type: 3}
       propertyPath: m_TagString
-      value: Ground
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 0d4a9c4482bbbf94badd06bcfb33e2b3, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8164078558771037576, guid: 0d4a9c4482bbbf94badd06bcfb33e2b3, type: 3}
       propertyPath: m_TagString
@@ -19046,9 +19159,9 @@ GameObject:
   - component: {fileID: 1554016647}
   - component: {fileID: 1554016646}
   - component: {fileID: 1554016645}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (40)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -19141,9 +19254,9 @@ GameObject:
   - component: {fileID: 1555915290}
   - component: {fileID: 1555915289}
   - component: {fileID: 1555915288}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (48)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -19233,7 +19346,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1561342100}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: habitacion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19266,9 +19379,9 @@ GameObject:
   - component: {fileID: 1569446055}
   - component: {fileID: 1569446054}
   - component: {fileID: 1569446053}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (37)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -19422,9 +19535,9 @@ GameObject:
   - component: {fileID: 1573924927}
   - component: {fileID: 1573924926}
   - component: {fileID: 1573924925}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -19517,9 +19630,9 @@ GameObject:
   - component: {fileID: 1581934546}
   - component: {fileID: 1581934545}
   - component: {fileID: 1581934544}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (2)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -19612,9 +19725,9 @@ GameObject:
   - component: {fileID: 1585334484}
   - component: {fileID: 1585334483}
   - component: {fileID: 1585334482}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (97)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -19707,9 +19820,9 @@ GameObject:
   - component: {fileID: 1605405512}
   - component: {fileID: 1605405511}
   - component: {fileID: 1605405510}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (1)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -19802,9 +19915,9 @@ GameObject:
   - component: {fileID: 1617503454}
   - component: {fileID: 1617503453}
   - component: {fileID: 1617503452}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (2)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -19897,9 +20010,9 @@ GameObject:
   - component: {fileID: 1624360044}
   - component: {fileID: 1624360043}
   - component: {fileID: 1624360042}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (111)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -19992,9 +20105,9 @@ GameObject:
   - component: {fileID: 1625388466}
   - component: {fileID: 1625388465}
   - component: {fileID: 1625388464}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (16)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -20087,9 +20200,9 @@ GameObject:
   - component: {fileID: 1631511987}
   - component: {fileID: 1631511986}
   - component: {fileID: 1631511985}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (68)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -20182,9 +20295,9 @@ GameObject:
   - component: {fileID: 1639357798}
   - component: {fileID: 1639357797}
   - component: {fileID: 1639357796}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (3)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -20277,9 +20390,9 @@ GameObject:
   - component: {fileID: 1651869677}
   - component: {fileID: 1651869676}
   - component: {fileID: 1651869675}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (6)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -20372,9 +20485,9 @@ GameObject:
   - component: {fileID: 1661178345}
   - component: {fileID: 1661178344}
   - component: {fileID: 1661178343}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (75)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -20467,9 +20580,9 @@ GameObject:
   - component: {fileID: 1662068339}
   - component: {fileID: 1662068338}
   - component: {fileID: 1662068337}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (126)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -20557,13 +20670,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 360548723, guid: 69a9c2091cc50f545b42de2dd933a77d, type: 3}
+      propertyPath: type
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8012977574662141581, guid: 69a9c2091cc50f545b42de2dd933a77d, type: 3}
       propertyPath: m_Name
       value: Enemy_Fat_New (2)
       objectReference: {fileID: 0}
     - target: {fileID: 8012977574662141687, guid: 69a9c2091cc50f545b42de2dd933a77d, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 8012977574662141687, guid: 69a9c2091cc50f545b42de2dd933a77d, type: 3}
       propertyPath: m_LocalScale.x
@@ -20631,9 +20748,9 @@ GameObject:
   - component: {fileID: 1697561900}
   - component: {fileID: 1697561899}
   - component: {fileID: 1697561898}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (5)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -20726,9 +20843,9 @@ GameObject:
   - component: {fileID: 1710312418}
   - component: {fileID: 1710312417}
   - component: {fileID: 1710312416}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (93)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -20821,9 +20938,9 @@ GameObject:
   - component: {fileID: 1717368742}
   - component: {fileID: 1717368741}
   - component: {fileID: 1717368740}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (66)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -20916,9 +21033,9 @@ GameObject:
   - component: {fileID: 1724468708}
   - component: {fileID: 1724468707}
   - component: {fileID: 1724468706}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (88)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -21011,9 +21128,9 @@ GameObject:
   - component: {fileID: 1725229538}
   - component: {fileID: 1725229537}
   - component: {fileID: 1725229536}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (3)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -21106,7 +21223,7 @@ GameObject:
   - component: {fileID: 1727475036}
   - component: {fileID: 1727475035}
   - component: {fileID: 1727475034}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (3)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -21201,9 +21318,9 @@ GameObject:
   - component: {fileID: 1730150706}
   - component: {fileID: 1730150705}
   - component: {fileID: 1730150704}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (7)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -21301,9 +21418,9 @@ GameObject:
   - component: {fileID: 1734487131}
   - component: {fileID: 1734487130}
   - component: {fileID: 1734487129}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (127)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -21396,7 +21513,7 @@ GameObject:
   - component: {fileID: 1743182227}
   - component: {fileID: 1743182226}
   - component: {fileID: 1743182225}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (4)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -21491,7 +21608,7 @@ GameObject:
   - component: {fileID: 1752468788}
   - component: {fileID: 1752468787}
   - component: {fileID: 1752468786}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (2)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -21584,9 +21701,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1760675457}
   - component: {fileID: 1760675458}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: collider
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21719,9 +21836,9 @@ GameObject:
   - component: {fileID: 1782649432}
   - component: {fileID: 1782649431}
   - component: {fileID: 1782649430}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (101)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -21814,9 +21931,9 @@ GameObject:
   - component: {fileID: 1787501143}
   - component: {fileID: 1787501142}
   - component: {fileID: 1787501141}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (1)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -21909,7 +22026,7 @@ GameObject:
   - component: {fileID: 1792048954}
   - component: {fileID: 1792048953}
   - component: {fileID: 1792048952}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (4)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -22004,9 +22121,9 @@ GameObject:
   - component: {fileID: 1801575204}
   - component: {fileID: 1801575203}
   - component: {fileID: 1801575202}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (49)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -22178,9 +22295,9 @@ GameObject:
   - component: {fileID: 1814105047}
   - component: {fileID: 1814105046}
   - component: {fileID: 1814105045}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (106)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -22273,9 +22390,9 @@ GameObject:
   - component: {fileID: 1815028449}
   - component: {fileID: 1815028448}
   - component: {fileID: 1815028447}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (108)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -22368,9 +22485,9 @@ GameObject:
   - component: {fileID: 1815721017}
   - component: {fileID: 1815721016}
   - component: {fileID: 1815721015}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (95)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -22463,9 +22580,9 @@ GameObject:
   - component: {fileID: 1832693157}
   - component: {fileID: 1832693156}
   - component: {fileID: 1832693155}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (61)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -22558,9 +22675,9 @@ GameObject:
   - component: {fileID: 1844991773}
   - component: {fileID: 1844991772}
   - component: {fileID: 1844991771}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (75)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -22653,9 +22770,9 @@ GameObject:
   - component: {fileID: 1849063837}
   - component: {fileID: 1849063836}
   - component: {fileID: 1849063835}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (4)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -22748,9 +22865,9 @@ GameObject:
   - component: {fileID: 1859322769}
   - component: {fileID: 1859322768}
   - component: {fileID: 1859322767}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (6)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -22841,7 +22958,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1871634803}
   - component: {fileID: 1871634804}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: collider
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -22887,9 +23004,9 @@ GameObject:
   - component: {fileID: 1875155243}
   - component: {fileID: 1875155242}
   - component: {fileID: 1875155241}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (67)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -22982,7 +23099,7 @@ GameObject:
   - component: {fileID: 1878169230}
   - component: {fileID: 1878169229}
   - component: {fileID: 1878169228}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (7)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -23077,9 +23194,9 @@ GameObject:
   - component: {fileID: 1885789310}
   - component: {fileID: 1885789309}
   - component: {fileID: 1885789308}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (10)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -23172,9 +23289,9 @@ GameObject:
   - component: {fileID: 1889714007}
   - component: {fileID: 1889714006}
   - component: {fileID: 1889714005}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (4)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -23267,7 +23384,7 @@ GameObject:
   - component: {fileID: 1899267514}
   - component: {fileID: 1899267513}
   - component: {fileID: 1899267512}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (2)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -23362,9 +23479,9 @@ GameObject:
   - component: {fileID: 1903608095}
   - component: {fileID: 1903608094}
   - component: {fileID: 1903608093}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (128)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -23457,9 +23574,9 @@ GameObject:
   - component: {fileID: 1907586440}
   - component: {fileID: 1907586439}
   - component: {fileID: 1907586438}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (110)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -23549,7 +23666,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1909275881}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: paredes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23582,9 +23699,9 @@ GameObject:
   - component: {fileID: 1910918189}
   - component: {fileID: 1910918188}
   - component: {fileID: 1910918187}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (11)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -23677,9 +23794,9 @@ GameObject:
   - component: {fileID: 1921382279}
   - component: {fileID: 1921382278}
   - component: {fileID: 1921382277}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (1)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -23770,9 +23887,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1935752259}
   - component: {fileID: 1935752260}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: collider
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23816,9 +23933,9 @@ GameObject:
   - component: {fileID: 1936467514}
   - component: {fileID: 1936467513}
   - component: {fileID: 1936467512}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (4)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -23927,7 +24044,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4308536299834048653, guid: 82dd238b9f7528d42a9d0fd15e5e6f03, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4308536299834048653, guid: 82dd238b9f7528d42a9d0fd15e5e6f03, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23991,9 +24108,9 @@ GameObject:
   - component: {fileID: 1953638961}
   - component: {fileID: 1953638960}
   - component: {fileID: 1953638959}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (63)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -24142,12 +24259,20 @@ PrefabInstance:
       value: suelo (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0d4a9c4482bbbf94badd06bcfb33e2b3, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0d4a9c4482bbbf94badd06bcfb33e2b3, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0d4a9c4482bbbf94badd06bcfb33e2b3, type: 3}
       propertyPath: m_TagString
-      value: Ground
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 0d4a9c4482bbbf94badd06bcfb33e2b3, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8164078558771037576, guid: 0d4a9c4482bbbf94badd06bcfb33e2b3, type: 3}
       propertyPath: m_TagString
@@ -24190,9 +24315,9 @@ GameObject:
   - component: {fileID: 1960486814}
   - component: {fileID: 1960486813}
   - component: {fileID: 1960486812}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (30)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -24285,7 +24410,7 @@ GameObject:
   - component: {fileID: 1964280861}
   - component: {fileID: 1964280860}
   - component: {fileID: 1964280859}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -24380,9 +24505,9 @@ GameObject:
   - component: {fileID: 1971815897}
   - component: {fileID: 1971815896}
   - component: {fileID: 1971815895}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (42)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -24473,9 +24598,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1972558301}
   - component: {fileID: 1972558302}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: collider
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24519,9 +24644,9 @@ GameObject:
   - component: {fileID: 1975554161}
   - component: {fileID: 1975554160}
   - component: {fileID: 1975554159}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (80)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -24614,7 +24739,7 @@ GameObject:
   - component: {fileID: 1977516909}
   - component: {fileID: 1977516908}
   - component: {fileID: 1977516907}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (7)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -24709,9 +24834,9 @@ GameObject:
   - component: {fileID: 1978220462}
   - component: {fileID: 1978220461}
   - component: {fileID: 1978220460}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (62)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -24804,9 +24929,9 @@ GameObject:
   - component: {fileID: 1983771704}
   - component: {fileID: 1983771703}
   - component: {fileID: 1983771702}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (23)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -24896,7 +25021,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1997691333}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Stairs (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24929,9 +25054,9 @@ GameObject:
   - component: {fileID: 2003267175}
   - component: {fileID: 2003267174}
   - component: {fileID: 2003267173}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (46)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -25022,9 +25147,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2011586476}
   - component: {fileID: 2011586477}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: collider
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25068,9 +25193,9 @@ GameObject:
   - component: {fileID: 2014903495}
   - component: {fileID: 2014903494}
   - component: {fileID: 2014903493}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (4)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -25163,9 +25288,9 @@ GameObject:
   - component: {fileID: 2026182916}
   - component: {fileID: 2026182915}
   - component: {fileID: 2026182914}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -25258,9 +25383,9 @@ GameObject:
   - component: {fileID: 2032100677}
   - component: {fileID: 2032100676}
   - component: {fileID: 2032100675}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (45)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -25353,9 +25478,9 @@ GameObject:
   - component: {fileID: 2034230545}
   - component: {fileID: 2034230544}
   - component: {fileID: 2034230543}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (117)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -25448,9 +25573,9 @@ GameObject:
   - component: {fileID: 2041106778}
   - component: {fileID: 2041106777}
   - component: {fileID: 2041106776}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (3)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -25543,9 +25668,9 @@ GameObject:
   - component: {fileID: 2043042203}
   - component: {fileID: 2043042202}
   - component: {fileID: 2043042201}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (32)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -25638,9 +25763,9 @@ GameObject:
   - component: {fileID: 2058255078}
   - component: {fileID: 2058255077}
   - component: {fileID: 2058255076}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (41)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -25733,9 +25858,9 @@ GameObject:
   - component: {fileID: 2071076221}
   - component: {fileID: 2071076220}
   - component: {fileID: 2071076219}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (2)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -25828,9 +25953,9 @@ GameObject:
   - component: {fileID: 2076270373}
   - component: {fileID: 2076270372}
   - component: {fileID: 2076270371}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -25923,9 +26048,9 @@ GameObject:
   - component: {fileID: 2079425943}
   - component: {fileID: 2079425942}
   - component: {fileID: 2079425941}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (119)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -26018,9 +26143,9 @@ GameObject:
   - component: {fileID: 2081266979}
   - component: {fileID: 2081266978}
   - component: {fileID: 2081266977}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (109)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -26113,9 +26238,9 @@ GameObject:
   - component: {fileID: 2086918496}
   - component: {fileID: 2086918495}
   - component: {fileID: 2086918494}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (123)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -26208,9 +26333,9 @@ GameObject:
   - component: {fileID: 2090012631}
   - component: {fileID: 2090012630}
   - component: {fileID: 2090012629}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (18)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -26303,9 +26428,9 @@ GameObject:
   - component: {fileID: 2097423841}
   - component: {fileID: 2097423840}
   - component: {fileID: 2097423839}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (129)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -26398,7 +26523,7 @@ GameObject:
   - component: {fileID: 2100157862}
   - component: {fileID: 2100157861}
   - component: {fileID: 2100157860}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (5)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -26493,9 +26618,9 @@ GameObject:
   - component: {fileID: 2103491301}
   - component: {fileID: 2103491300}
   - component: {fileID: 2103491299}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: stair (3)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -26586,9 +26711,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2117754233}
   - component: {fileID: 2117754234}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: collider
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26627,13 +26752,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 360548723, guid: 69a9c2091cc50f545b42de2dd933a77d, type: 3}
+      propertyPath: type
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8012977574662141581, guid: 69a9c2091cc50f545b42de2dd933a77d, type: 3}
       propertyPath: m_Name
       value: Enemy_Fat_New
       objectReference: {fileID: 0}
     - target: {fileID: 8012977574662141687, guid: 69a9c2091cc50f545b42de2dd933a77d, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8012977574662141687, guid: 69a9c2091cc50f545b42de2dd933a77d, type: 3}
       propertyPath: m_LocalScale.x
@@ -26721,7 +26850,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9136160405187565412, guid: c2a85776aa9c0ea40aaf0bf56c0efa08, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9136160405187565412, guid: c2a85776aa9c0ea40aaf0bf56c0efa08, type: 3}
       propertyPath: m_LocalScale.x
@@ -26789,9 +26918,9 @@ GameObject:
   - component: {fileID: 2138586946}
   - component: {fileID: 2138586945}
   - component: {fileID: 2138586944}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Suelo (103)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -26872,3 +27001,60 @@ Transform:
   m_Father: {fileID: 407636433}
   m_RootOrder: 213
   m_LocalEulerAnglesHint: {x: 0, y: 30, z: 0}
+--- !u!1001 &5187404189362400601
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5187404188257493905, guid: b1754ac050ce1174596536fbdf95a0b9, type: 3}
+      propertyPath: m_Name
+      value: Elevator
+      objectReference: {fileID: 0}
+    - target: {fileID: 5187404188257493908, guid: b1754ac050ce1174596536fbdf95a0b9, type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 5187404188257493908, guid: b1754ac050ce1174596536fbdf95a0b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5187404188257493908, guid: b1754ac050ce1174596536fbdf95a0b9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5187404188257493908, guid: b1754ac050ce1174596536fbdf95a0b9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 165
+      objectReference: {fileID: 0}
+    - target: {fileID: 5187404188257493908, guid: b1754ac050ce1174596536fbdf95a0b9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5187404188257493908, guid: b1754ac050ce1174596536fbdf95a0b9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5187404188257493908, guid: b1754ac050ce1174596536fbdf95a0b9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5187404188257493908, guid: b1754ac050ce1174596536fbdf95a0b9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5187404188257493908, guid: b1754ac050ce1174596536fbdf95a0b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5187404188257493908, guid: b1754ac050ce1174596536fbdf95a0b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5187404188257493908, guid: b1754ac050ce1174596536fbdf95a0b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b1754ac050ce1174596536fbdf95a0b9, type: 3}
