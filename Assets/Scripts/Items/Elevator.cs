@@ -17,7 +17,7 @@ public class Elevator : KillTech
     private Vector3 direction;
     private bool arrived;
 
-    protected override void Activate() { active = true;Debug.Log("ACTIVATED"); }
+    protected override void Activate() { active = true; }
 
     protected override void OnEnter() { player.transform.SetParent(transform);}
     protected override void OnExit() { player.transform.SetParent(null); }
