@@ -146,22 +146,25 @@
           </e>
           <e p="HUD.cs" t="Include" />
           <e p="Items" t="Include">
+            <e p="Elevator.cs" t="Include" />
             <e p="KeyItem.cs" t="Include" />
+            <e p="KillTech.cs" t="Include" />
             <e p="LockedDoor.cs" t="Include" />
             <e p="PickableObject.cs" t="Include" />
             <e p="Powerup.cs" t="Include" />
             <e p="StatusPickup.cs" t="Include" />
           </e>
+          <e p="Killbox.cs" t="Include" />
           <e p="LevelEnd.cs" t="Include" />
           <e p="LevelManager.cs" t="Include" />
           <e p="Player" t="Include">
-            <e p="Feet.cs" t="Include" />
             <e p="PlayerControls.cs" t="Include" />
             <e p="PlayerDamageDetection.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
             <e p="PlayerPowers.cs" t="Include" />
             <e p="PlayerStats.cs" t="Include" />
           </e>
+          <e p="TwoDoor.cs" t="Include" />
           <e p="Weapons" t="Include">
             <e p="[OUT] LongRangeWeapon.cs" t="Include" />
             <e p="[OUT] ShortRangeWeapon.cs" t="Include" />

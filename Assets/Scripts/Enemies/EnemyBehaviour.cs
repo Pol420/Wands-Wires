@@ -18,6 +18,9 @@ public abstract class EnemyBehaviour : MonoBehaviour
 
     protected NavMeshAgent navMeshAgent;
     
+    //Provisional
+    protected Enemy enemy;
+    
     void Start()
     {
         player = PlayerStats.Instance().transform.GetChild(0);
@@ -32,6 +35,8 @@ public abstract class EnemyBehaviour : MonoBehaviour
 
         if (patrolPositions.Length <= 0)
             patrolPositions = DefaultPatrolPositions();
+
+        enemy = GetComponent<Enemy>();
     }
 
     public void Chase()

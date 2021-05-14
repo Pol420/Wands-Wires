@@ -6,6 +6,8 @@ public class EnemyBehaviourNormal : EnemyBehaviour
 {
     [SerializeField] private GameObject attackArea;
     
+    
+
     public override void Attack()
     {
         LookAtPlayer();
@@ -37,7 +39,8 @@ public class EnemyBehaviourNormal : EnemyBehaviour
     {
         if (timeToAttack <= 0)
         {
-            animator.SetTrigger("Attack");
+            if(!enemy.IsDead())
+                animator.SetTrigger("Attack");
             timeToAttack = enemyData.GetMaxTimeToAttack();
         }
         else
@@ -48,7 +51,7 @@ public class EnemyBehaviourNormal : EnemyBehaviour
 
     private void ShootingAttack()
     {
-        if (timeToShoot <= 0)
+        if (timeToShoot <= 0 && !enemy.IsDead())
         {
             Instantiate(enemyData.GetProjectile(), shootingPoint.transform.position, shootingPoint.transform.rotation);
             timeToShoot = enemyData.GetMaxTimeToShoot();

@@ -27,6 +27,10 @@ public class Enemy : MonoBehaviour
     public static UnityEvent death;
     public UnityEvent singularDeath;
     private bool dead;
+    
+    
+    //Provisional
+    private EnemyBehaviourNormal isNormal;
 
     private void Awake()
     {
@@ -34,6 +38,7 @@ public class Enemy : MonoBehaviour
         singularDeath = new UnityEvent();
         singularDeath.AddListener(death.Invoke);
         dead = false;
+        isNormal = GetComponent<EnemyBehaviourNormal>();
     }
 
     void Start()
@@ -67,8 +72,13 @@ public class Enemy : MonoBehaviour
             dead = true;
             if(Random.Range(0f, 1f) <= dropChance) DropItem();
             singularDeath.Invoke();
-            //anim.SetTrigger("Die");
-            DestroyEnemy(); //temp before animation events!
+            if(isNormal != null)
+                anim.SetTrigger("Die");
+            else
+            {
+                DestroyEnemy();
+            }
+            //DestroyEnemy(); //temp before animation events!
         }
     }
 
@@ -87,4 +97,9 @@ public class Enemy : MonoBehaviour
     }
 
     private bool Roll(float threshold) { return Random.Range(0f, 100f) <= threshold; }
+
+    public bool IsDead()
+    {
+        return dead;
+    }
 }
