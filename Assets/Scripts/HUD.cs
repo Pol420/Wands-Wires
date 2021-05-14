@@ -5,9 +5,6 @@ using UnityEngine.UI;
 
 public class HUD : MonoBehaviour
 {
-    [SerializeField] private List<RectTransform> toAdjust = new List<RectTransform>();
-    private RectTransform adjustmentPane;
-
     [Header("Ammo")]
     [SerializeField] private Text fireText = null;
     [SerializeField] private Text waterText = null;
@@ -35,15 +32,6 @@ public class HUD : MonoBehaviour
     private void Start()
     {
         items = new List<GameObject>();
-        adjustmentPane = transform.GetChild(0).GetComponent<RectTransform>();
-        Vector2 adjustment = new Vector2(Screen.width / adjustmentPane.rect.width, Screen.height / adjustmentPane.rect.height);
-        foreach (RectTransform rt in toAdjust)
-        {
-            rt.anchoredPosition *= adjustment;
-            rt.localScale *= adjustment.x;
-        }
-        itemSpacing *= adjustment.x;
-        adjustmentPane.gameObject.SetActive(false);
     }
 
     public void SetFire(int amount) { fireText.text = amount + ""; }
