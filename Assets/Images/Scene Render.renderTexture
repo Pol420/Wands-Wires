@@ -6,7 +6,7 @@ RenderTexture:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Low Res
+  m_Name: Scene Render
   m_ImageContentsHash:
     serializedVersion: 2
     Hash: 00000000000000000000000000000000
@@ -16,7 +16,7 @@ RenderTexture:
   serializedVersion: 3
   m_Width: 512
   m_Height: 384
-  m_AntiAliasing: 1
+  m_AntiAliasing: 2
   m_MipCount: -1
   m_DepthFormat: 0
   m_ColorFormat: 8
