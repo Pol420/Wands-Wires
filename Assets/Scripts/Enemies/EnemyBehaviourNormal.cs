@@ -11,27 +11,29 @@ public class EnemyBehaviourNormal : EnemyBehaviour
     public override void Attack()
     {
         LookAtPlayer();
-        
-        if (InAttackRange())
+        if (!enemy.IsDamaged())
         {
-            MeleeAttack();  
-        }
-        else
-        {
-            ShootingAttack();
-            if (CalculateDistance(navMeshAgent.destination, transform.position) < errorDistance)
+            if (InAttackRange())
             {
-                Vector3 newPosition = transform.position + 
-                                      new Vector3(Random.Range(-50.0f, 50.0f), 0, Random.Range(-5.0f, 5.0f));
-                while(!InShootRange(newPosition) && !InAttackRange(newPosition))
-                {
-                    newPosition = transform.position +
-                                  new Vector3(Random.Range(-50.0f, 50.0f), 0, Random.Range(-5.0f, 5.0f));
-                }
-
-                navMeshAgent.destination = newPosition;
-                animator.SetBool("Walking", true);
+                MeleeAttack();  
             }
+            else
+            {
+                ShootingAttack();
+                if (CalculateDistance(navMeshAgent.destination, transform.position) < errorDistance)
+                {
+                    Vector3 newPosition = transform.position + 
+                                          new Vector3(Random.Range(-50.0f, 50.0f), 0, Random.Range(-5.0f, 5.0f));
+                    while(!InShootRange(newPosition) && !InAttackRange(newPosition))
+                    {
+                        newPosition = transform.position +
+                                      new Vector3(Random.Range(-50.0f, 50.0f), 0, Random.Range(-5.0f, 5.0f));
+                    }
+
+                    navMeshAgent.destination = newPosition;
+                    animator.SetBool("Walking", true);
+                }
+            }    
         }
     }
 

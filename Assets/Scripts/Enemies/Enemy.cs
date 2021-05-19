@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -27,8 +28,9 @@ public class Enemy : MonoBehaviour
     public static UnityEvent death;
     public UnityEvent singularDeath;
     private bool dead;
-    
-    
+    private bool damaged;
+
+
     //Provisional
     private EnemyBehaviourNormal isNormal;
 
@@ -38,6 +40,7 @@ public class Enemy : MonoBehaviour
         singularDeath = new UnityEvent();
         singularDeath.AddListener(death.Invoke);
         dead = false;
+        damaged = false;
         isNormal = GetComponent<EnemyBehaviourNormal>();
     }
 
@@ -62,7 +65,19 @@ public class Enemy : MonoBehaviour
     {
         currentHealth -= amount;
         if (hb) healthBar.value = currentHealth / health;
-        if (currentHealth <= 0 && !dead) Die();
+        if (!dead)
+        {
+            if (currentHealth <= 0)
+            {
+                damaged = false;
+                Die();
+            }
+            else
+            {
+                anim.SetTrigger("Damaged");
+                damaged = true; 
+            }
+        }
     }
 
     private void Die()
@@ -70,6 +85,7 @@ public class Enemy : MonoBehaviour
         if (!dead)
         {
             dead = true;
+            anim.SetBool("Dead", true);
             if(Random.Range(0f, 1f) <= dropChance) DropItem();
             singularDeath.Invoke();
             if(isNormal != null)
@@ -101,5 +117,15 @@ public class Enemy : MonoBehaviour
     public bool IsDead()
     {
         return dead;
+    }
+
+    public void NotDamaged()
+    {
+        damaged = false;
+    }
+
+    public bool IsDamaged()
+    {
+        return damaged;
     }
 }
