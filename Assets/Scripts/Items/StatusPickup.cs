@@ -6,6 +6,11 @@ public class StatusPickup : PickableObject
 {
     [SerializeField] private PickupType type = PickupType.Health;
     [SerializeField] private PickupSize size = PickupSize.Medium;
+    [SerializeField] private GameObject fireAmmoModel = null;
+    [SerializeField] private GameObject waterAmmoModel = null;
+    [SerializeField] private GameObject teslaAmmoModel = null;
+    [SerializeField] private GameObject healthModel = null;
+    [SerializeField] private GameObject shieldModel = null;
 
     private static GameObject statusSample;
     protected override void OnStart() { if (statusSample == null) CreateSample(); }
@@ -68,16 +73,17 @@ public class StatusPickup : PickableObject
     {
         switch (typeIndex)
         {
-            case 0: type = PickupType.Health; break;
-            case 1: type = PickupType.Shield; break;
-            case 2: type = PickupType.FireAmmo; break;
-            case 3: type = PickupType.WaterAmmo; break;
-            case 4: type = PickupType.TeslaAmmo; break;
+            case 0: type = PickupType.Health; Instantiate(healthModel, transform); break;
+            case 1: type = PickupType.Shield; Instantiate(shieldModel, transform); break;
+            case 2: type = PickupType.FireAmmo; Instantiate(fireAmmoModel, transform); break;
+            case 3: type = PickupType.WaterAmmo; Instantiate(waterAmmoModel, transform); break;
+            case 4: type = PickupType.TeslaAmmo; Instantiate(teslaAmmoModel, transform); break;
             default: break;
         }
     }
     public void SetSize(int sizeIndex)
     {
+        transform.localScale = Vector3.one * 0.4f * (sizeIndex + 1);
         switch (sizeIndex)
         {
             case 0: size = PickupSize.Small; break;
