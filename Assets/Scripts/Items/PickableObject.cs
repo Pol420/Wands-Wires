@@ -39,6 +39,6 @@ public abstract class PickableObject : MonoBehaviour
         foreach (Collider c in GetComponents<Collider>()) c.enabled = active;
         body.useGravity = active;
         if (!active) body.velocity = Vector3.zero;
-        else body.AddForce(4f * (Vector3.up + Random.insideUnitSphere.normalized), ForceMode.VelocityChange);
+        else body.AddForce(5f * (Vector3.up + Random.insideUnitSphere.normalized), ForceMode.Impulse);
     }
 }

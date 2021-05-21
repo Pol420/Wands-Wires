@@ -86,7 +86,6 @@ public class Enemy : MonoBehaviour
         {
             dead = true;
             anim.SetBool("Dead", true);
-            if(Random.Range(0f, 1f) <= dropChance) DropItem();
             singularDeath.Invoke();
             if(isNormal != null)
                 anim.SetTrigger("Die");
@@ -100,6 +99,7 @@ public class Enemy : MonoBehaviour
 
     public void DestroyEnemy()
     {
+        if (Random.Range(0f, 1f) <= dropChance) DropItem();
         Destroy(gameObject);
     }
 
