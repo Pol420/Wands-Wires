@@ -1497,7 +1497,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 927007594196545073}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7329322687941259247}
@@ -2248,7 +2248,7 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
-  m_Height: 3
+  m_Height: 1.8
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &927007594816134333
@@ -2264,7 +2264,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mouseSensitivity: 2
-  moveSpeed: 18
+  moveSpeed: 32
   jumpPower: 1024
   axis: {x: 0, y: 0}
   mouse: {x: 0, y: 0}
@@ -2307,8 +2307,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.25, y: 0.1, z: 0.25}
-  m_Center: {x: 0, y: -1.5, z: 0}
+  m_Size: {x: 0.25, y: 0.072024345, z: 0.25}
+  m_Center: {x: 0, y: -0.9356713, z: 0}
 --- !u!1 &927007594874215443
 GameObject:
   m_ObjectHideFlags: 0
