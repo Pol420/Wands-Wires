@@ -6,8 +6,6 @@ public class EnemyBehaviourNormal : EnemyBehaviour
 {
     [SerializeField] private GameObject attackArea;
     
-    
-
     public override void Attack()
     {
         LookAtPlayer();

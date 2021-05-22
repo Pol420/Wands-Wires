@@ -50,6 +50,7 @@ public class PlayerStats : MonoBehaviour
 
     void Start()
     {
+        if (LevelManager.Instance().InMainMenu()) Destroy(gameObject);
         LevelManager.levelLoad.AddListener(InitPlayer);
         InitPlayer();
         LevelManager.levelReset.AddListener(ResetPlayer);
@@ -91,13 +92,6 @@ public class PlayerStats : MonoBehaviour
         AddWaterAmmo(0);
         AddTeslaAmmo(0);
         keyItems = new List<string>();
-    }
-    
-    void Update()
-    {
-        if (Input.GetKey(KeyCode.H)) Hurt(5f);
-        if (Input.GetKey(KeyCode.V)) AddHealth(5f);
-        if (Input.GetKey(KeyCode.E)) AddShield(1f);
     }
 
     public int GetCurrentAmmo()

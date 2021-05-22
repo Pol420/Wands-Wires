@@ -29,33 +29,41 @@ public class PlayerMovement : MonoBehaviour
     
     void Update()
     {
-        Pivot(controls.mouse.x);
-        Look(controls.mouse.y);
+        if (!LevelManager.paused)
+        {
+            body.useGravity = true;
+            Pivot(controls.mouse.x);
+            Look(controls.mouse.y);
+        }
+        else body.useGravity = false;
     }
 
     private void FixedUpdate()
     {
-        fixedTimeFlow = Time.fixedDeltaTime / Time.timeScale;
-        if (grounded)
+        if (!LevelManager.paused)
         {
-            Move(controls.axis);
-            if (controls.IsJumping()) Jump(controls.axis);
-        }
-        else
-        {
-            if (body.velocity.y >= 0f)
+            fixedTimeFlow = Time.fixedDeltaTime / Time.timeScale;
+            if (grounded)
             {
                 Move(controls.axis);
-                Fall(fixedTimeFlow * (controls.IsJumping() ? 0.5f : 1f));
+                if (controls.IsJumping()) Jump(controls.axis);
             }
             else
             {
-                Move(controls.axis);
-                Fall(fixedTimeFlow);
+                if (body.velocity.y >= 0f)
+                {
+                    Move(controls.axis);
+                    Fall(fixedTimeFlow * (controls.IsJumping() ? 0.5f : 1f));
+                }
+                else
+                {
+                    Move(controls.axis);
+                    Fall(fixedTimeFlow);
+                }
             }
+            SpeedLimit();
+            grounded = Physics.CheckBox(transform.position - transform.up * offFeet, feetSize, transform.rotation, groundMask);
         }
-        SpeedLimit();
-        grounded = Physics.CheckBox(transform.position - transform.up * offFeet, feetSize, transform.rotation, groundMask);
     }
 
     private void Fall(float multiplier)

@@ -23,12 +23,15 @@ public class EnemyStateMachine : MonoBehaviour
 
     void Update()
     {
-        ChangeState();
-        switch (state)
+        if (!LevelManager.paused)
         {
-            case EnemyStates.Chase: Chase(); break;
-            case EnemyStates.Attack: Attack(); break;
-            default: Patrol(); break;
+            ChangeState();
+            switch (state)
+            {
+                case EnemyStates.Chase: Chase(); break;
+                case EnemyStates.Attack: Attack(); break;
+                default: Patrol(); break;
+            }
         }
     }
 

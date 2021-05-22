@@ -30,36 +30,45 @@ public abstract class Weapon : MonoBehaviour
 
     private Animator anim;
     protected static Transform cam;
+    private LevelManager lm;
 
     void Awake()
     {
         anim = GetComponent<Animator>();
         if(cam == null) cam = Camera.main.transform;
         otherWeapon = otherWeaponObject.GetComponent<Weapon>();
+    }
+
+    private void Start()
+    {
+        lm = LevelManager.Instance();
         SubStart();
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F)) SwitchWeapon();
-        else if (Input.GetKeyDown(KeyCode.Alpha1)) SwitchAmmo(Ammo.Fire);
-        else if (Input.GetKeyDown(KeyCode.Alpha2)) SwitchAmmo(Ammo.Water);
-        else if (Input.GetKeyDown(KeyCode.Alpha3)) SwitchAmmo(Ammo.Tesla);
-        else if (currentReload > 0f)
+        if (!LevelManager.paused)
         {
-            currentReload -= Time.unscaledDeltaTime;
-            holder.SetHudSelector(1 - currentReload / reloadTime);
-        }
-        else if ((!auto && Input.GetButtonDown("Fire1")) || (auto && Input.GetButton("Fire1")))
-        {
-            if (holder.GetCurrentAmmo() > 0)
+            if (Input.GetKeyDown(KeyCode.F)) SwitchWeapon();
+            else if (Input.GetKeyDown(KeyCode.Alpha1)) SwitchAmmo(Ammo.Fire);
+            else if (Input.GetKeyDown(KeyCode.Alpha2)) SwitchAmmo(Ammo.Water);
+            else if (Input.GetKeyDown(KeyCode.Alpha3)) SwitchAmmo(Ammo.Tesla);
+            else if (currentReload > 0f)
             {
-                currentReload = reloadTime;
-                Shoot(SpawnBullet());
-                //todo trigger animation accordingly
+                currentReload -= Time.unscaledDeltaTime;
+                holder.SetHudSelector(1 - currentReload / reloadTime);
             }
+            else if ((!auto && Input.GetButtonDown("Fire1")) || (auto && Input.GetButton("Fire1")))
+            {
+                if (holder.GetCurrentAmmo() > 0)
+                {
+                    currentReload = reloadTime;
+                    Shoot(SpawnBullet());
+                    //todo trigger animation accordingly
+                }
+            }
+            SubUpdate();
         }
-        SubUpdate();
     }
 
     private GameObject SpawnBullet()

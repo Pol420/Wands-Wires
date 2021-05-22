@@ -15,19 +15,20 @@ public class PlayerControls : MonoBehaviour
     
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
         axis = Vector2.zero;
         mouse = Vector2.zero;
     }
-    
+
     void Update()
     {
-        float inputX = Input.GetAxis("Horizontal");
-        float inputY = Input.GetAxis("Vertical");
-        if(inputX * inputY == 0f) axis = new Vector2(inputX, inputY) * moveSpeed;
-        else axis = new Vector2(inputX, inputY).normalized * moveSpeed;
-        mouse = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y")) * mouseSensitivity;
+        if (!LevelManager.paused)
+        {
+            float inputX = Input.GetAxis("Horizontal");
+            float inputY = Input.GetAxis("Vertical");
+            if (inputX * inputY == 0f) axis = new Vector2(inputX, inputY) * moveSpeed;
+            else axis = new Vector2(inputX, inputY).normalized * moveSpeed;
+            mouse = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y")) * mouseSensitivity;
+        }
     }
     
     public bool IsJumping() { return Input.GetKey(KeyCode.Space); }
