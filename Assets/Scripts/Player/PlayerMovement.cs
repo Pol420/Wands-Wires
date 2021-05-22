@@ -31,9 +31,11 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!LevelManager.paused)
         {
+            body.useGravity = true;
             Pivot(controls.mouse.x);
             Look(controls.mouse.y);
         }
+        else body.useGravity = false;
     }
 
     private void FixedUpdate()

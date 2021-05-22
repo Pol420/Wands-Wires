@@ -47,7 +47,7 @@ public abstract class Weapon : MonoBehaviour
 
     void Update()
     {
-        if (!lm.Paused())
+        if (!LevelManager.paused)
         {
             if (Input.GetKeyDown(KeyCode.F)) SwitchWeapon();
             else if (Input.GetKeyDown(KeyCode.Alpha1)) SwitchAmmo(Ammo.Fire);

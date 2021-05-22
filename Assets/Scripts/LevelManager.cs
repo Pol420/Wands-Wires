@@ -33,12 +33,8 @@ public class LevelManager : MonoBehaviour
             levelReset = new UnityEvent();
             reset = false;
             pauseScreen.SetActive(false);
-            if (!InMainMenu())
-            {
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = false;
-            }
             paused = false;
+            levelLoad.AddListener(OnLevelLoad);
         }
         else if (instance != this) Destroy(gameObject);
     }
@@ -66,10 +62,11 @@ public class LevelManager : MonoBehaviour
         {
             if(!paused)
             {
-                Cursor.lockState = CursorLockMode.Confined;
+                Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
                 pauseScreen.SetActive(true);
                 paused = true;
+                Time.timeScale = 0f;
             }
             else
             {
@@ -77,6 +74,7 @@ public class LevelManager : MonoBehaviour
                 Cursor.visible = false;
                 pauseScreen.SetActive(false);
                 paused = false;
+                Time.timeScale = 1f;
             }
         }
     }
@@ -91,6 +89,17 @@ public class LevelManager : MonoBehaviour
     {
         loading = SceneManager.LoadSceneAsync(index, LoadSceneMode.Single);
         loadingScreen.SetActive(true);
+        if (paused) Pause();
     }
     public void Quit() { Application.Quit(); }
+
+    private void OnLevelLoad()
+    {
+        if (InMainMenu() && PlayerStats.Instance() != null)
+        {
+            Destroy(PlayerStats.Instance().gameObject);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+    }
 }

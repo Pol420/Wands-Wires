@@ -63,10 +63,13 @@ public class PlayerPowers : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z) && slowCharge >= slowMaxCharge) MakeSlowmo();
-        CoolDownPowers();
-        if (Slowmo()) Time.timeScale = 1f - slowAmount;
-        else if (Time.timeScale != 1f) Time.timeScale = 1f;
+        if (!LevelManager.paused)
+        {
+            if (Input.GetKeyDown(KeyCode.Z) && slowCharge >= slowMaxCharge) MakeSlowmo();
+            CoolDownPowers();
+            if (Slowmo()) Time.timeScale = 1f - slowAmount;
+            else if (Time.timeScale != 1f) Time.timeScale = 1f;
+        }
     }
 
     private void CoolDownPowers()

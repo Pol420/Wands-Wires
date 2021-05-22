@@ -20,7 +20,7 @@ public abstract class EnemyBehaviour : MonoBehaviour
     
     //Provisional
     protected Enemy enemy;
-    
+
     void Start()
     {
         player = PlayerStats.Instance().transform.GetChild(0);
@@ -48,7 +48,6 @@ public abstract class EnemyBehaviour : MonoBehaviour
     public void EndChase()
     {
         navMeshAgent.destination = transform.position;
-        
     }
 
     public void Patrol()
