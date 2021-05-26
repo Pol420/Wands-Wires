@@ -62,9 +62,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   size: 0
-  fireAmmoModel: {fileID: 2874590777343537139, guid: a75a5cfb984c2a94d84c4f94ba1fcac0, type: 3}
-  waterAmmoModel: {fileID: 501346803728269815, guid: c7feeae80f1d3a1449e8173eb684ebfe, type: 3}
-  teslaAmmoModel: {fileID: 2415729436739715956, guid: c68aa65b9578c6e429438d3a018ecb9b, type: 3}
+  fireAmmoModel: {fileID: 2960183735297498255, guid: d41588fda91f64146a3644fc85f8cba3, type: 3}
+  waterAmmoModel: {fileID: 7653106943535356450, guid: 7efa64d95adc2bc4694aceb0e18eb181, type: 3}
+  teslaAmmoModel: {fileID: 8052469508244707700, guid: 1085337d1a559374d8ae29f4fd0bf48f, type: 3}
   healthModel: {fileID: 6624583002101420774, guid: dc490fd7afb6678499293e1e6447b1c4, type: 3}
   shieldModel: {fileID: 4965956832390434006, guid: 9919bd56dca35654e961d60126148b6e, type: 3}
 --- !u!54 &2333496995106632074
