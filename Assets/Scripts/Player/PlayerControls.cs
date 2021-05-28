@@ -23,11 +23,16 @@ public class PlayerControls : MonoBehaviour
     {
         if (!LevelManager.paused)
         {
+            Cursor.lockState = CursorLockMode.Locked;
             float inputX = Input.GetAxis("Horizontal");
             float inputY = Input.GetAxis("Vertical");
             if (inputX * inputY == 0f) axis = new Vector2(inputX, inputY) * moveSpeed;
             else axis = new Vector2(inputX, inputY).normalized * moveSpeed;
             mouse = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y")) * mouseSensitivity;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.None;
         }
     }
     

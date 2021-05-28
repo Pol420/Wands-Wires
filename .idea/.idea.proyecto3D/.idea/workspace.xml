@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="436568db-9915-4505-bab8-3a191725d208" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/normal_animaciones_nuevo.FBX" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/normal_animaciones_nuevo.FBX.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ScenaPrueba.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ScenaPrueba.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviourNormal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviourNormal.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/pruebas/animator_normal_v2.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pruebas/animator_normal_v2.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerControls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerControls.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +62,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviourNormal.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerControls.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rJEGPnjYAxRO3ccFd4NRy7lvQY" />
@@ -150,6 +145,7 @@
       <workItem from="1620876979210" duration="393000" />
       <workItem from="1620996305952" duration="694000" />
       <workItem from="1621430434918" duration="3376000" />
+      <workItem from="1622218441076" duration="308000" />
     </task>
     <servers />
   </component>
