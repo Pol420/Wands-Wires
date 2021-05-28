@@ -2,19 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Collider), typeof(Rigidbody))]
+[RequireComponent(typeof(Collider))]
 public abstract class PickableObject : MonoBehaviour
 {
     protected PlayerStats playerStats;
     protected PlayerPowers playerPowers;
-    protected Rigidbody body;
     protected Collider col;
 
 
     private void Awake()
     {
         foreach (Collider c in GetComponents<Collider>()) if (c.isTrigger) col = c;
-        body = GetComponent<Rigidbody>();
     }
 
     private void Start()
@@ -37,8 +35,5 @@ public abstract class PickableObject : MonoBehaviour
     public void Activate(bool active)
     {
         foreach (Collider c in GetComponents<Collider>()) c.enabled = active;
-        body.useGravity = active;
-        if (!active) body.velocity = Vector3.zero;
-        else body.AddForce(5f * (Vector3.up + Random.insideUnitSphere.normalized), ForceMode.Impulse);
     }
 }
