@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9198819325946295277}
   - component: {fileID: 5948626079526518425}
   - component: {fileID: 5365940916829666797}
-  - component: {fileID: -2540595199546740385}
+  - component: {fileID: 3048422555562540132}
   m_Layer: 10
   m_Name: ground5
   m_TagString: Ground
@@ -82,7 +82,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &-2540595199546740385
+--- !u!65 &3048422555562540132
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,5 +93,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.7499989, y: 0.4375, z: 1.75}
-  m_Center: {x: -1.7499974, y: 0, z: 0}
+  m_Size: {x: 1.749999, y: 0.4375, z: 1.75}
+  m_Center: {x: 0.0000005066395, y: 0, z: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5033495827259589358}
   - component: {fileID: 7858146472277719972}
   - component: {fileID: 6640562821827993392}
-  - component: {fileID: 5308422573148089420}
+  - component: {fileID: 1944388968097034687}
   m_Layer: 0
   m_Name: ceiling3
   m_TagString: Untagged
@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4282007039714398677}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 76.343, y: 0.21875, z: -2.9135299}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -82,7 +82,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5308422573148089420
+--- !u!65 &1944388968097034687
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,5 +93,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.7499989, y: 0.4375, z: 1.75}
-  m_Center: {x: -1.7499974, y: 0, z: 0}
+  m_Size: {x: 1.749999, y: 0.4375, z: 1.75}
+  m_Center: {x: 0.0000005066395, y: 0, z: 0}
