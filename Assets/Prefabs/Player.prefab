@@ -2264,7 +2264,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mouseSensitivity: 2
-  moveSpeed: 32
+  moveSpeed: 12
   jumpPower: 1024
   axis: {x: 0, y: 0}
   mouse: {x: 0, y: 0}
