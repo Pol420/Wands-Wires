@@ -109,7 +109,6 @@ public class Enemy : MonoBehaviour
         if(Roll(powerupDropChance)) drop = Powerup.RandomPowerup(transform.position);
         else  if (Roll(ammoToStatusChance)) drop = StatusPickup.DropAmmo(transform.position, type);
         else drop = StatusPickup.RandomStatus(transform.position);
-        drop.transform.position = transform.position+Vector3.up;
     }
 
     private bool Roll(float threshold) { return Random.Range(0f, 100f) <= threshold; }

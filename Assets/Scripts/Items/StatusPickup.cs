@@ -61,7 +61,7 @@ public class StatusPickup : PickableObject
     public static GameObject DropAmmo(Vector3 pos, Ammo ammoType)
     {
         GameObject ammo = Instantiate(statusSample);
-        ammo.transform.position = pos;
+        ammo.transform.position = pos+Vector3.up;
         StatusPickup stat = ammo.GetComponent<StatusPickup>();
         stat.Activate(true);
         stat.SetType(ammoType == Ammo.Fire? 2:(ammoType == Ammo.Water? 3:4));
@@ -73,17 +73,17 @@ public class StatusPickup : PickableObject
     {
         switch (typeIndex)
         {
-            case 0: type = PickupType.Health; Instantiate(healthModel, transform); break;
-            case 1: type = PickupType.Shield; Instantiate(shieldModel, transform); break;
-            case 2: type = PickupType.FireAmmo; Instantiate(fireAmmoModel, transform); break;
-            case 3: type = PickupType.WaterAmmo; Instantiate(waterAmmoModel, transform); break;
-            case 4: type = PickupType.TeslaAmmo; Instantiate(teslaAmmoModel, transform); break;
+            case 0: type = PickupType.Health; Instantiate(healthModel, transform.GetChild(0)); break;
+            case 1: type = PickupType.Shield; Instantiate(shieldModel, transform.GetChild(0)); break;
+            case 2: type = PickupType.FireAmmo; Instantiate(fireAmmoModel, transform.GetChild(0)); break;
+            case 3: type = PickupType.WaterAmmo; Instantiate(waterAmmoModel, transform.GetChild(0)); break;
+            case 4: type = PickupType.TeslaAmmo; Instantiate(teslaAmmoModel, transform.GetChild(0)); break;
             default: break;
         }
     }
     public void SetSize(int sizeIndex)
     {
-        transform.localScale = Vector3.one * 0.4f * (sizeIndex + 1);
+        transform.localScale = Vector3.one * 0.5f * (sizeIndex + 1);
         switch (sizeIndex)
         {
             case 0: size = PickupSize.Small; break;
