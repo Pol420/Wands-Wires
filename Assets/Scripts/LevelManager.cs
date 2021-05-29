@@ -23,20 +23,30 @@ public class LevelManager : MonoBehaviour
     {
         if (instance == null)
         {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-            loadingScreen = transform.GetChild(0).gameObject;
-            pauseScreen = transform.GetChild(1).gameObject;
-            loadBar = loadingScreen.GetComponentInChildren<Slider>();
-            loadingScreen.SetActive(false);
             levelLoad = new UnityEvent();
             levelReset = new UnityEvent();
-            reset = false;
-            pauseScreen.SetActive(false);
             paused = false;
-            levelLoad.AddListener(OnLevelLoad);
+            Init();
         }
-        else if (instance != this) Destroy(gameObject);
+        else if (instance != this)
+        {
+            Destroy(instance.gameObject);
+            Init();
+        }
+    }
+
+    private void Init()
+    {
+        instance = this;
+        DontDestroyOnLoad(gameObject);
+        loadingScreen = transform.GetChild(0).gameObject;
+        pauseScreen = transform.GetChild(1).gameObject;
+        loadBar = loadingScreen.GetComponentInChildren<Slider>();
+        loadingScreen.SetActive(false);
+        pauseScreen.SetActive(false);
+        reset = false;
+        levelLoad.AddListener(OnLevelLoad);
+        levelLoad.Invoke();
     }
 
     private void Update()
@@ -91,15 +101,24 @@ public class LevelManager : MonoBehaviour
         loadingScreen.SetActive(true);
         if (paused) Pause();
     }
-    public void Quit() { Application.Quit(); }
+    public void Quit()
+    {
+        UnityEditor.EditorApplication.isPlaying = false;
+        Application.Quit();
+    }
 
     private void OnLevelLoad()
     {
-        if (InMainMenu() && PlayerStats.Instance() != null)
+        if (InMainMenu())
         {
-            Destroy(PlayerStats.Instance().gameObject);
+            if (PlayerStats.Instance() != null) Destroy(PlayerStats.Instance().gameObject);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
     }
 }
