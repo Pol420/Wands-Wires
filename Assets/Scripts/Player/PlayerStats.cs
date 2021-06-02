@@ -146,6 +146,7 @@ public class PlayerStats : MonoBehaviour
                 AddHealth(-amount * (1f - shieldAbsorption));
             }
             else AddHealth(-amount);
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Player/damage", GetComponent<Transform>().position);
         }
     }
 

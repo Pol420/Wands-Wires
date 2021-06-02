@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{29dfd253-e5fa-4297-b4bf-a676edf77be2}">
+		<property name="assetPath">
+			<value>Dano_spawner_2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>2.5260997732426302</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{86832ba8-a013-41ab-8f5d-9a6407fc6641}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{a1e0a8c3-28ba-4b8a-8893-a8d6ce425966}">
+		<property name="assetPath">
+			<value>disparo_volador_2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>2</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{86832ba8-a013-41ab-8f5d-9a6407fc6641}</destination>
+		</relationship>
+	</object>
+</objects>

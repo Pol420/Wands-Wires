@@ -71,11 +71,13 @@ public class Enemy : MonoBehaviour
             {
                 damaged = false;
                 Die();
+                FMODUnity.RuntimeManager.PlayOneShot("event:/EnemyNormal/death", GetComponent<Transform>().position);
             }
             else
             {
                 anim.SetTrigger("Damaged");
-                damaged = true; 
+                damaged = true;
+                FMODUnity.RuntimeManager.PlayOneShot("event:/EnemyNormal/hurt", GetComponent<Transform>().position);
             }
         }
     }

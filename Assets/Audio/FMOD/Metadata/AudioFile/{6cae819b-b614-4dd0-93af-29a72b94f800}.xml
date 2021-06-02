@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{6cae819b-b614-4dd0-93af-29a72b94f800}">
+		<property name="assetPath">
+			<value>C.C DISPARO 4.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.2041723356009071</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{86832ba8-a013-41ab-8f5d-9a6407fc6641}</destination>
+		</relationship>
+	</object>
+</objects>

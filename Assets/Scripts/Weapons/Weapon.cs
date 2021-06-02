@@ -32,6 +32,8 @@ public abstract class Weapon : MonoBehaviour
     protected static Transform cam;
     private LevelManager lm;
 
+    protected FMOD.Studio.EventInstance cargaEv;
+
     void Awake()
     {
         anim = GetComponent<Animator>();
@@ -43,6 +45,7 @@ public abstract class Weapon : MonoBehaviour
     {
         lm = LevelManager.Instance();
         SubStart();
+        cargaEv = FMODUnity.RuntimeManager.CreateInstance("event:/Player/cargando");
     }
 
     void Update()
@@ -65,6 +68,7 @@ public abstract class Weapon : MonoBehaviour
                     currentReload = reloadTime;
                     Shoot(SpawnBullet());
                     //todo trigger animation accordingly
+
                 }
             }
             SubUpdate();

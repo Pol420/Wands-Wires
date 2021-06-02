@@ -16,6 +16,7 @@ public class StaffWeapon : Weapon
             if (i != 0) SpendAmmo();
             Vector2 dispersionCircle = Random.insideUnitCircle * dispersion;
             Instantiate(bullet).GetComponent<Projectile>().ShootProjectile(bulletHole.position, cam.transform.forward + cam.transform.up * dispersionCircle.x + cam.transform.right * dispersionCircle.y, Damage(), ShotPower(), weight);
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Player/dispersion", GetComponent<Transform>().position);
         }
         Destroy(bullet);
     }

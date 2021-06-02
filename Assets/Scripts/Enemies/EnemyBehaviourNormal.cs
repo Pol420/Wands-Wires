@@ -39,8 +39,12 @@ public class EnemyBehaviourNormal : EnemyBehaviour
     {
         if (timeToAttack <= 0)
         {
-            if(!enemy.IsDead())
+            if (!enemy.IsDead())
+            {
                 animator.SetTrigger("Attack");
+                FMODUnity.RuntimeManager.PlayOneShot("event:/EnemyNormal/hit", GetComponent<Transform>().position);
+            }
+                
             timeToAttack = enemyData.GetMaxTimeToAttack();
         }
         else
@@ -56,6 +60,7 @@ public class EnemyBehaviourNormal : EnemyBehaviour
             Instantiate(enemyData.GetProjectile(), shootingPoint.transform.position, shootingPoint.transform.rotation);
             timeToShoot = enemyData.GetMaxTimeToShoot();
             animator.SetTrigger("Shoot");
+            FMODUnity.RuntimeManager.PlayOneShot("event:/EnemyNormal/shoot", GetComponent<Transform>().position);
         }
         else
         {
@@ -73,5 +78,10 @@ public class EnemyBehaviourNormal : EnemyBehaviour
     {
         attackArea.SetActive(false);
         Debug.Log("Adios");
+    }
+
+    void PlaySound(string path)
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(path, GetComponent<Transform>().position);
     }
 }

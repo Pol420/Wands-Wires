@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{0291ecab-fc89-4639-8861-67986381ba5e}">
+		<property name="assetPath">
+			<value>golpe_pesado_1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>1.0844217687074831</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{86832ba8-a013-41ab-8f5d-9a6407fc6641}</destination>
+		</relationship>
+	</object>
+</objects>
