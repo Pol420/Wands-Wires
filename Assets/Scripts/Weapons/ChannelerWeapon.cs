@@ -11,6 +11,8 @@ public class ChannelerWeapon : Weapon
     private GameObject bullet;
     private Vector3 startingScale;
 
+
+
     protected override void Shoot(GameObject bullet)
     {
         AddAmmo();
@@ -21,6 +23,8 @@ public class ChannelerWeapon : Weapon
             {
                 this.bullet = bullet;
                 startingScale = bullet.transform.localScale;
+                cargaEv.setParameterByName("Shoot", 0);
+                cargaEv.start();
             }
             else Destroy(bullet);
             this.bullet.transform.position = bulletHole.transform.position;
@@ -42,6 +46,9 @@ public class ChannelerWeapon : Weapon
         charging = false;
         bullet = null;
         reloadTime = 1f;
+        cargaEv.setParameterByName("Shoot", 10);
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Player/carga", GetComponent<Transform>().position);
+
         Invoke("ResetCharge", 1f);
     }
 
