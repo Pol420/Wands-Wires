@@ -71,13 +71,11 @@ public class EnemyBehaviourNormal : EnemyBehaviour
     public void ActivateAttackArea()
     {
         attackArea.SetActive(true);
-        Debug.Log("Holaaa");
     }
     
     public void DeactivateAttackArea()
     {
         attackArea.SetActive(false);
-        Debug.Log("Adios");
     }
 
     void PlaySound(string path)

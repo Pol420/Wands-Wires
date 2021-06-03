@@ -7,64 +7,24 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000002327ACE4078 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001B6184F4358 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
-[LOG] SoundI::release                          :  (000002329D265378)
-[LOG] SoundI::release                          :     C.C Golpe 4 (0000023282E775D8)
-[LOG] SoundI::release                          :  (000002329D265098)
-[LOG] SoundI::release                          :     C.C Golpe 3 (0000023282E763F8)
-[LOG] SoundI::release                          :  (000002329D265208)
-[LOG] SoundI::release                          :     C.C Golpe 2 (0000023282E76258)
-[LOG] SoundI::release                          :  (000002327FCFF888)
-[LOG] SoundI::release                          :     C.C Golpe 1 (000002327FD5C508)
-[LOG] SoundI::release                          :  (000002329D265D88)
-[LOG] SoundI::release                          :     C.C Golpe 5 (0000023282E77778)
-[LOG] SoundI::release                          :  (000002327FCFF718)
-[LOG] SoundI::release                          :     Dano_player_2 (000002327FD5B9A8)
-[LOG] SoundI::release                          :  (000002327FCFF158)
-[LOG] SoundI::release                          :     Dano_player_3 (000002327FD5CEC8)
-[LOG] SoundI::release                          :  (000002327FCFEFE8)
-[LOG] SoundI::release                          :     Dano_player_1 (000002327FD5BE88)
-[LOG] SoundI::release                          :  (000002327FCFFCD8)
-[LOG] SoundI::release                          :     disparo_carne_canon_2 (000002327FD5BCE8)
-[LOG] SoundI::release                          :  (000002327A736688)
-[LOG] SoundI::release                          :     disparo_carne_canon_3 (000002327B1F9DB8)
-[LOG] SoundI::release                          :  (000002327A736DB8)
-[LOG] SoundI::release                          :     disparo_carne_canon_1 (000002327B1FA0F8)
-[LOG] SoundI::release                          :  (000002327A736518)
-[LOG] SoundI::release                          :     C.C DISPARO 1 (000002327B1F9738)
-[LOG] SoundI::release                          :  (000002327A736C48)
-[LOG] SoundI::release                          :     C.C DISPARO 2 (000002327B1F90B8)
-[LOG] SoundI::release                          :  (000002326AB3E908)
-[LOG] SoundI::release                          :     C.C DISPARO 3 (000002327B1F9A78)
-[LOG] SoundI::release                          :  (000002327A736238)
-[LOG] SoundI::release                          :     C.C DISPARO 4 (000002327B1F98D8)
-[LOG] SoundI::release                          :  (00000232717A9618)
-[LOG] SoundI::release                          :     Pasos_player_1 (0000023282E768D8)
-[LOG] SoundI::release                          :  (000002329D265C18)
-[LOG] SoundI::release                          :     Pasos_player_2 (0000023282E770F8)
-[LOG] SoundI::release                          :  (000002329D265AA8)
-[LOG] SoundI::release                          :     Pasos_player_3 (0000023282E77F98)
-[LOG] SoundI::release                          :  (00000232717A9058)
-[LOG] SoundI::release                          :     Pasos_carne_canon_1 (0000023282E77C58)
-[LOG] SoundI::release                          :  (00000232717A9338)
-[LOG] SoundI::release                          :     Pasos_carne_canon_2 (0000023282E76C18)
-[LOG] SoundI::release                          :  (00000232717A8A98)
-[LOG] SoundI::release                          :     Pasos_carne_canon_3 (0000023282E77DF8)
-[LOG] SoundI::release                          :  (000002325ED81858)
-[LOG] SoundI::release                          :     Carga varita  (00000231AB7ABD88)
-[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
 [LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] SystemI::close                           : Closed.

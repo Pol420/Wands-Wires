@@ -101,7 +101,7 @@ MonoBehaviour:
   Path: Assets/Audio/FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637582790928135468
+  lastModified: 637582795187309606
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -481,6 +481,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 700
+--- !u!114 &-3110149542419490089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/cargando/Shoot
+  m_EditorClassIdentifier: 
+  Name: Shoot
+  Min: 0
+  Max: 10
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-3032696027049229840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -605,7 +625,7 @@ MonoBehaviour:
   Path: Assets/Audio/FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637582790928185325
+  lastModified: 637582795187329544
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -814,7 +834,7 @@ MonoBehaviour:
   - {fileID: -8409367204617811345}
   StringsBanks:
   - {fileID: -1239534132698316348}
-  stringsBankWriteTime: 637582790928185325
+  stringsBankWriteTime: 637582795187329544
   cacheVersion: 6
 --- !u!114 &14292902087405389
 MonoBehaviour:
@@ -940,7 +960,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -3441954800109834064}
+  - {fileID: -3110149542419490089}
   MinDistance: 0
   MaxDistance: 0
   Length: 1875

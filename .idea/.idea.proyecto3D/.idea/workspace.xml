@@ -2,8 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="436568db-9915-4505-bab8-3a191725d208" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Levels/Stairs 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Levels/Stairs 1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Levels/Stairs 2.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Levels/Stairs 2.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Levels/Stairs 3.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Levels/Stairs 3.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Levels/ground_bricks.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Levels/ground_bricks.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Levels/ground_steel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Levels/ground_steel.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Levels/wall_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Levels/wall_2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Levels/Arc6.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Levels/Arc6.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Levels/ArcJoin6.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Levels/ArcJoin6.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Levels/ArcJoinMirror6.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Levels/ArcJoinMirror6.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Levels/Ground5.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Levels/Ground5.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Levels/Ground6.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Levels/Ground6.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Levels/Ground7.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Levels/Ground7.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Levels/Wall5.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Levels/Wall5.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Levels/Wall6.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Levels/Wall6.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Levels/ceiling5.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Levels/ceiling5.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Levels/ceiling6.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Levels/ceiling6.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nivel1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nivel1/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel1/LightingData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nivel1/Lightmap-0_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel1/Lightmap-0_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nivel1/Lightmap-0_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel1/Lightmap-0_comp_light.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nivel1/Lightmap-1_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel1/Lightmap-1_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nivel1/Lightmap-1_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel1/Lightmap-1_comp_light.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nivel1/Lightmap-2_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel1/Lightmap-2_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nivel1/Lightmap-2_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel1/Lightmap-2_comp_light.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nivel1/Lightmap-3_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel1/Lightmap-3_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nivel1/Lightmap-3_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel1/Lightmap-3_comp_light.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviourNormal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviourNormal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmod_editor.log" beforeDir="false" afterPath="$PROJECT_DIR$/fmod_editor.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,9 +95,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerPowers.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Data.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviour.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviourNormal.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerControls.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviourNormal.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rJEGPnjYAxRO3ccFd4NRy7lvQY" />
@@ -146,6 +181,7 @@
       <workItem from="1620996305952" duration="694000" />
       <workItem from="1621430434918" duration="3376000" />
       <workItem from="1622218441076" duration="961000" />
+      <workItem from="1622689722391" duration="884000" />
     </task>
     <servers />
   </component>
