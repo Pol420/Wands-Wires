@@ -46,6 +46,7 @@ public class StatusPickup : PickableObject
                 break;
             default: break;
         }
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Otros/vida", GetComponent<Transform>().position);
     }
 
     public static GameObject RandomStatus(Vector3 pos)

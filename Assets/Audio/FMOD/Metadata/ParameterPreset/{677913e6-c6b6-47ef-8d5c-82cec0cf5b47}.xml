@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{677913e6-c6b6-47ef-8d5c-82cec0cf5b47}">
+		<property name="name">
+			<value>Destiny</value>
+		</property>
+		<relationship name="folder">
+			<destination>{b3956362-0e6f-4fc3-bdb0-2c2fd1c7bd1a}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{fd375981-d37a-4980-a8c2-5eeba580e911}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{fd375981-d37a-4980-a8c2-5eeba580e911}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
