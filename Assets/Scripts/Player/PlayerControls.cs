@@ -29,6 +29,7 @@ public class PlayerControls : MonoBehaviour
             if (inputX * inputY == 0f) axis = new Vector2(inputX, inputY) * moveSpeed;
             else axis = new Vector2(inputX, inputY).normalized * moveSpeed;
             mouse = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y")) * mouseSensitivity;
+            if(axis.magnitude>0.1) FMODUnity.RuntimeManager.PlayOneShot("event:/Player/steps", GetComponent<Transform>().position);
         }
         else
         {
