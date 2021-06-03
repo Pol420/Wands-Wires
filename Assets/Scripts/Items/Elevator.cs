@@ -16,11 +16,15 @@ public class Elevator : KillTech
     private float currentWait;
     private Vector3 direction;
     private bool arrived;
+    private bool startMovement;
+
+    //protected FMOD.Studio.EventInstance elevatorEv;
 
     protected override void Activate() { active = true; }
 
     protected override void OnEnter() { player.transform.SetParent(transform);}
     protected override void OnExit() { player.transform.SetParent(null); }
+
 
     protected override void OnStart()
     {
@@ -29,6 +33,10 @@ public class Elevator : KillTech
         going = false;
         currentWait = -1f;
         direction = movement.normalized;
+        startMovement = false;
+
+        //elevatorEv = FMODUnity.RuntimeManager.CreateInstance("event:/Otros/elevator");
+        
     }
 
     private void Update()
@@ -42,6 +50,7 @@ public class Elevator : KillTech
                 else if (playerInRange || !arrived || going) Move();
             }
             else currentWait -= Time.deltaTime;
+                
         }
     }
 
@@ -49,14 +58,32 @@ public class Elevator : KillTech
     {
         if (arrived)
         {
+            if (startMovement)
+            {
+                startMovement = false;
+                //elevatorEv.setParameterByName("Destiny", 1);
+
+            }
             if (currentWait == -1f) currentWait = 0f;
             else currentWait = wait;
             going = !going;
         }
-        else transform.position += direction * moveSpeed * Time.deltaTime * (going ? 1 : -1);
+        else
+        {
+            if (!startMovement)
+            {
+                startMovement = true;
+                //elevatorEv.setParameterByName("Destiny", 0);
+                //elevatorEv.start();
+                
+            }
+            transform.position += direction * moveSpeed * Time.deltaTime * (going ? 1 : -1);
+        }
     }
 
-    private void CheckArrival() { arrived = Vector3.Distance(transform.position, origin + (going ? movement : Vector3.zero)) <= moveSpeed * Time.deltaTime; }
+    private void CheckArrival() {
+        arrived = Vector3.Distance(transform.position, origin + (going ? movement : Vector3.zero)) <= moveSpeed * Time.deltaTime;
+    }
 
     protected override void OnGizmos()
     {
