@@ -96,8 +96,8 @@ MonoBehaviour:
   fireAmmoModel: {fileID: 2960183735297498255, guid: d41588fda91f64146a3644fc85f8cba3, type: 3}
   waterAmmoModel: {fileID: 7653106943535356450, guid: 7efa64d95adc2bc4694aceb0e18eb181, type: 3}
   teslaAmmoModel: {fileID: 8052469508244707700, guid: 1085337d1a559374d8ae29f4fd0bf48f, type: 3}
-  healthModel: {fileID: 6624583002101420774, guid: dc490fd7afb6678499293e1e6447b1c4, type: 3}
-  shieldModel: {fileID: 4965956832390434006, guid: 9919bd56dca35654e961d60126148b6e, type: 3}
+  healthModel: {fileID: 919132149155446097, guid: efd1aa550eb8fd34aa2332bd19394087, type: 3}
+  shieldModel: {fileID: 919132149155446097, guid: cfb6200ea00dc12419c80f24c05c4fa2, type: 3}
 --- !u!65 &7693704588998157757
 BoxCollider:
   m_ObjectHideFlags: 0

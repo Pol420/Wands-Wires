@@ -161,7 +161,7 @@ MonoBehaviour:
   Path: Assets/Audio/FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637583514972861413
+  lastModified: 637583557751697627
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -581,7 +581,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -9126888729182176818}
+  - {fileID: 3258681871716499080}
   MinDistance: 0
   MaxDistance: 0
   Length: 3500
@@ -831,7 +831,7 @@ MonoBehaviour:
   Path: Assets/Audio/FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637583514972911261
+  lastModified: 637583557751707600
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -1100,7 +1100,7 @@ MonoBehaviour:
   - {fileID: -8409367204617811345}
   StringsBanks:
   - {fileID: -1239534132698316348}
-  stringsBankWriteTime: 637583514972911261
+  stringsBankWriteTime: 637583557751707600
   cacheVersion: 6
 --- !u!114 &14292902087405389
 MonoBehaviour:
@@ -1185,6 +1185,26 @@ MonoBehaviour:
   lastModified: 637572907845679018
   LoadResult: 0
   FileSizes: []
+  Exists: 1
+--- !u!114 &994036542468666454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/cargando/Shoot
+  m_EditorClassIdentifier: 
+  Name: Shoot
+  Min: 0
+  Max: 10
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
   Exists: 1
 --- !u!114 &1064473961721756067
 MonoBehaviour:
@@ -1286,7 +1306,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 3837175374007482120}
+  - {fileID: 994036542468666454}
   MinDistance: 0
   MaxDistance: 0
   Length: 1875
@@ -1456,6 +1476,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 580
+--- !u!114 &3258681871716499080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/elevator/Destiny
+  m_EditorClassIdentifier: 
+  Name: Destiny
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &3267095048725339867
 MonoBehaviour:
   m_ObjectHideFlags: 0
