@@ -161,7 +161,7 @@ MonoBehaviour:
   Path: Assets/Audio/FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637583580724246408
+  lastModified: 637583557751697627
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -601,7 +601,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -6716247521785998138}
+  - {fileID: -984183115344675273}
   MinDistance: 0
   MaxDistance: 0
   Length: 3500
@@ -851,7 +851,7 @@ MonoBehaviour:
   Path: Assets/Audio/FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637583580724256049
+  lastModified: 637583557751707600
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -900,6 +900,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 800
+--- !u!114 &-984183115344675273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/elevator/Destiny
+  m_EditorClassIdentifier: 
+  Name: Destiny
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-963221918132671769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1120,7 +1140,7 @@ MonoBehaviour:
   - {fileID: -8409367204617811345}
   StringsBanks:
   - {fileID: -1239534132698316348}
-  stringsBankWriteTime: 637583580724256049
+  stringsBankWriteTime: 637583557751707600
   cacheVersion: 6
 --- !u!114 &14292902087405389
 MonoBehaviour:
@@ -1326,7 +1346,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 3229226236116273318}
+  - {fileID: 4535869944636256980}
   MinDistance: 0
   MaxDistance: 0
   Length: 1875
@@ -1685,6 +1705,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &4535869944636256980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/cargando/Shoot
+  m_EditorClassIdentifier: 
+  Name: Shoot
+  Min: 0
+  Max: 10
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &4573609340860605128
 MonoBehaviour:
   m_ObjectHideFlags: 0
