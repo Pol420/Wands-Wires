@@ -71,7 +71,6 @@ public class Enemy : MonoBehaviour
             {
                 damaged = false;
                 Die();
-                FMODUnity.RuntimeManager.PlayOneShot("event:/EnemyNormal/death", GetComponent<Transform>().position);
             }
             else
             {
@@ -84,18 +83,18 @@ public class Enemy : MonoBehaviour
 
     private void Die()
     {
-        if (!dead)
+        if (!IsDead())
         {
             dead = true;
             anim.SetBool("Dead", true);
-            //singularDeath.Invoke();
+            singularDeath.Invoke();
             if(isNormal != null)
                 anim.SetTrigger("Die");
             else
             {
                 DestroyEnemy();
             }
-            //DestroyEnemy(); //temp before animation events!
+            FMODUnity.RuntimeManager.PlayOneShot("event:/EnemyNormal/death", GetComponent<Transform>().position);
         }
     }
 

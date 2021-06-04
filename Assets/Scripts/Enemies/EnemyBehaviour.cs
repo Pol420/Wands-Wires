@@ -58,7 +58,7 @@ public abstract class EnemyBehaviour : MonoBehaviour
             if (patrolPosition >= patrolPositions.Length)
                 patrolPosition = 0;
         }
-            
+        if (!navMeshAgent.isOnNavMesh) Debug.Log(gameObject.name);
         navMeshAgent.destination = patrolPositions[patrolPosition].transform.position;
     }
 

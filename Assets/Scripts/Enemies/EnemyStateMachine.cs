@@ -54,7 +54,6 @@ public class EnemyStateMachine : MonoBehaviour
         Debug.DrawRay(transform.position, dir, Color.red);
         if (Physics.Raycast(transform.position, dir.normalized, out RaycastHit hit, dir.magnitude))
         {
-            Debug.Log(hit.transform);
             if (hit.collider.gameObject.CompareTag("Player")) return true;
         }
         return false;
