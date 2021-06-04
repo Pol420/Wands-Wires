@@ -40,6 +40,7 @@
                 <e p="{4c8b1d20-f888-445f-937b-375e6e355f02}.xml" t="Include" />
                 <e p="{4f108a75-efbf-4358-8040-2c0b58dc1437}.xml" t="Include" />
                 <e p="{4fd6abf4-52cb-4420-9ac4-a93ba849b5c3}.xml" t="Include" />
+                <e p="{50f0d3a1-bd5c-429c-bed3-61924a8866d9}.xml" t="Include" />
                 <e p="{51191129-a504-4b1e-9fa2-2e526523295d}.xml" t="Include" />
                 <e p="{5b20f64e-fda8-4b5d-93b9-5f01fb317613}.xml" t="Include" />
                 <e p="{5b9371e9-f176-4b9c-842f-751630cd247c}.xml" t="Include" />
@@ -68,6 +69,7 @@
                 <e p="{9a65bfb2-ba89-487f-bc80-053a88e3a2a4}.xml" t="Include" />
                 <e p="{9cd50ca9-13e9-4705-8507-815f132c5c14}.xml" t="Include" />
                 <e p="{9cef0e43-9cd3-4485-bc82-4a1fb93a0557}.xml" t="Include" />
+                <e p="{9f6f7315-22fd-4819-99d1-bfe95d306537}.xml" t="Include" />
                 <e p="{a1e0a8c3-28ba-4b8a-8893-a8d6ce425966}.xml" t="Include" />
                 <e p="{a2acd27e-0146-43a6-a83a-09a91f3cfef3}.xml" t="Include" />
                 <e p="{a3090ada-8e24-4d0c-946c-6257e8e269a9}.xml" t="Include" />
@@ -121,8 +123,8 @@
                 <e p="{2920ed6f-69ed-48ab-9475-15e2bdebe6d7}.xml" t="Include" />
                 <e p="{433bfb1b-79f3-419c-aeef-7fcced4cd5df}.xml" t="Include" />
                 <e p="{4ded8e16-3d7c-4a6a-a4a3-c43507d2a1fe}.xml" t="Include" />
+                <e p="{58a03983-61d3-4a16-865e-971b428366d3}.xml" t="Include" />
                 <e p="{5e9250b9-d071-4f1c-9ece-81e5d8b932b3}.xml" t="Include" />
-                <e p="{61eabdf6-3956-459d-be0b-05676a323c3c}.xml" t="Include" />
                 <e p="{62c53df6-aa09-45d3-ad71-cb5796cfcd1e}.xml" t="Include" />
                 <e p="{6a8e50cd-a946-4e2b-923c-c7f632ece7b4}.xml" t="Include" />
                 <e p="{6ed3fc3d-31da-418e-8c4a-28aca11015c7}.xml" t="Include" />
@@ -337,6 +339,7 @@
             <e p="PlayerStats.cs" t="Include" />
           </e>
           <e p="TwoDoor.cs" t="Include" />
+          <e p="WeaponAltar.cs" t="Include" />
           <e p="Weapons" t="Include">
             <e p="[OUT] LongRangeWeapon.cs" t="Include" />
             <e p="[OUT] ShortRangeWeapon.cs" t="Include" />

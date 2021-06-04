@@ -201,7 +201,7 @@ MonoBehaviour:
   Path: Assets/Audio/FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637584006633416276
+  lastModified: 637584033701340999
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -661,7 +661,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 8417010377996380276}
+  - {fileID: 4827716346859556906}
   MinDistance: 0
   MaxDistance: 0
   Length: 3500
@@ -727,6 +727,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 700
+--- !u!114 &-3147242303389368911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Otros/door
+  m_EditorClassIdentifier: 
+  Path: event:/Otros/door
+  guid: 8339a058d361164a865e971b428366d3
+  Banks:
+  - {fileID: -8409367204617811345}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 500
 --- !u!114 &-3110149542419490089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -911,11 +934,11 @@ MonoBehaviour:
   Path: Assets/Audio/FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637584006633456179
+  lastModified: 637584033701351475
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 2104
+    Value: 2080
   Exists: 1
 --- !u!114 &-1217222157349824431
 MonoBehaviour:
@@ -1200,7 +1223,6 @@ MonoBehaviour:
   - {fileID: 14292902087405389}
   - {fileID: -6689767620805521870}
   - {fileID: -1762327830177030824}
-  - {fileID: -3728958902953736014}
   - {fileID: -1793755856423106260}
   - {fileID: -8549830212991523794}
   - {fileID: -4804204091514308866}
@@ -1215,12 +1237,13 @@ MonoBehaviour:
   - {fileID: -3728886186427608612}
   - {fileID: -4371291067431115293}
   - {fileID: 5141259452106665357}
+  - {fileID: -3147242303389368911}
   EditorParameters: []
   MasterBanks:
   - {fileID: -8409367204617811345}
   StringsBanks:
   - {fileID: -1239534132698316348}
-  stringsBankWriteTime: 637584006633456179
+  stringsBankWriteTime: 637584033701351475
   cacheVersion: 6
 --- !u!114 &14292902087405389
 MonoBehaviour:
@@ -1426,7 +1449,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 6154940684243677161}
+  - {fileID: 8982809751541678277}
   MinDistance: 0
   MaxDistance: 0
   Length: 1875
@@ -1847,6 +1870,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &4827716346859556906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/elevator/Destiny
+  m_EditorClassIdentifier: 
+  Name: Destiny
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &5141259452106665357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2187,3 +2230,23 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 700
+--- !u!114 &8982809751541678277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/cargando/Shoot
+  m_EditorClassIdentifier: 
+  Name: Shoot
+  Min: 0
+  Max: 10
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1

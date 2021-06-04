@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemyBehaviourFat : EnemyBehaviour
 {
+    [SerializeField] private GameObject attackArea;
+    
     public override void Attack()
     {
         LookAtPlayer();
@@ -14,5 +16,15 @@ public class EnemyBehaviourFat : EnemyBehaviour
             timeToAttack = enemyData.GetMaxTimeToAttack();
         }
         else timeToAttack -= Time.deltaTime;
+    }
+    
+    public void ActivateAttackArea()
+    {
+        attackArea.SetActive(true);
+    }
+    
+    public void DeactivateAttackArea()
+    {
+        attackArea.SetActive(false);
     }
 }

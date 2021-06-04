@@ -2,42 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="436568db-9915-4505-bab8-3a191725d208" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Enemies/Enemy_Flying.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Enemies/Enemy_Flying.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Volador/Prueba_Attack.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Volador/Prueba_Attack.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Gordo.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Gordo.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Materials/enemy_fat_fire.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Materials/enemy_fat_fire.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Materials/enemy_fat_tesla.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Materials/enemy_fat_tesla.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Materials/enemy_fat_water.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Materials/enemy_fat_water.mat.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Enemies/Enemy_Fat.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Enemies/Enemy_Fat.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Pesado/Attack.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Pesado/Attack.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/fat/Gordo.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/fat/Gordo.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviourFat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviourFat.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Pesado/Attack.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Pesado/Attack.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Pesado/Death.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Pesado/Death.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Pesado/Death.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Pesado/Death.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Pesado/Hit.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Pesado/Hit.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Pesado/Hit.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Pesado/Hit.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Pesado/Walk.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Pesado/Walk.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Pesado/Walk.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Pesado/Walk.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Volador/Attack.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Volador/Attack.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Volador/Attack.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Volador/Attack.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Volador/Death.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Volador/Death.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Volador/Death.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Volador/Death.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Volador/Hit.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Volador/Hit.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Volador/Idle.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Volador/Idle.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Volador/Idle.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Volador/Idle.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Materials/Map__55_Map_Output_Selector.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Materials/Map__55_Map_Output_Selector.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Volador.obj.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Volador.obj.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/pesado.obj.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/pesado.obj.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fmod_editor.log" beforeDir="false" afterPath="$PROJECT_DIR$/fmod_editor.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +56,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Behaviour_Spawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Items/StatusPickup.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy_Behaviour_Fat.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviourFat.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviourFlying.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviourSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerStats.cs" />
@@ -98,6 +69,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerControls.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviourNormal.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviourFat.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rJEGPnjYAxRO3ccFd4NRy7lvQY" />
@@ -183,6 +155,7 @@
       <workItem from="1622218441076" duration="961000" />
       <workItem from="1622689722391" duration="884000" />
       <workItem from="1622760338323" duration="990000" />
+      <workItem from="1622799773313" duration="583000" />
     </task>
     <servers />
   </component>

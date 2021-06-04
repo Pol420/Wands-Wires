@@ -61,7 +61,21 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.46239558
+        functionName: ActivateAttackArea
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: f57298fe9a8491c4ca2337a8cd7a0af7, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.7270195
+        functionName: DeactivateAttackArea
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: f57298fe9a8491c4ca2337a8cd7a0af7, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
