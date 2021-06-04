@@ -31,6 +31,7 @@ public class PlayerStats : MonoBehaviour
 
     private List<string> keyItems;
     private PlayerPowers powers;
+    private Weapon[] weapons;
 
     private Vector3Int startingAmmo;
     private float startingHealth;
@@ -42,6 +43,7 @@ public class PlayerStats : MonoBehaviour
         {
             instance = this;
             powers = GetComponent<PlayerPowers>();
+            weapons = GetComponentsInChildren<Weapon>(true);
             powers.SetHud(hud);
             DontDestroyOnLoad(gameObject);
         }
@@ -201,6 +203,30 @@ public class PlayerStats : MonoBehaviour
             return true;
         }
         return false;
+    }
+
+    public void UnlockWeapon(WeaponType weapon)
+    {
+        switch (weapon)
+        {
+            case WeaponType.Wand: SwitchWeapons(0); break;
+            case WeaponType.Staff: SwitchWeapons(1); break;
+            case WeaponType.Grimoir: SwitchWeapons(2); break;
+            case WeaponType.Prism: SwitchWeapons(3); break;
+            default: break;
+        }
+    }
+    private void SwitchWeapons(int target)
+    {
+        for (int i = 0; i < weapons.Length; ++i)
+        {
+            if (i == target)
+            {
+                weapons[i].gameObject.SetActive(true);
+                weapons[i].Unlock();
+            }
+            else weapons[i].gameObject.SetActive(false);
+        }
     }
 
     public void Kill() { Die(); }

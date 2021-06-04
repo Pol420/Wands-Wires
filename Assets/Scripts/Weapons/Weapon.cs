@@ -121,5 +121,9 @@ public abstract class Weapon : MonoBehaviour
         else if (roll == 1) holder.AddWaterAmmo(-1); 
         else holder.AddTeslaAmmo(-1);
     }
+    public void Unlock()
+    {
+        unlocked = true;
+    }
 }
 public enum Ammo{Fire, Water, Tesla}

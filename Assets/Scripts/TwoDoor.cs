@@ -51,7 +51,7 @@ public class TwoDoor : MonoBehaviour
                 }
                 else if (leftOn)
                 {
-                    LevelManager.Instance().LoadNextScene();
+                    Destroy(gameObject);
                 }
             }
         }

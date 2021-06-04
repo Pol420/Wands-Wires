@@ -29,6 +29,8 @@ public class PlayerPowers : MonoBehaviour
     private HUD hud;
     public void SetHud(HUD hud) { this.hud = hud; }
     private int startingCharge;
+    private Camera cam;
+    private float startingLens;
 
     private void Awake()
     {
@@ -42,11 +44,14 @@ public class PlayerPowers : MonoBehaviour
 
     void Start()
     {
+        cam = Camera.main;
+        startingLens = cam.focalLength;
         //Enemy.death.AddListener(OnKill);
         LevelManager.levelLoad.AddListener(InitPlayer);
         InitPlayer();
         LevelManager.levelReset.AddListener(ResetPowers);
         ResetPowers();
+
     }
 
     private void InitPlayer()  { startingCharge = slowCharge; }
@@ -67,8 +72,16 @@ public class PlayerPowers : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Z) && slowCharge >= slowMaxCharge) MakeSlowmo();
             CoolDownPowers();
-            if (Slowmo()) Time.timeScale = 1f - slowAmount;
-            else if (Time.timeScale != 1f) Time.timeScale = 1f;
+            if (Slowmo())
+            {
+                Time.timeScale = 1f - slowAmount;
+                cam.focalLength = startingLens / (1f + slowmoDuration / maxSloDuration);
+            }
+            else if (Time.timeScale != 1f)
+            {
+                Time.timeScale = 1f;
+                cam.focalLength = startingLens;
+            }
         }
     }
 
