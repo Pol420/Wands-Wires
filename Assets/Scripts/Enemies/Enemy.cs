@@ -88,7 +88,7 @@ public class Enemy : MonoBehaviour
         {
             dead = true;
             anim.SetBool("Dead", true);
-            singularDeath.Invoke();
+            //singularDeath.Invoke();
             if(isNormal != null)
                 anim.SetTrigger("Die");
             else
