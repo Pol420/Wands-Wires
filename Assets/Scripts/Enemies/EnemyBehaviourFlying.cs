@@ -25,6 +25,7 @@ public class EnemyBehaviourFlying : EnemyBehaviour
         {
             Instantiate(enemyData.GetProjectile(), shootingPoint.transform.position, shootingPoint.transform.rotation);
             timeToShoot = enemyData.GetMaxTimeToShoot();
+            FMODUnity.RuntimeManager.PlayOneShot("event:/EnemyNormal/shoot", GetComponent<Transform>().position);
         }
         else
         {

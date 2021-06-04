@@ -14,6 +14,7 @@ public class EnemyBehaviourFat : EnemyBehaviour
         {
             animator.SetTrigger("Attack");
             timeToAttack = enemyData.GetMaxTimeToAttack();
+            FMODUnity.RuntimeManager.PlayOneShot("event:/EnemyNormal/hit", GetComponent<Transform>().position);
         }
         else timeToAttack -= Time.deltaTime;
     }
