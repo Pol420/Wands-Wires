@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Enemy_Stats_Flying
   m_EditorClassIdentifier: 
   attackDistance: 0
-  shootDistance: 25
+  shootDistance: 10
   shootDamage: 10
   attackDamage: 0
   maxSightDistance: 35
   maxTimeToShoot: 0.2
   maxTimeToAttack: 0
-  maxHealth: 50
-  speed: 50
+  maxHealth: 15
+  speed: 5
   projectile: {fileID: 5916056238211575011, guid: bf335991e836b2a4eb0bcab088c99f9f, type: 3}
