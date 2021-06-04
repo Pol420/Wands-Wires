@@ -1,24 +1,3 @@
-%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c01ebbbc2e265a498b8a5a1216c0cb7, type: 3}
-  m_Name: Enemy_Stats_Normal
-  m_EditorClassIdentifier: 
-  attackDistance: 3
-  shootDistance: 50
-  shootDamage: 20
-  attackDamage: 25
-  maxSightDistance: 15
-  maxTimeToShoot: 1
-  maxTimeToAttack: 0.8
-  maxHealth: 100
-  speed: 50
-  projectile: {fileID: 5916056238211575011, guid: bf335991e836b2a4eb0bcab088c99f9f, type: 3}
+version https://git-lfs.github.com/spec/v1
+oid sha256:83763a71325aee4e89299cb60554367a116461582eb1b420511a066126d2c910
+size 672
