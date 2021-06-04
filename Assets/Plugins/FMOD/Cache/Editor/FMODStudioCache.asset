@@ -166,6 +166,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 593
+--- !u!114 &-8474849154983203785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/cargando/Shoot
+  m_EditorClassIdentifier: 
+  Name: Shoot
+  Min: 0
+  Max: 10
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-8409367204617811345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,7 +201,7 @@ MonoBehaviour:
   Path: Assets/Audio/FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637583594852356642
+  lastModified: 637584006633416276
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -466,6 +486,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 600
+--- !u!114 &-5633346967327953056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/elevator/Destiny
+  m_EditorClassIdentifier: 
+  Name: Destiny
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-5338821861155898324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -621,7 +661,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -8762936500102874551}
+  - {fileID: 8417010377996380276}
   MinDistance: 0
   MaxDistance: 0
   Length: 3500
@@ -871,13 +911,33 @@ MonoBehaviour:
   Path: Assets/Audio/FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637583594852366302
+  lastModified: 637584006633456179
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 2108
+    Value: 2104
   Exists: 1
 --- !u!114 &-1217222157349824431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/cargando/Shoot
+  m_EditorClassIdentifier: 
+  Name: Shoot
+  Min: 0
+  Max: 10
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
+--- !u!114 &-1191098825225465698
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1130,7 +1190,6 @@ MonoBehaviour:
   EditorEvents:
   - {fileID: -41156472418360666}
   - {fileID: -6092332131287941584}
-  - {fileID: -6840665482103927817}
   - {fileID: -2466881644891181957}
   - {fileID: -578340556006936948}
   - {fileID: -8061842679705074949}
@@ -1155,12 +1214,13 @@ MonoBehaviour:
   - {fileID: -6778783103996065672}
   - {fileID: -3728886186427608612}
   - {fileID: -4371291067431115293}
+  - {fileID: 5141259452106665357}
   EditorParameters: []
   MasterBanks:
   - {fileID: -8409367204617811345}
   StringsBanks:
   - {fileID: -1239534132698316348}
-  stringsBankWriteTime: 637583594852366302
+  stringsBankWriteTime: 637584006633456179
   cacheVersion: 6
 --- !u!114 &14292902087405389
 MonoBehaviour:
@@ -1366,7 +1426,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 4770276357244327895}
+  - {fileID: 6154940684243677161}
   MinDistance: 0
   MaxDistance: 0
   Length: 1875
@@ -1787,6 +1847,29 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &5141259452106665357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Otros/key
+  m_EditorClassIdentifier: 
+  Path: event:/Otros/key
+  guid: 1bfb3b43f3799c41aeef7fcced4cd5df
+  Banks:
+  - {fileID: -8409367204617811345}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 762
 --- !u!114 &5259514298915090536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1809,6 +1892,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1000
+--- !u!114 &6154940684243677161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/cargando/Shoot
+  m_EditorClassIdentifier: 
+  Name: Shoot
+  Min: 0
+  Max: 10
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &6732008201076027519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1915,6 +2018,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 580
+--- !u!114 &7448259824705868007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/elevator/Destiny
+  m_EditorClassIdentifier: 
+  Name: Destiny
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &7861016282944315261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2000,6 +2123,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &8417010377996380276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/elevator/Destiny
+  m_EditorClassIdentifier: 
+  Name: Destiny
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &8629726755532973721
 MonoBehaviour:
   m_ObjectHideFlags: 0
