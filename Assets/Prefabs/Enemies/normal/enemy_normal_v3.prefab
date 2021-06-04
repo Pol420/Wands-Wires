@@ -1373,7 +1373,7 @@ MonoBehaviour:
   healthBar: {fileID: 0}
   mats:
   - {fileID: 2100000, guid: e452658ec82b03544bf13b69221bf170, type: 2}
-  - {fileID: 2100000, guid: b274026477396a945912ec8a849756aa, type: 2}
+  - {fileID: 2100000, guid: 0c90034834a549f4b89912675b9cb958, type: 2}
   - {fileID: 2100000, guid: c0994c87cf18e30419fb841ec13b513c, type: 2}
   health: 100
   type: 0

@@ -52,8 +52,11 @@
                 <e p="{782917bf-5b1f-42c2-a358-491fe8812a41}.xml" t="Include" />
                 <e p="{78cb1485-dd40-4e17-b0ea-60afd3403a12}.xml" t="Include" />
                 <e p="{78cc0d7d-b731-48e5-9039-b99ebe454bb9}.xml" t="Include" />
+                <e p="{7999c8f6-09af-4f44-bcd5-ae1ce12fe456}.xml" t="Include" />
                 <e p="{7a632587-feee-4ef0-a3d3-35a706541cbb}.xml" t="Include" />
+                <e p="{7f4e1f24-661e-4e44-8bf6-e4c7173df321}.xml" t="Include" />
                 <e p="{8099b0f4-f056-4139-8598-1db888a920a4}.xml" t="Include" />
+                <e p="{814fa3a3-add6-4540-969a-bf9ba2ce3c3b}.xml" t="Include" />
                 <e p="{82e406b3-c0de-464f-b145-082b3b1424e4}.xml" t="Include" />
                 <e p="{83f69c39-4125-4cfd-bedf-4490f102d3a5}.xml" t="Include" />
                 <e p="{841e5485-056f-489f-8f66-2cdb1ccfbc20}.xml" t="Include" />
@@ -112,6 +115,7 @@
               <e p="Event" t="Include">
                 <e p="{052b86ce-7019-452d-9b90-ac26b9cde36f}.xml" t="Include" />
                 <e p="{0cce9424-8c33-4eaf-9c58-c6f6fc225682}.xml" t="Include" />
+                <e p="{1933c3da-619a-4d6c-b07f-1072896b9329}.xml" t="Include" />
                 <e p="{1d037098-a2a2-4ca7-98c9-7b27a305cb82}.xml" t="Include" />
                 <e p="{25620bab-4ff1-42f8-be36-8bac55b7f8ea}.xml" t="Include" />
                 <e p="{2920ed6f-69ed-48ab-9475-15e2bdebe6d7}.xml" t="Include" />
@@ -134,7 +138,6 @@
                 <e p="{b18fb478-a42e-439d-8a66-8cfeee64538d}.xml" t="Include" />
                 <e p="{bc809c44-e91a-438c-abe4-6a18d183c1ed}.xml" t="Include" />
                 <e p="{bcf2995a-c249-4ff8-b964-d6b6f333974d}.xml" t="Include" />
-                <e p="{cbd06ebf-2bdc-4654-bd56-eca8bf1e0cca}.xml" t="Include" />
                 <e p="{eb7cfdd2-0889-4f64-a297-23fc5c4a7069}.xml" t="Include" />
                 <e p="{ec0a81fe-e1bf-4d37-913d-274e4182cd81}.xml" t="Include" />
               </e>
@@ -150,6 +153,7 @@
               <e p="Master.xml" t="Include" />
               <e p="Mixer.xml" t="Include" />
               <e p="ParameterPreset" t="Include">
+                <e p="{677913e6-c6b6-47ef-8d5c-82cec0cf5b47}.xml" t="Include" />
                 <e p="{8c3b05d6-9cef-43d4-951d-8ef0904fcf60}.xml" t="Include" />
               </e>
               <e p="ParameterPresetFolder" t="Include">

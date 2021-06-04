@@ -2,42 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="436568db-9915-4505-bab8-3a191725d208" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Levels/Stairs 1.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Levels/Stairs 1.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Levels/Stairs 2.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Levels/Stairs 2.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Levels/Stairs 3.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Levels/Stairs 3.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Levels/ground_bricks.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Levels/ground_bricks.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Levels/ground_steel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Levels/ground_steel.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Levels/wall_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Levels/wall_2.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Enemies/Enemy_Flying.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Enemies/Enemy_Flying.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Volador/Prueba_Attack.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Volador/Prueba_Attack.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Gordo.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Gordo.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Materials/enemy_fat_fire.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Materials/enemy_fat_fire.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Materials/enemy_fat_tesla.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Materials/enemy_fat_tesla.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Materials/enemy_fat_water.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Materials/enemy_fat_water.mat.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.proyecto3D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Levels/Arc6.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Levels/Arc6.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Levels/ArcJoin6.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Levels/ArcJoin6.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Levels/ArcJoinMirror6.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Levels/ArcJoinMirror6.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Levels/Ground5.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Levels/Ground5.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Levels/Ground6.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Levels/Ground6.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Levels/Ground7.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Levels/Ground7.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Levels/Wall5.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Levels/Wall5.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Levels/Wall6.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Levels/Wall6.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Levels/ceiling5.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Levels/ceiling5.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Levels/ceiling6.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Levels/ceiling6.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Enemies/Enemy_Fat.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Enemies/Enemy_Fat.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nivel1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nivel1/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel1/LightingData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nivel1/Lightmap-0_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel1/Lightmap-0_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nivel1/Lightmap-0_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel1/Lightmap-0_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nivel1/Lightmap-1_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel1/Lightmap-1_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nivel1/Lightmap-1_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel1/Lightmap-1_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nivel1/Lightmap-2_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel1/Lightmap-2_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nivel1/Lightmap-2_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel1/Lightmap-2_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nivel1/Lightmap-3_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel1/Lightmap-3_comp_dir.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nivel1/Lightmap-3_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel1/Lightmap-3_comp_light.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviourNormal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/EnemyBehaviourNormal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Pesado/Attack.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Pesado/Attack.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Pesado/Attack.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Pesado/Attack.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Pesado/Death.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Pesado/Death.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Pesado/Death.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Pesado/Death.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Pesado/Hit.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Pesado/Hit.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Pesado/Hit.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Pesado/Hit.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Pesado/Walk.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Pesado/Walk.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Pesado/Walk.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Pesado/Walk.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Volador/Attack.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Volador/Attack.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Volador/Attack.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Volador/Attack.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Volador/Death.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Volador/Death.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Volador/Death.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Volador/Death.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Volador/Hit.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Volador/Hit.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Volador/Idle.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Volador/Idle.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Volador/Idle.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Animaciones/Volador/Idle.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Materials/Map__55_Map_Output_Selector.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Materials/Map__55_Map_Output_Selector.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Volador.obj.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/Volador.obj.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/pesado.obj.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pruebas/Export_Unity/pesado.obj.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fmod_editor.log" beforeDir="false" afterPath="$PROJECT_DIR$/fmod_editor.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -182,6 +182,7 @@
       <workItem from="1621430434918" duration="3376000" />
       <workItem from="1622218441076" duration="961000" />
       <workItem from="1622689722391" duration="884000" />
+      <workItem from="1622760338323" duration="990000" />
     </task>
     <servers />
   </component>

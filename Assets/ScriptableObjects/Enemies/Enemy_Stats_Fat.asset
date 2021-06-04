@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c01ebbbc2e265a498b8a5a1216c0cb7, type: 3}
   m_Name: Enemy_Stats_Fat
   m_EditorClassIdentifier: 
-  attackDistance: 6
+  attackDistance: 2
   shootDistance: -1
   shootDamage: -1
   attackDamage: 50
