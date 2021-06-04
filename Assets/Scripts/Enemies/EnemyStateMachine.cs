@@ -37,7 +37,7 @@ public class EnemyStateMachine : MonoBehaviour
 
     private void ChangeState()
     {
-        if (InDetectionRange())
+        if (InDetectionRange() && CanSeePlayer())
         {
             if (InAttackRange() || InShootDistance())
             {
@@ -47,6 +47,16 @@ public class EnemyStateMachine : MonoBehaviour
             else state = EnemyStates.Chase;
         }
         else state = EnemyStates.Patrol;
+    }
+    private bool CanSeePlayer()
+    {
+        Vector3 dir = player.position - transform.position;
+        Debug.DrawRay(transform.position, dir, Color.red);
+        if (Physics.Raycast(transform.position, dir.normalized, out RaycastHit hit, dir.magnitude))
+        {
+            if (hit.collider.gameObject.CompareTag("Player")) return true;
+        }
+        return false;
     }
 
     private void Chase() { enemyBehaviour.Chase(); }
