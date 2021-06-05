@@ -28,7 +28,7 @@ public abstract class Weapon : MonoBehaviour
     [SerializeField] [Range(0f, 10f)] protected float weight = 0f;
     [SerializeField] [Range(0f, 100f)] private float damage = 20f;
 
-    private Animator anim;
+    protected Animator anim;
     protected static Transform cam;
     private LevelManager lm;
 
