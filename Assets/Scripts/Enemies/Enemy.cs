@@ -51,7 +51,8 @@ public class Enemy : MonoBehaviour
         anim = GetComponent<Animator>();
         hb = healthBar != null;
         Renderer rend = GetComponent<Renderer>();
-        if(rend == null) rend = GetComponentInChildren<SkinnedMeshRenderer>();
+        if (rend == null) rend = GetComponentInChildren<SkinnedMeshRenderer>();
+        if (rend == null) rend = GetComponentInChildren<Renderer>();
         switch(type)
         {
             case Ammo.Fire: rend.material = mats[0]; break;

@@ -67,9 +67,10 @@ public abstract class Weapon : MonoBehaviour
                 {
                     currentReload = reloadTime;
                     Shoot(SpawnBullet());
-                    //todo trigger animation accordingly
-
+                    anim.SetFloat("shot", Random.Range(0, 3));
+                    anim.SetTrigger("Shoot");
                 }
+                else anim.SetTrigger("Spent");
             }
             SubUpdate();
         }
