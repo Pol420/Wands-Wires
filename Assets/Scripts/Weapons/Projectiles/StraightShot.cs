@@ -12,7 +12,7 @@ public class StraightShot : Projectile
     protected override void Shoot(Vector3 position, Vector3 direction, float power)
     {
         transform.position = position;
-        transform.up = direction;
+        transform.forward = direction;
         body.velocity = direction * power;
     }
 }
