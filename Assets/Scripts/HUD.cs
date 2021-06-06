@@ -34,6 +34,8 @@ public class HUD : MonoBehaviour
         items = new List<GameObject>();
     }
 
+    public void ResetHud() { items = new List<GameObject>(); }
+
     public void SetFire(int amount) { fireText.text = amount + ""; }
     public void SetWater(int amount) { waterText.text = amount + ""; }
     public void SetTesla(int amount) { teslaText.text = amount + ""; }

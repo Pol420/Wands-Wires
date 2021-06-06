@@ -47,16 +47,14 @@ public class PlayerPowers : MonoBehaviour
         cam = Camera.main;
         startingLens = cam.focalLength;
         //Enemy.death.AddListener(OnKill);
-        LevelManager.levelLoad.AddListener(InitPlayer);
-        InitPlayer();
-        LevelManager.levelReset.AddListener(ResetPowers);
+        InitPowers();
         ResetPowers();
 
     }
 
-    private void InitPlayer()  { startingCharge = slowCharge; }
+    public void InitPowers()  { startingCharge = slowCharge; }
 
-    private void ResetPowers()
+    public void ResetPowers()
     {
         invincibleDuration = Time.deltaTime;
         infiniteAmmoDuration = Time.deltaTime;

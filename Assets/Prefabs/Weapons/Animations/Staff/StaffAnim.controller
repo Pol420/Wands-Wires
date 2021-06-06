@@ -59,7 +59,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Wand Shots
+  m_Name: Staff Shots
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -134,7 +134,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WandAnim
+  m_Name: StaffAnim
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Shoot
@@ -177,7 +177,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: e955dfd3b01f53e4c8b0ac0b17eaa691, type: 2}
+    m_Motion: {fileID: 7400000, guid: 59b331d6c93a10a45b84b3de44f44af8, type: 2}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -185,7 +185,7 @@ BlendTree:
     m_DirectBlendParameter: Blend
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: e80303da21076d1499d9545213107e44, type: 2}
+    m_Motion: {fileID: 7400000, guid: fa3d51a12f91a1f408978c4acdbb1a0a, type: 2}
     m_Threshold: 1
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -193,7 +193,7 @@ BlendTree:
     m_DirectBlendParameter: Blend
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 569a997ca1c4c3f4193fad068280b88a, type: 2}
+    m_Motion: {fileID: 7400000, guid: ee83f5bb7d5a5524a883bf4b105958a7, type: 2}
     m_Threshold: 2
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -269,7 +269,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WandSpent
+  m_Name: StaffSpent
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -282,7 +282,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 501576911b108aa48b4256b60e09a6ab, type: 2}
+  m_Motion: {fileID: 7400000, guid: 9c2e2cc0d3d9a1840a31796a146fe818, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
