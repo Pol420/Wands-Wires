@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq.Expressions;
 using UnityEngine;
 
 [RequireComponent(typeof(EnemyBehaviour), typeof(Enemy_Data))]
@@ -9,6 +10,9 @@ public class EnemyStateMachine : MonoBehaviour
     private Transform player;
     private Enemy_Data enemyData;
     private EnemyBehaviour enemyBehaviour;
+    private Transform eyes;
+
+    [SerializeField] private LayerMask layerMask = 0;
 
     enum EnemyStates { Attack, Chase, Patrol }
     private EnemyStates state;
@@ -16,9 +20,10 @@ public class EnemyStateMachine : MonoBehaviour
     void Start()
     {
         state = EnemyStates.Patrol;
-        player = PlayerStats.Instance().transform.GetChild(0);
+        player = Camera.main.transform;
         enemyData = GetComponent<Enemy_Data>();
         enemyBehaviour = GetComponent<EnemyBehaviour>();
+        eyes = transform.GetChild(0);
     }
 
     void Update()
@@ -37,22 +42,24 @@ public class EnemyStateMachine : MonoBehaviour
 
     private void ChangeState()
     {
-        if (InDetectionRange() && CanSeePlayer())
+        if (InDetectionRange())
         {
-            if (InAttackRange() || InShootDistance())
+            if (CanSeePlayer())
             {
-                EndChase();
-                state = EnemyStates.Attack;
+                if (InAttackRange() || InShootDistance())
+                {
+                    EndChase();
+                    state = EnemyStates.Attack;
+                }
+                else state = EnemyStates.Chase;
             }
-            else state = EnemyStates.Chase;
         }
         else state = EnemyStates.Patrol;
     }
     private bool CanSeePlayer()
     {
-        Vector3 dir = player.position - transform.position;
-        Debug.DrawRay(transform.position, dir, Color.red);
-        if (Physics.Raycast(transform.position, dir.normalized, out RaycastHit hit, dir.magnitude))
+        Vector3 dir = player.position - eyes.position;
+        if (Physics.Raycast(eyes.position, dir.normalized, out RaycastHit hit, dir.magnitude, ~layerMask))
         {
             if (hit.collider.gameObject.CompareTag("Player")) return true;
         }

@@ -89,7 +89,7 @@ public abstract class Weapon : MonoBehaviour
     private void SwitchAmmo(Ammo ammoType)
     {
         holder.SwitchAmmo(ammoType);
-        currentReload = reloadTime;
+        //currentReload = reloadTime;
     }
 
     private void SwitchWeapon()
