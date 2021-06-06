@@ -5,7 +5,13 @@ using UnityEngine;
 public class MegaPrism : Weapon
 {
 
+    [Header("Rays")]
     [SerializeField] private GameObject lightRayPrefab = null;
+    [SerializeField] private Material fireMat = null;
+    [SerializeField] private Material waterMat = null;
+    [SerializeField] private Material teslaMat = null;
+
+    [Header("Laser Settings")]
     [SerializeField] [Range(1, 8)] private int rayPerElement = 1;
     [SerializeField] [Range(0f, 10f)] private float maxChargeTime = 4f;
     [SerializeField] [Range(0f, 1000f)] private float maxDistance = 100f;
@@ -44,19 +50,13 @@ public class MegaPrism : Weapon
         reloadTime = 0f;
         primaryRay = Instantiate(lightRayPrefab, bulletHole).GetComponent<LightRay>();
         adjacentRays = new LightRay[rayPerElement * 3];
-        GameObject fireMat = Instantiate(fireBullet);
-        GameObject waterMat = Instantiate(waterBullet);
-        GameObject teslaMat = Instantiate(teslaBullet);
         for (int i = 0; i < rayPerElement * 3; ++i)
         {
             adjacentRays[i] = Instantiate(lightRayPrefab, bulletHole).GetComponent<LightRay>();
-            if (i % 3 == 0) adjacentRays[i].SetMaterial(fireMat.GetComponent<Renderer>().material);
-            else if (i % 3 == 1) adjacentRays[i].SetMaterial(waterMat.GetComponent<Renderer>().material);
-            else adjacentRays[i].SetMaterial(teslaMat.GetComponent<Renderer>().material);
+            if (i % 3 == 0) adjacentRays[i].SetMaterial(fireMat);
+            else if (i % 3 == 1) adjacentRays[i].SetMaterial(waterMat);
+            else adjacentRays[i].SetMaterial(teslaMat);
         }
-        Destroy(fireMat);
-        Destroy(waterMat);
-        Destroy(teslaMat);
         closestDist = 0f;
         RestRays();
     }

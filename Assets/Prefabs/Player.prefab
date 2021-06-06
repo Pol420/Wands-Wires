@@ -1526,6 +1526,9 @@ MonoBehaviour:
   weight: 0
   damage: 8
   lightRayPrefab: {fileID: 5635067192216064532, guid: a037a93da24e12243bf440fbea616d57, type: 3}
+  fireMat: {fileID: 2100000, guid: 672ae395ee655be4bba2a9f52d330405, type: 2}
+  waterMat: {fileID: 2100000, guid: c45a591eb8e469b4482c1d094ca23a91, type: 2}
+  teslaMat: {fileID: 2100000, guid: 503b031c66ec2d540861d91927df6dbe, type: 2}
   rayPerElement: 3
   maxChargeTime: 4
   maxDistance: 256
@@ -2925,7 +2928,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1714261286066772685, guid: 1f7ccddbd9d4c634f847e7c997f23fc1, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4838447831189894539, guid: 1f7ccddbd9d4c634f847e7c997f23fc1, type: 3}
       propertyPath: m_RootOrder
@@ -3104,7 +3107,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1282790358652836174, guid: 6ceff53f6c0fa3449abffcf90f0429cc, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2383928021080765620, guid: 6ceff53f6c0fa3449abffcf90f0429cc, type: 3}
       propertyPath: m_RootOrder
