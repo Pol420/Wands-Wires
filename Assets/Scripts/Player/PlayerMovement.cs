@@ -36,9 +36,6 @@ public class PlayerMovement : MonoBehaviour
             Look(controls.mouse.y);
         }
         else body.useGravity = false;
-        
-        //if(Physics.Raycast(cam.position, cam.forward, out RaycastHit hit))
-          //  Debug.Log(hit.transform.gameObject.name);
     }
 
     private void FixedUpdate()

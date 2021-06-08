@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
-[RequireComponent(typeof(PlayerPowers))]
+[RequireComponent(typeof(PlayerPowers), typeof(PlayerAnimator))]
 public class PlayerStats : MonoBehaviour
 {
     private static PlayerStats instance;
@@ -122,19 +122,17 @@ public class PlayerStats : MonoBehaviour
     public void SwitchAmmo(Ammo ammoType)
     {
         currentAmmo = ammoType;
+        PlayerAnimator.Reload();
         switch (ammoType)
         {
             case Ammo.Fire:
                 MoveHudSelector(0);
-                //anim.SetTrigger("Reload Fire");
                 break;
             case Ammo.Water:
                 MoveHudSelector(1);
-                //anim.SetTrigger("Reload Water");
                 break;
             case Ammo.Tesla:
                 MoveHudSelector(2);
-                //anim.SetTrigger("Reload Tesla");
                 break;
             default: break;
         }

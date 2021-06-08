@@ -63,6 +63,7 @@ public abstract class Weapon : MonoBehaviour
             }
             else if ((!auto && Input.GetButtonDown("Fire1")) || (auto && Input.GetButton("Fire1")))
             {
+                if (!auto) Invoke("Reload", 0.2f);
                 if (holder.GetCurrentAmmo() > 0)
                 {
                     currentReload = reloadTime;
@@ -74,6 +75,11 @@ public abstract class Weapon : MonoBehaviour
             }
             SubUpdate();
         }
+    }
+
+    private void Reload()
+    {
+        PlayerAnimator.Reload();
     }
 
     private GameObject SpawnBullet()
