@@ -6,10 +6,12 @@ public class ChannelerWeapon : Weapon
 {
     [Header("Physics")]
     [SerializeField] [Range(0f, 5f)] private float maximumChargeTime = 3f;
+    [SerializeField] [Range(0f, 1f)] private float spellScale = 0.2f;
     private float charge;
     private bool charging;
-    private GameObject bullet;
+    private GameObject currentBullet;
     private Vector3 startingScale;
+    private Transform particles;
 
 
 
@@ -19,36 +21,40 @@ public class ChannelerWeapon : Weapon
         if (reloadTime == 0f)
         {
             charging = true;
-            if (this.bullet == null)
+            if (currentBullet == null)
             {
-                this.bullet = bullet;
-                startingScale = bullet.transform.localScale;
+                currentBullet = bullet;
+                particles = bullet.transform.GetChild(0);
+                startingScale = particles.localScale;
+                currentBullet.transform.forward = cam.transform.forward;
                 cargaEv.setParameterByName("Shoot", 0);
                 cargaEv.start();
             }
             else Destroy(bullet);
-            this.bullet.transform.position = bulletHole.transform.position;
-            this.bullet.transform.localScale = startingScale * (0.5f + charge / maximumChargeTime);
-            this.bullet.transform.up = cam.transform.forward;
+            currentBullet.transform.position = bulletHole.transform.position;
+            particles.localScale = spellScale * startingScale * (charge / maximumChargeTime);
             if (charge >= maximumChargeTime) ShootCharge();
             else charge += Time.unscaledDeltaTime;
+            anim.SetFloat("charge", charge / maximumChargeTime);
         }
         else Destroy(bullet);
     }
 
     private void ShootCharge()
     {
+        anim.SetTrigger("Discharge");
+        anim.SetFloat("charge", -1f);
+        particles.localScale = startingScale;
         charge = Mathf.Min(maximumChargeTime, charge);
         float proportion = 2f * charge / maximumChargeTime;
         SpendAmmo(Mathf.RoundToInt(charge));
-        bullet.GetComponent<Projectile>().ShootProjectile(bulletHole.position, cam.transform.forward, Damage() * proportion, ShotPower());
+        currentBullet.GetComponent<Projectile>().ShootProjectile(bulletHole.position, cam.transform.forward, Damage() * proportion, ShotPower());
         charge = 0f;
         charging = false;
-        bullet = null;
+        currentBullet = null;
         reloadTime = 1f;
         cargaEv.setParameterByName("Shoot", 10);
         FMODUnity.RuntimeManager.PlayOneShot("event:/Player/carga", GetComponent<Transform>().position);
-
         Invoke("ResetCharge", 1f);
     }
 

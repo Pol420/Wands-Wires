@@ -28,7 +28,7 @@ public abstract class Weapon : MonoBehaviour
     [SerializeField] [Range(0f, 10f)] protected float weight = 0f;
     [SerializeField] [Range(0f, 100f)] private float damage = 20f;
 
-    private Animator anim;
+    protected Animator anim;
     protected static Transform cam;
     private LevelManager lm;
 
@@ -63,16 +63,23 @@ public abstract class Weapon : MonoBehaviour
             }
             else if ((!auto && Input.GetButtonDown("Fire1")) || (auto && Input.GetButton("Fire1")))
             {
+                if (!auto) Invoke("Reload", 0.2f);
                 if (holder.GetCurrentAmmo() > 0)
                 {
                     currentReload = reloadTime;
                     Shoot(SpawnBullet());
-                    //todo trigger animation accordingly
-
+                    anim.SetFloat("shot", Random.Range(0, 3));
+                    anim.SetTrigger("Shoot");
                 }
+                else anim.SetTrigger("Spent");
             }
             SubUpdate();
         }
+    }
+
+    private void Reload()
+    {
+        PlayerAnimator.Reload();
     }
 
     private GameObject SpawnBullet()
@@ -88,7 +95,7 @@ public abstract class Weapon : MonoBehaviour
     private void SwitchAmmo(Ammo ammoType)
     {
         holder.SwitchAmmo(ammoType);
-        currentReload = reloadTime;
+        //currentReload = reloadTime;
     }
 
     private void SwitchWeapon()
@@ -120,6 +127,10 @@ public abstract class Weapon : MonoBehaviour
         if(roll == 0) holder.AddFireAmmo(-1);
         else if (roll == 1) holder.AddWaterAmmo(-1); 
         else holder.AddTeslaAmmo(-1);
+    }
+    public void Unlock()
+    {
+        unlocked = true;
     }
 }
 public enum Ammo{Fire, Water, Tesla}

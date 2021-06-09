@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
-[RequireComponent(typeof(PlayerPowers))]
+[RequireComponent(typeof(PlayerPowers), typeof(PlayerAnimator))]
 public class PlayerStats : MonoBehaviour
 {
     private static PlayerStats instance;
@@ -31,6 +31,7 @@ public class PlayerStats : MonoBehaviour
 
     private List<string> keyItems;
     private PlayerPowers powers;
+    private Weapon[] weapons;
 
     private Vector3Int startingAmmo;
     private float startingHealth;
@@ -42,18 +43,18 @@ public class PlayerStats : MonoBehaviour
         {
             instance = this;
             powers = GetComponent<PlayerPowers>();
+            weapons = GetComponentsInChildren<Weapon>(true);
             powers.SetHud(hud);
             DontDestroyOnLoad(gameObject);
         }
         else if (instance != this) { instance.transform.GetChild(0).position = transform.GetChild(0).position; Destroy(gameObject); }
+        else InitPlayer();
     }
 
     void Start()
     {
         if (LevelManager.Instance().InMainMenu()) Destroy(gameObject);
-        LevelManager.levelLoad.AddListener(InitPlayer);
         InitPlayer();
-        LevelManager.levelReset.AddListener(ResetPlayer);
         ResetPlayer();
     }
 
@@ -71,6 +72,7 @@ public class PlayerStats : MonoBehaviour
             startingHealth = maxHealth;
             startingShield = maxShield;
         }
+        powers.InitPowers();
     }
 
     private void ResetPlayer()
@@ -92,6 +94,8 @@ public class PlayerStats : MonoBehaviour
         AddWaterAmmo(0);
         AddTeslaAmmo(0);
         keyItems = new List<string>();
+        powers.ResetPowers();
+        hud.ResetHud();
     }
 
     public int GetCurrentAmmo()
@@ -118,19 +122,17 @@ public class PlayerStats : MonoBehaviour
     public void SwitchAmmo(Ammo ammoType)
     {
         currentAmmo = ammoType;
+        PlayerAnimator.Reload();
         switch (ammoType)
         {
             case Ammo.Fire:
                 MoveHudSelector(0);
-                //anim.SetTrigger("Reload Fire");
                 break;
             case Ammo.Water:
                 MoveHudSelector(1);
-                //anim.SetTrigger("Reload Water");
                 break;
             case Ammo.Tesla:
                 MoveHudSelector(2);
-                //anim.SetTrigger("Reload Tesla");
                 break;
             default: break;
         }
@@ -173,7 +175,7 @@ public class PlayerStats : MonoBehaviour
         if(currentHealth <= 0f) Die();
     }
 
-    private void Die() { LevelManager.Instance().ReloadScene(); }
+    private void Die() { LevelManager.Instance().ReloadScene(); ResetPlayer(); }
 
     public void AddShield(float amount) { SetShield(Mathf.Clamp(currentShield + amount, 0f, maxShield)); }
     public void SetShield(float amount)
@@ -201,6 +203,30 @@ public class PlayerStats : MonoBehaviour
             return true;
         }
         return false;
+    }
+
+    public void UnlockWeapon(WeaponType weapon)
+    {
+        switch (weapon)
+        {
+            case WeaponType.Wand: SwitchWeapons(0); break;
+            case WeaponType.Staff: SwitchWeapons(1); break;
+            case WeaponType.Grimoir: SwitchWeapons(2); break;
+            case WeaponType.Prism: SwitchWeapons(3); break;
+            default: break;
+        }
+    }
+    private void SwitchWeapons(int target)
+    {
+        for (int i = 0; i < weapons.Length; ++i)
+        {
+            if (i == target)
+            {
+                weapons[i].gameObject.SetActive(true);
+                weapons[i].Unlock();
+            }
+            else weapons[i].gameObject.SetActive(false);
+        }
     }
 
     public void Kill() { Die(); }

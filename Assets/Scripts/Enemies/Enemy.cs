@@ -51,7 +51,8 @@ public class Enemy : MonoBehaviour
         anim = GetComponent<Animator>();
         hb = healthBar != null;
         Renderer rend = GetComponent<Renderer>();
-        if(rend == null) rend = GetComponentInChildren<SkinnedMeshRenderer>();
+        if (rend == null) rend = GetComponentInChildren<SkinnedMeshRenderer>();
+        if (rend == null) rend = GetComponentInChildren<Renderer>();
         switch(type)
         {
             case Ammo.Fire: rend.material = mats[0]; break;
@@ -71,7 +72,6 @@ public class Enemy : MonoBehaviour
             {
                 damaged = false;
                 Die();
-                FMODUnity.RuntimeManager.PlayOneShot("event:/EnemyNormal/death", GetComponent<Transform>().position);
             }
             else
             {
@@ -84,7 +84,7 @@ public class Enemy : MonoBehaviour
 
     private void Die()
     {
-        if (!dead)
+        if (!IsDead())
         {
             dead = true;
             anim.SetBool("Dead", true);
@@ -95,7 +95,7 @@ public class Enemy : MonoBehaviour
             {
                 DestroyEnemy();
             }
-            //DestroyEnemy(); //temp before animation events!
+            FMODUnity.RuntimeManager.PlayOneShot("event:/EnemyNormal/death", GetComponent<Transform>().position);
         }
     }
 

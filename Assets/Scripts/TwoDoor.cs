@@ -9,11 +9,13 @@ public class TwoDoor : MonoBehaviour
     [Header("Key Settings")]
     [SerializeField] private string leftKeyCode = "key1";
     [SerializeField] private string rightKeyCode = "key2";
+    [SerializeField] private bool justLeftKeyDoor = false;
 
     protected bool playerInRange;
     protected PlayerStats player;
     private bool leftOn;
     private bool rightOn;
+    
 
     private void Start()
     {
@@ -42,7 +44,7 @@ public class TwoDoor : MonoBehaviour
                 }
                 if (!rightOn)
                 {
-                    if (player.GetKey(rightKeyCode))
+                    if (player.GetKey(rightKeyCode) || justLeftKeyDoor)
                     {
                         rightOn = true;
                         rightKeySlot.SetActive(true);
@@ -51,7 +53,8 @@ public class TwoDoor : MonoBehaviour
                 }
                 else if (leftOn)
                 {
-                    LevelManager.Instance().LoadNextScene();
+                    Destroy(gameObject);
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/Otros/door", GetComponent<Transform>().position);
                 }
             }
         }

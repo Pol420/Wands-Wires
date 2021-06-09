@@ -9,8 +9,6 @@ public class LevelManager : MonoBehaviour
 {
     private static LevelManager instance;
     public static LevelManager Instance() { return instance; }
-    public static UnityEvent levelLoad;
-    public static UnityEvent levelReset;
     public static bool paused;
 
     private GameObject loadingScreen;
@@ -23,8 +21,6 @@ public class LevelManager : MonoBehaviour
     {
         if (instance == null)
         {
-            levelLoad = new UnityEvent();
-            levelReset = new UnityEvent();
             paused = false;
             Init();
         }
@@ -45,8 +41,6 @@ public class LevelManager : MonoBehaviour
         loadingScreen.SetActive(false);
         pauseScreen.SetActive(false);
         reset = false;
-        levelLoad.AddListener(OnLevelLoad);
-        levelLoad.Invoke();
     }
 
     private void Update()
@@ -57,8 +51,11 @@ public class LevelManager : MonoBehaviour
             {
                 loading = null;
                 loadingScreen.SetActive(false);
-                if (reset) levelReset.Invoke();
-                else levelLoad.Invoke();
+                if (reset)
+                {
+                    Debug.Log("Level has been reset!");
+                }
+                else OnLevelLoad();
                 reset = false;
             }
             else loadBar.value = Mathf.Clamp01(loading.progress / 0.9f);
@@ -103,7 +100,7 @@ public class LevelManager : MonoBehaviour
     }
     public void Quit()
     {
-        UnityEditor.EditorApplication.isPlaying = false;
+        //UnityEditor.EditorApplication.isPlaying = false;
         Application.Quit();
     }
 

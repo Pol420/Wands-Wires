@@ -1,0 +1,1650 @@
+fileFormatVersion: 2
+guid: 58f38a33a8872844a8216fab2f127bfb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1342033480090089599
+    second: mp1_goudy-stout_1_0
+  - first:
+      213: -8041686963805005653
+    second: mp1_goudy-stout_1_1
+  - first:
+      213: 5522317514977322270
+    second: mp1_goudy-stout_1_2
+  - first:
+      213: 3058792137594534037
+    second: mp1_goudy-stout_1_3
+  - first:
+      213: 701716181381949617
+    second: mp1_goudy-stout_1_4
+  - first:
+      213: -1431513304832184834
+    second: mp1_goudy-stout_1_5
+  - first:
+      213: -6914358559132125078
+    second: mp1_goudy-stout_1_6
+  - first:
+      213: 2924628169238870580
+    second: mp1_goudy-stout_1_7
+  - first:
+      213: -2517890378504749970
+    second: mp1_goudy-stout_1_8
+  - first:
+      213: -8782386219108390154
+    second: mp1_goudy-stout_1_9
+  - first:
+      213: -1113627489857052817
+    second: mp1_goudy-stout_1_10
+  - first:
+      213: -3852792997686062222
+    second: mp1_goudy-stout_1_11
+  - first:
+      213: 6159448190638431710
+    second: mp1_goudy-stout_1_12
+  - first:
+      213: 239477468034069183
+    second: mp1_goudy-stout_1_13
+  - first:
+      213: -7332198483675780203
+    second: mp1_goudy-stout_1_14
+  - first:
+      213: 1032322186557082080
+    second: mp1_goudy-stout_1_15
+  - first:
+      213: 6437004302258506383
+    second: mp1_goudy-stout_1_16
+  - first:
+      213: -8003164949939674881
+    second: mp1_goudy-stout_1_17
+  - first:
+      213: 8328001599606580717
+    second: mp1_goudy-stout_1_18
+  - first:
+      213: -6635114844486937667
+    second: mp1_goudy-stout_1_19
+  - first:
+      213: 4251844282876750524
+    second: mp1_goudy-stout_1_20
+  - first:
+      213: 5765342528098271735
+    second: mp1_goudy-stout_1_21
+  - first:
+      213: 3210401915552499248
+    second: mp1_goudy-stout_1_22
+  - first:
+      213: 7947141487517394319
+    second: mp1_goudy-stout_1_23
+  - first:
+      213: 8702046911180522402
+    second: mp1_goudy-stout_1_24
+  - first:
+      213: -4451404913079591758
+    second: mp1_goudy-stout_1_25
+  - first:
+      213: -4596744805850119896
+    second: mp1_goudy-stout_1_26
+  - first:
+      213: -2352057990749112402
+    second: mp1_goudy-stout_1_27
+  - first:
+      213: -7891801020728035757
+    second: mp1_goudy-stout_1_28
+  - first:
+      213: 766507355851319418
+    second: mp1_goudy-stout_1_29
+  - first:
+      213: 6554412839100930339
+    second: mp1_goudy-stout_1_30
+  - first:
+      213: 2371572111047832690
+    second: mp1_goudy-stout_1_31
+  - first:
+      213: -2359350643980546636
+    second: mp1_goudy-stout_1_32
+  - first:
+      213: -5254593366749677191
+    second: mp1_goudy-stout_1_33
+  - first:
+      213: -2405509318186766496
+    second: mp1_goudy-stout_1_34
+  - first:
+      213: 1469684501079409529
+    second: mp1_goudy-stout_1_35
+  - first:
+      213: -7365428618508093954
+    second: mp1_goudy-stout_1_36
+  - first:
+      213: 1993226743667709983
+    second: mp1_goudy-stout_1_37
+  - first:
+      213: 6556258427726845867
+    second: mp1_goudy-stout_1_38
+  - first:
+      213: -8196830975157504039
+    second: mp1_goudy-stout_1_39
+  - first:
+      213: -8108580602855581709
+    second: mp1_goudy-stout_1_40
+  - first:
+      213: -8062404207006301161
+    second: mp1_goudy-stout_1_41
+  - first:
+      213: -1394780999252445056
+    second: mp1_goudy-stout_1_42
+  - first:
+      213: -879856794477668285
+    second: mp1_goudy-stout_1_43
+  - first:
+      213: -215305182660560993
+    second: mp1_goudy-stout_1_44
+  - first:
+      213: 1776277602587907293
+    second: mp1_goudy-stout_1_45
+  - first:
+      213: -3390534194424288206
+    second: mp1_goudy-stout_1_46
+  - first:
+      213: 8475315571639461692
+    second: mp1_goudy-stout_1_47
+  - first:
+      213: 1424245590963750949
+    second: mp1_goudy-stout_1_48
+  - first:
+      213: -6345910655350993192
+    second: mp1_goudy-stout_1_49
+  - first:
+      213: -1744862728746428776
+    second: mp1_goudy-stout_1_50
+  - first:
+      213: 6154757696386197089
+    second: mp1_goudy-stout_1_51
+  - first:
+      213: -7813636440882579448
+    second: mp1_goudy-stout_1_52
+  - first:
+      213: 587408204032488687
+    second: mp1_goudy-stout_1_53
+  - first:
+      213: -1827823825605138245
+    second: mp1_goudy-stout_1_54
+  - first:
+      213: 3983416332848073476
+    second: mp1_goudy-stout_1_55
+  - first:
+      213: -6867268995650646105
+    second: mp1_goudy-stout_1_56
+  - first:
+      213: 8743155534410993894
+    second: mp1_goudy-stout_1_57
+  - first:
+      213: -3943128336462644149
+    second: mp1_goudy-stout_1_58
+  - first:
+      213: -5482803752162325856
+    second: mp1_goudy-stout_1_59
+  - first:
+      213: 6331126954353371693
+    second: mp1_goudy-stout_1_60
+  - first:
+      213: 519192944830615605
+    second: mp1_goudy-stout_1_61
+  - first:
+      213: -2002781183469135322
+    second: mp1_goudy-stout_1_62
+  - first:
+      213: 4090117480874829138
+    second: mp1_goudy-stout_1_63
+  - first:
+      213: 8653672165377332796
+    second: mp1_goudy-stout_1_64
+  - first:
+      213: -6975345819483081089
+    second: mp1_goudy-stout_1_65
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_0
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 855.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f787379f65cdf9210800000000000000
+      internalID: 1342033480090089599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_1
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 855.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba853872050366090800000000000000
+      internalID: -8041686963805005653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_2
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 855.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e152429758633ac40800000000000000
+      internalID: 5522317514977322270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_3
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 855.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59874133e33037a20800000000000000
+      internalID: 3058792137594534037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_4
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 855.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b82a6c262ffcb900800000000000000
+      internalID: 701716181381949617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_5
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 855.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efd6b36db3e322ce0800000000000000
+      internalID: -1431513304832184834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_6
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 855.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a687f3936834b00a0800000000000000
+      internalID: -6914358559132125078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_7
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 855.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43a759713dd569820800000000000000
+      internalID: 2924628169238870580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_8
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 855.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6cb9d58a08ae0dd0800000000000000
+      internalID: -2517890378504749970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 713.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fa22c9c342be1680800000000000000
+      internalID: -8782386219108390154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_10
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 713.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6fd5feb2b99b80f0800000000000000
+      internalID: -1113627489857052817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_11
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 713.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2735fcb7e21288ac0800000000000000
+      internalID: -3852792997686062222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_12
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 713.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edd1d67ce71ca7550800000000000000
+      internalID: 6159448190638431710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_13
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 713.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb271e50d7bc25300800000000000000
+      internalID: 239477468034069183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_14
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 713.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59be8d5a35cce3a90800000000000000
+      internalID: -7332198483675780203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_15
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 713.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e94d772f8b835e00800000000000000
+      internalID: 1032322186557082080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_16
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 713.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8a87c5ee45d45950800000000000000
+      internalID: 6437004302258506383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_17
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 713.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff02dff61eb0fe090800000000000000
+      internalID: -8003164949939674881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_18
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 713.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de56f69c451039370800000000000000
+      internalID: 8328001599606580717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 571.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db35f6a04365be3a0800000000000000
+      internalID: -6635114844486937667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_20
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 571.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbae42919d5910b30800000000000000
+      internalID: 4251844282876750524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_21
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 571.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f100c3bb7c920050800000000000000
+      internalID: 5765342528098271735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_22
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 571.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0368db26883ad8c20800000000000000
+      internalID: 3210401915552499248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_23
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 571.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f856e3fb31be94e60800000000000000
+      internalID: 7947141487517394319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_24
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 571.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a343bf6f81e3c870800000000000000
+      internalID: 8702046911180522402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_25
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 571.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc567ce0de6932c0800000000000000
+      internalID: -4451404913079591758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_26
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 571.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8218e2424f41530c0800000000000000
+      internalID: -4596744805850119896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_27
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 571.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea7b74a18bfcb5fd0800000000000000
+      internalID: -2352057990749112402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_28
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 571.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 356b071c8c0ba7290800000000000000
+      internalID: -7891801020728035757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 429.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a78ed37016e23aa00800000000000000
+      internalID: 766507355851319418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_30
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 429.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 329ded910c3f5fa50800000000000000
+      internalID: 6554412839100930339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_31
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 429.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274ba36154489e020800000000000000
+      internalID: 2371572111047832690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_32
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 429.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bd43f4f617e14fd0800000000000000
+      internalID: -2359350643980546636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_33
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 429.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 979f2c74c2fe317b0800000000000000
+      internalID: -5254593366749677191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_34
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 429.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06fe591250aed9ed0800000000000000
+      internalID: -2405509318186766496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_35
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 429.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9734cba544e556410800000000000000
+      internalID: 1469684501079409529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_36
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 429.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef53457f1bdb8c990800000000000000
+      internalID: -7365428618508093954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_37
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 429.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f185f1da92d59ab10800000000000000
+      internalID: 1993226743667709983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_38
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 429.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba7d150bd428cfa50800000000000000
+      internalID: 6556258427726845867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 287.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d771d128a10f3e80800000000000000
+      internalID: -8196830975157504039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_40
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 287.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f79b2e17e8887f80800000000000000
+      internalID: -8108580602855581709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_41
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 287.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71446c517169c1090800000000000000
+      internalID: -8062404207006301161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_42
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 287.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 088f710321eb4ace0800000000000000
+      internalID: -1394780999252445056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_43
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 287.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 348d1f738ee1ac3f0800000000000000
+      internalID: -879856794477668285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_44
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 287.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f97773db315130df0800000000000000
+      internalID: -215305182660560993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_45
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 287.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd41cb4811b96a810800000000000000
+      internalID: 1776277602587907293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_46
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 287.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23c668e2d1762f0d0800000000000000
+      internalID: -3390534194424288206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_47
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 287.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3728e6bb9e5e9570800000000000000
+      internalID: 8475315571639461692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_48
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 287.4286
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5288f4aa1dfe3c310800000000000000
+      internalID: 1424245590963750949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 145.42857
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de007b81ebcee7a0800000000000000
+      internalID: -6345910655350993192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_50
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 145.42857
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8961047c79009c7e0800000000000000
+      internalID: -1744862728746428776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_51
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 145.42857
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16663bbf3871a6550800000000000000
+      internalID: 6154757696386197089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_52
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 145.42857
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80875213e03609390800000000000000
+      internalID: -7813636440882579448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_53
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 145.42857
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe4b18b36a4e62800800000000000000
+      internalID: 587408204032488687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_54
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 145.42857
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb86fc23ae342a6e0800000000000000
+      internalID: -1827823825605138245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_55
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 145.42857
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40b06e7bc00f74730800000000000000
+      internalID: 3983416332848073476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_56
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 145.42857
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7af80399b3f82b0a0800000000000000
+      internalID: -6867268995650646105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_57
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 145.42857
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e0de84a2ade55970800000000000000
+      internalID: 8743155534410993894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_58
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 145.42857
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4cfd596ba13749c0800000000000000
+      internalID: -3943128336462644149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_59
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3.4285736
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aa8f2b590b29e3b0800000000000000
+      internalID: -5482803752162325856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_60
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 3.4285736
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2a2226db6eacd750800000000000000
+      internalID: 6331126954353371693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_61
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 3.4285736
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53094868b3b843700800000000000000
+      internalID: 519192944830615605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_62
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 3.4285736
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62a5c74ff11b434e0800000000000000
+      internalID: -2002781183469135322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mp1_goudy-stout_1_63
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 3.4285736
+        width: 86
+        height: 142.57143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 255e821bd2403c830800000000000000
+      internalID: 4090117480874829138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 8ce2f9f0b88e4124eb66307088685204
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
