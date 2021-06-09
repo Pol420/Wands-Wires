@@ -28,7 +28,7 @@ public abstract class Projectile : MonoBehaviour
     {
         if (ttl < 0.1f)
         {
-            particles.localScale = 10f * ttl * Vector3.one;
+            if(particles!=null)particles.localScale = 10f * ttl * Vector3.one;
             ttl += Time.deltaTime;
         }
     }
