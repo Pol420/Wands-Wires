@@ -29,6 +29,7 @@ public class Enemy : MonoBehaviour
     public UnityEvent singularDeath;
     private bool dead;
     private bool damaged;
+    private Enemy_Data enemyData;
 
 
     //Provisional
@@ -41,12 +42,14 @@ public class Enemy : MonoBehaviour
         singularDeath.AddListener(death.Invoke);
         dead = false;
         damaged = false;
+        enemyData = GetComponent<Enemy_Data>();
         isNormal = GetComponent<EnemyBehaviourNormal>();
     }
 
     void Start()
     {
         foreach (BodyPart part in transform.GetComponentsInChildren<BodyPart>()) part.Connect(this, floatyTextPrefab, type);
+        health = enemyData.GetMaxHealth();
         currentHealth = health;
         anim = GetComponent<Animator>();
         hb = healthBar != null;

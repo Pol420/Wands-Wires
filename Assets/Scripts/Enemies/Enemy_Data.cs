@@ -6,7 +6,8 @@ using UnityEngine;
 public class Enemy_Data : MonoBehaviour
 {
     [SerializeField] private Enemy_Stats enemyStats;
-
+    
+    public int GetMaxHealth() { return enemyStats.maxHealth; }
     public float GetAttackDamage() { return enemyStats.attackDamage; }
     public float GetMaxSightDistance() { return enemyStats.maxSightDistance; }
     public float GetAttackDistance() { return enemyStats.attackDistance; }
