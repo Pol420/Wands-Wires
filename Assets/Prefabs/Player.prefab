@@ -2878,7 +2878,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bd1ee3a2c0c47a428681d871400c3c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bobbingMultiplier: 1
+  bobbingMultiplier: 4
+  pivotingAmount: 0.15
 --- !u!1 &9060966155224191256
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,10 +7,12 @@ using UnityEngine.PostProcessing;
 public class PlayerAnimator : MonoBehaviour
 {
     [SerializeField] [Range(0f, 5f)] private float bobbingMultiplier = 1f;
+    [SerializeField] [Range(0f, 1f)] private float pivotingAmount = 0.1f;
     private static Animator anim;
 
     private Vector3 previousPosition;
     private Transform body;
+    private float direction;
 
     void Awake()
     {
@@ -21,10 +23,15 @@ public class PlayerAnimator : MonoBehaviour
 
     private void Update()
     {
-        Vector3 velocity = body.position - previousPosition;
-        velocity.y = 0f;
-        anim.SetFloat("speed", velocity.magnitude);
-        previousPosition = body.position;
+        if (!LevelManager.paused)
+        {
+            direction = Mathf.Lerp(direction, Input.GetAxis("Mouse X") * pivotingAmount, pivotingAmount);
+            Vector3 velocity = body.position - previousPosition;
+            velocity.y = 0f;
+            anim.SetFloat("speed", velocity.magnitude * bobbingMultiplier - 1f);
+            previousPosition = body.position;
+            anim.SetFloat("direction", direction);
+        }
     }
 
     public static void Reload()
