@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.PostProcessing;
 
 public class PlayerPowers : MonoBehaviour
 {
     private static PlayerPowers instance;
     public static PlayerPowers Instance() { return instance; }
     public static UnityEvent effectiveHit;
+    private static ChromaticAberrationModel.Settings aberration;
 
     [Header("Power")]
     [SerializeField] [Range(0, 100)] private int slowMaxCharge = 50;
@@ -46,10 +48,10 @@ public class PlayerPowers : MonoBehaviour
     {
         cam = Camera.main;
         startingLens = cam.focalLength;
-        //Enemy.death.AddListener(OnKill);
+        Enemy.death.AddListener(OnKill);
         InitPowers();
         ResetPowers();
-
+        aberration = Camera.main.GetComponent<PostProcessingBehaviour>().profile.chromaticAberration.settings;
     }
 
     public void InitPowers()  { startingCharge = slowCharge; }
@@ -74,6 +76,7 @@ public class PlayerPowers : MonoBehaviour
             {
                 Time.timeScale = 1f - slowAmount;
                 cam.focalLength = startingLens / (1f + slowmoDuration / maxSloDuration);
+                aberration.intensity = 1.1f - slowmoDuration / maxSloDuration;
             }
             else if (Time.timeScale != 1f)
             {

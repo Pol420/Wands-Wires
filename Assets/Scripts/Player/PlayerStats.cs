@@ -11,7 +11,7 @@ public class PlayerStats : MonoBehaviour
     public static PlayerStats Instance() { return instance; }
 
     [Header("References")]
-    [SerializeField] private Vector3Int ammo = new Vector3Int(99, 99, 99);
+    [SerializeField] private Vector3Int ammo = new Vector3Int(64, 64, 64);
     [SerializeField] private HUD hud = null;
 
     [Header("Status")]
@@ -60,7 +60,7 @@ public class PlayerStats : MonoBehaviour
 
     private void InitPlayer()
     {
-        if (resetAmmoOnLevelComplete) startingAmmo = new Vector3Int(99, 99, 99);
+        if (resetAmmoOnLevelComplete) startingAmmo = new Vector3Int(64, 64, 64);
         else startingAmmo = ammo;
         if (currentHealth > 0 && !resetHealthOnLevelComplete)
         {

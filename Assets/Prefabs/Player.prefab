@@ -678,6 +678,7 @@ GameObject:
   - component: {fileID: 927007594196545075}
   - component: {fileID: 927007594196545074}
   - component: {fileID: 6957063451140485298}
+  - component: {fileID: 712123711405192592}
   m_Layer: 3
   m_Name: Main Camera (weapons)
   m_TagString: MainCamera
@@ -765,6 +766,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attenuationObject: {fileID: 0}
   ListenerNumber: -1
+--- !u!114 &712123711405192592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927007594196545073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: 5e3f7345180d69e488a2ef0ee0ab1fc8, type: 2}
 --- !u!1 &927007594343848398
 GameObject:
   m_ObjectHideFlags: 0
@@ -2822,10 +2836,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b9d95ff8a52b21479ac85936904cd71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammo: {x: 99, y: 99, z: 99}
+  ammo: {x: 64, y: 64, z: 64}
   hud: {fileID: 4311329859873195150}
-  maxHealth: 300
-  maxShield: 200
+  maxHealth: 200
+  maxShield: 100
   shieldAbsorption: 0.75
   currentAmmo: 0
   healOnDeath: 1
@@ -2864,6 +2878,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bd1ee3a2c0c47a428681d871400c3c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bobbingMultiplier: 1
 --- !u!1 &9060966155224191256
 GameObject:
   m_ObjectHideFlags: 0
