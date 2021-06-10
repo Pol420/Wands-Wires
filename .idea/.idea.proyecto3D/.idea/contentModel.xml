@@ -332,6 +332,7 @@
           <e p="LevelEnd.cs" t="Include" />
           <e p="LevelManager.cs" t="Include" />
           <e p="Player" t="Include">
+            <e p="PlayerAnimator.cs" t="Include" />
             <e p="PlayerControls.cs" t="Include" />
             <e p="PlayerDamageDetection.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />

@@ -12,7 +12,7 @@ public class Enemy_Stats : ScriptableObject
     [SerializeField] public float maxSightDistance;
     [SerializeField] public float maxTimeToShoot;
     [SerializeField] public float maxTimeToAttack;
-    [SerializeField] public float maxHealth;
+    [SerializeField] public int maxHealth;
     [SerializeField] public float speed;
     [SerializeField] public GameObject projectile;
 
