@@ -16,6 +16,11 @@ public class PlayerAnimator : MonoBehaviour
 
     void Awake()
     {
+        InitAnimator();
+    }
+
+    public void InitAnimator()
+    {
         anim = GetComponent<Animator>();
         body = transform.GetChild(0);
         previousPosition = body.position;

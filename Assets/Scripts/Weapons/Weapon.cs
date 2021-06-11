@@ -18,6 +18,12 @@ public abstract class Weapon : MonoBehaviour
     [SerializeField] protected GameObject waterBullet = null;
     [SerializeField] protected GameObject teslaBullet = null;
 
+    [Header("Particles Prefabs")]
+    [SerializeField] protected GameObject fireParticles = null;
+    [SerializeField] protected GameObject waterParticles = null;
+    [SerializeField] protected GameObject teslaParticles = null;
+    private GameObject fireFlares, waterBubbles, teslaSparks;
+
     [Header("Ammo")]
     [SerializeField] [Range(0f, 5f)] protected float reloadTime = 0.5f;
     [SerializeField] private bool auto = false;
@@ -46,6 +52,10 @@ public abstract class Weapon : MonoBehaviour
         lm = LevelManager.Instance();
         SubStart();
         cargaEv = FMODUnity.RuntimeManager.CreateInstance("event:/Player/cargando");
+        fireFlares = Instantiate(fireParticles, bulletHole);
+        waterBubbles = Instantiate(waterParticles, bulletHole);
+        teslaSparks = Instantiate(teslaParticles, bulletHole);
+        ResetParticles();
     }
 
     void Update()
@@ -92,17 +102,24 @@ public abstract class Weapon : MonoBehaviour
         return bullet;
     }
 
-    private void SwitchAmmo(Ammo ammoType)
+    public void SwitchAmmo(Ammo ammoType)
     {
         holder.SwitchAmmo(ammoType);
+        ResetParticles(ammoType);
         //currentReload = reloadTime;
     }
 
     private void SwitchWeapon()
     {
+        SwitchAmmo(holder.GetCurrentAmmoType());
+        Invoke("ActivateCurrentWeapon", 0.1f);
+    }
+    private void ActivateCurrentWeapon()
+    {
         gameObject.SetActive(false);
         otherWeapon.NextWeapon().SetActive(true);
     }
+
     public GameObject NextWeapon()
     {
         if (unlocked) return gameObject;
@@ -131,6 +148,17 @@ public abstract class Weapon : MonoBehaviour
     public void Unlock()
     {
         unlocked = true;
+    }
+    private void ResetParticles() {  ResetParticles(holder.GetCurrentAmmoType()); }
+    private void ResetParticles(Ammo ammo)
+    {
+        fireFlares.SetActive(ammo.Equals(Ammo.Fire));
+        waterBubbles.SetActive(ammo.Equals(Ammo.Water));
+        teslaSparks.SetActive(ammo.Equals(Ammo.Tesla));
+    }
+    private void OnEnable()
+    {
+        if (waterBubbles != null) ResetParticles();
     }
 }
 public enum Ammo{Fire, Water, Tesla}

@@ -31,11 +31,13 @@ public class PlayerStats : MonoBehaviour
 
     private List<string> keyItems;
     private PlayerPowers powers;
+    private PlayerAnimator animator;
     private Weapon[] weapons;
 
     private Vector3Int startingAmmo;
     private float startingHealth;
     private float startingShield;
+    private int currentWeapon;
 
     private void Awake()
     {
@@ -43,6 +45,7 @@ public class PlayerStats : MonoBehaviour
         {
             instance = this;
             powers = GetComponent<PlayerPowers>();
+            animator = GetComponent<PlayerAnimator>();
             weapons = GetComponentsInChildren<Weapon>(true);
             powers.SetHud(hud);
             DontDestroyOnLoad(gameObject);
@@ -73,6 +76,7 @@ public class PlayerStats : MonoBehaviour
             startingShield = maxShield;
         }
         powers.InitPowers();
+        animator.InitAnimator();
     }
 
     private void ResetPlayer()
@@ -96,6 +100,7 @@ public class PlayerStats : MonoBehaviour
         keyItems = new List<string>();
         powers.ResetPowers();
         hud.ResetHud();
+        animator.InitAnimator();
     }
 
     public int GetCurrentAmmo()
@@ -218,6 +223,7 @@ public class PlayerStats : MonoBehaviour
     }
     private void SwitchWeapons(int target)
     {
+        currentWeapon = target;
         for (int i = 0; i < weapons.Length; ++i)
         {
             if (i == target)
